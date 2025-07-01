@@ -1,0 +1,84 @@
+body { margin: 0; padding-bottom: 3rem; font-family: 'Roboto', sans-serif; font-size: 15px; }
+
+#ChatForm { background: rgba(0, 0, 0, 0.15); padding: 0.25rem; position: fixed; bottom: 0; left: 0; right: 0; display: flex; height: 3rem; box-sizing: border-box; backdrop-filter: blur(10px); }
+#ChatForm > button { background: #333; border: none; padding: 0 1rem; margin: 0.25rem; border-radius: 3px; outline: none; color: #fff; }
+
+#title:focus { outline: none; }
+#title {font-size: 20px; border: none; padding: 0 1rem; flex-grow: 1; border-radius: 2rem; margin: 0.1rem; font-family: 'Roboto', sans-serif;}
+#messages > div { font-size:20px; font-weight: 400; padding: 1rem 1rem; }
+#messages > div:nth-child(odd) { background: #efefef; }
+div.loading img{ height: 40px; }
+
+.container {
+  width: 100%;
+}
+
+h1.title { font-size: 30px; text-align: center;}
+@media only screen and (max-width: 360px) {
+  h1.title {
+    font-size: 50px; text-align: center;
+  }
+}
+
+/* Loading Text ****/
+/*
+@keyframes ldio-4hhfs65i075 {
+   0% { transform: translate(12px,80px) scale(0); }
+  25% { transform: translate(12px,80px) scale(0); }
+  50% { transform: translate(12px,80px) scale(1); }
+  75% { transform: translate(80px,80px) scale(1); }
+ 100% { transform: translate(148px,80px) scale(1); }
+}
+@keyframes ldio-4hhfs65i075-r {
+   0% { transform: translate(148px,80px) scale(1): }
+ 100% { transform: translate(148px,80px) scale(0); }
+}
+@keyframes ldio-4hhfs65i075-c {
+   0% { background: #858585 }
+  25% { background: #858585 }
+  50% { background: #858585 }
+  75% { background: #858585 }
+ 100% { background: #858585 }
+}
+.ldio-4hhfs65i075 div {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  transform: translate(40px,40px) scale(1);
+  background: none;
+  animation: ldio-4hhfs65i075 1s infinite cubic-bezier(0,0.5,0.5,1);
+}
+.ldio-4hhfs65i075 div:nth-child(1) {
+  background: #858585;
+  transform: translate(148px,80px) scale(1);
+  animation: ldio-4hhfs65i075-r 0.25s infinite cubic-bezier(0,0.5,0.5,1), ldio-4hhfs65i075-c 1s infinite step-start;
+}.ldio-4hhfs65i075 div:nth-child(2) {
+  animation-delay: -0.25s;
+  background: #858585;
+}.ldio-4hhfs65i075 div:nth-child(3) {
+  animation-delay: -0.5s;
+  background: #858585;
+}.ldio-4hhfs65i075 div:nth-child(4) {
+  animation-delay: -0.75s;
+  background: #858585;
+}.ldio-4hhfs65i075 div:nth-child(5) {
+  animation-delay: -1s;
+  background: #858585;
+}
+.loadingio-spinner-ellipsis-onwap1tfgec {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  overflow: hidden;
+  background: none;
+}
+.ldio-4hhfs65i075 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateZ(0) scale(1);
+  backface-visibility: hidden;
+  transform-origin: 0 0;
+}
+.ldio-4hhfs65i075 div { box-sizing: content-box; }*/
