@@ -5,9 +5,8 @@
     <div class="row">
         <div class="col-12 col-md-12">
             <h3 class="m-t-0"><a href="{{ env('APP_URL') }}admin/fine-tuning" class="btn btn-primary btn-sm"><i class="fas fa-reply-all"></i> Trở về</a> Edit Fine-Tuning</h3>
-            <form action="{{ env('APP_URL') }}admin/fine-tuning/update" method="post" id="FineTuningform">
+            <form action="{{ env('APP_URL') }}admin/fine-tuning/create" method="post" id="FineTuningform">
                 {{ csrf_field() }}
-                <input type="hidden" name="id" id="id" value="{{ $ds['_id'] }}">
                 <div class="form-body">
                     <hr />
                     @if($errors->any())
@@ -19,22 +18,32 @@
                             </ul>
                         </div>
                     @endif
+                    <div class="form-group row mb-3">
+                        <label class="col-form-label col-md-2 text-right p-t-10">Chủ đề</label>
+                        <div class="col-md-2">
+                            <select name="system_content" id="system_content" class="form-control form-select-sm" required>
+                                <option value="">-- Chọn --</option>
+                            </select>
+                        </div>
+                    </div>
+                    </div>
                     <div class="form-group row">
-                        <label class="col-form-label col-md-2 text-right p-t-10">system</label>
-                        <div class="col-md-10">
-                            <textarea name="system_content" id="system_content" rows="10" class="form-control" placeholder="Nhập nội dung system" required>{{ $ds['messages'][0]['content'] }} </textarea>                            
+                        <label class="col-form-label col-md-2 text-right p-t-10">Câu hỏi</label>
+                        <div class="col-md-4">
+                            <textarea name="user_content" id="user_content" rows="10" class="form-control" placeholder="Nhập nội dung câu hỏi" required>{{ old('user_content') }} </textarea>                            
+                        </div>
+                        <button type="button" class="btn btn-success pb-4 py-2 px-1" style="height: 40px; font-size: 12px; line-height: 1.2;">
+                            Gợi ý thêm câu hỏi <br><i class="fa fa-arrow-right"></i>
+                        </button>
+
+                        <div class="col-md-4">
+                            <textarea name="user_content_suggest" id="user_content_suggest" rows="10" class="form-control" placeholder="Câu hỏi gợi ý thêm" required>{{ old('user_content_suggest') }} </textarea>                            
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="col-form-label col-md-2 text-right p-t-10">user</label>
+                        <label class="col-form-label col-md-2 text-right p-t-10">Câu trả lời</label>
                         <div class="col-md-10">
-                            <textarea name="user_content" id="user_content" rows="10" class="form-control" placeholder="Nhập nội dung user" required>{{ $ds['messages'][1]['content'] }} </textarea>                            
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label class="col-form-label col-md-2 text-right p-t-10">assistant</label>
-                        <div class="col-md-10">
-                            <textarea name="assistant_content" id="assistant_content" rows="10" class="form-control" placeholder="Nhập nội dung assistant" required>{{ $ds['messages'][2]['content'] }} </textarea>                            
+                            <textarea name="assistant_content" id="assistant_content" rows="10" class="form-control" placeholder="Nhập nội dung trả lời" required>{{ old('assistant_content') }} </textarea>                            
                         </div>
                     </div>
                 </div>

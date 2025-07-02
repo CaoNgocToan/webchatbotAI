@@ -62,7 +62,7 @@ class FineTuningController extends Controller
         $fineTuning->save();
 
         // Có thể thêm logic update intent/utter nếu cần
-
+        $this->updateIntentAndUtter($data['system_content'], $data['user_content'], $data['assistant_content']);
         return redirect(env('APP_URL') . 'admin/fine-tuning');
     }
 
