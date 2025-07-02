@@ -91,19 +91,21 @@ class FineTuningController extends Controller
     private function getFilePaths($fieldName)
     {
         $slug = $this->slugify($fieldName);
-        $base = "D:\\Demo\\RasaTest\\";
+        
+
         return [
-            'nlu' => $base . "data\\nlu_$slug.yml",
-            'domain' => $base . "domain\\domain_$slug.yml"
+            'nlu' => env('CHATBOT_URL') . "\\data\\nlu\\nlu_$slug.yml",
+            'domain' => env('CHATBOT_URL') . "\\domain\\domain_$slug.yml"
         ];
-    }
+        }
+
 
     // Thêm intent và utter
     private function addIntentAndUtter($field, $userText, $assistantText)
     {
         $intentSlug = $this->slugify($userText);
-        $intent = "hoi_$intentSlug";
-        $utter = "utter_$intentSlug";
+        $intent = "$field/$intentSlug";
+        $utter = "utter_$field/$intentSlug";
 
         $paths = $this->getFilePaths($field);
 
@@ -119,11 +121,30 @@ class FineTuningController extends Controller
         // Ghi utter
         $responseBlock = "  $utter:\n    - text: |\n       $assistantText\n\n";
         $content = file_get_contents($paths['domain']);
+
+        // Nếu chưa có "responses:", thêm vào
         if (strpos($content, "responses:") === false) {
-            $content .= "\nresponses:\n";
+            $content = "responses:\n" . $responseBlock . $content;
+        } else {
+            // Chèn vào trước dòng session_config
+            $lines = explode("\n", $content);
+            $newLines = [];
+            $inserted = false;
+
+            foreach ($lines as $line) {
+                if (strpos($line, 'session_config:') !== false && !$inserted) {
+                    // Thêm responseBlock trước session_config
+                    $newLines[] = $responseBlock;
+                    $inserted = true;
+                }
+                $newLines[] = $line;
+            }
+
+            $content = implode("\n", $newLines);
         }
-        $content .= $responseBlock;
+
         file_put_contents($paths['domain'], $content);
+
     }
 
     // Xóa intent và utter
