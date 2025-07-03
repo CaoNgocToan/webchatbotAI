@@ -4,48 +4,31 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Topic;
-use Session;
+use Illuminate\Support\Facades\Session;
+use Illuminate\Pagination\LengthAwarePaginator;
 
 class TopicController extends Controller
 {
     // Hiển thị danh sách
-    
-    public function list(Request $request)
+         function list(Request $request)
     {
-        $perPage = 30;
-        $page = $request->get('page', 1);
-
-        // Lấy toàn bộ dữ liệu
-        $all = Topic::orderBy('created_at', 'desc')->get();
-
-        // Tách trang
-        $items = $all->forPage($page, $perPage);
-
-        // Tạo đối tượng phân trang
-        $danhsach = new LengthAwarePaginator(
-            $items,
-            $all->count(),
-            $perPage,
-            $page,
-            ['path' => $request->url(), 'query' => $request->query()]
-        );
-
-        return view('Admin.Topic.list')->with(compact('danhsach'));
+        
+        $danhsach = Topic::orderBy('updated_at', 'desc')->paginate(30);
+        return view('Admin.Topic.list', compact('danhsach'));
     }
-
     // Hiển thị chi tiết topic
-    public function detail(Request $request, $id = '')
+    public function detail($id)
     {
-        $ds = Topic::find($id);
-        return view('Admin.Topic.detail')->with(compact('ds'));
+        $ds = Topic::findOrFail($id);
+        return view('Admin.Topic.detail', compact('ds'));
     }
 
     // Xoá topic
-    public function delete(Request $request, $id = '')
+    public function delete($id)
     {
         Topic::destroy($id);
         Session::flash('msg', 'Xoá thành công');
-        return redirect(env('APP_URL') . 'admin/topic');
+        return redirect()->to(route('admin.topic.list'));
     }
 
     // Hiển thị form thêm mới
@@ -62,20 +45,17 @@ class TopicController extends Controller
             'ten_khong_dau' => 'required|string'
         ]);
 
-        Topic::create([
-            'ten_topic' => $request->ten_topic,
-            'ten_khong_dau' => $request->ten_khong_dau
-        ]);
+        Topic::create($request->only(['ten_topic', 'ten_khong_dau']));
 
         Session::flash('msg', 'Thêm mới thành công');
-        return redirect(env('APP_URL') . 'admin/topic');
+        return redirect()->to(route('admin.topic.list'));
     }
 
     // Hiển thị form cập nhật
     public function editForm($id)
     {
-        $ds = Topic::find($id);
-        return view('Admin.Topic.edit')->with(compact('ds'));
+        $ds = Topic::findOrFail($id);
+        return view('Admin.Topic.edit', compact('ds'));
     }
 
     // Cập nhật topic
@@ -86,15 +66,10 @@ class TopicController extends Controller
             'ten_khong_dau' => 'required|string'
         ]);
 
-        $topic = Topic::find($id);
-        if ($topic) {
-            $topic->ten_topic = $request->ten_topic;
-            $topic->ten_khong_dau = $request->ten_khong_dau;
-            $topic->save();
+        $topic = Topic::findOrFail($id);
+        $topic->update($request->only(['ten_topic', 'ten_khong_dau']));
 
-            Session::flash('msg', 'Cập nhật thành công');
-        }
-
-        return redirect(env('APP_URL') . 'admin/topic');
+        Session::flash('msg', 'Cập nhật thành công');
+        return redirect()->to(route('admin.topic.list'));
     }
 }
