@@ -45,7 +45,7 @@ Route::group(['prefix' => 'admin',  'middleware' => 'checkauth'], function(){
     
     Route::get('fine-tuning/sync/{id}', [FineTuningController::class, 'sync'])->middleware('role:Admin,Manager');
 
-    Route::get('topic/', [TopicController::class, 'list']);
+    Route::get('topic', [TopicController::class, 'list'])->name('admin.topic.list');
     Route::get('topic/delete/{id}', [TopicController::class, 'delete']);
     Route::get('topic/create', [TopicController::class, 'createForm']);
     Route::post('topic/create', [TopicController::class, 'create']);

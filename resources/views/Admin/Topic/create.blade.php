@@ -1,6 +1,12 @@
-@extends('layouts.app')
+@extends('Admin.layout')
 
-@section('content')
+@section('title', 'Danh sách Topic')
+
+@section('css')
+    <link href="{{ env('APP_URL') }}assets/admin/libs/jquery-toast/jquery.toast.min.css" rel="stylesheet" type="text/css" />
+@endsection
+
+@section('body')
 <div class="container">
     <h3>Thêm mới Topic</h3>
 
