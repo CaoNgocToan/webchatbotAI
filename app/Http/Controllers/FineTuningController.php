@@ -151,8 +151,8 @@ class FineTuningController extends Controller
     private function deleteIntentAndUtter($field, $userText)
     {
         $intentSlug = $this->slugify($userText);
-        $intent = "hoi_$intentSlug";
-        $utter = "utter_$intentSlug";
+        $intent = "$field/$intentSlug";
+        $utter = "utter_$field/$intentSlug";
 
         $paths = $this->getFilePaths($field);
 

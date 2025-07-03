@@ -1,69 +1,37 @@
-@extends('Admin.layout')
-@section('title', 'Messages Chat')
+@extends('layouts.app')
 
-@section('body')
-<div class="card-box">
-    <div class="row">
-        <div class="col-12 col-md-12">
-            <h3 class="m-t-0"><i class="mdi mdi-message-text"></i> Danh sách Chat</h3>
-            <hr />
-            @if($danhsach)
-            <table class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
-                <thead>
-                    <tr>
-                        <th>Date</th>
-                        <th>Messages</th>
-                        <th class="text-center">#</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach($danhsach as $ds)
-                    <tr>
-                        <td class="text-center">{{ date("d/m/Y H:i", strtotime($ds['created_at'])) }}</td>
-                        <td>
-                            <strong>{{ $ds['messages'][0]['role'] }}:</strong> {{ $ds['messages'][0]['content'] }} <br />
-                            <strong>{{ $ds['messages'][1]['role'] }}:</strong> {{ $ds['messages'][1]['content'] }} <br />
-                            <strong>{{ $ds['messages'][2]['role'] }}:</strong> {{ $ds['messages'][2]['content'] }} <br />
-                        </td>
-                        <td class="text-center" style="vertical-align:middle;">
-                            <a href="{{ env('APP_URL') }}admin/messages/delete/{{$ds['_id']}}" onclick="return confirm('Are you sure?')"><i class="fa fa-trash text-danger"></i></a>
-                        </td>
-                    </tr>
-                    @endforeach
-                </tbody>
-            </table>
-            {{ $danhsach->withPath(env('APP_URL') . 'admin/messages') }}
-            @endif
-        </div>
-    </div>
+@section('content')
+<div class="container">
+    <h3>Danh sách Topic</h3>
+    @if(Session::has('msg'))
+        <div class="alert alert-success">{{ Session::get('msg') }}</div>
+    @endif
+    <a href="{{ url('admin/topic/create') }}" class="btn btn-success mb-3">Thêm mới</a>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Tên Topic</th>
+                <th>Tên không dấu</th>
+                <th>Hành động</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach($danhsach as $item)
+                <tr>
+                    <td>{{ $item->ten_topic }}</td>
+                    <td>{{ $item->ten_khong_dau }}</td>
+                    <td>
+                        <a href="{{ url('admin/topic/detail/'.$item->_id) }}" class="btn btn-info btn-sm">Chi tiết</a>
+                        <a href="{{ url('admin/topic/edit/'.$item->_id) }}" class="btn btn-warning btn-sm">Sửa</a>
+                        <a href="{{ url('admin/topic/delete/'.$item->_id) }}" class="btn btn-danger btn-sm"
+                           onclick="return confirm('Bạn có chắc chắn muốn xoá?')">Xoá</a>
+                    </td>
+                </tr>
+            @endforeach
+        </tbody>
+    </table>
+
+    {{ $danhsach->links() }}
 </div>
-
-<div id="XemChiTietModal" class="modal fade bs-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="myExtraLargeModalLabel">Messages Detail</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body" id="XemChiTietHTML">
-                ...
-            </div>
-        </div><!-- /.modal-content -->
-    </div>
-</div>
-@endsection
-
-@section('js')
-<script type="text/javascript">
-    jQuery(document).ready(function(){
-        $(".xem-chi-tiet").click(function(){
-            var href = $(this).attr("href");
-            $.get(href, function(html){
-                $("#XemChiTietHTML").html(html);
-            })
-        });
-    });
-</script>
 @endsection

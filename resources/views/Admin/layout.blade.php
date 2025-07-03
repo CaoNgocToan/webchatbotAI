@@ -95,6 +95,9 @@
                                 <a href="{{ env('APP_URL') }}admin/messages"><i class="fab fa-rocketchat"></i>Tin nhắn Chat</a>
                             </li>
                             <li class="has-submenu">
+                                <a href="{{ env('APP_URL') }}admin/topic"><i class="fa fa-book"></i></i>Chủ đề</a>
+                            </li>
+                            <li class="has-submenu">
                                 <a href="{{ env('APP_URL') }}admin/fine-tuning"><i class="fas fa-book-medical"></i>Tập huấn dữ liệu</a>
                             </li>
                             {{--<li class="has-submenu">

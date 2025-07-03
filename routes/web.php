@@ -9,6 +9,7 @@ use App\Http\Controllers\DMDiaChiController;
 use App\Http\Controllers\MessagesController;
 use App\Http\Controllers\FineTuningController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\TopicController;
 
 Route::get('auth/login',[LoginController::class, 'login_form']);
 Route::get('auth/logout', [LoginController::class, 'logout']);
@@ -43,6 +44,13 @@ Route::group(['prefix' => 'admin',  'middleware' => 'checkauth'], function(){
     Route::get('fine-tuning/delete/{id}', [FineTuningController::class, 'delete'])->middleware('role:Admin,Manager');
     
     Route::get('fine-tuning/sync/{id}', [FineTuningController::class, 'sync'])->middleware('role:Admin,Manager');
+
+    Route::get('topic/', [TopicController::class, 'list']);
+    Route::get('topic/delete/{id}', [TopicController::class, 'delete']);
+    Route::get('topic/create', [TopicController::class, 'createForm']);
+    Route::post('topic/create', [TopicController::class, 'create']);
+    Route::get('topic/edit/{id}', [TopicController::class, 'editForm']);
+    Route::post('topic/edit/{id}', [TopicController::class, 'update']);
 
     Route::get('user', [UserController::class, 'list'])->middleware('role:Admin');
     Route::get('user/change-password', [UserController::class, 'change_password'])->middleware('role:Admin');
