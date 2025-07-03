@@ -19,7 +19,8 @@ class FineTuningController extends Controller
     // Hiển thị form thêm mới
     public function add()
     {
-        return view('Admin.FineTuning.add');
+        $topics = Topic::all();
+        return view('Admin.FineTuning.add', compact('topics'));
     }
 
     // Tạo mới FineTuning

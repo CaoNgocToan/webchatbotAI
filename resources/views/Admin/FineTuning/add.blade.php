@@ -23,21 +23,18 @@
                         <div class="col-md-2">
                             <select name="system_content" id="system_content" class="form-control form-select-sm" required>
                                 <option value="">-- Chọn --</option>
+                                @foreach ($topics as $topic)
+                                    <option value="{{ $topic->_id }}">{{ $topic->ten_topic }}</option>
+                                @endforeach
+
                             </select>
                         </div>
-                    </div>
+                    
                     </div>
                     <div class="form-group row">
                         <label class="col-form-label col-md-2 text-right p-t-10">Câu hỏi</label>
-                        <div class="col-md-4">
+                        <div class="col-md-10">
                             <textarea name="user_content" id="user_content" rows="10" class="form-control" placeholder="Nhập nội dung câu hỏi" required>{{ old('user_content') }} </textarea>                            
-                        </div>
-                        <button type="button" class="btn btn-success pb-4 py-2 px-1" style="height: 40px; font-size: 12px; line-height: 1.2;">
-                            Gợi ý thêm câu hỏi <br><i class="fa fa-arrow-right"></i>
-                        </button>
-
-                        <div class="col-md-4">
-                            <textarea name="user_content_suggest" id="user_content_suggest" rows="10" class="form-control" placeholder="Câu hỏi gợi ý thêm" required>{{ old('user_content_suggest') }} </textarea>                            
                         </div>
                     </div>
                     <div class="form-group row">

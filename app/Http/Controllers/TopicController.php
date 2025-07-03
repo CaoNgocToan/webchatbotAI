@@ -45,7 +45,21 @@ class TopicController extends Controller
             'ten_khong_dau' => 'required|string'
         ]);
 
-        Topic::create($request->only(['ten_topic', 'ten_khong_dau']));
+        $ten_topic = $request->input('ten_topic');
+        $ten_khong_dau = $request->input('ten_khong_dau');
+
+        $exists = Topic::where('ten_topic', $ten_topic)
+            ->orWhere('ten_khong_dau', $ten_khong_dau)
+            ->first();
+
+        if ($exists) {
+            return redirect()->back()->withInput()->with('msg', 'Tên Topic hoặc Tên không dấu đã tồn tại!');
+        }
+
+        Topic::create([
+            'ten_topic' => $ten_topic,
+            'ten_khong_dau' => $ten_khong_dau
+        ]);
 
         Session::flash('msg', 'Thêm mới thành công');
         return redirect()->to(route('admin.topic.list'));
@@ -65,7 +79,16 @@ class TopicController extends Controller
             'ten_topic' => 'required|string',
             'ten_khong_dau' => 'required|string'
         ]);
+        $ten_topic = $request->input('ten_topic');
+        $ten_khong_dau = $request->input('ten_khong_dau');
 
+        $exists = Topic::where('ten_topic', $ten_topic)
+            ->orWhere('ten_khong_dau', $ten_khong_dau)
+            ->first();
+
+        if ($exists) {
+            return redirect()->back()->withInput()->with('msg', 'Tên Topic hoặc Tên không dấu đã tồn tại!');
+        }
         $topic = Topic::findOrFail($id);
         $topic->update($request->only(['ten_topic', 'ten_khong_dau']));
 
