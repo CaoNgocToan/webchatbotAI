@@ -7,23 +7,42 @@
 @endsection
 
 @section('body')
-<div class="container">
-    <h3>Cập nhật Topic</h3>
+<div class="card-box">
+    <div class="row">
+        <div class="col-12 col-md-12">
+            <h3 class="m-t-0"> Update Topic</h3>
+                    
 
-    <form action="{{ url('admin/topic/edit/'.$ds->_id) }}" method="POST">
-        @csrf
-        <div class="form-group">
-            <label for="ten_topic">Tên Topic</label>
-            <input type="text" name="ten_topic" class="form-control" value="{{ $ds->ten_topic }}" required>
+            <form action="{{ url('admin/topic/create') }}" method="POST">
+                @csrf
+                <div class="form-body">
+                    <hr />
+                    @if($errors->any())
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+                </div>
+                <div class="form-group">
+                    <label for="ten_topic">Tên chủ đề</label>
+                    <input type="text" name="ten_topic" class="form-control" placeholder="Nhập tên của chủ đề" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="ten_khong_dau">Tên không dấu</label>
+                    <input type="text" name="ten_khong_dau" class="form-control" placeholder="Bỏ trống nếu bạn muốn tự động bỏ dấu">
+                </div>
+                <div class="form-actions">
+                    <a href="{{ env('APP_URL') }}admin/fine-tuning" class="btn btn-light"><i class="fa fa-reply-all"></i> Trở về</a>
+                    <button type="submit" class="btn btn-info"> <i class="fa fa-check"></i> Cập nhật</button>
+                </div>
+            </form>
         </div>
-
-        <div class="form-group">
-            <label for="ten_khong_dau">Tên không dấu</label>
-            <input type="text" name="ten_khong_dau" class="form-control" value="{{ $ds->ten_khong_dau }}" required>
-        </div>
-
-        <button type="submit" class="btn btn-success mt-3">Cập nhật</button>
-    </form>
+    </div>
 </div>
 @endsection
 @section('js')

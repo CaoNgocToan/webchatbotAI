@@ -11,7 +11,7 @@
                     <hr />
                     @if($errors->any())
                         <div class="alert alert-success">
-                            <ul>
+                            <ul> 
                                 @foreach ($errors->all() as $error)
                                     <li>{{ $error }}</li>
                                 @endforeach
@@ -24,7 +24,7 @@
                             <select name="system_content" id="system_content" class="form-control form-select-sm" required>
                                 <option value="">-- Chọn --</option>
                                 @foreach ($topics as $topic)
-                                    <option value="{{ $topic->_id }}">{{ $topic->ten_topic }}</option>
+                                    <option value="{{ $topic->ten_khong_dau }}">{{ $topic->ten_topic }}</option>
                                 @endforeach
 
                             </select>
@@ -34,13 +34,13 @@
                     <div class="form-group row">
                         <label class="col-form-label col-md-2 text-right p-t-10">Câu hỏi</label>
                         <div class="col-md-10">
-                            <textarea name="user_content" id="user_content" rows="10" class="form-control" placeholder="Nhập nội dung câu hỏi" required>{{ old('user_content') }} </textarea>                            
+                            <textarea name="user_content" id="user_content" rows="10" class="form-control" placeholder="Nhập nội dung câu hỏi. &#10*Lưu ý: &#10 1.Mỗi một dòng là một câu hỏi. &#10 2.Phải có ít nhất 10 câu hỏi. &#10 3.Các câu hỏi phải có mục đích hỏi giống nhau." required>{{ old('user_content') }}</textarea>                            
                         </div>
                     </div>
                     <div class="form-group row">
                         <label class="col-form-label col-md-2 text-right p-t-10">Câu trả lời</label>
                         <div class="col-md-10">
-                            <textarea name="assistant_content" id="assistant_content" rows="10" class="form-control" placeholder="Nhập nội dung trả lời" required>{{ old('assistant_content') }} </textarea>                            
+                            <textarea name="assistant_content" id="assistant_content" rows="10" class="form-control" placeholder="Nhập nội dung trả lời" required>{{ old('assistant_content') }}</textarea>                            
                         </div>
                     </div>
                 </div>
@@ -52,4 +52,18 @@
         </div>
     </div>
 </div>
+@endsection
+@section('js')
+<script src="{{ env('APP_URL') }}assets/admin/libs/jquery-toast/jquery.toast.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        @if(Session::get('msg') && Session::get('msg'))
+            $.toast({
+                heading:"Thông báo",
+                text:"{{ Session::get('msg') }}",
+                loaderBg:"#3b98b5",icon:"info", hideAfter:3000,stack:1,position:"top-right"
+            });
+        @endif
+    });
+</script>
 @endsection
