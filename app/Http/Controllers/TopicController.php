@@ -77,28 +77,44 @@ class TopicController extends Controller
     }
 
     // Cập nhật topic
-    public function update(Request $request, $id)
-    {
-        $request->validate([
-            'ten_topic' => 'required|string',
-            'ten_khong_dau' => 'required|string'
-        ]);
-        $ten_topic = $request->input('ten_topic');
-        $ten_khong_dau = $request->input('ten_khong_dau');
+    public function update(Request $request)
+{
+    $request->validate([
+        'ten_topic' => 'required|string',
+        'id' => 'required'
+    ]);
 
-        $exists = Topic::where('ten_topic', $ten_topic)
-            ->orWhere('ten_khong_dau', $ten_khong_dau)
-            ->first();
+    $ten_topic = $request->input('ten_topic');
+    $ten_khong_dau = $request->input('ten_khong_dau');
+    $id = $request->input('id');
 
-        if ($exists) {
-            return redirect()->back()->withInput()->with('msg', 'Tên Topic hoặc Tên không dấu đã tồn tại!');
-        }
-        $topic = Topic::findOrFail($id);
-        $topic->update($request->only(['ten_topic', 'ten_khong_dau']));
-
-        Session::flash('msg', 'Cập nhật thành công');
-        return redirect()->to(route('admin.topic.list'));
+    if (empty($ten_khong_dau)) {
+        $ten_khong_dau = $this->slugify($ten_topic);
     }
+
+    // Kiểm tra trùng tên nhưng loại trừ chính bản ghi đang sửa
+    $exists = Topic::where('id', '<>', $id)
+        ->where(function ($q) use ($ten_topic, $ten_khong_dau) {
+            $q->where('ten_topic', $ten_topic)
+              ->orWhere('ten_khong_dau', $ten_khong_dau);
+        })
+        ->first();
+
+    if ($exists) {
+        return redirect()->back()->withInput()->with('msg', 'Tên Topic hoặc Tên không dấu đã tồn tại!');
+    }
+
+    $topic = Topic::findOrFail($id);
+
+    $topic->update([
+        'ten_topic' => $ten_topic,
+        'ten_khong_dau' => $ten_khong_dau
+    ]);
+
+    Session::flash('msg', 'Cập nhật thành công');
+    return redirect()->to(route('admin.topic.list'));
+}
+
 
     function slugify($text) {
     // Bảng thay thế ký tự tiếng Việt có dấu thành không dấu

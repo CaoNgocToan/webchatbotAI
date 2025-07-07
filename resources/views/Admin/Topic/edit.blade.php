@@ -13,8 +13,10 @@
             <h3 class="m-t-0"> Update Topic</h3>
                     
 
-            <form action="{{ url('admin/topic/create') }}" method="POST">
+            <form action="{{ env('APP_URL') }}admin/topic/update" method="POST" >
+                <input type="hidden" name="id" value="{{ $ds->_id }}">
                 @csrf
+                <input type="hidden" name="id" value="{{ $ds->_id }}">
                 <div class="form-body">
                     <hr />
                     @if($errors->any())
@@ -27,15 +29,19 @@
                         </div>
                     @endif
                 </div>
+                
                 <div class="form-group">
                     <label for="ten_topic">Tên chủ đề</label>
-                    <input type="text" name="ten_topic" class="form-control" placeholder="Nhập tên của chủ đề" required>
+                    <input type="text" name="ten_topic" class="form-control" placeholder="Nhập tên của chủ đề"
+                        value="{{ old('ten_topic', $ds->ten_topic) }}" required>
                 </div>
 
                 <div class="form-group">
                     <label for="ten_khong_dau">Tên không dấu</label>
-                    <input type="text" name="ten_khong_dau" class="form-control" placeholder="Bỏ trống nếu bạn muốn tự động bỏ dấu">
+                    <input type="text" name="ten_khong_dau" class="form-control" placeholder="Bỏ trống nếu bạn muốn tự động bỏ dấu"
+                        value="{{ old('ten_khong_dau', $ds->ten_khong_dau) }}">
                 </div>
+
                 <div class="form-actions">
                     <a href="{{ env('APP_URL') }}admin/fine-tuning" class="btn btn-light"><i class="fa fa-reply-all"></i> Trở về</a>
                     <button type="submit" class="btn btn-info"> <i class="fa fa-check"></i> Cập nhật</button>

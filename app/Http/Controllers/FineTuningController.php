@@ -113,7 +113,7 @@ class FineTuningController extends Controller
             ['role' => 'examples', 'content' => $examples],
             ['role' => 'utter',    'content' => $request->input('assistant_content')],
         ];
-        $fineTuning->messagesNew = $messagesNew;
+        $fineTuning->messages = $messagesNew;
         $fineTuning->save();
 
         // Có thể thêm logic update intent/utter nếu cần
@@ -146,92 +146,80 @@ class FineTuningController extends Controller
 
 
     // Thêm intent và utter
-    private function addIntentAndUtter(array $messages)
-    {
-        // Chuyển mảng thành dạng dễ truy cập
-        $msg = collect($messages)->keyBy('role');
+    private function addIntentAndUtter(array $messages): void
+{
+    $msg           = collect($messages)->keyBy('role');
+    $field         = $msg['topic']['content'];
+    $intentSlug    = $msg['intent']['content'];
+    $examples      = $msg['examples']['content'];
+    $assistantText = $msg['utter']['content'];
 
-        $field        = $msg['topic']['content'];
-        $intentSlug   = $msg['intent']['content'];
-        $examples     = $msg['examples']['content'];
-        $assistantText = $msg['utter']['content'];
+    $intent = "$field/$intentSlug";
+    $utter  = "utter_$field/$intentSlug";
 
-        $intent = "$field/$intentSlug";
-        $utter  = "utter_$field/$intentSlug";
+    $paths = $this->getFilePaths($field);
+    $this->ensureRasaFilesExist($paths, $field);
 
-        $paths = $this->getFilePaths($field);
-        if (!file_exists($paths['nlu']) || !file_exists($paths['domain'])) {
-            return;
-        }
-
-        // === NLU ===
+    // === NLU ===
+    $nluContent = file_get_contents($paths['nlu']);
+    if (!preg_match('/^- intent:\s*' . preg_quote($intent, '/') . '\b/m', $nluContent)) {
         $intentBlock = "- intent: $intent\n  examples: |";
         foreach ($examples as $ex) {
             $intentBlock .= "\n    - " . trim($ex);
         }
         $intentBlock .= "\n";
-        file_put_contents($paths['nlu'], "\n" . $intentBlock, FILE_APPEND);
+        file_put_contents($paths['nlu'], trim($nluContent) . "\n\n" . $intentBlock . "\n");
+    }
 
-        // === DOMAIN ===
+    // === DOMAIN ===
+    $domainContent = file_get_contents($paths['domain']);
+    if (!preg_match('/^\s*' . preg_quote($utter, '/') . ':/m', $domainContent)) {
         $utterBlock = "  $utter:\n  - text: |\n      " . str_replace("\n", "\n      ", trim($assistantText)) . "\n";
-        $domainContent = file_get_contents($paths['domain']);
 
-        if (strpos($domainContent, "responses:") === false) {
-            $domainContent = "responses:\n" . $utterBlock . "\n" . $domainContent;
+        if (strpos($domainContent, 'responses:') !== false) {
+            $domainContent = preg_replace('/(responses:\s*\n)/', "$1$utterBlock\n", $domainContent, 1);
         } else {
-            $lines = explode("\n", $domainContent);
-            $newLines = [];
-            $inserted = false;
-
-            foreach ($lines as $line) {
-                if (strpos($line, 'session_config:') !== false && !$inserted) {
-                    $newLines[] = $utterBlock;
-                    $inserted = true;
-                }
-                $newLines[] = $line;
-            }
-
-            if (!$inserted) {
-                $newLines[] = $utterBlock;
-            }
-
-            $domainContent = implode("\n", $newLines);
+            $domainContent .= "\nresponses:\n$utterBlock\n";
         }
 
-        file_put_contents($paths['domain'], $domainContent);
+        file_put_contents($paths['domain'], trim($domainContent) . "\n");
     }
+}
+
 
 
 
 
     // Xóa intent và utter
-    private function deleteIntentAndUtter(array $messages)
+   private function deleteIntentAndUtter(array $messages): void
 {
-    // Lấy dữ liệu từ messages
-    $msg = collect($messages)->keyBy('role');
-
+    $msg         = collect($messages)->keyBy('role');
     $field       = $msg['topic']['content'] ?? '';
     $intentSlug  = $msg['intent']['content'] ?? '';
     $intent      = "$field/$intentSlug";
     $utter       = "utter_$field/$intentSlug";
 
     $paths = $this->getFilePaths($field);
-    if (!file_exists($paths['nlu']) || !file_exists($paths['domain'])) {
-        return;
+
+    // XÓA intent trong NLU
+    if (file_exists($paths['nlu'])) {
+        $content = file_get_contents($paths['nlu']);
+        $parts = preg_split('/(?=- intent: )/', $content);
+        $filtered = array_filter($parts, fn($block) => !preg_match('/^- intent:\s*' . preg_quote($intent, '/') . '\b/', trim($block)));
+        file_put_contents($paths['nlu'], trim(implode('', $filtered)) . "\n");
     }
 
-    // --- XÓA INTENT TRONG FILE NLU ---
-    $nluContent = file_get_contents($paths['nlu']);
-    $pattern = '/- intent:\s*' . preg_quote($intent, '/') . '\s*examples:\s*\|(?:\n\s*-\s.*)+/u';
-    $nluContent = preg_replace($pattern, '', $nluContent);
-    file_put_contents($paths['nlu'], trim($nluContent) . "\n");
-
-    // --- XÓA UTTER TRONG FILE DOMAIN ---
-    $domainContent = file_get_contents($paths['domain']);
-    $patternUtter = '/^\s*' . preg_quote($utter, '/') . ':\n(?:\s*-\s*text:\s*\|\n(?:\s{8,}.*\n?)*)+/m';
-    $domainContent = preg_replace($patternUtter, '', $domainContent);
-    file_put_contents($paths['domain'], trim($domainContent) . "\n");
+    // XÓA utter trong domain
+    if (file_exists($paths['domain'])) {
+        $content = file_get_contents($paths['domain']);
+        $parts = preg_split('/(?=^\s*utter_)/m', $content);
+        $filtered = array_filter($parts, fn($block) => !preg_match('/^' . preg_quote($utter, '/') . ':/m', $block));
+        file_put_contents($paths['domain'], trim(implode("\n", $filtered)) . "\n");
+    }
 }
+
+
+
 
     // Sửa intent và utter
     private function updateIntentAndUtter(array $messagesOld, array $messagesNew)
@@ -293,5 +281,38 @@ class FineTuningController extends Controller
 
         return $text;
     }
+
+    private function ensureRasaFilesExist(array $paths, string $slug): void
+{
+    foreach (['nlu', 'domain'] as $key) {
+        $dir = dirname($paths[$key]);
+        if (!is_dir($dir)) {
+            mkdir($dir, 0777, true);
+        }
+    }
+
+    if (!file_exists($paths['nlu'])) {
+        file_put_contents($paths['nlu'], "version: \"3.1\"\n\nnlu:\n");
+    }
+
+    if (!file_exists($paths['domain'])) {
+        $domainContent = <<<YAML
+version: "3.1"
+
+intents:
+  - {$slug}
+
+responses:
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+YAML;
+        file_put_contents($paths['domain'], $domainContent);
+    }
+}
+
+
 
 }

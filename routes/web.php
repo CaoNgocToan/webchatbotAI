@@ -45,12 +45,12 @@ Route::group(['prefix' => 'admin',  'middleware' => 'checkauth'], function(){
     
     Route::get('fine-tuning/sync/{id}', [FineTuningController::class, 'sync'])->middleware('role:Admin,Manager');
 
-    Route::get('topic', [TopicController::class, 'list'])->name('admin.topic.list');
-    Route::get('topic/delete/{id}', [TopicController::class, 'delete']);
-    Route::get('topic/create', [TopicController::class, 'createForm']);
-    Route::post('topic/create', [TopicController::class, 'create']);
-    Route::get('topic/edit/{id}', [TopicController::class, 'editForm']);
-    Route::post('topic/edit/{id}', [TopicController::class, 'update']);
+    Route::get('topic', [TopicController::class, 'list'])->name('admin.topic.list')->middleware('role:Admin,Manager');
+    Route::get('topic/delete/{id}', [TopicController::class, 'delete'])->middleware('role:Admin,Manager');
+    Route::get('topic/create', [TopicController::class, 'createForm'])->middleware('role:Admin,Manager');
+    Route::post('topic/create', [TopicController::class, 'create'])->middleware('role:Admin,Manager');
+    Route::get('topic/edit/{id}', [TopicController::class, 'editForm'])->middleware('role:Admin,Manager');
+    Route::post('topic/update', [TopicController::class, 'update'])->middleware('role:Admin,Manager');
 
     Route::get('user', [UserController::class, 'list'])->middleware('role:Admin');
     Route::get('user/change-password', [UserController::class, 'change_password'])->middleware('role:Admin');
