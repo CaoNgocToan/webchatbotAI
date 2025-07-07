@@ -10,44 +10,52 @@
                 <input type="hidden" name="id" value="{{ $ds->_id }}">
                 <div class="form-body">
                     <hr />
+                   @php
+                        $messages = collect($ds->messages)->keyBy('role');
+                    @endphp
+
                     @if($errors->any())
-                        <div class="alert alert-success">
-                            <ul>
+                        <div class="alert alert-danger">
+                            <ul class="mb-0">
                                 @foreach ($errors->all() as $error)
                                     <li>{{ $error }}</li>
                                 @endforeach
                             </ul>
                         </div>
                     @endif
+
+                    {{-- Chủ đề --}}
                     <div class="form-group row mb-3">
                         <label class="col-form-label col-md-2 text-right p-t-10">Chủ đề</label>
                         <div class="col-md-2">
                             <select name="system_content" id="system_content" class="form-control form-select-sm" required>
                                 <option value="">-- Chọn --</option>
                                 @foreach ($topics as $topic)
-                                    <option value="{{ $topic->ten_khong_dau }}" {{ $ds->messages[0]['content'] == $topic->ten_khong_dau ? 'selected' : '' }}>
+                                    <option value="{{ $topic->ten_khong_dau }}"
+                                        {{ old('system_content', $messages['topic']['content'] ?? '') == $topic->ten_khong_dau ? 'selected' : '' }}>
                                         {{ $topic->ten_topic }}
                                     </option>
                                 @endforeach
                             </select>
-
                         </div>
-                    
                     </div>
+
+                    {{-- Danh sách câu hỏi --}}
                     <div class="form-group row">
                         <label class="col-form-label col-md-2 text-right p-t-10">Câu hỏi</label>
                         <div class="col-md-10">
-                            <textarea name="user_content" id="user_content" rows="10" class="form-control" required>{{ old('user_content', $ds->messages[1]['content']) }}</textarea>
-                       
+                            <textarea name="user_content" id="user_content" rows="10" class="form-control" required>{{ old('user_content', is_array($messages['examples']['content'] ?? null) ? implode("\n", $messages['examples']['content']) : '') }}</textarea>
                         </div>
                     </div>
+
+                    {{-- Câu trả lời --}}
                     <div class="form-group row">
                         <label class="col-form-label col-md-2 text-right p-t-10">Câu trả lời</label>
                         <div class="col-md-10">
-                            <textarea name="assistant_content" id="assistant_content" rows="10" class="form-control" required>{{ old('assistant_content', $ds->messages[2]['content']) }}</textarea>
+                            <textarea name="assistant_content" id="assistant_content" rows="10" class="form-control" required>{{ old('assistant_content', $messages['utter']['content'] ?? '') }}</textarea>
                         </div>
                     </div>
-                </div>
+
                 
                 <div class="form-actions">
                     <a href="{{ env('APP_URL') }}admin/fine-tuning" class="btn btn-light"><i class="fa fa-reply-all"></i> Trở về</a>

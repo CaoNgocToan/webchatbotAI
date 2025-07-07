@@ -29,7 +29,7 @@
                 </div>
                 <div class="form-group">
                     <label for="ten_topic">Tên chủ đề</label>
-                    <input type="text" name="ten_topic" class="form-control" placeholder="Nhập tên của chủ đề" required>
+                    <input type="text" name="ten_topic"  class="form-control" placeholder="Nhập tên của chủ đề" required>
                 </div>
 
                 <div class="form-group">

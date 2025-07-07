@@ -10,33 +10,52 @@
             <h3 class="m-t-0"><a href="{{ env('APP_URL') }}admin/fine-tuning/add"><i class="mdi mdi-message-plus"></i></a> Tập huấn dữ liệu Fine-Tunning: {{ number_format($total, 0, ",", ".") }} dòng dữ liệu</h3>
             <hr />
             @if($danhsach)
-            <table class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
-                <thead>
-                    <tr>
-                        <th>Messages</th>
-                        <th class="text-center">#</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach($danhsach as $ds)
-                    <tr>
-                        <td>
-                            <strong>{{ $ds['messages'][0]['role'] }}</strong> : {{ $ds['messages'][0]['content'] }} <br />
-                            <strong>{{ $ds['messages'][1]['role'] }}</strong> : {{ $ds['messages'][1]['content'] }} <br />
-                            <strong>{{ $ds['messages'][2]['role'] }}</strong> : {{ $ds['messages'][2]['content'] }}
-                        </td>
-                        {{-- <td>{{ Str::limit($ds['prompt'], 100) }}</td>
-                        <td>{{ Str::limit($ds['completion'],100) }}</td> --}}
-                        <td class="text-center" style="width:50px;vertical-align:middle;">
-                            <a href="{{ env('APP_URL') }}admin/fine-tuning/delete/{{$ds['_id']}}" onclick="return confirm('Are you sure?')"><i class="fa fa-trash text-danger"></i></a>
-                            <a href="{{ env('APP_URL') }}admin/fine-tuning/edit/{{$ds['_id']}}"><i class="fas fa-pen"></i></a>
-                        </td>
-                    </tr>
-                    @endforeach
-                </tbody>
-            </table>
-            {{ $danhsach->withPath(env('APP_URL') . 'admin/fine-tuning') }}
-            @endif
+    <table class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th>Chủ đề</th>
+                <th>Intent</th>
+                <th>Câu hỏi</th>
+                <th>Trả lời</th>
+                <th class="text-center">#</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach($danhsach as $ds)
+                @php
+                    $messages = collect($ds['messages'])->keyBy('role');
+                @endphp
+                <tr>
+                    <td>{{ $messages['topic']['content'] ?? '-' }}</td>
+                    <td>{{ $messages['intent']['content'] ?? '-' }}</td>
+                    <td>
+                        @if(!empty($messages['examples']['content']) && is_array($messages['examples']['content']))
+                            <ul class="pl-3 mb-0">
+                                @foreach($messages['examples']['content'] as $example)
+                                    <li>{{ $example }}</li>
+                                @endforeach
+                            </ul>
+                        @else
+                            -
+                        @endif
+                    </td>
+                    <td>{{ $messages['utter']['content'] ?? '-' }}</td>
+                    <td class="text-center" style="width:60px;vertical-align:middle;">
+                        <a href="{{ env('APP_URL') }}admin/fine-tuning/delete/{{ $ds['_id'] }}" onclick="return confirm('Bạn có chắc chắn muốn xóa?')">
+                            <i class="fa fa-trash text-danger"></i>
+                        </a>
+                        <a href="{{ env('APP_URL') }}admin/fine-tuning/edit/{{ $ds['_id'] }}">
+                            <i class="fas fa-pen"></i>
+                        </a>
+                    </td>
+                </tr>
+            @endforeach
+        </tbody>
+    </table>
+
+    {{ $danhsach->withPath(env('APP_URL') . 'admin/fine-tuning') }}
+@endif
+
         </div>
     </div>
 </div>

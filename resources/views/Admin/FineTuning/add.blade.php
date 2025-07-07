@@ -32,11 +32,16 @@
                     
                     </div>
                     <div class="form-group row">
-                        <label class="col-form-label col-md-2 text-right p-t-10">Câu hỏi</label>
+                        <label class="col-form-label col-md-2 text-right p-t-10">Tên ý định</label>
                         <div class="col-md-10">
-                            <textarea name="user_content" id="user_content" rows="10" class="form-control" placeholder="Nhập nội dung câu hỏi. &#10*Lưu ý: &#10 1.Mỗi một dòng là một câu hỏi. &#10 2.Phải có ít nhất 10 câu hỏi. &#10 3.Các câu hỏi phải có mục đích hỏi giống nhau." required>{{ old('user_content') }}</textarea>                            
+                            <input type="text" name="ten_intent" class="form-control" placeholder="Nhập tên ý định(Bỏ trống nếu muốn tự động sinh).">
                         </div>
                     </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-md-2 text-right p-t-10">Câu hỏi</label>
+                        <div class="col-md-10">
+                            <textarea name="user_content" id="user_content" rows="10" class="form-control" required placeholder="* Mỗi dòng là một câu hỏi.&#10* Phải có ít nhất 10 câu hỏi."> {{ is_array(old('user_content')) ? implode("\n", old('user_content')) : old('user_content') }}</textarea></div>
+                        </div>
                     <div class="form-group row">
                         <label class="col-form-label col-md-2 text-right p-t-10">Câu trả lời</label>
                         <div class="col-md-10">
