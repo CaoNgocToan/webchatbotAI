@@ -112,117 +112,21 @@ class FineTuningController extends Controller
         $fineTuning->save();
 
         // Có thể thêm logic update intent/utter nếu cần
-        $this->updateIntentAndUtter($messagesOld, $messagesNew);
+    
         return redirect(env('APP_URL') . 'admin/fine-tuning');
     }
 
     // Xóa FineTuning
     public function delete($id)
     {
-        $fineTuning = FineTuning::findOrFail($id);
-        $this->deleteIntentAndUtter($fineTuning->messages);
-        
+
         FineTuning::destroy($id);
         Session::flash('msg', 'Xóa thành công');
         return redirect(env('APP_URL') . 'admin/fine-tuning');
     }
 
     
-    private function getFilePaths($fieldName)
-    {
-        $slug = $this->slugify($fieldName);
-        
-
-        return [
-            'nlu' => env('CHATBOT_URL') . "\\data\\nlu\\nlu_$slug.yml",
-            'domain' => env('CHATBOT_URL') . "\\domain\\domain_$slug.yml"
-        ];
-        }
-
-
-    // Thêm intent và utter
-    private function addIntentAndUtter(array $messages): void
-{
-    $msg           = collect($messages)->keyBy('role');
-    $field         = $msg['topic']['content'];
-    $intentSlug    = $msg['intent']['content'];
-    $examples      = $msg['examples']['content'];
-    $assistantText = $msg['utter']['content'];
-
-    $intent = "$field/$intentSlug";
-    $utter  = "utter_$field/$intentSlug";
-
-    $paths = $this->getFilePaths($field);
-    $this->ensureRasaFilesExist($paths, $field);
-
-    // === NLU ===
-    $nluContent = file_get_contents($paths['nlu']);
-    if (!preg_match('/^- intent:\s*' . preg_quote($intent, '/') . '\b/m', $nluContent)) {
-        $intentBlock = "- intent: $intent\n  examples: |";
-        foreach ($examples as $ex) {
-            $intentBlock .= "\n    - " . trim($ex);
-        }
-        $intentBlock .= "\n";
-        file_put_contents($paths['nlu'], trim($nluContent) . "\n\n" . $intentBlock . "\n");
-    }
-
-    // === DOMAIN ===
-    $domainContent = file_get_contents($paths['domain']);
-    if (!preg_match('/^\s*' . preg_quote($utter, '/') . ':/m', $domainContent)) {
-        $utterBlock = "  $utter:\n  - text: |\n      " . str_replace("\n", "\n      ", trim($assistantText)) . "\n";
-
-        if (strpos($domainContent, 'responses:') !== false) {
-            $domainContent = preg_replace('/(responses:\s*\n)/', "$1$utterBlock\n", $domainContent, 1);
-        } else {
-            $domainContent .= "\nresponses:\n$utterBlock\n";
-        }
-
-        file_put_contents($paths['domain'], trim($domainContent) . "\n");
-    }
-}
-
-
-
-
-
-    // Xóa intent và utter
-   private function deleteIntentAndUtter(array $messages): void
-{
-    $msg         = collect($messages)->keyBy('role');
-    $field       = $msg['topic']['content'] ?? '';
-    $intentSlug  = $msg['intent']['content'] ?? '';
-    $intent      = "$field/$intentSlug";
-    $utter       = "utter_$field/$intentSlug";
-
-    $paths = $this->getFilePaths($field);
-
-    // XÓA intent trong NLU
-    if (file_exists($paths['nlu'])) {
-        $content = file_get_contents($paths['nlu']);
-        $parts = preg_split('/(?=- intent: )/', $content);
-        $filtered = array_filter($parts, fn($block) => !preg_match('/^- intent:\s*' . preg_quote($intent, '/') . '\b/', trim($block)));
-        file_put_contents($paths['nlu'], trim(implode('', $filtered)) . "\n");
-    }
-
-    // XÓA utter trong domain
-    if (file_exists($paths['domain'])) {
-        $content = file_get_contents($paths['domain']);
-        $parts = preg_split('/(?=^\s*utter_)/m', $content);
-        $filtered = array_filter($parts, fn($block) => !preg_match('/^' . preg_quote($utter, '/') . ':/m', $block));
-        file_put_contents($paths['domain'], trim(implode("\n", $filtered)) . "\n");
-    }
-}
-
-
-
-
-    // Sửa intent và utter
-    private function updateIntentAndUtter(array $messagesOld, array $messagesNew)
-    {
-        $this->deleteIntentAndUtter($messagesOld);
-        $this->addIntentAndUtter($messagesNew);
-    }
-
+    
     private function slugify($text) 
     {
     // Bảng thay thế tiếng Việt có dấu sang không dấu
@@ -277,36 +181,7 @@ class FineTuningController extends Controller
         return $text;
     }
 
-    private function ensureRasaFilesExist(array $paths, string $slug): void
-{
-    foreach (['nlu', 'domain'] as $key) {
-        $dir = dirname($paths[$key]);
-        if (!is_dir($dir)) {
-            mkdir($dir, 0777, true);
-        }
-    }
-
-    if (!file_exists($paths['nlu'])) {
-        file_put_contents($paths['nlu'], "version: \"3.1\"\n\nnlu:\n");
-    }
-
-    if (!file_exists($paths['domain'])) {
-        $domainContent = <<<YAML
-version: "3.1"
-
-intents:
-  - {$slug}
-
-responses:
-
-session_config:
-  session_expiration_time: 60
-  carry_over_slots_to_new_session: true
-
-YAML;
-        file_put_contents($paths['domain'], $domainContent);
-    }
-}
+    
 
 
 

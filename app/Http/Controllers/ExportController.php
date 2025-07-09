@@ -39,104 +39,475 @@ class ExportController extends Controller
         return redirect()->back()->with('msg', '❌ Không xác định hành động!');
     }
 
-    public function writeToFile(?string $slug, array $exportTypes)
-{
-    // Nếu người dùng chọn "Tất cả"
+    public function downloadFile(?string $slug, array $exportTypes)
+{   
     if ($slug === 'tatca') {
-        // Lấy toàn bộ topic có dữ liệu
-        $topics = FineTuning::distinct('messages.topic.content')->pluck('messages.topic.content');
+        
+        $topics = $topics = Topic::all();
 
         foreach ($topics as $topicSlug) {
             if (in_array('nlu', $exportTypes)) {
-                $this->generateNluFile($topicSlug);
+                $this->downloadnlu($topicSlug['ten_khong_dau']);
             }
             if (in_array('domain', $exportTypes)) {
-                $this->generateDomainFile($topicSlug);
+                $this->downloaddomain($topicSlug['ten_khong_dau']);
             }
         }
 
         return redirect()->back()->with('msg', '✅ Đã ghi YAML cho tất cả chủ đề.');
-    }
-    else{
-        // Nếu là 1 chủ đề cụ thể
-        $fineTuning = FineTuning::where('topic', $slug)->pluck('messages')->all();
-        $datayml = $this -> getMessagesFromYmlFiles($slug);
+    }else{
         if (in_array('nlu', $exportTypes)) {
-            $this->generateNluFile($slug);
+            $this->downloadnlu($slug);
         }
         if (in_array('domain', $exportTypes)) {
-            $this->generateDomainFile($slug);
+            $this->downloaddomain($slug);
         }
     }
     return redirect()->back()->with('msg', "✅ Đã ghi YAML cho chủ đề '$slug'");
 }
 
+    public function writeToFile(?string $slug, array $exportTypes)
+{
+    if ($slug === 'tatca') {
+        $topics = $topics = Topic::all();
+        foreach ($topics as $topicSlug) {
+            if (in_array('nlu', $exportTypes)) {
+                $this->writenlu($topicSlug['ten_khong_dau']);
+            }
+            if (in_array('domain', $exportTypes)) {
+                $this->writedomain($topicSlug['ten_khong_dau']);
+            }
+        }
 
+        return redirect()->back()->with('msg', '✅ Đã ghi YAML cho tất cả chủ đề.');
+    }else{
+        if (in_array('nlu', $exportTypes)) {
+            $this->writenlu($slug);
+        }
+        if (in_array('domain', $exportTypes)) {
+            $this->writedomain($slug);
+        }
+    }
+    return redirect()->back()->with('msg', "✅ Đã ghi YAML cho chủ đề '$slug'");
+}
 
-
-        private function getMessagesFromYmlFiles(string $slug): array
+    public function writenlu(string $slug)
     {
-        $folderPath = base_path('datarasa');
+        $filePath = env('CHATBOT_URL') . "//data//nlu//nlu_$slug.yml";
+        // Lấy intent cũ trong file YAML nếu có
+        $intentYML = $this->readnlu($slug); // dạng [ [intent => .., examples => [..] ], ... ]
+        foreach ($intentYML as $item) {
+            $intent = $item['intent'];
+            $examples = $item['examples'];
+
+            if (!isset($nluItems[$intent])) {
+                $nluItems[$intent] = [
+                    'intent' => $intent,
+                    'examples' => implode("\n", array_map(fn($ex) => "- $ex", $examples)),
+                ];
+            }
+        }
+
+
+        $fineTunings = FineTuning::all(); // hoặc chỉ lấy cột messages: FineTuning::pluck('messages')
+
         $messagesList = [];
 
-        if (!File::isDirectory($folderPath)) {
-            return [['role' => 'error', 'content' => '❌ Thư mục datarasa không tồn tại']];
-        }
+        foreach ($fineTunings as $item) {
+            $messages = $item->messages;
 
-        $files = File::allFiles($folderPath);
-
-        $nluData = [];
-        $utterData = [];
-
-        foreach ($files as $file) {
-            $filename = $file->getFilename();
-            $slug = str_replace(['nlu_', 'domain_', '.yml'], '', $filename); // dùng làm 'topic'
-
-            $content = Yaml::parseFile($file->getRealPath());
-
-            if (str_starts_with($filename, 'nlu_') && isset($content['nlu'])) {
-                foreach ($content['nlu'] as $item) {
-                    $intent = $item['intent'] ?? null;
-                    if (!$intent) continue;
-
-                    $examples = [];
-                    if (isset($item['examples'])) {
-                        $lines = array_filter(array_map('trim', explode("\n", $item['examples'])));
-                        foreach ($lines as $line) {
-                            $examples[] = ltrim($line, '- ');
-                        }
-                    }
-
-                    $nluData[$intent] = [
-                        'topic' => $slug,
-                        'examples' => $examples,
-                    ];
-                }
-            }
-
-            if (str_starts_with($filename, 'domain_') && isset($content['responses'])) {
-                foreach ($content['responses'] as $utterKey => $utterVal) {
-                    if (isset($utterVal[0]['text'])) {
-                        $utterData[$utterKey] = $utterVal[0]['text'];
-                    }
+            foreach ($messages as $msg) {
+                if ($msg['role'] === 'topic' && $msg['content'] === $slug) {
+                    $messagesList[] = $messages;
+                    break; // chỉ cần 1 lần match là đủ
                 }
             }
         }
 
-        // Gộp thành danh sách $messages
-        foreach ($nluData as $intent => $nluItem) {
-            $utterKey = 'utter_' . $intent;
-            $utter = $utterData[$utterKey] ?? '';
+        
+        foreach ($messagesList as $messages) {
+            $intent = null;
+            $examples = [];
 
-            $messagesList[] = [
-                ['role' => 'topic',    'content' => $nluItem['topic']],
-                ['role' => 'intent',   'content' => $intent],
-                ['role' => 'examples', 'content' => $nluItem['examples']],
-                ['role' => 'utter',    'content' => $utter],
-            ];
+            foreach ($messages as $msg) {
+                if ($msg['role'] === 'intent') {
+                    $intent = $msg['content'];
+                    
+
+
+                } elseif ($msg['role'] === 'examples') {
+                    $examples = is_array($msg['content']) ? $msg['content'] : explode("\n", $msg['content']);
+                    $examples = array_filter(array_map('trim', $examples));
+                }
+            }
+
+            if ($intent && count($examples)) {
+                $nluItems[$intent] = [
+                    'intent' => $intent,
+                    'examples' => implode("\n", array_map(fn($ex) => "- $ex", $examples)),
+                ];
+            }
         }
 
-        return $messagesList;
+        
+
+        // Chuyển về định dạng cho YAML
+        $yamlData = [
+            'version' => '3.1',
+            'nlu' => array_map(function ($item) {
+                return [
+                    'intent' => $item['intent'],
+                    'examples' => Yaml::dump($item['examples'], 2, 4, Yaml::DUMP_MULTI_LINE_LITERAL_BLOCK),
+                ];
+            }, array_values($nluItems)),
+        ];
+
+        // YAML::dump thủ công vì nested dump ở trên đã xử lý literal block
+        $yamlString = "version: \"3.1\"\nnlu:\n";
+        foreach ($nluItems as $item) {
+            $yamlString .= "  - intent: " . $item['intent'] . "\n";
+            $yamlString .= "    examples: |\n";
+            foreach (explode("\n", $item['examples']) as $line) {
+                $yamlString .= "      " . $line . "\n";
+            }
+            $yamlString .= "\n";
+        }
+
+        File::ensureDirectoryExists(dirname($filePath));
+        File::put($filePath, $yamlString);
+       
+
+        return response()->download($filePath)->deleteFileAfterSend(true);
     }
+
+
+    public function writedomain(string $slug)
+    {
+        $filePath = env('CHATBOT_URL') . "//domain//domain_$slug.yml";
+        $responses = [];
+        $intents = [];
+        $utterYML=$this -> readdomain($slug);
+        foreach($utterYML as $item){
+            $utterKey = "utter_" . $item['utter'];
+            if (!isset($responses[$utterKey])) {
+                $responses[$utterKey] = $item['text'];
+            }
+        }
+
+
+        $fineTunings = FineTuning::all(); // hoặc chỉ lấy cột messages: FineTuning::pluck('messages')
+
+        $messagesList = [];
+
+        foreach ($fineTunings as $item) {
+            $messages = $item->messages;
+
+            foreach ($messages as $msg) {
+                if ($msg['role'] === 'topic' && $msg['content'] === $slug) {
+                    $messagesList[] = $messages;
+                    break; // chỉ cần 1 lần match là đủ
+                }
+            }
+        }
+
+       
+
+        foreach ($messagesList as $messages) {
+            $intent = null;
+            $utter = null;
+
+            foreach ($messages as $msg) {
+                if ($msg['role'] === 'intent') {
+                    $intent = $msg['content'];
+                } elseif ($msg['role'] === 'utter') {
+                    $utter = $msg['content'];
+                }
+            }
+
+            if ($intent && $utter) {
+                $utterKey = "utter_" . $intent;
+
+                if (!isset($responses[$utterKey])) {
+                    $responses[$utterKey] = $utter;
+                }
+
+                // Thêm intent (theo chude)
+                $intentSlug = explode('/', $intent)[0]; // "lamnghiep/abc" => "lamnghiep"
+                if (!in_array($intentSlug, $intents)) {
+                    $intents[] = $intentSlug;
+                }
+            }
+        }
+
+        
+        
+        
+        $yaml = "version: \"3.1\"\n\n";
+
+        // Intents
+        $yaml .= "intents:\n";
+        
+        $yaml .= "  - $slug\n\n";
+        
+
+        // Responses
+        $yaml .= "\nresponses:\n";
+        foreach ($responses as $utterKey => $text) {
+            $yaml .= "  $utterKey:\n";
+            $yaml .= "  - text: |\n";
+            foreach (explode("\n", (string) $text) as $line) {
+                $yaml .= "      $line\n";
+            }
+            
+        }
+
+        // Session config
+        $yaml .= "\nsession_config:\n";
+        $yaml .= "  session_expiration_time: 60\n";
+        $yaml .= "  carry_over_slots_to_new_session: true\n";
+
+        File::ensureDirectoryExists(dirname($filePath));
+        File::put($filePath, $yaml);
+
+        return response()->download($filePath)->deleteFileAfterSend(true);
+    }
+
+
+    public function downloadnlu(string $slug)
+    {
+        $filePath = base_path("temp//nlu//nlu_$slug.yml");
+
+        // Lấy intent cũ trong file YAML nếu có
+        $intentYML = $this->readnlu($slug); // dạng [ [intent => .., examples => [..] ], ... ]
+        foreach ($intentYML as $item) {
+            $intent = $item['intent'];
+            $examples = $item['examples'];
+
+            if (!isset($nluItems[$intent])) {
+                $nluItems[$intent] = [
+                    'intent' => $intent,
+                    'examples' => implode("\n", array_map(fn($ex) => "- $ex", $examples)),
+                ];
+            }
+        }
+
+
+        $fineTunings = FineTuning::all(); // hoặc chỉ lấy cột messages: FineTuning::pluck('messages')
+
+        $messagesList = [];
+
+        foreach ($fineTunings as $item) {
+            $messages = $item->messages;
+
+            foreach ($messages as $msg) {
+                if ($msg['role'] === 'topic' && $msg['content'] === $slug) {
+                    $messagesList[] = $messages;
+                    break; // chỉ cần 1 lần match là đủ
+                }
+            }
+        }
+
+        
+        foreach ($messagesList as $messages) {
+            $intent = null;
+            $examples = [];
+
+            foreach ($messages as $msg) {
+                if ($msg['role'] === 'intent') {
+                    $intent = $msg['content'];
+                    
+
+
+                } elseif ($msg['role'] === 'examples') {
+                    $examples = is_array($msg['content']) ? $msg['content'] : explode("\n", $msg['content']);
+                    $examples = array_filter(array_map('trim', $examples));
+                }
+            }
+
+            if ($intent && count($examples)) {
+                $nluItems[$intent] = [
+                    'intent' => $intent,
+                    'examples' => implode("\n", array_map(fn($ex) => "- $ex", $examples)),
+                ];
+            }
+        }
+
+        
+
+        // Chuyển về định dạng cho YAML
+        $yamlData = [
+            'version' => '3.1',
+            'nlu' => array_map(function ($item) {
+                return [
+                    'intent' => $item['intent'],
+                    'examples' => Yaml::dump($item['examples'], 2, 4, Yaml::DUMP_MULTI_LINE_LITERAL_BLOCK),
+                ];
+            }, array_values($nluItems)),
+        ];
+
+        // YAML::dump thủ công vì nested dump ở trên đã xử lý literal block
+        $yamlString = "version: \"3.1\"\nnlu:\n";
+        foreach ($nluItems as $item) {
+            $yamlString .= "  - intent: " . $item['intent'] . "\n";
+            $yamlString .= "    examples: |\n";
+            foreach (explode("\n", $item['examples']) as $line) {
+                $yamlString .= "      " . $line . "\n";
+            }
+            $yamlString .= "\n";
+        }
+
+        File::ensureDirectoryExists(dirname($filePath));
+        File::put($filePath, $yamlString);
+       
+
+        response()->download($filePath)->deleteFileAfterSend(true);
+    }
+
+
+    public function downloaddomain(string $slug)
+    {
+        $filePath = base_path("temp//domain//domain_$slug.yml");
+        $responses = [];
+        $intents = [];
+        $utterYML=$this -> readdomain($slug);
+        foreach($utterYML as $item){
+            $utterKey = "utter_" . $item['utter'];
+            if (!isset($responses[$utterKey])) {
+                $responses[$utterKey] = $item['text'];
+            }
+        }
+
+        
+        $fineTunings = FineTuning::all(); // hoặc chỉ lấy cột messages: FineTuning::pluck('messages')
+
+        $messagesList = [];
+
+        foreach ($fineTunings as $item) {
+            $messages = $item->messages;
+
+            foreach ($messages as $msg) {
+                if ($msg['role'] === 'topic' && $msg['content'] === $slug) {
+                    $messagesList[] = $messages;
+                    break; // chỉ cần 1 lần match là đủ
+                }
+            }
+        }
+
+        
+
+        foreach ($messagesList as $messages) {
+            $intent = null;
+            $utter = null;
+
+            foreach ($messages as $msg) {
+                if ($msg['role'] === 'intent') {
+                    $intent = $msg['content'];
+                } elseif ($msg['role'] === 'utter') {
+                    $utter = $msg['content'];
+                }
+            }
+
+            if ($intent && $utter) {
+                $utterKey = "utter_" . $intent;
+
+                if (!isset($responses[$utterKey])) {
+                    $responses[$utterKey] = $utter;
+                }
+
+                // Thêm intent (theo chude)
+                $intentSlug = explode('/', $intent)[0]; // "lamnghiep/abc" => "lamnghiep"
+                if (!in_array($intentSlug, $intents)) {
+                    $intents[] = $intentSlug;
+                }
+            }
+        }
+
+        
+        
+        
+        $yaml = "version: \"3.1\"\n\n";
+
+        // Intents
+        $yaml .= "intents:\n";
+        
+        $yaml .= "  - $slug\n\n";
+        
+
+        // Responses
+        $yaml .= "\nresponses:\n";
+        foreach ($responses as $utterKey => $text) {
+            $yaml .= "  $utterKey:\n";
+            $yaml .= "  - text: |\n";
+            foreach (explode("\n", (string) $text) as $line) {
+                $yaml .= "      $line\n";
+            }
+            
+        }
+
+        // Session config
+        $yaml .= "\nsession_config:\n";
+        $yaml .= "  session_expiration_time: 60\n";
+        $yaml .= "  carry_over_slots_to_new_session: true\n";
+
+        File::ensureDirectoryExists(dirname($filePath));
+        File::put($filePath, $yaml);
+
+        response()->download($filePath)->deleteFileAfterSend(true);
+    }
+
+
+    public function readnlu(string $slug)
+    {
+        $filePath = base_path("datarasa/nlu/nlu_$slug.yml");
+
+        if (!File::exists($filePath)) {
+            return response()->json(['error' => 'File not found'], 404);
+        }
+
+        $content = Yaml::parseFile($filePath);
+        $intents = [];
+
+        foreach ($content['nlu'] ?? [] as $item) {
+            if (isset($item['intent']) && isset($item['examples'])) {
+                // Tách examples YAML về mảng
+                $examplesArray = array_filter(array_map(
+                    fn($x) => ltrim(trim($x), "- "),
+                    explode("\n", $item['examples'])
+                ));
+
+                $intents[] = [
+                    'intent' => $item['intent'],
+                    'examples' => $examplesArray,
+                ];
+            }
+        }
+
+        return $intents;
+    }
+
+    public function readdomain(string $slug)
+    {
+        $filePath = base_path("datarasa/domain/domain_$slug.yml");
+
+        if (!File::exists($filePath)) {
+            return response()->json(['error' => 'File not found'], 404);
+        }
+
+        $content = Yaml::parseFile($filePath);
+        $responses = [];
+
+        foreach ($content['responses'] ?? [] as $key => $response) {
+            if (isset($response[0]['text'])) {
+                $responses[] = [
+                    'utter' => str_replace('utter_', '', $key),
+                    'text' => $response[0]['text'],
+                ];
+            }
+        }
+
+        return $responses;
+    }
+
+    
 
 }
