@@ -42,9 +42,6 @@
                     <input type="hidden" name="action_type" id="action_type" value="download">
 
                     <div class="form-actions">
-                        <a href="{{ env('APP_URL') }}admin/fine-tuning" class="btn btn-light">
-                            <i class="fa fa-reply-all"></i> Trở về
-                        </a>
                         <button type="submit" class="btn btn-warning" onclick="setAction('write')">
                             <i class="fas fa-save"></i> Ghi YAML vào server
                         </button>
@@ -64,6 +61,11 @@
 
 @section('js')
 <script src="{{ env('APP_URL') }}assets/admin/libs/jquery-toast/jquery.toast.min.js"></script>
+<script>
+function setAction(type) {
+    document.getElementById('action_type').value = type;
+}
+</script>
 
 <script type="text/javascript">
     $(document).ready(function(){

@@ -1,0 +1,16 @@
+version: "3.1"
+
+stories:
+
+- story: story_xin_chao
+  steps:
+  - intent: xin_chao
+  - action: utter_xin_chao
+
+- story: story_gioi_thieu
+  steps:
+  - intent: gioi_thieu
+  - action: utter_gioi_thieu
+
+
+

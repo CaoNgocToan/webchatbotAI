@@ -7,6 +7,8 @@ use App\Models\FineTuning;
 use App\Models\Topic;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Session;
+use Symfony\Component\Yaml\Yaml;
+use Illuminate\Support\Facades\File;
 
 class ExportController extends Controller
 {
@@ -55,99 +57,86 @@ class ExportController extends Controller
 
         return redirect()->back()->with('msg', '✅ Đã ghi YAML cho tất cả chủ đề.');
     }
-
-    // Nếu là 1 chủ đề cụ thể
-    if (in_array('nlu', $exportTypes)) {
-        $this->generateNluFile($slug);
+    else{
+        // Nếu là 1 chủ đề cụ thể
+        $fineTuning = FineTuning::where('topic', $slug)->pluck('messages')->all();
+        $datayml = $this -> getMessagesFromYmlFiles($slug);
+        if (in_array('nlu', $exportTypes)) {
+            $this->generateNluFile($slug);
+        }
+        if (in_array('domain', $exportTypes)) {
+            $this->generateDomainFile($slug);
+        }
     }
-    if (in_array('domain', $exportTypes)) {
-        $this->generateDomainFile($slug);
-    }
-
     return redirect()->back()->with('msg', "✅ Đã ghi YAML cho chủ đề '$slug'");
 }
 
-private function generateNluFile(string $slug)
-{
-    $examples = FineTuning::where('messages.topic.content', $slug)->get();
 
-    $yaml = "version: \"3.1\"\n\nnlu:\n";
 
-    foreach ($examples as $item) {
-        $msg = collect($item->messages)->keyBy('role');
-        $intent = $msg['intent']['content'];
-        $examplesList = $msg['examples']['content'] ?? [];
 
-        $yaml .= "- intent: $slug/$intent\n  examples: |\n";
-        foreach ($examplesList as $ex) {
-            $yaml .= "    - " . trim($ex) . "\n";
+        private function getMessagesFromYmlFiles(string $slug): array
+    {
+        $folderPath = base_path('datarasa');
+        $messagesList = [];
+
+        if (!File::isDirectory($folderPath)) {
+            return [['role' => 'error', 'content' => '❌ Thư mục datarasa không tồn tại']];
         }
-    }
 
-    $path = base_path("data/nlu/nlu_$slug.yml");
-    file_put_contents($path, $yaml);
-}
+        $files = File::allFiles($folderPath);
 
+        $nluData = [];
+        $utterData = [];
 
-private function generateDomainFile(string $slug)
-{
-    $fineTunings = FineTuning::where('topic_slug', $slug)->get();
-    $yaml = "version: \"3.1\"\n\ndomain:\n";
-    $yaml .= "  intents:\n";
-    foreach ($fineTunings as $fineTuning) {
-        $yaml .= "  - " . $fineTuning->name . "\n";
-    }
-    $yaml .= "  entities:\n";
-    foreach ($fineTunings as $fineTuning) {
-        $yaml .= "  - " . $fineTuning->topic_slug . "\n";
-    }
-    $yaml .= "  responses:\n";
-    foreach ($fineTunings as $fineTuning) {
-        $yaml .= "  utter_" . Str::slug($fineTuning->name) . ":\n";
-        $yaml .= "    - text: \"" . $fineTuning->description . "\"\n";
-    }
+        foreach ($files as $file) {
+            $filename = $file->getFilename();
+            $slug = str_replace(['nlu_', 'domain_', '.yml'], '', $filename); // dùng làm 'topic'
 
-    $path = base_path("domain/domain_$slug.yml");
-    file_put_contents($path, $yaml);
-    Session::flash('msg', "✅ Đã ghi file domain cho chủ đề '$slug'");
-}
+            $content = Yaml::parseFile($file->getRealPath());
 
-    private function downloadFile($slug, $exportTypes)
-    {
-        // Tạo file tạm thời để tải xuống
-        $filePath = storage_path("app/public/{$slug}_export.yaml");
-        $data = $this->prepareData($slug, $exportTypes);
-        
-        file_put_contents($filePath, $data);
+            if (str_starts_with($filename, 'nlu_') && isset($content['nlu'])) {
+                foreach ($content['nlu'] as $item) {
+                    $intent = $item['intent'] ?? null;
+                    if (!$intent) continue;
 
-        return response()->download($filePath)->deleteFileAfterSend(true);
-    }
+                    $examples = [];
+                    if (isset($item['examples'])) {
+                        $lines = array_filter(array_map('trim', explode("\n", $item['examples'])));
+                        foreach ($lines as $line) {
+                            $examples[] = ltrim($line, '- ');
+                        }
+                    }
 
-    private function prepareData($slug, $exportTypes)
-    {
-        // Lấy dữ liệu từ cơ sở dữ liệu
-        $fineTunings = FineTuning::where('topic_slug', $slug)->get();
-        $data = []; 
-        foreach ($fineTunings as $fineTuning) {
-            $item = [
-                'name' => $fineTuning->name,
-                'description' => $fineTuning->description,
-                'topic_slug' => $fineTuning->topic_slug,
+                    $nluData[$intent] = [
+                        'topic' => $slug,
+                        'examples' => $examples,
+                    ];
+                }
+            }
+
+            if (str_starts_with($filename, 'domain_') && isset($content['responses'])) {
+                foreach ($content['responses'] as $utterKey => $utterVal) {
+                    if (isset($utterVal[0]['text'])) {
+                        $utterData[$utterKey] = $utterVal[0]['text'];
+                    }
+                }
+            }
+        }
+
+        // Gộp thành danh sách $messages
+        foreach ($nluData as $intent => $nluItem) {
+            $utterKey = 'utter_' . $intent;
+            $utter = $utterData[$utterKey] ?? '';
+
+            $messagesList[] = [
+                ['role' => 'topic',    'content' => $nluItem['topic']],
+                ['role' => 'intent',   'content' => $intent],
+                ['role' => 'examples', 'content' => $nluItem['examples']],
+                ['role' => 'utter',    'content' => $utter],
             ];
-
-            if (in_array('intents', $exportTypes)) {
-                $item['intents'] = $fineTuning->intents;
-            }
-            if (in_array('responses', $exportTypes)) {
-                $item['responses'] = $fineTuning->responses;
-            }
-
-            $data[] = $item;
         }
-        // Chuyển đổi dữ liệu sang định dạng YAML
-        $yamlData = yaml_emit($data);
-        // Trả về dữ liệu YAML
-        return $yamlData;
-        }
+
+        return $messagesList;
+    }
 
 }

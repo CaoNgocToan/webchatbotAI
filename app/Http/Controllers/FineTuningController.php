@@ -64,11 +64,6 @@ class FineTuningController extends Controller
         $fineTuning = new FineTuning();
         $fineTuning->messages = $messages;
         $fineTuning->save();
-
-        // 6. Ghi vào file train của Rasa
-        $this->addIntentAndUtter($messages);
-
-
         // 7. Chuyển hướng sau khi thành công
         return redirect(env('APP_URL') . 'admin/fine-tuning')->with('msg', 'Tạo mới thành công');
     }

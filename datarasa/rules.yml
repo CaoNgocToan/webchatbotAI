@@ -1,0 +1,170 @@
+version: "3.1"
+
+rules:
+
+- rule: rule_xin_chao
+  steps:
+  - intent: xin_chao
+  - action: utter_xin_chao
+
+
+- rule: rule_baohiem
+  steps:
+  - intent: baohiem
+  - action: utter_baohiem
+
+- rule: rule_baotri
+  steps:
+  - intent: baotri
+  - action: utter_baotri
+
+- rule: rule_cdsag2024
+  steps:
+  - intent: cdsag2024
+  - action: utter_cdsag2024
+
+- rule: rule_chebien
+  steps:
+  - intent: chebien
+  - action: utter_chebien
+
+- rule: rule_chungkhoan
+  steps:
+  - intent: chungkhoan
+  - action: utter_chungkhoan
+
+- rule: rule_detmay
+  steps:
+  - intent: detmay
+  - action: utter_detmay
+
+- rule: rule_dichvucong
+  steps:
+  - intent: dichvucong
+  - action: utter_dichvucong
+
+- rule: rule_giaoduc
+  steps:
+  - intent: giaoduc
+  - action: utter_giaoduc
+
+- rule: rule_giaothong
+  steps:
+  - intent: giaothong
+  - action: utter_giaothong
+
+- rule: rule_khaithac
+  steps:
+  - intent: khaithac
+  - action: utter_khaithac
+
+- rule: rule_lamnghiep
+  steps:
+  - intent: lamnghiep
+  - action: utter_lamnghiep
+
+- rule: rule_langso
+  steps:
+  - intent: langso
+  - action: utter_langso
+
+- rule: rule_linhkien
+  steps:
+  - intent: linhkien
+  - action: utter_linhkien
+
+- rule: rule_logistics
+  steps:
+  - intent: logistics
+  - action: utter_logistics
+
+- rule: rule_nganhang
+  steps:
+  - intent: nganhang
+  - action: utter_nganhang
+
+- rule: rule_ngunghiep
+  steps:
+  - intent: ngunghiep
+  - action: utter_ngunghiep
+
+- rule: rule_nongnghiep
+  steps:
+  - intent: nongnghiep
+  - action: utter_nongnghiep
+
+- rule: rule_sothongtinvatruyenthong
+  steps:
+  - intent: sothongtinvatruyenthong
+  - action: utter_sothongtinvatruyenthong
+
+- rule: rule_taicheracthai
+  steps:
+  - intent: taicheracthai
+  - action: utter_taicheracthai
+
+- rule: rule_taichinh
+  steps:
+  - intent: taichinh
+  - action: utter_taichinh
+
+- rule: rule_thuongmai
+  steps:
+  - intent: thuongmai
+  - action: utter_thuongmai
+
+- rule: rule_tuongquancacnganh
+  steps:
+  - intent: tuongquancacnganh
+  - action: utter_tuongquancacnganh
+
+- rule: rule_vienthong
+  steps:
+  - intent: vienthong
+  - action: utter_vienthong
+
+- rule: rule_xaydung
+  steps:
+  - intent: xaydung
+  - action: utter_xaydung
+
+- rule: rule_xephangcdsdti2020
+  steps:
+  - intent: xephangcdsdti2020
+  - action: utter_xephangcdsdti2020
+
+- rule: rule_xephangcdsdti2021
+  steps:
+  - intent: xephangcdsdti2021
+  - action: utter_xephangcdsdti2021
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

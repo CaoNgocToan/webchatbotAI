@@ -1,0 +1,2204 @@
+version: '3.1'
+
+intents:
+ - xephangcdsdti2021
+
+responses:
+  utter_xephangcdsdti2021/dti_la_gi_va_bao_gom_nhung_cap_nao:
+  - text: |
+      DTI là viết tắt của “Xác định Bộ chỉ số đánh giá chuyển đổi số của các bộ, cơ quan ngang bộ, cơ quan thuộc Chính phủ, các tỉnh, thành phố trực thuộc trung ương và của quốc gia”. DTI bao gồm 3 cấp: DTI cấp tỉnh, DTI cấp bộ và DTI của quốc gia.
+
+
+  utter_xephangcdsdti2021/dti_cap_tinh_uoc_cau_truc_nhu_the_nao:
+  - text: |
+      DTI cấp tỉnh được cấu trúc theo 3 trụ cột: Chính quyền số, Kinh tế số và Xã hội số, gồm 9 chỉ số chính với 98 chỉ số thành phần. 9 chỉ số chính được chia thành Nhóm chỉ số nền tảng chung và Nhóm chỉ số về hoạt động. Nhóm chỉ số nền tảng chung gồm 6 chỉ số chính: Nhận thức số, Thể chế số, Hạ tầng số, Nhân lực số, An toàn thông tin mạng, Đô thị thông minh (không tính điểm vào DTI cấp tỉnh). Nhóm chỉ số về hoạt động gồm 3 chỉ số chính: Hoạt động chính quyền số, Hoạt động kinh tế số, Hoạt động xã hội số.
+
+
+  utter_xephangcdsdti2021/gia_tri_dti_trung_binh_cua_cac_bo_tinh_va_quoc_gia_nam_2021_la_bao_nhieu:
+  - text: |
+      Giá trị DTI trung bình năm 2021 của các bộ cung cấp dịch vụ công là 0,4595. Giá trị DTI trung bình của các bộ không cung cấp dịch vụ công là 0,2151. Giá trị DTI trung bình của các tỉnh là 0,4014. Giá trị DTI của quốc gia là 0,6110.
+
+
+  utter_xephangcdsdti2021/so_sanh_muc_tang_truong_dti_cua_cac_bo_tinh_va_quoc_gia_nam_2021_so_voi_nam_2020:
+  - text: |
+      DTI quốc gia tăng trưởng 25,8% so với năm 2020. DTI cấp tỉnh có mức tăng trưởng cao nhất, đạt 32,7% so với năm 2020.DTI cấp bộ cung cấp dịch vụ công tăng trưởng, trong khi DTI cấp bộ không cung cấp dịch vụ công giảm nhẹ so với năm 2020.
+
+
+  utter_xephangcdsdti2021/ba_nhiem_vu_giai_phap_nao_uoc_uu_tien_e_kien_tao_nen_mong_cho_chuyen_oi_so:
+  - text: |
+      Ba nhiệm vụ, giải pháp đầu tiên tạo nền móng chuyển đổi số là Chuyển đổi nhận thức, Kiến tạo thể chế và Phát triển hạ tầng số.
+
+
+  utter_xephangcdsdti2021/au_la_iem_noi_bat_trong_ket_qua_anh_gia_dti_nam_2021:
+  - text: |
+      Chuyển đổi nhận thức được đẩy mạnh: Chỉ số Nhận thức số cấp bộ và cấp tỉnh đều cao hơn mức trung bình và cao nhất trong các chỉ số chính. Kinh tế số có mức tăng trưởng nhanh hơn Chính quyền số và Xã hội số ở cấp tỉnh. Phát triển nhân lực số và đảm bảo an toàn thông tin mạng vẫn là những vấn đề cần được giải quyết sớm.
+
+
+  utter_xephangcdsdti2021/bo_nao_dan_au_ve_dti_trong_so_cac_bo_cung_cap_dich_vu_cong:
+  - text: |
+      Bộ Tài chính dẫn đầu về DTI trong số các bộ cung cấp dịch vụ công với giá trị DTI 2021 là 0,6321.
+
+
+  utter_xephangcdsdti2021/a_nang_at_uoc_ket_qua_gi_noi_bat_trong_viec_trien_khai_nen_tang_so:
+  - text: |
+      Triển khai 47 dịch vụ API trên Nền tảng LGSP thành phố, thu hút gần 2,5 triệu lượt giao dịch. Triển khai 100% DVCTT mức độ 4 trên Cổng Dịch vụ công thành phố, tỷ lệ hồ sơ trực tuyến đạt gần 60%. Tích hợp dữ liệu của 50 trạm quan trắc môi trường, 3 công trình cầu và hệ thống camera giám sát tại Âu thuyền Thọ Quang. Triển khai ứng dụng Chatbot sử dụng công nghệ AI để tự động trả lời và giải đáp các yêu cầu của người dân, doanh nghiệp về thông tin dịch vụ công.
+
+
+  utter_xephangcdsdti2021/mo_hinh_chuyen_oi_so_cap_xa_tai_xa_yen_hoa_tinh_ninh_binh_uoc_trien_khai_dua_tren_nhung_tru_cot_nao:
+  - text: |
+      Mô hình chuyển đổi số cấp xã tại xã Yên Hòa, tỉnh Ninh Bình được triển khai dựa trên 3 trụ cột: Chính quyền số, Kinh tế số và Xã hội số.
+
+
+  utter_xephangcdsdti2021/lang_son_a_thuc_hien_sang_kien_gi_e_thuc_ay_phat_trien_nhan_luc_so:
+  - text: |
+      Lạng Sơn đã thành lập các Tổ Công nghệ số cộng đồng để hướng dẫn, hỗ trợ người dân tạo lập và sử dụng cửa hàng số, giúp đạt được 60% số hộ gia đình có cửa hàng số và tài khoản thanh toán điện tử.
+
+
+  utter_xephangcdsdti2021/ngoai_bo_tai_chinh_nhung_bo_nao_khac_nam_trong_top_5_bo_dan_au_ve_dti_trong_so_cac_bo_cung_cap_dich_vu_cong:
+  - text: |
+      Bên cạnh Bộ Tài chính, 4 bộ còn lại trong top 5 bộ dẫn đầu về DTI bao gồm Bộ Kế hoạch và Đầu tư, Bảo hiểm Xã hội Việt Nam, Ngân hàng Nhà nước Việt Nam, và Bộ Công Thương.
+
+
+  utter_xephangcdsdti2021/bo_tai_chinh_a_at_uoc_nhung_thanh_tuu_gi_trong_viec_ung_dung_cong_nghe_thong_tin_vao_hoat_ong_chuyen_oi_so:
+  - text: |
+      Bộ Tài chính đã ứng dụng công nghệ thông tin trong nhiều lĩnh vực. Trong lĩnh vực Hải quan, 100% thủ tục hải quan cơ bản được tự động hóa, 100% Cục Hải quan và Chi cục Hải quan thực hiện thủ tục hải quan điện tử, với 99,65% doanh nghiệp tham gia. Thời gian xử lý hồ sơ hải quan giảm xuống chỉ còn từ 1-3 giây. Trong lĩnh vực Kho bạc Nhà nước, 100% các đơn vị giao dịch tham gia kiểm soát chi ngân sách nhà nước điện tử (trừ khối an ninh quốc phòng), với trên 99,5% hồ sơ được kiểm soát. Kho bạc Nhà nước đã triển khai ứng dụng di động cho đơn vị giao dịch tra cứu số dư tài khoản, đạt trên 90% sử dụng. Trong lĩnh vực Thuế, Tổng cục Thuế triển khai hóa đơn điện tử giai đoạn 1 tại 6 tỉnh, xây dựng hệ thống quản lý hóa đơn điện tử trên nền tảng công nghệ 4.0. Ứng dụng eTax Mobile được triển khai với các chức năng nộp thuế điện tử, tra cứu thông tin thuế, và kiểm tra tình trạng xử lý hồ sơ.
+
+
+  utter_xephangcdsdti2021/bo_giao_duc_va_ao_tao_a_trien_khai_dich_vu_cong_truc_tuyen_nao_cho_hoc_sinh_lop_12:
+  - text: |
+      Bộ Giáo dục và Đào tạo đã triển khai dịch vụ \"Đăng ký dự thi tốt nghiệp trung học phổ thông\" trực tuyến mức độ 4 cho học sinh lớp 12 trên toàn quốc.
+
+
+  utter_xephangcdsdti2021/ket_qua_trien_khai_dich_vu_ang_ky_du_thi_tot_nghiep_trung_hoc_pho_thong_truc_tuyen_cua_bo_giao_duc_va_ao_tao_nhu_the_nao:
+  - text: |
+      Trong vòng 10 ngày triển khai, hệ thống tiếp nhận 1.001.011 thí sinh đăng ký dự thi thành công, với 934.186 thí sinh đăng ký trực tuyến, đạt tỷ lệ 93,32%.
+
+
+  utter_xephangcdsdti2021/viec_trien_khai_thanh_cong_dich_vu_ang_ky_du_thi_tot_nghiep_trung_hoc_pho_thong_truc_tuyen_mang_lai_loi_ich_gi:
+  - text: |
+      Việc triển khai mang lại nhiều lợi ích như cho phép thí sinh đăng ký 24/24 giờ tại bất kỳ đâu có Internet, giảm thiểu thời gian đi lại và chi phí in ấn hồ sơ, góp phần bảo vệ môi trường nhờ giảm thiểu giấy tờ, và cung cấp dữ liệu cho Cơ sở dữ liệu quốc gia về dân cư.
+
+
+  utter_xephangcdsdti2021/bo_cong_thuong_a_lam_gi_e_nang_cao_hieu_qua_su_dung_dich_vu_cong_truc_tuyen:
+  - text: |
+      Bộ Công Thương đã cung cấp 228 dịch vụ công trực tuyến mức độ 4 trên Cổng Dịch vụ công, hoàn thành sớm mục tiêu đề ra trong năm 2021, đồng thời lấy người dân và doanh nghiệp làm trung tâm phục vụ.
+
+
+  utter_xephangcdsdti2021/ket_qua_trien_khai_dvctt_tren_cong_dich_vu_cong_bo_cong_thuong_nhu_the_nao:
+  - text: |
+      Tổng số hồ sơ điện tử năm 2021 là 1.617.249 hồ sơ, tương ứng hơn 99% tổng số hồ sơ gửi đến Bộ. 100% hồ sơ được giải quyết đúng hạn hoặc trước hạn, và 100% người dân, doanh nghiệp đánh giá chất lượng giải quyết thủ tục hành chính là rất tốt.
+
+
+  utter_xephangcdsdti2021/ngan_hang_nha_nuoc_viet_nam_at_vi_tri_thu_nhat_ve_chi_so_nao_trong_so_cac_bo_cung_cap_dich_vu_cong:
+  - text: |
+      Ngân hàng Nhà nước Việt Nam xếp thứ nhất về chỉ số An toàn thông tin.
+
+
+  utter_xephangcdsdti2021/ngan_hang_nha_nuoc_a_trien_khai_nhung_giai_phap_gi_e_am_bao_an_toan_thong_tin:
+  - text: |
+      Ngân hàng Nhà nước đã ban hành Kế hoạch đào tạo và phát triển nguồn lực an toàn thông tin giai đoạn 2021-2025, triển khai mô hình bảo đảm an toàn thông tin 4 lớp, thiết lập kênh trao đổi thông tin nhanh với Cục An toàn thông tin để xử lý các website lừa đảo, và phối hợp với Truyền hình Việt Nam tổ chức các chương trình truyền thông nâng cao nhận thức về an toàn thông tin.
+
+
+  utter_xephangcdsdti2021/tinh_nao_at_vi_tri_thu_nhat_ve_dti_cap_tinh_nam_2021:
+  - text: |
+      Thành phố Đà Nẵng dẫn đầu bảng xếp hạng DTI cấp tỉnh năm 2021 với điểm số 0,6419.
+
+
+  utter_xephangcdsdti2021/a_nang_at_vi_tri_thu_nhat_o_nhung_tru_cot_nao_trong_dti_2021:
+  - text: |
+      Đà Nẵng giữ vị trí quán quân ở cả ba trụ cột: Chính quyền số, Kinh tế số và Xã hội số.
+
+
+  utter_xephangcdsdti2021/a_nang_a_trien_khai_nhung_nen_tang_so_nao_phuc_vu_quan_ly_nha_nuoc:
+  - text: |
+      Đà Nẵng đã triển khai các nền tảng quan trọng như LGSP thành phố, Trung tâm giám sát điều hành thành phố thông minh (IOC), nền tảng tổng hợp và phân tích dữ liệu tập trung, giám sát dữ liệu trực tuyến, quản trị tổng thể cấp tỉnh, họp trực tuyến, và trợ lý ảo.
+
+
+  utter_xephangcdsdti2021/nen_tang_lgsp_cua_a_nang_a_at_uoc_ket_qua_gi:
+  - text: |
+      LGSP Đà Nẵng đạt được những thành tựu như triển khai 47 dịch vụ API, có 115 đơn vị đăng ký sử dụng, gần 2,5 triệu lượt giao dịch qua nền tảng, và tích hợp AI để phát hiện và cảnh báo sớm các hoạt động bất thường.
+
+
+  utter_xephangcdsdti2021/ngoai_lgsp_a_nang_con_ung_dung_cong_nghe_ai_vao_nhung_nen_tang_nao_khac:
+  - text: |
+      AI còn được ứng dụng vào nền tảng Kho dữ liệu dùng chung để phát hiện, cảnh báo dữ liệu bất thường, làm sạch dữ liệu đầu vào, dự báo; nền tảng quan trắc giám sát môi trường và kết cấu công trình cầu để cảnh báo sớm các chỉ số vượt ngưỡng; và ứng dụng Chatbot để tự động trả lời thông tin dịch vụ công.
+
+
+  utter_xephangcdsdti2021/mo_hinh_chuyen_oi_so_cap_xa_o_ninh_binh_uoc_trien_khai_nhu_the_nao:
+  - text: |
+      Mô hình dựa trên ba trụ cột: Chính quyền số (chuyển đổi hoạt động nội bộ và cung cấp dịch vụ công), Kinh tế số (thương mại điện tử, du lịch số), và Xã hội số (y tế số, giáo dục trực tuyến).
+
+
+  utter_xephangcdsdti2021/ninh_binh_a_at_uoc_ket_qua_gi_trong_viec_trien_khai_tru_cot_chinh_quyen_so_o_cap_xa:
+  - text: |
+      Ninh Bình đã thiết lập kênh truyền thông đến 100% hộ gia đình qua trang thông tin điện tử, truyền thanh thông minh, SMS, và Zalo. Văn bản điện tử được xử lý và ký số 100%, và 100% thủ tục hành chính cấp xã được giải quyết qua hệ thống một cửa điện tử.
+
+
+  utter_xephangcdsdti2021/lang_son_a_co_sang_kien_gi_e_thuc_ay_phat_trien_kinh_te_so_o_ia_phuong:
+  - text: |
+      Lạng Sơn đã thành lập các Tổ Công nghệ số cộng đồng để hướng dẫn, hỗ trợ người dân tạo lập và sử dụng cửa hàng số.
+
+
+  utter_xephangcdsdti2021/ba_ria_-_vung_tau_a_ung_dung_cong_nghe_ai_vao_linh_vuc_nao_e_ho_tro_phong_chong_dich_covid-19:
+  - text: |
+      Tỉnh đã triển khai tổng đài AI để tư vấn, hỗ trợ điều trị F0 tại nhà, giúp giảm tải cho ngành y tế và hỗ trợ hiệu quả việc cách ly tại nhà.
+
+
+  utter_xephangcdsdti2021/tong_ai_ai_o_ba_ria_-_vung_tau_hoat_ong_nhu_the_nao_e_ho_tro_f0_ieu_tri_tai_nha:
+  - text: |
+      Tổng đài AI sử dụng trí tuệ nhân tạo để chủ động gọi điện hỏi thăm tình hình sức khỏe định kỳ của các F0 điều trị tại nhà và hướng dẫn cách chăm sóc, điều trị. Ngoài ra, khi F0 cần hỗ trợ y tế, họ có thể gọi đến tổng đài để được tư vấn. Nếu phát hiện vấn đề sức khỏe nghiêm trọng hoặc chỉ số SPO2 dưới mức cho phép, tổng đài sẽ tự động chuyển cuộc gọi cho nhân viên y tế trực tiếp.
+
+
+  utter_xephangcdsdti2021/ba_ria_-_vung_tau_a_at_uoc_ket_qua_gi_khi_trien_khai_tong_ai_ai_ho_tro_f0_ieu_tri_tai_nha:
+  - text: |
+      Từ ngày 15/12/2021 đến 31/12/2021, tổng đài đã thực hiện gần 20.000 cuộc gọi tư vấn và tiếp nhận hơn 2.500 cuộc gọi từ các F0.
+
+
+  utter_xephangcdsdti2021/ngoai_viec_thanh_lap_to_cong_nghe_so_cong_ong_lang_son_con_thuc_hien_nhung_giai_phap_nao_e_ay_manh_chuyen_oi_so:
+  - text: |
+      Lạng Sơn đã kiện toàn bộ máy Sở Thông tin và Truyền thông, giao thêm chức năng về chuyển đổi số, chính quyền số, kinh tế số, xã hội số, an toàn thông tin. Tỉnh cũng áp dụng công nghệ số để quản lý, truy vết và điều trị trong phòng chống dịch Covid-19.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_hai_trong_bang_xep_hang_dti_cap_tinh_nam_2021:
+  - text: |
+      Thừa Thiên - Huế đứng thứ hai với điểm số 0,5872.
+
+
+  utter_xephangcdsdti2021/nen_tang_hue-s_cua_thua_thien_hue_cung_cap_nhung_dich_vu_gi_cho_nguoi_dan:
+  - text: |
+      Hue-S cung cấp hệ sinh thái dịch vụ số như phản ánh hiện trường, dịch vụ đô thị thông minh (giao thông, du lịch, môi trường), dịch vụ chính quyền số (thủ tục hành chính), và các dịch vụ khác như giáo dục, y tế, chống bão lụt, taxi.
+
+
+  utter_xephangcdsdti2021/ty_le_xu_ly_phan_anh_cua_nguoi_dan_tren_nen_tang_hue-s_la_bao_nhieu:
+  - text: |
+      Tỷ lệ xử lý đạt 97,1%.
+
+
+  utter_xephangcdsdti2021/bac_giang_a_ung_dung_cong_nghe_so_nhu_the_nao_trong_quan_ly_san_xuat_va_tieu_thu_vai_thieu:
+  - text: |
+      Bắc Giang phối hợp với các bộ ngành để áp dụng công nghệ số trong sản xuất và tiêu thụ, đặc biệt thông qua các sàn thương mại điện tử.
+
+
+  utter_xephangcdsdti2021/ket_qua_tieu_thu_vai_thieu_qua_san_thuong_mai_ien_tu_cua_bac_giang_nhu_the_nao:
+  - text: |
+      Bắc Giang tiêu thụ được 8.000 tấn vải thiều nhờ ứng dụng công nghệ số.
+
+
+  utter_xephangcdsdti2021/thai_nguyen_a_phat_trien_ung_dung_nao_e_phuc_vu_xa_hoi_so:
+  - text: |
+      Thái Nguyên phát triển ứng dụng ThaiNguyen ID, tích hợp các tiện ích xã hội số của tỉnh.
+
+
+  utter_xephangcdsdti2021/thainguyen_id_mang_lai_loi_ich_gi_cho_nguoi_dan_thai_nguyen:
+  - text: |
+      Ứng dụng giúp người dân, đặc biệt là công nhân, tiếp cận các dịch vụ như dịch vụ công trực tuyến, việc làm, và nhà ở.
+
+
+  utter_xephangcdsdti2021/thainguyen_id_a_uoc_bao_nhieu_nguoi_cai_at_va_thu_thap_uoc_bao_nhieu_ho_so:
+  - text: |
+      Ứng dụng ThaiNguyen ID đã có 45.447 lượt cài đặt và thu thập số hóa 22.341 hồ sơ học viên, sinh viên.
+
+
+  utter_xephangcdsdti2021/thainguyen_id_a_ket_noi_voi_bao_nhieu_doanh_nghiep_va_cung_cap_bao_nhieu_tin_tuc_ve_viec_lam_va_nha_o:
+  - text: |
+      Ứng dụng tiếp cận 80 doanh nghiệp với 50.000 lao động, kết nối 56 doanh nghiệp tuyển dụng và đăng tải hơn 750 tin tức về việc làm và nhà ở.
+
+
+  utter_xephangcdsdti2021/dti_quoc_gia_nam_2021_la_bao_nhieu:
+  - text: |
+      DTI quốc gia năm 2021 đạt 0,6110, tăng 25,8% so với năm 2020.
+
+
+  utter_xephangcdsdti2021/bo_nao_ung_au_ve_chi_so_an_toan_thong_tin_trong_khoi_bo_cung_cap_dich_vu_cong:
+  - text: |
+      Ngân hàng Nhà nước Việt Nam dẫn đầu về chỉ số An toàn thông tin.
+
+
+  utter_xephangcdsdti2021/ngan_hang_nha_nuoc_a_thuc_hien_nhung_giai_phap_nao_e_am_bao_an_toan_thong_tin:
+  - text: |
+      Các giải pháp bao gồm: ban hành chính sách an toàn thông tin, triển khai mô hình bảo đảm an toàn 4 lớp, xây dựng phương án bảo mật cho hệ thống thông tin, mạng lưới ứng cứu sự cố, truyền thông nâng cao nhận thức, và phối hợp xử lý trang web lừa đảo.
+
+
+  utter_xephangcdsdti2021/bo_giao_duc_va_ao_tao_a_trien_khai_dich_vu_cong_truc_tuyen_nao_hieu_qua:
+  - text: |
+      Dịch vụ \"Đăng ký dự thi tốt nghiệp Trung học phổ thông\" mức độ 4 cho phép học sinh lớp 12 đăng ký thi trực tuyến.
+
+
+  utter_xephangcdsdti2021/ket_qua_cua_viec_trien_khai_hoa_on_ien_tu_cua_bo_tai_chinh_nhu_the_nao:
+  - text: |
+      Tính đến cuối năm 2021, có 413.891 hồ sơ đăng ký sử dụng hóa đơn điện tử gửi đến cơ quan thuế, với 5.634.311 hóa đơn có mã và 305.933 hóa đơn không mã được xử lý.
+
+
+  utter_xephangcdsdti2021/ung_dung_etax_mobile_cua_bo_tai_chinh_co_nhung_chuc_nang_gi:
+  - text: |
+      Ứng dụng cho phép nộp thuế điện tử, tra cứu thông tin thuế, và kiểm tra tình trạng xử lý hồ sơ.
+
+
+  utter_xephangcdsdti2021/ung_dung_etax_mobile_a_uoc_bao_nhieu_nguoi_tai_ve_va_su_dung:
+  - text: |
+      Đến ngày 30/6/2022, ứng dụng ghi nhận hơn 74.000 lượt tải về, với hơn 61.000 tài khoản đăng ký giao dịch điện tử.
+
+
+  utter_xephangcdsdti2021/a_nang_a_ap_dung_cong_nghe_ai_nhu_the_nao_trong_viec_giam_sat_giao_thong_va_moi_truong:
+  - text: |
+      Đà Nẵng đã tích hợp công nghệ AI vào các nền tảng giám sát như giám sát đỗ xe, phát hiện vi phạm đỗ xe trái phép và giám sát tình hình đậu đỗ xe tại 25 bãi đỗ xe và hơn 80 tuyến đường cấm đậu đỗ xe trên địa bàn thành phố. Nền tảng quan trắc môi trường sử dụng AI để phát hiện sớm các chỉ số môi trường vượt ngưỡng cho phép, dựa trên dữ liệu từ 50 trạm quan trắc môi trường nước và không khí. AI cũng được sử dụng để phát hiện sớm các vấn đề về kết cấu của 3 cây cầu: cầu Thuận Phước, cầu Rồng và cầu Trần Thị Lý.
+
+
+  utter_xephangcdsdti2021/uu_iem_cua_viec_su_dung_nen_tang_lgsp_trong_hoat_ong_chinh_quyen_ien_tu_o_a_nang_la_gi:
+  - text: |
+      Đà Nẵng đã triển khai 47 dịch vụ API trên nền tảng LGSP, với 115 đơn vị đăng ký sử dụng và gần 2,5 triệu lượt giao dịch. Ưu điểm của nền tảng này là kết nối và chia sẻ dữ liệu, cho phép các ứng dụng của bộ, ngành kết nối và chia sẻ dữ liệu thông suốt. Nền tảng này cũng được tích hợp AI để phát hiện và cảnh báo sớm các yêu cầu, giao dịch, truy cập bất thường, giúp đảm bảo hệ thống hoạt động ổn định.
+
+
+  utter_xephangcdsdti2021/chuong_trinh_xay_dung_xa_thong_minh_uoc_trien_khai_tai_xa_yen_hoa_ninh_binh_dua_tren_nhung_tru_cot_nao:
+  - text: |
+      Chương trình \"Xây dựng xã thông minh\" tại xã Yên Hòa được triển khai dựa trên 3 trụ cột chính: chính quyền số, kinh tế số và xã hội số. Trong đó, chính quyền số bao gồm chuyển đổi số các hoạt động nội bộ của chính quyền và các hoạt động giao tiếp, cung cấp dịch vụ công cho người dân; kinh tế số bao gồm hoạt động thương mại điện tử, du lịch số, quảng bá - thương hiệu số; xã hội số bao gồm y tế số, giáo dục trực tuyến, dịch vụ xã hội số.
+
+
+  utter_xephangcdsdti2021/xa_yen_hoa_ninh_binh_a_at_uoc_ket_qua_gi_trong_viec_trien_khai_tru_cot_chinh_quyen_so:
+  - text: |
+      Xã Yên Hòa đã đạt được những kết quả sau trong việc triển khai trụ cột Chính quyền số: xây dựng kênh truyền thông thông suốt tới 100% hộ gia đình thông qua trang thông tin điện tử, hệ thống truyền thanh thông minh, tin nhắn SMS và mạng xã hội Zalo; xử lý văn bản điện tử và ký số 100%; cung cấp dịch vụ công trực tuyến với 100% thủ tục hành chính thuộc thẩm quyền của xã được tiếp nhận và giải quyết trên hệ thống một cửa điện tử.
+
+
+  utter_xephangcdsdti2021/phan_mem_quan_ly_va_truy_vet_covid_cho_doanh_nghiep_o_bac_giang_uoc_su_dung_e_lam_gi:
+  - text: |
+      Phần mềm này được xây dựng nhằm hỗ trợ công tác khoanh vùng, truy vết các ca nhiễm Covid-19 là công nhân trong các khu công nghiệp một cách nhanh chóng. Mục tiêu là vừa đảm bảo sản xuất, vừa phòng chống dịch hiệu quả.
+
+
+  utter_xephangcdsdti2021/phan_mem_quan_ly_va_truy_vet_covid_cho_doanh_nghiep_o_bac_giang_a_uoc_trien_khai_o_au:
+  - text: |
+      Phần mềm được triển khai cho 100% doanh nghiệp, cơ sở hành chính sự nghiệp và trường học từ tỉnh đến xã trên địa bàn tỉnh Bắc Giang.
+
+
+  utter_xephangcdsdti2021/ket_qua_cua_viec_trien_khai_phan_mem_quan_ly_va_truy_vet_covid_cho_doanh_nghiep_o_bac_giang_la_gi:
+  - text: |
+      Phần mềm đã được 5.175 doanh nghiệp và đơn vị sử dụng để cập nhật thông tin lên hệ thống, giúp cập nhật thông tin của 268.733 người lao động trong các doanh nghiệp và 13.000 cán bộ, công chức.
+
+
+  utter_xephangcdsdti2021/dti_2021_cap_bo_uoc_cau_truc_nhu_the_nao:
+  - text: |
+      DTI cấp bộ bao gồm 2 phần: thông tin chung và chỉ số đánh giá. Thông tin chung cung cấp thông tin tổng quan về bộ, nhưng không dùng để đánh giá. Chỉ số đánh giá bao gồm 6 chỉ số chính với 70 chỉ số thành phần, được chia thành nhóm chỉ số nền tảng chung (nhận thức số, thể chế số, hạ tầng số, nhân lực số, an toàn thông tin mạng) và nhóm chỉ số hoạt động (hoạt động chuyển đổi số).
+
+
+  utter_xephangcdsdti2021/thang_iem_anh_gia_dti_cap_tinh_uoc_phan_bo_nhu_the_nao:
+  - text: |
+      Thang điểm đánh giá DTI cấp tỉnh là 1000 điểm, được phân bổ cho nhóm chỉ số nền tảng chung, bao gồm nhận thức số, thể chế số, hạ tầng số, nhân lực số, an toàn thông tin mạng và đô thị thông minh (không tính điểm), cũng như cho nhóm chỉ số về hoạt động, bao gồm hoạt động chính quyền số, hoạt động kinh tế số và hoạt động xã hội số.
+
+
+  utter_xephangcdsdti2021/thoi_gian_thuc_hien_anh_gia_dti_2021_dien_ra_nhu_the_nao:
+  - text: |
+      Quá trình đánh giá DTI 2021 được thực hiện trong khoảng thời gian từ tháng 5 đến tháng 8 năm 2022, với các giai đoạn cụ thể là từ 24/5/2022 đến 15/6/2022 bộ, ngành, địa phương cung cấp số liệu, tài liệu; từ 16/6/2022 đến 26/6/2022 Bộ Thông tin và Truyền thông đánh giá, thẩm định số liệu, tài liệu; từ 27/6/2022 đến 10/7/2022 bộ, ngành, địa phương giải trình ý kiến đánh giá; từ 11/7/2022 đến 20/7/2022 Bộ Thông tin và Truyền thông tổng hợp kết quả và tháng 8/2022 công bố kết quả đánh giá DTI 2021.
+
+
+  utter_xephangcdsdti2021/ket_qua_trien_khai_nen_tang_cong_dich_vu_cong_thanh_pho_a_nang_nhu_the_nao:
+  - text: |
+      Đà Nẵng đã triển khai 100% DVCTT mức độ 4 cho các dịch vụ công đủ điều kiện, tỷ lệ hồ sơ trực tuyến đạt gần 60%, và tỷ lệ dịch vụ công trực tuyến có phát sinh hồ sơ trực tuyến là 78,92%.
+
+
+  utter_xephangcdsdti2021/ngoai_cong_dich_vu_cong_a_nang_con_trien_khai_nhung_nen_tang_nao_khac_phuc_vu_quan_ly_nha_nuoc:
+  - text: |
+      Đà Nẵng đã triển khai một số nền tảng khác phục vụ quản lý nhà nước, bao gồm: Nền tảng LGSP thành phố, Nền tảng Trung tâm Giám sát Điều hành thành phố thông minh (IOC), Nền tảng tổng hợp, phân tích dữ liệu tập trung, Nền tảng Giám sát dữ liệu trực tuyến, Nền tảng Quản trị tổng thể cấp tỉnh, Nền tảng Họp trực tuyến, và Nền tảng Trợ lý ảo.
+
+
+  utter_xephangcdsdti2021/a_nang_a_ung_dung_chatbot_tro_ly_ao_nhu_the_nao_trong_hoat_ong_cua_thanh_pho:
+  - text: |
+      Đà Nẵng đã ứng dụng Chatbot sử dụng công nghệ AI để tự động trả lời và giải đáp các yêu cầu của người dân, doanh nghiệp về thông tin dịch vụ công. Ứng dụng này được tích hợp trên Cổng Dịch vụ công thành phố, Cổng Thông tin dịch vụ công, và Zalo Tổng đài 1022.
+
+
+  utter_xephangcdsdti2021/ket_qua_cua_viec_su_dung_chatbot_tai_a_nang_nhu_the_nao:
+  - text: |
+      Trung bình mỗi tháng, Chatbot tại Đà Nẵng giải đáp tự động khoảng 4.000 lượt câu hỏi, giúp tiết kiệm 20.000 phút, tương đương 40 ngày làm việc.
+
+
+  utter_xephangcdsdti2021/lang_son_a_co_sang_kien_gi_noi_bat_trong_viec_phat_trien_nhan_luc_so:
+  - text: |
+      Lạng Sơn đã thành lập các Tổ Công nghệ số cộng đồng, dựa trên mô hình Tổ Covid cộng đồng, để hướng dẫn người dân tạo lập và sử dụng cửa hàng số.
+
+
+  utter_xephangcdsdti2021/sang_kien_to_cong_nghe_so_cong_ong_o_lang_son_a_at_uoc_ket_qua_gi:
+  - text: |
+      Tính đến ngày 31/12/2021, Lạng Sơn đã thành lập hơn 1.702 Tổ Công nghệ số cộng đồng với hơn 6.214 người tham gia. Số lượng cửa hàng số đã tăng từ 200 ban đầu lên hơn 116.000, đạt 60% số hộ gia đình có cửa hàng số và tài khoản thanh toán điện tử. Doanh thu từ các cửa hàng số cũng tăng gần 200 lần.
+
+
+  utter_xephangcdsdti2021/ba_ria_-_vung_tau_a_trien_khai_giai_phap_nao_e_ho_tro_cham_soc_f0_tai_nha:
+  - text: |
+      Bà Rịa - Vũng Tàu đã triển khai giải pháp Tổng đài AI tư vấn và hỗ trợ chăm sóc F0 tại nhà. Tổng đài này sử dụng công nghệ trí tuệ nhân tạo (AI) để tư vấn, hỗ trợ chăm sóc y tế qua hình thức hội thoại hai chiều.
+
+
+  utter_xephangcdsdti2021/tong_ai_ai_o_ba_ria_-_vung_tau_hoat_ong_nhu_the_nao:
+  - text: |
+      Tổng đài AI ở Bà Rịa - Vũng Tàu có hai chức năng chính: Nhận cuộc gọi đến: Tổng đài tiếp nhận cuộc gọi từ F0 khi họ cần hỗ trợ y tế. Tự động gọi đi: Tổng đài tự động gọi cho các F0 để hỏi thăm sức khỏe định kỳ, hướng dẫn cách chăm sóc và điều trị tại nhà. Nếu F0 gặp vấn đề về sức khỏe hoặc SPO2 dưới mức cho phép, tổng đài sẽ tự động chuyển cuộc gọi đến nhân viên y tế trực.
+
+
+  utter_xephangcdsdti2021/ket_qua_cua_viec_trien_khai_tong_ai_ai_o_ba_ria_-_vung_tau_ra_sao:
+  - text: |
+      Từ ngày 15/12/2021 đến ngày 31/12/2021, Tổng đài AI ở Bà Rịa - Vũng Tàu đã thực hiện gần 20.000 cuộc gọi đi để tư vấn, hỗ trợ chăm sóc F0 tại nhà và tiếp nhận hơn 2.500 cuộc gọi đến.
+
+
+  utter_xephangcdsdti2021/thai_nguyen_a_trien_khai_nen_tang_xa_hoi_so_nao:
+  - text: |
+      Thái Nguyên đã triển khai ứng dụng và nền tảng xã hội số ThaiNguyen ID.
+
+
+  utter_xephangcdsdti2021/thang_iem_dti_cap_tinh_va_cap_bo_la_bao_nhieu:
+  - text: |
+      Thang điểm đánh giá của DTI cấp tỉnh và cấp bộ đều là 1000 điểm.
+
+
+  utter_xephangcdsdti2021/thang_iem_cua_nhom_chi_so_nen_tang_chung_va_nhom_chi_so_ve_hoat_ong_cua_dti_cap_tinh_uoc_phan_bo_nhu_the_nao:
+  - text: |
+      DTI cấp tỉnh: 500 điểm cho nhóm chỉ số nền tảng chung và 500 điểm cho nhóm chỉ số về hoạt động. Cụ thể cho nhóm chỉ số nền tảng chung: Nhận thức số (100 điểm); Thể chế số (100 điểm); Hạ tầng số (100 điểm); Nhân lực số (100 điểm); An toàn thông tin mạng (100 điểm), riêng Đô thị thông minh không tính điểm. Cụ thể cho nhóm chỉ số về hoạt động: Hoạt động chính quyền số (200 điểm), Hoạt động kinh tế số (150 điểm), Hoạt động xã hội số (150 điểm).
+
+
+  utter_xephangcdsdti2021/thang_iem_cua_3_tru_cot_trong_dti_cap_tinh_uoc_tinh_nhu_the_nao:
+  - text: |
+      Trụ cột chính quyền số: 700 điểm (bao gồm điểm của nhóm chỉ số nền tảng chung và chỉ số Hoạt động chính quyền số). Trụ cột kinh tế số: 650 điểm (bao gồm điểm của nhóm chỉ số nền tảng chung và chỉ số Hoạt động kinh tế số). Trụ cột xã hội số: 650 điểm (bao gồm điểm của nhóm chỉ số nền tảng chung và chỉ số Hoạt động xã hội số).
+
+
+  utter_xephangcdsdti2021/thang_iem_cua_nhom_chi_so_nen_tang_chung_va_chi_so_hoat_ong_chuyen_oi_so_cua_dti_cap_bo_uoc_phan_bo_nhu_the_nao:
+  - text: |
+      DTI cấp bộ: 500 điểm cho nhóm chỉ số nền tảng chung và 500 điểm cho chỉ số Hoạt động chuyển đổi số. Cụ thể cho nhóm chỉ số nền tảng: Nhận thức số (100 điểm), Thể chế số (100 điểm), Hạ tầng số (100 điểm), Nhân lực số (100 điểm), An toàn thông tin mạng (100 điểm).
+
+
+  utter_xephangcdsdti2021/iem_anh_gia_dti_cua_quoc_gia_uoc_tong_hop_nhu_the_nao:
+  - text: |
+      Điểm đánh giá DTI của quốc gia được tổng hợp dựa trên điểm của 24 chỉ số. Điểm của các chỉ số này được xác định dựa trên số liệu, dữ liệu mà Bộ Thông tin và Truyền thông và các cơ quan liên quan thu thập được.
+
+
+  utter_xephangcdsdti2021/viec_anh_gia_dti_cap_bo_cap_tinh_uoc_thuc_hien_bang_hinh_thuc_nao:
+  - text: |
+      Việc hướng dẫn, cung cấp và đánh giá DTI cấp bộ, cấp tỉnh được thực hiện trực tuyến trên Hệ thống theo dõi, đánh giá mức độ chuyển đổi số cấp bộ, cấp tỉnh và của quốc gia tại địa chỉ https://www.dti.gov.vn.
+
+
+  utter_xephangcdsdti2021/bo_nganh_ia_phuong_can_cung_cap_nhung_thong_tin_gi_e_phuc_vu_anh_gia_dti:
+  - text: |
+      Số liệu, dữ liệu tương ứng với chỉ số thành phần, chỉ số chính thuộc DTI cấp bộ, cấp tỉnh (ban hành kèm theo Quyết định số 922/QĐ-BTTTT) tính từ ngày 01/01/2021 đến hết ngày 31/12/2021. Tài liệu kiểm chứng kèm theo (nếu có).
+
+
+  utter_xephangcdsdti2021/tai_lieu_kiem_chung_uoc_quy_inh_nhu_the_nao:
+  - text: |
+      Tài liệu kiểm chứng có thể là: báo cáo, kế hoạch, thông báo, quyết định do cơ quan nhà nước có thẩm quyền ban hành hoặc các tài liệu kiểm chứng khác đủ độ tin cậy (nếu có) để chứng minh số liệu báo cáo. Các file điện tử của tài liệu kiểm chứng phải là bản chụp của văn bản giấy dưới dạng ảnh (định dạng pdf) hoặc văn bản điện tử có chữ ký số theo quy định.
+
+
+  utter_xephangcdsdti2021/truong_hop_khong_co_tai_lieu_kiem_chung_thi_sao:
+  - text: |
+      Nếu không có tài liệu kiểm chứng hoặc tài liệu kiểm chứng không đầy đủ thông tin theo yêu cầu, bộ, ngành, địa phương cần giải trình rõ về số liệu báo cáo và chịu trách nhiệm về tính chính xác của thông tin.
+
+
+  utter_xephangcdsdti2021/phuong_phap_anh_gia_va_thang_iem_cua_dti_uoc_quy_inh_o_au:
+  - text: |
+      Phương pháp đánh giá và thang điểm của DTI được quy định trong Quyết định 922/QĐ-BTTTT ngày 20/5/2022.
+
+
+  utter_xephangcdsdti2021/bo_thong_tin_va_truyen_thong_a_cong_bo_ket_qua_anh_gia_dti_2021_vao_thoi_iem_nao:
+  - text: |
+      Bộ Thông tin và Truyền thông đã công bố kết quả đánh giá DTI 2021 vào tháng 8/2022.
+
+
+  utter_xephangcdsdti2021/theo_bao_cao_dti_2021_khong_gian_mang_uoc_xem_la_khong_gian_thu_may_cua_con_nguoi:
+  - text: |
+      Theo Báo cáo DTI 2021, không gian mạng được xem là không gian thứ 5 của con người, bên cạnh đất liền, đại dương, bầu trời và vũ trụ.
+
+
+  utter_xephangcdsdti2021/bao_cao_dti_2021_co_bao_nhieu_chuong_chinh:
+  - text: |
+      Báo cáo DTI 2021 có 2 chương chính: Chương I: Kết quả DTI 2021 cấp bộ. Chương II: Kết quả DTI 2021 cấp tỉnh.
+
+
+  utter_xephangcdsdti2021/bao_cao_dti_2021_co_bao_nhieu_phu_lucnoi_dung_cua_cac_phu_luc_nay_la_gi:
+  - text: |
+      Báo cáo DTI 2021 có 2 phụ lục: Phụ lục A: Cấu trúc Bộ chỉ số chuyển đổi số DTI 2021. Phụ lục B: Phương pháp, quy trình và nội dung đánh giá.
+
+
+  utter_xephangcdsdti2021/ngoai_ket_qua_anh_gia_dti_bao_cao_dti_2021_con_cung_cap_nhung_thong_tin_gi:
+  - text: |
+      Ngoài kết quả đánh giá DTI, Báo cáo DTI 2021 còn cung cấp bức tranh tổng thể về chuyển đổi số Việt Nam năm 2021, tập trung vào hai khối: Các bộ, cơ quan ngang bộ, cơ quan thuộc Chính phủ. Các tỉnh, thành phố trực thuộc Trung ương.
+
+
+  utter_xephangcdsdti2021/nguon_so_lieu_e_thuc_hien_anh_gia_dti_2021_uoc_lay_tu_au:
+  - text: |
+      Số liệu được sử dụng trong Báo cáo DTI 2021 được lấy từ hai nguồn: Số liệu báo cáo của các bộ, cơ quan ngang bộ, cơ quan thuộc Chính phủ và các tỉnh, thành phố trực thuộc Trung ương được gửi qua hệ thống https://dti.gov.vn. Số liệu từ các nền tảng số, hệ thống thông tin của Bộ Thông tin và Truyền thông và các cơ quan, tổ chức khác.
+
+
+  utter_xephangcdsdti2021/dti_2021_co_nhung_iem_khac_biet_gi_so_voi_dti_2020:
+  - text: |
+      So với năm 2020, DTI 2021 có những điểm khác biệt sau: Cập nhật nội dung của Chiến lược phát triển Chính phủ điện tử hướng tới Chính phủ số giai đoạn 2021-2025, định hướng đến năm 2030, Chiến lược quốc gia phát triển kinh tế số và xã hội số đến năm 2025, định hướng đến năm 2030. Bổ sung thêm nhiều chỉ số đánh giá phát triển và sử dụng các nền tảng số phục vụ chuyển đổi số. Tinh gọn số lượng chỉ số (từ 306 chỉ số cấp tỉnh còn 98 chỉ số; từ 111 chỉ số cấp bộ còn 70 chỉ số) và hướng tới các chỉ số có thể đo lường tự động hoặc kiểm chứng được.
+
+
+  utter_xephangcdsdti2021/theo_quyet_inh_922q-btttt_ngay_2052022_so_o_cau_truc_dti_cap_tinh_uoc_trinh_bay_o_au:
+  - text: |
+      Sơ đồ cấu trúc DTI cấp tỉnh được trình bày trong Hình 13 của Phụ lục A, Quyết định số 922/QĐ-BTTTT ngày 20/5/2022.
+
+
+  utter_xephangcdsdti2021/theo_quyet_inh_922q-btttt_ngay_2052022_so_o_cau_truc_dti_cap_bo_uoc_trinh_bay_o_au:
+  - text: |
+      Sơ đồ cấu trúc DTI cấp bộ được trình bày trong Hình 14 của Phụ lục A, Quyết định số 922/QĐ-BTTTT ngày 20/5/2022.
+
+
+  utter_xephangcdsdti2021/ai_chiu_trach_nhiem_in_an_bao_cao_dti_2021:
+  - text: |
+      Báo cáo DTI 2021 được in ấn tại Công ty TNHH In Thương mại và Dịch vụ Nguyễn Lâm, địa chỉ: Số 352 đường Giải Phóng, Thanh Xuân, Hà Nội.
+
+
+  utter_xephangcdsdti2021/bo_chi_so_chuyen_oi_so_2021_dti_2021_uoc_ban_hanh_boi_ai:
+  - text: |
+      DTI 2021 được ban hành bởi Bộ trưởng Bộ Thông tin và Truyền thông theo Quyết định số 922/QĐ-BTTTT vào ngày 20/5/2022.
+
+
+  utter_xephangcdsdti2021/dti_2021_bao_gom_may_cap_o_anh_gia:
+  - text: |
+      DTI 2021 bao gồm 03 cấp độ: DTI cấp tỉnh, DTI cấp bộ và DTI của quốc gia.
+
+
+  utter_xephangcdsdti2021/dti_cap_tinh_bao_gom_bao_nhieu_chi_so_chinh:
+  - text: |
+      DTI cấp tỉnh gồm 09 chỉ số chính với 98 chỉ số thành phần.
+
+
+  utter_xephangcdsdti2021/muc_ich_cua_viec_xay_dung_bo_chi_so_dti_la_gi:
+  - text: |
+      Mục đích là để giúp các bộ, ngành, địa phương đánh giá mức độ chuyển đổi số của mình và phục vụ công tác quản lý, hoạch định chính sách chuyển đổi số.
+
+
+  utter_xephangcdsdti2021/ai_la_oi_tuong_uoc_anh_gia_trong_dti_2021:
+  - text: |
+      Các bộ, cơ quan ngang bộ, cơ quan thuộc Chính phủ, các tỉnh, thành phố trực thuộc trung ương và của quốc gia.
+
+
+  utter_xephangcdsdti2021/dti_2021_co_vai_tro_gi_trong_viec_thuc_ay_chuyen_oi_so:
+  - text: |
+      DTI 2021 cung cấp một khung đánh giá rõ ràng, giúp các cơ quan nhận diện điểm mạnh và điểm yếu trong quá trình chuyển đổi số, từ đó có kế hoạch cải thiện.
+
+
+  utter_xephangcdsdti2021/co_bao_nhieu_chi_so_thanh_phan_trong_dti_cap_tinh:
+  - text: |
+      DTI cấp tỉnh có 98 chỉ số thành phần.
+
+
+  utter_xephangcdsdti2021/dti_2021_co_uoc_cap_nhat_hang_nam_khong:
+  - text: |
+      Có, DTI 2021 được thực hiện đánh giá và công bố kết quả hàng năm.
+
+
+  utter_xephangcdsdti2021/dti_2021_co_bao_gom_cac_chi_so_ve_kinh_te_so_khong:
+  - text: |
+      Có, DTI 2021 bao gồm các chỉ số liên quan đến kinh tế số cấp tỉnh.
+
+
+  utter_xephangcdsdti2021/dti_2021_co_chi_so_nao_lien_quan_en_xa_hoi_so_khong:
+  - text: |
+      Có, DTI 2021 cũng bao gồm các chỉ số về xã hội số cấp tỉnh.
+
+
+  utter_xephangcdsdti2021/ai_a_phoi_hop_cung_cap_thong_tin_cho_bao_cao_dti_2021:
+  - text: |
+      Các cơ quan, đơn vị, tổ chức và cá nhân đã nhiệt tình phối hợp và cung cấp thông tin, số liệu trong quá trình xây dựng báo cáo.
+
+
+  utter_xephangcdsdti2021/dti_2021_co_bao_nhieu_chuong:
+  - text: |
+      DTI 2021 có 2 chương chính: Kết quả DTI 2021 cấp bộ và Kết quả DTI 2021 cấp tỉnh.
+
+
+  utter_xephangcdsdti2021/dti_2021_co_chi_so_nao_lien_quan_en_chinh_quyen_so_khong:
+  - text: |
+      Có, DTI 2021 bao gồm các chỉ số về chính quyền số cấp tỉnh.
+
+
+  utter_xephangcdsdti2021/dti_2021_co_uoc_su_dung_e_so_sanh_giua_cac_bo_khong:
+  - text: |
+      Có, DTI 2021 cho phép so sánh mức độ chuyển đổi số giữa các bộ và tỉnh thành.
+
+
+  utter_xephangcdsdti2021/dti_2021_co_chi_so_nao_lien_quan_en_dich_vu_cong_khong:
+  - text: |
+      Có, DTI 2021 có chỉ số đánh giá cho các bộ cung cấp dịch vụ công.
+
+
+  utter_xephangcdsdti2021/dti_2021_co_bao_gom_cac_chi_so_ve_an_toan_thong_tin_khong:
+  - text: |
+      DTI 2021 có thể bao gồm các chỉ số liên quan đến an toàn thông tin trong các chỉ số thành phần.
+
+
+  utter_xephangcdsdti2021/dti_2021_co_uoc_cong_bo_cong_khai_khong:
+  - text: |
+      Có, kết quả đánh giá DTI 2021 được công bố công khai để các tổ chức, cá nhân tham khảo.
+
+
+  utter_xephangcdsdti2021/dti_2021_co_chi_so_nao_lien_quan_en_ha_tang_cong_nghe_thong_tin_khong:
+  - text: |
+      Có, DTI 2021 bao gồm các chỉ số liên quan đến hạ tầng công nghệ thông tin trong các chỉ số thành phần.
+
+
+  utter_xephangcdsdti2021/dti_2021_co_the_giup_gi_cho_cac_ia_phuong_trong_viec_chuyen_oi_so:
+  - text: |
+      DTI 2021 giúp các địa phương nhận diện rõ ràng các lĩnh vực cần cải thiện và phát triển trong quá trình chuyển đổi số.
+
+
+  utter_xephangcdsdti2021/dti_2021_co_bao_nhieu_chi_so_chinh:
+  - text: |
+      DTI 2021 có 05 chỉ số chính.
+
+
+  utter_xephangcdsdti2021/cac_chi_so_chinh_cua_dti_2021_la_gi:
+  - text: |
+      Các chỉ số chính bao gồm Nhận thức số, Thể chế số, Hạ tầng số, Nhân lực số, và An toàn thông tin mạng.
+
+
+  utter_xephangcdsdti2021/dti_2021_co_thay_oi_gi_so_voi_dti_2020:
+  - text: |
+      DTI 2021 cập nhật nội dung của các chiến lược phát triển và tinh gọn nhiều chỉ số.
+
+
+  utter_xephangcdsdti2021/so_luong_chi_so_cap_tinh_trong_dti_2021_la_bao_nhieu:
+  - text: |
+      DTI 2021 có 98 chỉ số cấp tỉnh.
+
+
+  utter_xephangcdsdti2021/dti_2021_co_bao_nhieu_chi_so_cap_bo:
+  - text: |
+      DTI 2021 có 70 chỉ số cấp bộ.
+
+
+  utter_xephangcdsdti2021/ai_la_co_quan_chu_tri_trong_viec_thuc_hien_dti_2021:
+  - text: |
+      Bộ Thông tin và Truyền thông là cơ quan chủ trì.
+
+
+  utter_xephangcdsdti2021/dti_2021_co_bao_nhieu_nhom_oi_tuong_anh_gia:
+  - text: |
+      DTI 2021 có hai nhóm đối tượng đánh giá: cấp bộ và cấp tỉnh.
+
+
+  utter_xephangcdsdti2021/muc_tieu_cua_dti_2021_la_gi:
+  - text: |
+      Mục tiêu của DTI 2021 là đánh giá mức độ chuyển đổi số của các bộ, ngành và địa phương.
+
+
+  utter_xephangcdsdti2021/dti_2021_co_bao_nhieu_chi_so_thanh_phan:
+  - text: |
+      DTI 2021 có tổng cộng 24 chỉ số.
+
+
+  utter_xephangcdsdti2021/dti_2021_co_tham_chieu_en_cac_chi_so_quoc_te_khong:
+  - text: |
+      Có, DTI 2021 tham chiếu đến các chỉ số được sử dụng trong các đánh giá quốc tế.
+
+
+  utter_xephangcdsdti2021/dti_2021_co_bao_nhieu_chuong_chinh_trong_bao_cao:
+  - text: |
+      DTI 2021 có hai chương chính trong báo cáo.
+
+
+  utter_xephangcdsdti2021/chuong_i_cua_bao_cao_dti_2021_tap_trung_vao_ieu_gi:
+  - text: |
+      Chương I tập trung vào kết quả DTI 2021 cấp bộ.
+
+
+  utter_xephangcdsdti2021/chuong_ii_cua_bao_cao_dti_2021_tap_trung_vao_ieu_gi:
+  - text: |
+      Chương II tập trung vào kết quả DTI 2021 cấp tỉnh.
+
+
+  utter_xephangcdsdti2021/dti_2021_co_bao_nhieu_phu_luc:
+  - text: |
+      DTI 2021 có hai phụ lục.
+
+
+  utter_xephangcdsdti2021/phu_luc_a_cua_bao_cao_dti_2021_trinh_bay_noi_dung_gi:
+  - text: |
+      Phụ lục A trình bày cấu trúc Bộ chỉ số chuyển đổi số DTI 2021.
+
+
+  utter_xephangcdsdti2021/phu_luc_b_cua_bao_cao_dti_2021_trinh_bay_noi_dung_gi:
+  - text: |
+      Phụ lục B trình bày phương pháp, quy trình và nội dung đánh giá.
+
+
+  utter_xephangcdsdti2021/dti_2021_co_bao_nhieu_chi_so_cap_bo_cung_cap_dich_vu_cong:
+  - text: |
+      DTI 2021 có một số chỉ số dành riêng cho các bộ cung cấp dịch vụ công.
+
+
+  utter_xephangcdsdti2021/dti_2021_co_bao_nhieu_chi_so_cap_bo_khong_cung_cap_dich_vu_cong:
+  - text: |
+      DTI 2021 cũng có một số chỉ số dành cho các bộ không cung cấp dịch vụ công.
+
+
+  utter_xephangcdsdti2021/dti_2021_co_vai_tro_gi_trong_viec_hoach_inh_chinh_sach:
+  - text: |
+      DTI 2021 cung cấp thông tin hữu ích cho công tác quản lý và hoạch định chính sách chuyển đổi số.
+
+
+  utter_xephangcdsdti2021/ai_la_oi_tuong_uoc_khuyen_khich_su_dung_bao_cao_dti_2021:
+  - text: |
+      Các tổ chức, cá nhân trên toàn quốc được khuyến khích sử dụng báo cáo DTI 2021.
+
+
+  utter_xephangcdsdti2021/tru_cot_xa_hoi_so_co_bao_nhieu_chi_so_chinh:
+  - text: |
+      Có 07 chỉ số chính.
+
+
+  utter_xephangcdsdti2021/cac_chi_so_chinh_cua_tru_cot_xa_hoi_so_uoc_phan_loai_nhu_the_nao:
+  - text: |
+      Bao gồm 06 chỉ số chính thuộc nhóm chỉ số nền tảng chung và chỉ số Hoạt động xã hội số.
+
+
+  utter_xephangcdsdti2021/tinh_nao_co_chi_so_xa_hoi_so_cao_nhat_trong_nam_2021:
+  - text: |
+      TP. Đà Nẵng.
+
+
+  utter_xephangcdsdti2021/chi_so_xa_hoi_so_cua_tp_a_nang_la_bao_nhieu:
+  - text: |
+      0,6483.
+
+
+  utter_xephangcdsdti2021/chi_so_xa_hoi_so_cua_thua_thien_-_hue_la_bao_nhieu:
+  - text: |
+      0,5782.
+
+
+  utter_xephangcdsdti2021/chi_so_xa_hoi_so_cua_tinh_binh_duong_la_bao_nhieu:
+  - text: |
+      0,4519.
+
+
+  utter_xephangcdsdti2021/co_bao_nhieu_tinh_co_chi_so_xa_hoi_so_tren_05:
+  - text: |
+      Có 9 tỉnh.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_nam_trong_xep_hang_chi_so_xa_hoi_so:
+  - text: |
+      Ninh Bình.
+
+
+  utter_xephangcdsdti2021/chi_so_xa_hoi_so_cua_tinh_vinh_phuc_la_bao_nhieu:
+  - text: |
+      0,5634.
+
+
+  utter_xephangcdsdti2021/tinh_nao_co_chi_so_xa_hoi_so_gan_nhat_voi_04:
+  - text: |
+      Tỉnh Hậu Giang (0,4392).
+
+
+  utter_xephangcdsdti2021/chi_so_xa_hoi_so_cua_tp_ho_chi_minh_la_bao_nhieu:
+  - text: |
+      0,5418.
+
+
+  utter_xephangcdsdti2021/chi_so_xa_hoi_so_cua_tinh_bac_ninh_la_bao_nhieu:
+  - text: |
+      0,5292.
+
+
+  utter_xephangcdsdti2021/tinh_nao_co_chi_so_xa_hoi_so_thap_hon_04:
+  - text: |
+      Các tỉnh như Cà Mau (0,3389), Bắc Kạn (0,3383), Gia Lai (0,3330), và nhiều tỉnh khác.
+
+
+  utter_xephangcdsdti2021/chi_so_xa_hoi_so_cua_tinh_lam_ong_la_bao_nhieu:
+  - text: |
+      0,4950.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_tam_trong_xep_hang_chi_so_xa_hoi_so:
+  - text: |
+      Thái Nguyên.
+
+
+  utter_xephangcdsdti2021/chi_so_xa_hoi_so_cua_tinh_thanh_hoa_la_bao_nhieu:
+  - text: |
+      0,4904.
+
+
+  utter_xephangcdsdti2021/co_bao_nhieu_tinh_co_chi_so_xa_hoi_so_tu_04_en_05:
+  - text: |
+      Có 11 tỉnh.
+
+
+  utter_xephangcdsdti2021/tinh_nao_co_chi_so_xa_hoi_so_cao_nhat_trong_khu_vuc_mien_trung:
+  - text: |
+      Tỉnh Thừa Thiên - Huế hiện đang dẫn đầu trong khu vực miền Trung với chỉ số Xã hội số cao, cho thấy những chính sách và nỗ lực chuyển đổi số hiệu quả của địa phương này.
+
+
+  utter_xephangcdsdti2021/chi_so_xa_hoi_so_cua_tinh_binh_thuan_la_bao_nhieu:
+  - text: |
+      Chỉ số Xã hội số của tỉnh Bình Thuận được ghi nhận là 0,3252, tuy chưa cao nhưng là bước khởi đầu quan trọng trong hành trình chuyển đổi số của tỉnh.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_muoi_hai_trong_xep_hang_chi_so_xa_hoi_so:
+  - text: |
+      Trong danh sách xếp hạng, tỉnh Thanh Hóa đã giành vị trí thứ mười hai, chứng tỏ sự quan tâm và nỗ lực của tỉnh trong việc nâng cao chỉ số này.
+
+
+  utter_xephangcdsdti2021/chi_so_xa_hoi_so_cua_tinh_quang_nam_la_bao_nhieu:
+  - text: |
+      Chỉ số Xã hội số của tỉnh Quảng Nam đạt 0,4594, cho thấy những tiến bộ đáng kể trong việc ứng dụng công nghệ số tại địa phương.
+
+
+  utter_xephangcdsdti2021/tinh_nao_co_chi_so_xa_hoi_so_thap_nhat_trong_danh_sach:
+  - text: |
+      Bạc Liêu hiện đang là tỉnh có chỉ số Xã hội số thấp nhất trong danh sách với mức 0,2122, điều này cho thấy cần có những biện pháp và chiến lược để nâng cao mức độ chuyển đổi số tại đây.
+
+
+  utter_xephangcdsdti2021/chi_so_xa_hoi_so_cua_tinh_gia_lai_la_bao_nhieu:
+  - text: |
+      Chỉ số Xã hội số của tỉnh Gia Lai đạt 0,3330, điều này phản ánh mức độ phát triển công nghệ số còn nhiều thách thức trong quá trình chuyển đổi số.
+
+
+  utter_xephangcdsdti2021/chi_so_xa_hoi_so_cua_tinh_ninh_thuan_la_bao_nhieu:
+  - text: |
+      Chỉ số Xã hội số của tỉnh Ninh Thuận được ghi nhận là 0,3220, cho thấy sự cần thiết trong việc đẩy mạnh ứng dụng công nghệ số.
+
+
+  utter_xephangcdsdti2021/tinh_nao_co_chi_so_xa_hoi_so_cao_hon_04_nhung_thap_hon_05:
+  - text: |
+      Bình Phước với chỉ số 0,4747 nằm trong khoảng trên 0,4 nhưng chưa đạt 0,5, cho thấy tỉnh vẫn còn nhiều tiềm năng để phát triển trong lĩnh vực chuyển đổi số.
+
+
+  utter_xephangcdsdti2021/chi_so_xa_hoi_so_cua_tinh_khanh_hoa_la_bao_nhieu:
+  - text: |
+      Chỉ số Xã hội số của tỉnh Khánh Hòa đạt 0,3959, cho thấy tỉnh đã có những bước đi đáng kể trong việc phát triển công nghệ số.
+
+
+  utter_xephangcdsdti2021/chi_so_xa_hoi_so_cua_tinh_ha_nam_la_bao_nhieu:
+  - text: |
+      Chỉ số Xã hội số của tỉnh Hà Nam được ghi nhận là 0,4292, cho thấy tỉnh đang trên đà phát triển trong lĩnh vực chuyển đổi số.
+
+
+  utter_xephangcdsdti2021/chi_so_xa_hoi_so_cua_tinh_ca_mau_la_bao_nhieu:
+  - text: |
+      Chỉ số Xã hội số của tỉnh Cà Mau đạt 0,3389, điều này cho thấy tỉnh cần nhiều nỗ lực hơn nữa để cải thiện mức độ chuyển đổi số.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_bay_muoi_trong_xep_hang_chi_so_xa_hoi_so:
+  - text: |
+      Đắk Lắk đứng thứ bảy mươi trong bảng xếp hạng chỉ số Xã hội số, cho thấy một số lượng lớn các tỉnh vẫn đang ở mức thấp.
+
+
+  utter_xephangcdsdti2021/chi_so_xa_hoi_so_cua_tinh_lao_cai_la_bao_nhieu:
+  - text: |
+      Chỉ số Xã hội số của tỉnh Lào Cai được ghi nhận là 0,3156, phản ánh sự cần thiết phải cải thiện mức độ chuyển đổi số tại địa phương.
+
+
+  utter_xephangcdsdti2021/tinh_nao_co_chi_so_xa_hoi_so_cao_nhat_trong_khu_vuc_mien_tay:
+  - text: |
+      Kiên Giang là tỉnh có chỉ số Xã hội số cao nhất trong khu vực miền Tây, cho thấy sự phát triển và ứng dụng công nghệ số tại địa phương đang diễn ra hiệu quả.
+
+
+  utter_xephangcdsdti2021/chi_so_xa_hoi_so_cua_tinh_ak_nong_la_bao_nhieu:
+  - text: |
+      Chỉ số Xã hội số của tỉnh Đắk Nông được ghi nhận là 0,3594, cho thấy tỉnh vẫn đang trong quá trình phát triển và cải thiện mức độ chuyển đổi số của mình.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_muoi_trong_xep_hang_chi_so_xa_hoi_so:
+  - text: |
+      Trong bảng xếp hạng chỉ số Xã hội số, tỉnh Lâm Đồng đã xuất sắc giành vị trí thứ mười, điều này phản ánh những nỗ lực đáng kể trong việc nâng cao công nghệ thông tin và truyền thông tại địa phương.
+
+
+  utter_xephangcdsdti2021/chi_so_xa_hoi_so_cua_tinh_hau_giang_la_bao_nhieu:
+  - text: |
+      Chỉ số Xã hội số của tỉnh Hậu Giang đạt 0,4392, cho thấy sự tiến bộ trong việc áp dụng công nghệ số vào các hoạt động xã hội, cải thiện chất lượng đời sống người dân.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_ba_muoi_trong_xep_hang_chi_so_xa_hoi_so:
+  - text: |
+      Vĩnh Long đã được xếp ở vị trí thứ ba mươi trong bảng xếp hạng chỉ số Xã hội số, minh chứng cho những nỗ lực cải thiện chỉ số này trong thời gian qua.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_hai_trong_xep_hang_chi_so_xa_hoi_so:
+  - text: |
+      Thừa Thiên - Huế không chỉ là tỉnh có chỉ số cao nhất trong khu vực miền Trung mà còn đứng thứ hai trong bảng xếp hạng chung, minh chứng cho những nỗ lực chuyển đổi số hiệu quả.
+
+
+  utter_xephangcdsdti2021/tinh_nao_co_chi_so_xa_hoi_so_cao_hon_04_va_thap_hon_05:
+  - text: |
+      Đồng Nai với chỉ số 0,4430 là một trong những tỉnh có chỉ số Xã hội số cao hơn 0,4 nhưng vẫn chưa đạt 0,5, thể hiện tiềm năng phát triển trong thời gian tới.
+
+
+  utter_xephangcdsdti2021/tinh_nao_co_chi_so_kinh_te_so_cao_nhat_nam_2021:
+  - text: |
+      Chỉ số Kinh tế số cao nhất năm 2021 thuộc về TP. Đà Nẵng, với mức đạt 0,6312, điều này cho thấy thành phố này đã có những nỗ lực đáng kể trong việc phát triển kinh tế số và ứng dụng công nghệ thông tin vào các lĩnh vực kinh tế.
+
+
+  utter_xephangcdsdti2021/chi_so_kinh_te_so_cua_tinh_thua_thien_-_hue_la_bao_nhieu:
+  - text: |
+      Chỉ số Kinh tế số của tỉnh Thừa Thiên - Huế ghi nhận là 0,5922, phản ánh sự chuyển mình mạnh mẽ trong việc áp dụng công nghệ số vào phát triển kinh tế và cải thiện đời sống người dân.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_ba_trong_xep_hang_chi_so_kinh_te_so:
+  - text: |
+      TP. Hồ Chí Minh xếp thứ ba trong bảng xếp hạng với chỉ số Kinh tế số đạt 0,5773, thể hiện vị thế hàng đầu của thành phố trong việc ứng dụng công nghệ số trong kinh doanh và dịch vụ.
+
+
+  utter_xephangcdsdti2021/chi_so_kinh_te_so_cua_tinh_vinh_phuc_la_bao_nhieu:
+  - text: |
+      Chỉ số Kinh tế số của tỉnh Vĩnh Phúc được ghi nhận là 0,5671, cho thấy tỉnh đang tích cực phát triển các ứng dụng công nghệ số trong hoạt động sản xuất và thương mại.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_nam_trong_xep_hang_chi_so_kinh_te_so:
+  - text: |
+      Tỉnh Thái Nguyên với chỉ số 0,5364 đã đứng ở vị trí thứ năm, chứng tỏ những nỗ lực trong việc cải thiện môi trường kinh doanh và khuyến khích đổi mới sáng tạo.
+
+
+  utter_xephangcdsdti2021/chi_so_kinh_te_so_cua_tinh_bac_ninh_la_bao_nhieu:
+  - text: |
+      Chỉ số Kinh tế số của tỉnh Bắc Ninh đạt mức 0,5320, phản ánh sự phát triển nhanh chóng trong lĩnh vực công nghiệp và dịch vụ, đặc biệt là công nghệ thông tin.
+
+
+  utter_xephangcdsdti2021/chi_so_kinh_te_so_cua_tinh_ninh_binh_la_bao_nhieu:
+  - text: |
+      Chỉ số Kinh tế số của tỉnh Ninh Bình là 0,5239, chứng tỏ những bước tiến trong việc áp dụng công nghệ số vào các lĩnh vực kinh tế quan trọng.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_chin_trong_xep_hang_chi_so_kinh_te_so:
+  - text: |
+      Bắc Giang ghi nhận chỉ số Kinh tế số ở mức 0,5169, đứng thứ chín trong bảng xếp hạng, phản ánh những nỗ lực trong phát triển kinh tế và đổi mới sáng tạo.
+
+
+  utter_xephangcdsdti2021/chi_so_kinh_te_so_cua_tinh_quang_ninh_la_bao_nhieu:
+  - text: |
+      Chỉ số Kinh tế số của tỉnh Quảng Ninh đạt 0,4969, cho thấy tỉnh đã có những nỗ lực trong việc cải thiện hạ tầng công nghệ và thúc đẩy phát triển kinh tế.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_muoi_trong_xep_hang_chi_so_kinh_te_so:
+  - text: |
+      TP. Cần Thơ đứng ở vị trí thứ mười với chỉ số Kinh tế số 0,4944, phản ánh những nỗ lực trong việc ứng dụng công nghệ số vào phát triển kinh tế địa phương.
+
+
+  utter_xephangcdsdti2021/chi_so_kinh_te_so_cua_tinh_tien_giang_la_bao_nhieu:
+  - text: |
+      Chỉ số Kinh tế số của tỉnh Tiền Giang được ghi nhận là 0,4856, cho thấy tỉnh đang trong quá trình phát triển mạnh mẽ về ứng dụng công nghệ thông tin trong hoạt động kinh tế.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_muoi_ba_trong_xep_hang_chi_so_kinh_te_so:
+  - text: |
+      Lâm Đồng đứng ở vị trí thứ mười ba với chỉ số 0,4794, chứng tỏ tỉnh đang dần cải thiện khả năng ứng dụng công nghệ số trong các lĩnh vực kinh tế.
+
+
+  utter_xephangcdsdti2021/chi_so_kinh_te_so_cua_tinh_binh_phuoc_la_bao_nhieu:
+  - text: |
+      Chỉ số Kinh tế số của tỉnh Bình Phước ghi nhận là 0,4735, cho thấy tỉnh đang có những bước đi vững chắc trong việc phát triển kinh tế số.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_muoi_lam_trong_xep_hang_chi_so_kinh_te_so:
+  - text: |
+      Đồng Nai xếp ở vị trí thứ mười lăm với chỉ số 0,4714, phản ánh những nỗ lực trong cải cách và ứng dụng công nghệ số vào phát triển kinh tế.
+
+
+  utter_xephangcdsdti2021/chi_so_kinh_te_so_cua_tinh_long_an_la_bao_nhieu:
+  - text: |
+      Chỉ số Kinh tế số của tỉnh Long An được ghi nhận là 0,4616, cho thấy tỉnh đang nỗ lực trong việc nâng cao chỉ số kinh tế số và cải thiện chất lượng sống cho người dân.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_muoi_bay_trong_xep_hang_chi_so_kinh_te_so:
+  - text: |
+      Phú Thọ với chỉ số Kinh tế số 0,4593 đứng ở vị trí thứ mười bảy, điều này cho thấy tỉnh đã có những bước tiến trong việc áp dụng công nghệ vào kinh tế.
+
+
+  utter_xephangcdsdti2021/chi_so_kinh_te_so_cua_tinh_hai_duong_la_bao_nhieu:
+  - text: |
+      Chỉ số Kinh tế số của tỉnh Hải Dương được ghi nhận là 0,4586, phản ánh nỗ lực trong việc thúc đẩy phát triển kinh tế số tại địa phương.
+
+
+  utter_xephangcdsdti2021/tinh_nao_co_chi_so_kinh_te_so_thap_nhat_trong_danh_sach:
+  - text: |
+      Gia Lai là tỉnh có chỉ số Kinh tế số thấp nhất trong danh sách với mức 0,3344, cho thấy tỉnh cần nhiều biện pháp để thúc đẩy phát triển kinh tế số.
+
+
+  utter_xephangcdsdti2021/chi_so_kinh_te_so_cua_tinh_ak_lak_la_bao_nhieu:
+  - text: |
+      Chỉ số Kinh tế số của tỉnh Đắk Lắk ghi nhận là 0,3902, cho thấy rằng tỉnh vẫn còn nhiều thách thức trong việc phát triển ứng dụng công nghệ số vào kinh tế.
+
+
+  utter_xephangcdsdti2021/chi_so_kinh_te_so_trung_binh_cua_cac_tinh_nam_2021_la_bao_nhieu:
+  - text: |
+      Chỉ số Kinh tế số trung bình của các tỉnh năm 2021 được ghi nhận là 0,4098, một con số phản ánh sự phát triển của kinh tế số trong bối cảnh toàn quốc. Con số này cho thấy rằng các tỉnh đã có những bước tiến đáng kể trong việc áp dụng công nghệ thông tin và truyền thông vào hoạt động sản xuất và dịch vụ.
+
+
+  utter_xephangcdsdti2021/tang_truong_chi_so_kinh_te_so_nam_2021_so_voi_nam_2020_la_bao_nhieu_phan_tram:
+  - text: |
+      Tăng trưởng chỉ số Kinh tế số năm 2021 so với năm 2020 đạt 59,6%, điều này cho thấy sự bứt phá mạnh mẽ trong việc chuyển đổi số của các tỉnh, góp phần thúc đẩy phát triển kinh tế và nâng cao năng lực cạnh tranh.
+
+
+  utter_xephangcdsdti2021/co_bao_nhieu_tinh_co_chi_so_kinh_te_so_tren_muc_trung_binh:
+  - text: |
+      Có 31/63 tỉnh có chỉ số Kinh tế số trên mức trung bình, chiếm 49,21%. Điều này chứng tỏ rằng một nửa số tỉnh đang tích cực triển khai các giải pháp công nghệ nhằm nâng cao hiệu quả kinh tế.
+
+
+  utter_xephangcdsdti2021/co_bao_nhieu_tinh_co_chi_so_kinh_te_so_lon_hon_05:
+  - text: |
+      Có 9/63 tỉnh có chỉ số Kinh tế số lớn hơn 0,5, chiếm 14,29%. Đây là dấu hiệu cho thấy một số tỉnh đang đi đầu trong việc ứng dụng công nghệ số vào phát triển kinh tế.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_muoi_mot_trong_xep_hang_chi_so_kinh_te_so:
+  - text: |
+      TP. Cần Thơ đứng thứ mười một trong bảng xếp hạng với chỉ số Kinh tế số đạt 0,4944, thể hiện những nỗ lực của thành phố trong việc cải thiện môi trường kinh doanh và nâng cao ứng dụng công nghệ.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_muoi_bon_trong_xep_hang_chi_so_kinh_te_so:
+  - text: |
+      Lâm Đồng đứng ở vị trí thứ mười bốn với chỉ số 0,4794, phản ánh những nỗ lực của tỉnh trong việc phát triển kinh tế số và nâng cao chất lượng sống cho người dân.
+
+
+  utter_xephangcdsdti2021/chi_so_kinh_te_so_cua_tinh_ong_nai_la_bao_nhieu:
+  - text: |
+      Chỉ số Kinh tế số của tỉnh Đồng Nai ghi nhận là 0,4714, cho thấy tỉnh đang có những bước tiến trong việc ứng dụng công nghệ số vào hoạt động kinh tế.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_muoi_sau_trong_xep_hang_chi_so_kinh_te_so:
+  - text: |
+      Long An xếp thứ mười sáu với chỉ số Kinh tế số đạt 0,4616, cho thấy tỉnh đang dần cải thiện khả năng ứng dụng công nghệ số trong các lĩnh vực kinh tế quan trọng.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_muoi_tam_trong_xep_hang_chi_so_kinh_te_so:
+  - text: |
+      Hải Dương đứng ở vị trí thứ mười tám với chỉ số 0,4586, cho thấy tỉnh đã có những bước đi vững chắc trong việc nâng cao chỉ số kinh tế số.
+
+
+  utter_xephangcdsdti2021/tinh_nao_co_chi_so_kinh_te_so_thap_hon_03:
+  - text: |
+      Bạc Liêu là tỉnh có chỉ số Kinh tế số thấp hơn 0,3, với mức 0,2497, cho thấy tỉnh cần cải thiện nhiều hơn trong việc phát triển kinh tế số.
+
+
+  utter_xephangcdsdti2021/chi_so_kinh_te_so_cua_tinh_quang_ngai_la_bao_nhieu:
+  - text: |
+      Chỉ số Kinh tế số của tỉnh Quảng Ngãi là 0,2492, phản ánh những thách thức trong việc phát triển ứng dụng công nghệ số trong kinh tế.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_nam_muoi_trong_xep_hang_chi_so_kinh_te_so:
+  - text: |
+      Lào Cai đứng ở vị trí thứ năm mươi với chỉ số Kinh tế số là 0,3288, cho thấy tỉnh đang cố gắng cải thiện chỉ số này để thúc đẩy phát triển kinh tế.
+
+
+  utter_xephangcdsdti2021/chi_so_kinh_te_so_cua_tinh_nghe_an_la_bao_nhieu:
+  - text: |
+      Chỉ số Kinh tế số của tỉnh Nghệ An được ghi nhận là 0,3205, phản ánh những nỗ lực trong việc cải thiện hạ tầng công nghệ thông tin.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_nam_muoi_hai_trong_xep_hang_chi_so_kinh_te_so:
+  - text: |
+      Nghệ An đứng thứ năm mươi hai với chỉ số 0,3205, điều này cho thấy tỉnh cần nhiều biện pháp để nâng cao chỉ số kinh tế số.
+
+
+  utter_xephangcdsdti2021/chi_so_kinh_te_so_cua_tinh_tuyen_quang_la_bao_nhieu:
+  - text: |
+      Chỉ số Kinh tế số của tỉnh Tuyên Quang là 0,3171, cho thấy tỉnh đang có những nỗ lực trong việc phát triển kinh tế số.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_nam_muoi_ba_trong_xep_hang_chi_so_kinh_te_so:
+  - text: |
+      Lai Châu đứng thứ năm mươi ba với chỉ số 0,3168, phản ánh tình hình phát triển kinh tế số còn nhiều thách thức.
+
+
+  utter_xephangcdsdti2021/chi_so_kinh_te_so_cua_tinh_an_giang_la_bao_nhieu:
+  - text: |
+      Chỉ số Kinh tế số của tỉnh An Giang ghi nhận là 0,3082, cho thấy tỉnh đã có những cố gắng nhất định trong việc cải thiện kinh tế số.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_nam_muoi_sau_trong_xep_hang_chi_so_kinh_te_so:
+  - text: |
+      Hà Tĩnh đứng ở vị trí thứ năm mươi sáu với chỉ số 0,2984, điều này cho thấy tỉnh cần nhiều nỗ lực hơn nữa để nâng cao chỉ số kinh tế số.
+
+
+  utter_xephangcdsdti2021/chi_so_kinh_te_so_cua_tinh_quang_binh_la_bao_nhieu:
+  - text: |
+      Chỉ số Kinh tế số của tỉnh Quảng Bình ghi nhận là 0,2972, cho thấy tỉnh đang đối mặt với nhiều thách thức trong phát triển kinh tế số.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_nam_muoi_tam_trong_xep_hang_chi_so_kinh_te_so:
+  - text: |
+      Hòa Bình đứng ở vị trí thứ năm mươi tám với chỉ số 0,2950, cho thấy tỉnh vẫn còn nhiều việc cần làm để phát triển kinh tế số.
+
+
+  utter_xephangcdsdti2021/chi_so_kinh_te_so_cua_tinh_quang_tri_la_bao_nhieu:
+  - text: |
+      Chỉ số Kinh tế số của tỉnh Quảng Trị là 0,2895, phản ánh thực trạng phát triển kinh tế số còn hạn chế.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_sau_muoi_trong_xep_hang_chi_so_kinh_te_so:
+  - text: |
+      Sóc Trăng đứng thứ sáu mươi với chỉ số 0,2880, điều này cho thấy tỉnh cần khẩn trương cải thiện chỉ số này.
+
+
+  utter_xephangcdsdti2021/chi_so_kinh_te_so_cua_tinh_cao_bang_la_bao_nhieu:
+  - text: |
+      Chỉ số Kinh tế số của tỉnh Cao Bằng ghi nhận là 0,2695, cho thấy tỉnh vẫn còn nhiều thách thức trong việc áp dụng công nghệ số vào phát triển kinh tế.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_sau_muoi_hai_trong_xep_hang_chi_so_kinh_te_so:
+  - text: |
+      Bạc Liêu, với chỉ số 0,2497, đứng thứ sáu mươi hai trong xếp hạng, cho thấy tình trạng phát triển kinh tế số của tỉnh còn nhiều hạn chế.
+
+
+  utter_xephangcdsdti2021/tinh_nao_co_chi_so_kinh_te_so_cao_nhat_trong_nhom_tinh_mien_trung:
+  - text: |
+      TP. Đà Nẵng có chỉ số Kinh tế số cao nhất trong nhóm tỉnh miền Trung với mức 0,6312, điều này phản ánh sự phát triển vượt bậc của thành phố trong lĩnh vực công nghệ và kinh tế số.
+
+
+  utter_xephangcdsdti2021/chi_so_kinh_te_so_cua_tinh_binh_inh_la_bao_nhieu:
+  - text: |
+      Chỉ số Kinh tế số của tỉnh Bình Định ghi nhận là 0,3877, cho thấy tỉnh đang nỗ lực trong việc ứng dụng công nghệ thông tin vào phát triển kinh tế.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_ba_muoi_trong_xep_hang_chi_so_kinh_te_so:
+  - text: |
+      Hậu Giang đứng ở vị trí thứ ba mươi với chỉ số 0,4319, phản ánh nỗ lực cải cách và phát triển kinh tế số của tỉnh.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_au_ve_chi_so_kinh_te_so_nam_2021:
+  - text: |
+      TP. Đà Nẵng đứng đầu về chỉ số Kinh tế số năm 2021 với chỉ số 0,6312, thể hiện sự phát triển vượt bậc trong việc ứng dụng công nghệ thông tin và truyền thông vào nền kinh tế.
+
+
+  utter_xephangcdsdti2021/chi_so_kinh_te_so_cua_tinh_tp_can_tho_la_bao_nhieu:
+  - text: |
+      Chỉ số Kinh tế số của tỉnh TP. Cần Thơ là 0,4944, phản ánh những nỗ lực trong việc áp dụng công nghệ vào các hoạt động kinh tế.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_muoi_hai_trong_xep_hang_chi_so_kinh_te_so:
+  - text: |
+      Tiền Giang đứng thứ mười hai với chỉ số 0,4856, cho thấy tỉnh đang từng bước cải thiện chỉ số kinh tế số.
+
+
+  utter_xephangcdsdti2021/chi_so_kinh_te_so_cua_tinh_lam_ong_la_bao_nhieu:
+  - text: |
+      Chỉ số Kinh tế số của tỉnh Lâm Đồng là 0,4794, phản ánh nỗ lực trong việc phát triển kinh tế số và ứng dụng công nghệ.
+
+
+  utter_xephangcdsdti2021/chi_so_kinh_te_so_cua_tinh_phu_tho_la_bao_nhieu:
+  - text: |
+      Chỉ số Kinh tế số của tỉnh Phú Thọ là 0,4593, phản ánh những nỗ lực trong việc áp dụng công nghệ số vào phát triển kinh tế.
+
+
+  utter_xephangcdsdti2021/chi_so_kinh_te_so_cua_tinh_quang_nam_la_bao_nhieu:
+  - text: |
+      Chỉ số Kinh tế số của tỉnh Quảng Nam là 0,4581, cho thấy tỉnh đang nỗ lực trong việc phát triển kinh tế số.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_hai_muoi_trong_xep_hang_chi_so_kinh_te_so:
+  - text: |
+      Bình Dương đứng ở vị trí thứ hai mươi với chỉ số 0,4580, phản ánh nỗ lực của tỉnh trong việc cải thiện chỉ số kinh tế số.
+
+
+  utter_xephangcdsdti2021/chi_so_kinh_te_so_cua_tinh_kien_giang_la_bao_nhieu:
+  - text: |
+      Chỉ số Kinh tế số của tỉnh Kiên Giang là 0,4578, cho thấy tỉnh đang nỗ lực nâng cao khả năng cạnh tranh trong lĩnh vực kinh tế số.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_hai_muoi_ba_trong_xep_hang_chi_so_kinh_te_so:
+  - text: |
+      Hà Nam đứng thứ hai mươi ba với chỉ số 0,4519, phản ánh tình hình phát triển kinh tế số tại tỉnh.
+
+
+  utter_xephangcdsdti2021/chi_so_kinh_te_so_cua_tinh_ba_ria_-_vung_tau_la_bao_nhieu:
+  - text: |
+      Chỉ số Kinh tế số của tỉnh Bà Rịa - Vũng Tàu là 0,4468, cho thấy tỉnh cần nhiều nỗ lực hơn để phát triển kinh tế số.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_hai_muoi_sau_trong_xep_hang_chi_so_kinh_te_so:
+  - text: |
+      Nam Định đứng ở vị trí thứ hai mươi sáu với chỉ số 0,4443, phản ánh tình hình phát triển kinh tế số còn nhiều thách thức.
+
+
+  utter_xephangcdsdti2021/chi_so_kinh_te_so_cua_tinh_yen_bai_la_bao_nhieu:
+  - text: |
+      Chỉ số Kinh tế số của tỉnh Yên Bái là 0,4437, cho thấy tỉnh đang cố gắng nâng cao chỉ số kinh tế số.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_hai_muoi_chin_trong_xep_hang_chi_so_kinh_te_so:
+  - text: |
+      Bến Tre đứng thứ hai mươi chín với chỉ số 0,4308, cho thấy tỉnh vẫn còn nhiều việc cần làm để cải thiện chỉ số này.
+
+
+  utter_xephangcdsdti2021/chi_so_kinh_te_so_cua_tinh_ha_giang_la_bao_nhieu:
+  - text: |
+      Chỉ số Kinh tế số của tỉnh Hà Giang là 0,4183, phản ánh những thách thức trong việc phát triển kinh tế số.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_ba_muoi_mot_trong_xep_hang_chi_so_kinh_te_so:
+  - text: |
+      Hưng Yên đứng thứ ba mươi một với chỉ số 0,4108, cho thấy tỉnh đang nỗ lực trong việc cải thiện chỉ số kinh tế số.
+
+
+  utter_xephangcdsdti2021/chi_so_kinh_te_so_cua_tinh_khanh_hoa_la_bao_nhieu:
+  - text: |
+      Chỉ số Kinh tế số của tỉnh Khánh Hòa là 0,4089, cho thấy tỉnh vẫn còn nhiều thách thức trong việc phát triển kinh tế số.
+
+
+  utter_xephangcdsdti2021/chi_so_chinh_quyen_so_cua_tinh_a_nang_nam_2021_la_bao_nhieu:
+  - text: |
+      Chỉ số Chính quyền số của tỉnh Đà Nẵng năm 2021 là 0,6868, cho thấy tỉnh này đã đạt được những tiến bộ đáng kể trong việc ứng dụng công nghệ thông tin vào hoạt động chính quyền.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_hai_ve_chi_so_chinh_quyen_so_nam_2021:
+  - text: |
+      Tỉnh Thừa Thiên - Huế đứng thứ hai về chỉ số Chính quyền số năm 2021, phản ánh sự phát triển của tỉnh trong việc cải cách hành chính và ứng dụng công nghệ.
+
+
+  utter_xephangcdsdti2021/chi_so_chinh_quyen_so_cua_tp_ho_chi_minh_la_bao_nhieu:
+  - text: |
+      Chỉ số Chính quyền số của TP. Hồ Chí Minh là 0,6345, cho thấy thành phố đang nỗ lực trong việc cải thiện dịch vụ chính quyền điện tử.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_tu_trong_xep_hang_chi_so_chinh_quyen_so:
+  - text: |
+      Bắc Ninh đứng thứ tư trong xếp hạng chỉ số Chính quyền số, thể hiện sự nỗ lực của tỉnh trong việc phát triển chính quyền số.
+
+
+  utter_xephangcdsdti2021/chi_so_chinh_quyen_so_cua_tinh_ninh_binh_la_bao_nhieu:
+  - text: |
+      Chỉ số Chính quyền số của tỉnh Ninh Bình là 0,5701, cho thấy tỉnh đã có những bước tiến trong việc ứng dụng công nghệ trong chính quyền.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_sau_trong_xep_hang_chi_so_chinh_quyen_so:
+  - text: |
+      Quảng Ninh đứng thứ sáu trong xếp hạng chỉ số Chính quyền số, phản ánh những cải cách tích cực trong hoạt động của chính quyền.
+
+
+  utter_xephangcdsdti2021/chi_so_chinh_quyen_so_cua_tinh_lang_son_la_bao_nhieu:
+  - text: |
+      Chỉ số Chính quyền số của tỉnh Lạng Sơn là 0,5589, cho thấy tỉnh này đã có những cải thiện đáng kể trong việc ứng dụng công nghệ.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_tam_trong_xep_hang_chi_so_chinh_quyen_so:
+  - text: |
+      Bình Phước đứng thứ tám trong xếp hạng chỉ số Chính quyền số, thể hiện nỗ lực trong việc cải cách hành chính.
+
+
+  utter_xephangcdsdti2021/chi_so_chinh_quyen_so_cua_tinh_thai_nguyen_la_bao_nhieu:
+  - text: |
+      Chỉ số Chính quyền số của tỉnh Thái Nguyên là 0,5487, cho thấy tỉnh đang dần nâng cao hiệu quả quản lý nhà nước thông qua công nghệ.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_muoi_trong_xep_hang_chi_so_chinh_quyen_so:
+  - text: |
+      Vĩnh Phúc đứng ở vị trí thứ mười trong xếp hạng chỉ số Chính quyền số, phản ánh những nỗ lực của tỉnh trong việc cải thiện dịch vụ hành chính.
+
+
+  utter_xephangcdsdti2021/gia_tri_trung_binh_cua_chi_so_chinh_quyen_so_cap_tinh_nam_2021_la_bao_nhieu:
+  - text: |
+      Giá trị trung bình của chỉ số Chính quyền số cấp tỉnh năm 2021 là 0,4317, cho thấy mức độ ứng dụng công nghệ thông tin còn cần cải thiện.
+
+
+  utter_xephangcdsdti2021/tang_truong_cua_chi_so_chinh_quyen_so_nam_2021_so_voi_nam_2020_la_bao_nhieu_phan_tram:
+  - text: |
+      Tăng trưởng của chỉ số Chính quyền số năm 2021 so với năm 2020 đạt 19,6%, cho thấy sự phát triển nhanh chóng trong lĩnh vực này.
+
+
+  utter_xephangcdsdti2021/co_bao_nhieu_tinhtp_co_chi_so_chinh_quyen_so_tren_muc_trung_binh:
+  - text: |
+      Có 31/63 tỉnh/TP có chỉ số Chính quyền số trên mức trung bình, chiếm 49,21%, phản ánh tình hình phát triển không đồng đều giữa các địa phương.
+
+
+  utter_xephangcdsdti2021/co_bao_nhieu_tinhtp_co_chi_so_chinh_quyen_so_lon_hon_05:
+  - text: |
+      Có 18/63 tỉnh/TP có chỉ số Chính quyền số lớn hơn 0,5, chiếm 28,57%, cho thấy một số tỉnh đã đạt được những kết quả tích cực trong việc phát triển chính quyền số.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_muoi_mot_ve_chi_so_chinh_quyen_so:
+  - text: |
+      TP. Cần Thơ đứng thứ mười một trong xếp hạng chỉ số Chính quyền số, phản ánh nỗ lực cải cách hành chính tại địa phương.
+
+
+  utter_xephangcdsdti2021/chi_so_chinh_quyen_so_cua_tinh_hai_duong_la_bao_nhieu:
+  - text: |
+      Chỉ số Chính quyền số của tỉnh Hải Dương là 0,5320, cho thấy tỉnh đang có những bước tiến trong việc ứng dụng công nghệ thông tin.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_muoi_ba_trong_xep_hang_chi_so_chinh_quyen_so:
+  - text: |
+      Đồng Nai đứng thứ mười ba trong xếp hạng chỉ số Chính quyền số, phản ánh những nỗ lực trong việc cải cách chính quyền.
+
+
+  utter_xephangcdsdti2021/chi_so_chinh_quyen_so_cua_tinh_binh_duong_la_bao_nhieu:
+  - text: |
+      Chỉ số Chính quyền số của tỉnh Bình Dương là 0,5200, cho thấy tỉnh đã có những cải thiện đáng kể trong việc phát triển chính quyền số.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_muoi_bon_trong_xep_hang_chi_so_chinh_quyen_so:
+  - text: |
+      Hưng Yên đứng thứ mười bốn trong xếp hạng chỉ số Chính quyền số, phản ánh nỗ lực của tỉnh trong việc cải cách hành chính.
+
+
+  utter_xephangcdsdti2021/chi_so_chinh_quyen_so_cua_tinh_kien_giang_la_bao_nhieu:
+  - text: |
+      Chỉ số Chính quyền số của tỉnh Kiên Giang là 0,5100, cho thấy tỉnh đang nỗ lực nâng cao chất lượng dịch vụ hành chính.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_muoi_lam_trong_xep_hang_chi_so_chinh_quyen_so:
+  - text: |
+      Hà Nam đứng thứ mười lăm trong xếp hạng chỉ số Chính quyền số, thể hiện sự cố gắng trong cải cách hành chính.
+
+
+  utter_xephangcdsdti2021/chi_so_chinh_quyen_so_cua_tinh_ba_ria_-_vung_tau_la_bao_nhieu:
+  - text: |
+      Chỉ số Chính quyền số của tỉnh Bà Rịa - Vũng Tàu là 0,5000, cho thấy tỉnh đang nỗ lực cải thiện chỉ số này.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_muoi_bay_trong_xep_hang_chi_so_chinh_quyen_so:
+  - text: |
+      Nam Định đứng ở vị trí thứ mười bảy trong xếp hạng chỉ số Chính quyền số, phản ánh những nỗ lực của tỉnh trong việc cải cách hành chính.
+
+
+  utter_xephangcdsdti2021/chi_so_chinh_quyen_so_cua_tinh_yen_bai_la_bao_nhieu:
+  - text: |
+      Chỉ số Chính quyền số của tỉnh Yên Bái là 0,4900, cho thấy tỉnh vẫn cần nhiều cải cách hơn nữa để nâng cao chỉ số này.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_hai_muoi_trong_xep_hang_chi_so_chinh_quyen_so:
+  - text: |
+      Bình Định đứng ở vị trí thứ hai mươi trong xếp hạng chỉ số Chính quyền số, phản ánh nỗ lực cải cách chính quyền của tỉnh.
+
+
+  utter_xephangcdsdti2021/tinh_nao_co_chi_so_chinh_quyen_so_thap_nhat_trong_danh_sach:
+  - text: |
+      Tỉnh Bạc Liêu có chỉ số Chính quyền số thấp nhất trong danh sách, với giá trị là 0,2366, cho thấy cần nhiều cải cách hơn nữa trong ứng dụng công nghệ thông tin.
+
+
+  utter_xephangcdsdti2021/chi_so_chinh_quyen_so_cua_tinh_cao_bang_la_bao_nhieu:
+  - text: |
+      Chỉ số Chính quyền số của tỉnh Cao Bằng là 0,2597, phản ánh tình hình phát triển công nghệ thông tin trong chính quyền tại tỉnh này.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_hai_muoi_mot_trong_xep_hang_chi_so_chinh_quyen_so:
+  - text: |
+      Tỉnh Quảng Ngãi đứng thứ hai mươi mốt trong xếp hạng chỉ số Chính quyền số, cho thấy sự nỗ lực trong cải cách hành chính.
+
+
+  utter_xephangcdsdti2021/chi_so_chinh_quyen_so_cua_tinh_ha_tinh_la_bao_nhieu:
+  - text: |
+      Chỉ số Chính quyền số của tỉnh Hà Tĩnh là 0,2732, cho thấy tỉnh đang cố gắng nâng cao chất lượng dịch vụ hành chính.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_hai_muoi_ba_trong_xep_hang_chi_so_chinh_quyen_so:
+  - text: |
+      Tỉnh Quảng Bình đứng thứ hai mươi ba trong xếp hạng chỉ số Chính quyền số, phản ánh những nỗ lực trong việc cải cách hành chính.
+
+
+  utter_xephangcdsdti2021/chi_so_chinh_quyen_so_cua_tinh_hoa_binh_la_bao_nhieu:
+  - text: |
+      Chỉ số Chính quyền số của tỉnh Hòa Bình là 0,2876, cho thấy tỉnh này đang từng bước nâng cao chỉ số của mình.
+
+
+  utter_xephangcdsdti2021/chi_so_chinh_quyen_so_cua_tinh_nghe_an_la_bao_nhieu:
+  - text: |
+      Chỉ số Chính quyền số của tỉnh Nghệ An là 0,3181, cho thấy tỉnh đã có sự tiến bộ trong việc ứng dụng công nghệ thông tin.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_hai_muoi_bay_trong_xep_hang_chi_so_chinh_quyen_so:
+  - text: |
+      Bắc Kạn đứng thứ hai mươi bảy trong xếp hạng chỉ số Chính quyền số, phản ánh những nỗ lực của tỉnh trong lĩnh vực này.
+
+
+  utter_xephangcdsdti2021/chi_so_chinh_quyen_so_cua_tinh_quang_tri_la_bao_nhieu:
+  - text: |
+      Chỉ số Chính quyền số của tỉnh Quảng Trị là 0,3268, cho thấy tỉnh này cũng đang cố gắng cải thiện chỉ số của mình.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_hai_muoi_chin_trong_xep_hang_chi_so_chinh_quyen_so:
+  - text: |
+      Tỉnh Tuyên Quang đứng thứ hai mươi chín trong xếp hạng chỉ số Chính quyền số, phản ánh tình hình phát triển công nghệ thông tin tại địa phương.
+
+
+  utter_xephangcdsdti2021/chi_so_chinh_quyen_so_cua_tinh_phu_yen_la_bao_nhieu:
+  - text: |
+      Chỉ số Chính quyền số của tỉnh Phú Yên là 0,3286, cho thấy tỉnh này cũng đang nỗ lực trong việc cải cách hành chính.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_ba_muoi_mot_trong_xep_hang_chi_so_chinh_quyen_so:
+  - text: |
+      Tỉnh Đồng Tháp đứng thứ ba mươi một trong xếp hạng chỉ số Chính quyền số, phản ánh nỗ lực cải cách hành chính tại địa phương.
+
+
+  utter_xephangcdsdti2021/chi_so_chinh_quyen_so_cua_tinh_binh_thuan_la_bao_nhieu:
+  - text: |
+      Chỉ số Chính quyền số của tỉnh Bình Thuận là 0,3379, cho thấy tỉnh đang có những tiến bộ nhất định trong ứng dụng công nghệ thông tin.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_ba_muoi_ba_trong_xep_hang_chi_so_chinh_quyen_so:
+  - text: |
+      Tỉnh Kon Tum đứng thứ ba mươi ba trong xếp hạng chỉ số Chính quyền số, cho thấy nỗ lực của tỉnh trong việc cải cách hành chính.
+
+
+  utter_xephangcdsdti2021/chi_so_chinh_quyen_so_cua_tinh_ien_bien_la_bao_nhieu:
+  - text: |
+      Chỉ số Chính quyền số của tỉnh Điện Biên là 0,3457, phản ánh tình hình phát triển công nghệ thông tin trong chính quyền.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_ba_muoi_lam_trong_xep_hang_chi_so_chinh_quyen_so:
+  - text: |
+      Tỉnh Ninh Thuận đứng thứ ba mươi lăm trong xếp hạng chỉ số Chính quyền số, cho thấy cần nhiều nỗ lực trong việc cải cách hành chính.
+
+
+  utter_xephangcdsdti2021/chi_so_chinh_quyen_so_cua_tinh_ak_nong_la_bao_nhieu:
+  - text: |
+      Chỉ số Chính quyền số của tỉnh Đắk Nông là 0,3527, cho thấy tỉnh đang có những cải thiện trong lĩnh vực này.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_ba_muoi_bay_trong_xep_hang_chi_so_chinh_quyen_so:
+  - text: |
+      Tỉnh Lào Cai đứng thứ ba mươi bảy trong xếp hạng chỉ số Chính quyền số, phản ánh tình hình phát triển công nghệ thông tin tại địa phương.
+
+
+  utter_xephangcdsdti2021/chi_so_chinh_quyen_so_cua_tinh_son_la_la_bao_nhieu:
+  - text: |
+      Chỉ số Chính quyền số của tỉnh Sơn La là 0,3594, cho thấy tỉnh này cũng đang nỗ lực cải cách hành chính.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_ba_muoi_chin_trong_xep_hang_chi_so_chinh_quyen_so:
+  - text: |
+      Tỉnh Lai Châu đứng thứ ba mươi chín trong xếp hạng chỉ số Chính quyền số, phản ánh tình hình phát triển công nghệ thông tin tại tỉnh.
+
+
+  utter_xephangcdsdti2021/chi_so_chinh_quyen_so_cua_tinh_thai_binh_la_bao_nhieu:
+  - text: |
+      Chỉ số Chính quyền số của tỉnh Thái Bình là 0,4500, cho thấy tỉnh đang có những nỗ lực trong cải cách hành chính.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_bon_muoi_mot_trong_xep_hang_chi_so_chinh_quyen_so:
+  - text: |
+      Tỉnh Hưng Yên đứng thứ bốn mươi một trong xếp hạng chỉ số Chính quyền số, cho thấy tình hình phát triển công nghệ thông tin tại tỉnh này còn cần cải thiện.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_bon_muoi_ba_trong_xep_hang_chi_so_chinh_quyen_so:
+  - text: |
+      Tỉnh Bình Dương đứng thứ bốn mươi ba trong xếp hạng chỉ số Chính quyền số, phản ánh tình hình phát triển công nghệ thông tin tại địa phương.
+
+
+  utter_xephangcdsdti2021/tinh_nao_co_chi_so_chinh_quyen_so_cao_nhat_trong_danh_sach:
+  - text: |
+      TP. Đà Nẵng có chỉ số Chính quyền số cao nhất trong danh sách, với giá trị là 0,6868, phản ánh sự phát triển mạnh mẽ trong ứng dụng công nghệ thông tin trong chính quyền.
+
+
+  utter_xephangcdsdti2021/chi_so_chinh_quyen_so_cua_tinh_thua_thien_-_hue_la_bao_nhieu:
+  - text: |
+      Chỉ số Chính quyền số của tỉnh Thừa Thiên - Huế là 0,6666, cho thấy tỉnh này cũng đang có sự phát triển đáng kể.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_ba_trong_xep_hang_chi_so_chinh_quyen_so:
+  - text: |
+      TP. Hồ Chí Minh đứng thứ ba trong xếp hạng chỉ số Chính quyền số, với giá trị là 0,6197.
+
+
+  utter_xephangcdsdti2021/chi_so_chinh_quyen_so_cua_tinh_bac_ninh_la_bao_nhieu:
+  - text: |
+      Chỉ số Chính quyền số của tỉnh Bắc Ninh là 0,5789, phản ánh nỗ lực trong cải cách hành chính và ứng dụng công nghệ thông tin.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_nam_trong_xep_hang_chi_so_chinh_quyen_so:
+  - text: |
+      Tỉnh Ninh Bình đứng thứ năm trong xếp hạng chỉ số Chính quyền số, cho thấy sự cải thiện trong lĩnh vực này.
+
+
+  utter_xephangcdsdti2021/chi_so_chinh_quyen_so_cua_tinh_quang_ninh_la_bao_nhieu:
+  - text: |
+      Chỉ số Chính quyền số của tỉnh Quảng Ninh là 0,5700, cho thấy tỉnh này cũng đang có sự tiến bộ nhất định.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_bay_trong_xep_hang_chi_so_chinh_quyen_so:
+  - text: |
+      Tỉnh Lạng Sơn đứng thứ bảy trong xếp hạng chỉ số Chính quyền số, phản ánh tình hình phát triển công nghệ thông tin tại địa phương.
+
+
+  utter_xephangcdsdti2021/chi_so_chinh_quyen_so_cua_tinh_binh_phuoc_la_bao_nhieu:
+  - text: |
+      Chỉ số Chính quyền số của tỉnh Bình Phước là 0,5500, cho thấy tỉnh này đang có sự cố gắng trong cải cách hành chính.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_chin_trong_xep_hang_chi_so_chinh_quyen_so:
+  - text: |
+      Tỉnh Thái Nguyên đứng thứ chín trong xếp hạng chỉ số Chính quyền số, cho thấy nỗ lực của tỉnh trong việc ứng dụng công nghệ.
+
+
+  utter_xephangcdsdti2021/chi_so_chinh_quyen_so_cua_tinh_vinh_phuc_la_bao_nhieu:
+  - text: |
+      Chỉ số Chính quyền số của tỉnh Vĩnh Phúc là 0,5400, phản ánh tình hình cải cách hành chính tại tỉnh.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_muoi_mot_trong_xep_hang_chi_so_chinh_quyen_so:
+  - text: |
+      Tỉnh Bắc Giang đứng thứ mười một trong xếp hạng chỉ số Chính quyền số, cho thấy sự nỗ lực trong cải cách hành chính.
+
+
+  utter_xephangcdsdti2021/chi_so_chinh_quyen_so_cua_tinh_an_giang_la_bao_nhieu:
+  - text: |
+      Chỉ số Chính quyền số của tỉnh An Giang là 0,4500, phản ánh những cố gắng trong việc nâng cao chất lượng dịch vụ hành chính.
+
+
+  utter_xephangcdsdti2021/chi_so_chinh_quyen_so_cua_tinh_hau_giang_la_bao_nhieu:
+  - text: |
+      Chỉ số Chính quyền số của tỉnh Hậu Giang là 0,4300, cho thấy nỗ lực cải cách hành chính tại tỉnh này.
+
+
+  utter_xephangcdsdti2021/chi_so_chinh_quyen_so_cua_tinh_tien_giang_la_bao_nhieu:
+  - text: |
+      Chỉ số Chính quyền số của tỉnh Tiền Giang là 0,4200, cho thấy tỉnh đang có những cải thiện trong lĩnh vực công nghệ thông tin.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_muoi_chin_trong_xep_hang_chi_so_chinh_quyen_so:
+  - text: |
+      Tỉnh Vĩnh Long đứng thứ mười chín trong xếp hạng chỉ số Chính quyền số, phản ánh sự nỗ lực trong cải cách hành chính.
+
+
+  utter_xephangcdsdti2021/chi_so_chinh_quyen_so_cua_tinh_long_an_la_bao_nhieu:
+  - text: |
+      Chỉ số Chính quyền số của tỉnh Long An là 0,4100, cho thấy tỉnh cũng đang có những cải thiện trong ứng dụng công nghệ thông tin.
+
+
+  utter_xephangcdsdti2021/chi_so_chinh_quyen_so_cua_tinh_tra_vinh_la_bao_nhieu:
+  - text: |
+      Chỉ số Chính quyền số của tỉnh Trà Vinh là 0,4000, phản ánh tình hình phát triển công nghệ thông tin trong chính quyền.
+
+
+  utter_xephangcdsdti2021/tinh_nao_ung_thu_hai_muoi_lam_trong_xep_hang_chi_so_chinh_quyen_so:
+  - text: |
+      Tỉnh Quảng Trị đứng thứ hai mươi lăm trong xếp hạng chỉ số Chính quyền số, phản ánh tình hình phát triển công nghệ thông tin tại tỉnh.
+
+
+  utter_xephangcdsdti2021/chi_so_chinh_quyen_so_cua_tinh_tuyen_quang_la_bao_nhieu:
+  - text: |
+      Chỉ số Chính quyền số của tỉnh Tuyên Quang là 0,3269, cho thấy nỗ lực cải cách hành chính tại địa phương.
+
+
+  utter_xephangcdsdti2021/chi_so_chinh_quyen_so_cua_tinh_ninh_thuan_la_bao_nhieu:
+  - text: |
+      Chỉ số Chính quyền số của tỉnh Ninh Thuận là 0,3512, phản ánh tình hình phát triển công nghệ thông tin trong chính quyền tại tỉnh.
+
+
+  utter_xephangcdsdti2021/co_bao_nhieu_bo_cung_cap_dich_vu_cong_uoc_anh_gia_trong_dti_2021:
+  - text: |
+      Có 17 bộ, ngành được đánh giá trong DTI 2021, phản ánh sự nỗ lực trong việc cải cách hành chính và cung cấp dịch vụ công.
+
+
+  utter_xephangcdsdti2021/bo_nao_ung_au_ve_dti_2021:
+  - text: |
+      Bộ Tài chính đứng đầu về DTI 2021, cho thấy sự hiệu quả trong cung cấp dịch vụ công và ứng dụng công nghệ thông tin.
+
+
+  utter_xephangcdsdti2021/gia_tri_trung_binh_dti_2021_cua_cac_bo_cung_cap_dich_vu_cong_la_bao_nhieu:
+  - text: |
+      Giá trị trung bình DTI 2021 của các bộ cung cấp dịch vụ công là 0,4595, cho thấy sự cải thiện trong hiệu quả hoạt động.
+
+
+  utter_xephangcdsdti2021/tang_truong_dti_2021_so_voi_nam_2020_la_bao_nhieu_phan_tram:
+  - text: |
+      Tăng trưởng DTI 2021 so với năm 2020 là 15,4%, phản ánh sự tiến bộ trong lĩnh vực cung cấp dịch vụ công.
+
+
+  utter_xephangcdsdti2021/bo_nao_ung_thu_hai_trong_xep_hang_dti_2021:
+  - text: |
+      Bộ Kế hoạch và Đầu tư đứng thứ hai trong xếp hạng DTI 2021, cho thấy sự nỗ lực trong cải cách và cải tiến dịch vụ.
+
+
+  utter_xephangcdsdti2021/bo_nao_ung_thu_ba_trong_xep_hang_dti_2021:
+  - text: |
+      Bảo hiểm Xã hội Việt Nam đứng thứ ba trong xếp hạng DTI 2021, cho thấy sự phát triển trong lĩnh vực bảo hiểm xã hội.
+
+
+  utter_xephangcdsdti2021/bo_nao_ung_thu_tu_trong_xep_hang_dti_2021:
+  - text: |
+      Ngân hàng Nhà nước Việt Nam đứng thứ tư trong xếp hạng DTI 2021, phản ánh hiệu quả trong quản lý tài chính và ngân hàng.
+
+
+  utter_xephangcdsdti2021/bo_nao_ung_thu_nam_trong_xep_hang_dti_2021:
+  - text: |
+      Bộ Công Thương đứng thứ năm trong xếp hạng DTI 2021, cho thấy sự phát triển trong lĩnh vực công thương.
+
+
+  utter_xephangcdsdti2021/co_bao_nhieu_bo_at_gia_tri_dti_2021_tren_muc_trung_binh:
+  - text: |
+      Có 7/17 bộ, ngành (chiếm 41,18%) đạt giá trị DTI 2021 trên mức trung bình, cho thấy sự nỗ lực cải cách trong cung cấp dịch vụ.
+
+
+  utter_xephangcdsdti2021/co_bao_nhieu_bo_at_gia_tri_dti_2021_lon_hon_muc_05:
+  - text: |
+      Có 6/17 bộ, ngành (chiếm 35,29%) đạt giá trị DTI 2021 lớn hơn mức 0,5, phản ánh sự phát triển vượt bậc trong cung cấp dịch vụ công.
+
+
+  utter_xephangcdsdti2021/bo_nao_khong_thuc_hien_anh_gia_dti_2021_do_ac_thu_chuc_nang:
+  - text: |
+      Bộ Công an, Bộ Quốc phòng, Văn phòng Chính phủ và Bộ Ngoại giao không thực hiện đánh giá DTI 2021 do đặc thù chức năng của các bộ này.
+
+
+  utter_xephangcdsdti2021/bo_nao_la_co_quan_ngang_bo_khong_cung_cap_dich_vu_cong:
+  - text: |
+      Thanh tra Chính phủ và Ủy ban Dân tộc là hai cơ quan ngang bộ không cung cấp dịch vụ công.
+
+
+  utter_xephangcdsdti2021/bo_nao_ung_thu_sau_trong_xep_hang_dti_2021:
+  - text: |
+      Bộ Y tế đứng thứ sáu trong xếp hạng DTI 2021, phản ánh sự quan tâm đến sức khỏe cộng đồng trong cung cấp dịch vụ.
+
+
+  utter_xephangcdsdti2021/bo_nao_ung_thu_bay_trong_xep_hang_dti_2021:
+  - text: |
+      Bộ Thông tin và Truyền thông đứng thứ bảy trong xếp hạng DTI 2021, cho thấy sự phát triển trong lĩnh vực công nghệ thông tin.
+
+
+  utter_xephangcdsdti2021/bo_nao_ung_thu_tam_trong_xep_hang_dti_2021:
+  - text: |
+      Bộ Giáo dục và Đào tạo đứng thứ tám trong xếp hạng DTI 2021, phản ánh nỗ lực cải cách trong lĩnh vực giáo dục.
+
+
+  utter_xephangcdsdti2021/dti_2021_la_gi_va_tai_sao_no_quan_trong:
+  - text: |
+      DTI 2021 (Chỉ số chuyển đổi số) là một chỉ số đánh giá mức độ chuyển đổi số của các bộ, ngành trong việc cung cấp dịch vụ công. Nó quan trọng vì giúp xác định hiệu quả của các dịch vụ công trực tuyến, từ đó cải thiện chất lượng phục vụ người dân và doanh nghiệp.
+
+
+  utter_xephangcdsdti2021/gia_tri_dti_2021_cua_cac_bo_cung_cap_dich_vu_cong_co_y_nghia_gi:
+  - text: |
+      Giá trị DTI 2021 cho thấy khả năng và mức độ sẵn sàng của các bộ trong việc áp dụng công nghệ số để cung cấp dịch vụ công. Giá trị cao hơn cho thấy sự tiến bộ trong việc hiện đại hóa và cải cách hành chính.
+
+
+  utter_xephangcdsdti2021/so_sanh_gia_tri_dti_2021_voi_nam_2020_co_su_thay_oi_nao_khong:
+  - text: |
+      Giá trị DTI 2021 của các bộ cung cấp dịch vụ công là 0,4595, tăng 15,4% so với năm 2020 (0,3982), cho thấy sự cải thiện trong việc áp dụng công nghệ số.
+
+
+  utter_xephangcdsdti2021/co_bao_nhieu_bo_khong_cung_cap_dich_vu_cong_va_gia_tri_dti_cua_ho_la_gi:
+  - text: |
+      Có 17 bộ không cung cấp dịch vụ công, với giá trị DTI 2021 là 0,2151, cho thấy mức độ chuyển đổi số thấp hơn so với các bộ cung cấp dịch vụ công.
+
+
+  utter_xephangcdsdti2021/tai_sao_mot_so_bo_khong_tham_gia_vao_viec_cung_cap_dich_vu_cong:
+  - text: |
+      Một số bộ không tham gia do đặc thù chức năng và nhiệm vụ của họ, như Bộ Công an và Bộ Quốc phòng, mà chủ yếu tập trung vào an ninh và quốc phòng.
+
+
+  utter_xephangcdsdti2021/cac_bo_nao_co_gia_tri_dti_cao_nhat_trong_so_cac_bo_cung_cap_dich_vu_cong:
+  - text: |
+      Top 5 bộ có giá trị DTI cao nhất bao gồm Bộ Tài chính, Bộ Kế hoạch và Đầu tư, Bảo hiểm Xã hội Việt Nam, Ngân hàng Nhà nước Việt Nam, và Bộ Công Thương.
+
+
+  utter_xephangcdsdti2021/co_bao_nhieu_bo_at_gia_tri_dti_tren_muc_trung_binh:
+  - text: |
+      7/17 bộ, ngành (chiếm 41,18%) có giá trị DTI 2021 trên mức trung bình của cả khối bộ cung cấp dịch vụ công.
+
+
+  utter_xephangcdsdti2021/cac_bo_nao_co_gia_tri_dti_duoi_muc_trung_binh:
+  - text: |
+      Các bộ có giá trị DTI dưới mức trung bình bao gồm những bộ có chỉ số thấp hơn 0,4595, cho thấy họ cần cải thiện hơn nữa trong việc áp dụng công nghệ số.
+
+
+  utter_xephangcdsdti2021/co_nhung_yeu_to_nao_anh_huong_en_gia_tri_dti_cua_cac_bo:
+  - text: |
+      Các yếu tố ảnh hưởng đến giá trị DTI bao gồm hạ tầng công nghệ thông tin, khả năng cung cấp dịch vụ công trực tuyến, mức độ nhận thức và đào tạo nhân lực về công nghệ số.
+
+
+  utter_xephangcdsdti2021/bo_tai_chinh_a_thuc_hien_nhung_cai_cach_nao_e_at_uoc_vi_tri_so_mot_trong_dti_2021:
+  - text: |
+      Bộ Tài chính đã đầu tư vào hạ tầng công nghệ thông tin, cải cách quy trình hành chính, và phát triển các dịch vụ công trực tuyến để nâng cao hiệu quả phục vụ.
+
+
+  utter_xephangcdsdti2021/co_nhung_thach_thuc_nao_ma_cac_bo_gap_phai_trong_viec_nang_cao_dti:
+  - text: |
+      Các thách thức bao gồm thiếu hụt nguồn lực tài chính, sự chậm trễ trong việc áp dụng công nghệ mới, và sự kháng cự từ phía nhân viên trong việc thay đổi thói quen làm việc.
+
+
+  utter_xephangcdsdti2021/dti_2021_co_anh_huong_en_chinh_sach_cong_khong:
+  - text: |
+      Có, DTI 2021 cung cấp thông tin quan trọng cho các nhà hoạch định chính sách để điều chỉnh và cải cách các quy định liên quan đến dịch vụ công và chuyển đổi số.
+
+
+  utter_xephangcdsdti2021/cac_bo_co_ke_hoach_gi_e_cai_thien_dti_trong_tuong_lai:
+  - text: |
+      Các bộ đang lên kế hoạch đầu tư vào công nghệ mới, đào tạo nhân lực, và cải cách quy trình để nâng cao hiệu quả và chất lượng dịch vụ công.
+
+
+  utter_xephangcdsdti2021/co_nhung_bo_nao_a_co_su_cai_thien_ang_ke_trong_dti_2021_so_voi_nam_truoc:
+  - text: |
+      Bộ Kế hoạch và Đầu tư và Bảo hiểm Xã hội Việt Nam là những bộ có sự cải thiện đáng kể trong DTI 2021 so với năm 2020.
+
+
+  utter_xephangcdsdti2021/dti_2021_co_the_uoc_su_dung_e_so_sanh_giua_cac_tinh_thanh_khong:
+  - text: |
+      Có, DTI 2021 cũng có thể được áp dụng để so sánh giữa các tỉnh thành, giúp đánh giá mức độ chuyển đổi số và hiệu quả cung cấp dịch vụ công ở cấp địa phương.
+
+
+  utter_xephangcdsdti2021/cac_bo_nao_uoc_xep_vao_nhom_khong_cung_cap_dich_vu_cong_trong_dti_2021:
+  - text: |
+      Nhóm này bao gồm các bộ như: Thanh tra Chính phủ, Ủy ban Dân tộc, Ban Quản lý Lăng Chủ tịch Hồ Chí Minh, Ủy ban Quản lý vốn nhà nước tại doanh nghiệp, Viện Hàn lâm Khoa học Xã hội Việt Nam, và một số cơ quan khác không thực hiện cung cấp dịch vụ công.
+
+
+  utter_xephangcdsdti2021/tai_sao_mot_so_bo_khong_uoc_anh_gia_trong_dti_2021:
+  - text: |
+      Một số bộ như Bộ Công an, Bộ Quốc phòng, Văn phòng Chính phủ, và Bộ Ngoại giao không được đánh giá do đặc thù chức năng và nhiệm vụ của họ, khiến một số chỉ số đánh giá không phù hợp.
+
+
+  utter_xephangcdsdti2021/dti_cua_cac_bo_khong_cung_cap_dich_vu_cong_co_y_nghia_gi:
+  - text: |
+      DTI của các bộ không cung cấp dịch vụ công giúp đánh giá mức độ chuyển đổi số và hiệu quả hoạt động của các cơ quan này, từ đó cải thiện quản lý và điều hành.
+
+
+  utter_xephangcdsdti2021/co_bao_nhieu_bo_khong_cung_cap_dich_vu_cong_uoc_anh_gia_trong_dti_2021:
+  - text: |
+      Trong DTI 2021, có 9 bộ không cung cấp dịch vụ công được đánh giá.
+
+
+  utter_xephangcdsdti2021/bo_nao_co_dti_cao_nhat_trong_nhom_khong_cung_cap_dich_vu_cong:
+  - text: |
+      Ban Quản lý Lăng Chủ tịch Hồ Chí Minh có DTI cao nhất trong nhóm này.
+
+
+  utter_xephangcdsdti2021/dti_trung_binh_cua_cac_bo_khong_cung_cap_dich_vu_cong_la_bao_nhieu:
+  - text: |
+      DTI trung bình của các bộ không cung cấp dịch vụ công là 0,2151.
+
+
+  utter_xephangcdsdti2021/cac_chi_so_nao_uoc_su_dung_e_anh_gia_dti_cua_cac_bo_khong_cung_cap_dich_vu_cong:
+  - text: |
+      Các chỉ số bao gồm mức độ ứng dụng công nghệ thông tin, hiệu quả quản lý, và khả năng cung cấp thông tin công khai.
+
+
+  utter_xephangcdsdti2021/co_su_khac_biet_nao_giua_dti_cua_cac_bo_cung_cap_dich_vu_cong_va_khong_cung_cap_dich_vu_cong_khong:
+  - text: |
+      Có, DTI của các bộ cung cấp dịch vụ công thường cao hơn do họ có nhiều hoạt động liên quan đến dịch vụ công hơn.
+
+
+  utter_xephangcdsdti2021/dti_co_the_giup_gi_cho_cac_bo_khong_cung_cap_dich_vu_cong:
+  - text: |
+      DTI giúp các bộ này nhận diện được điểm mạnh và điểm yếu trong hoạt động của mình, từ đó có kế hoạch cải thiện hiệu quả công việc.
+
+
+  utter_xephangcdsdti2021/cac_bo_khong_cung_cap_dich_vu_cong_co_the_cai_thien_dti_cua_minh_bang_cach_nao:
+  - text: |
+      Họ có thể cải thiện DTI bằng cách tăng cường ứng dụng công nghệ thông tin, nâng cao chất lượng dịch vụ nội bộ và cải thiện khả năng cung cấp thông tin cho công chúng.
+
+
+  utter_xephangcdsdti2021/dti_co_anh_huong_en_chinh_sach_cua_cac_bo_khong_cung_cap_dich_vu_cong_khong:
+  - text: |
+      Có, DTI có thể ảnh hưởng đến việc xây dựng và điều chỉnh chính sách nhằm nâng cao hiệu quả hoạt động của các bộ này.
+
+
+  utter_xephangcdsdti2021/co_nhung_thach_thuc_nao_trong_viec_anh_gia_dti_cua_cac_bo_khong_cung_cap_dich_vu_cong:
+  - text: |
+      Thách thức bao gồm việc xác định các chỉ số phù hợp và thu thập dữ liệu chính xác từ các bộ này.
+
+
+  utter_xephangcdsdti2021/dti_co_the_uoc_su_dung_e_so_sanh_giua_cac_bo_khong_cung_cap_dich_vu_cong_khong:
+  - text: |
+      Có, DTI cho phép so sánh hiệu quả hoạt động giữa các bộ không cung cấp dịch vụ công, từ đó rút ra bài học kinh nghiệm.
+
+
+  utter_xephangcdsdti2021/cac_bo_khong_cung_cap_dich_vu_cong_co_the_hoc_hoi_gi_tu_cac_bo_cung_cap_dich_vu_cong:
+  - text: |
+      Họ có thể học hỏi về cách thức ứng dụng công nghệ thông tin, cải tiến quy trình làm việc và nâng cao chất lượng dịch vụ.
+
+
+  utter_xephangcdsdti2021/dti_co_the_thay_oi_theo_thoi_gian_khong:
+  - text: |
+      Có, DTI có thể thay đổi theo thời gian do sự cải tiến trong công nghệ, quy trình làm việc và chính sách của các bộ.
+
+
+  utter_xephangcdsdti2021/vai_tro_va_chuc_nang_cua_6_bo_khong_cung_cap_dich_vu_cong:
+  - text: |
+      Các Bộ này có chức năng cụ thể trong quá trình chuyển đổi số như sau: Bộ Khoa học và Công nghệ có vai trò nghiên cứu, ứng dụng công nghệ mới vào chuyển đổi số; Bộ Thông tin và Truyền thông có vai trò xây dựng hạ tầng kỹ thuật, ban hành chính sách về chuyển đổi số; Các Bộ khác tham gia xây dựng, hoàn thiện thể chế, chính sách cho chuyển đổi số trong lĩnh vực quản lý của mình.
+
+
+  utter_xephangcdsdti2021/muc_tieu_va_ket_qua_chuyen_oi_so_cua_tung_bo:
+  - text: |
+      Điểm số DTi 2020 trung bình của các Bộ không cung cấp dịch vụ công là 0.3242.
+
+
+  utter_xephangcdsdti2021/so_sanh_dti_2020_giua_cac_bo:
+  - text: |
+      Bộ Thông tin và Truyền thông đạt điểm cao nhất (0.2995), trong khi Ban Quản lý Lăng Chủ tịch Hồ Chí Minh đạt điểm thấp nhất (0.0992). Điểm số này cho thấy sự chênh lệch về mức độ chuyển đổi số giữa các Bộ không cung cấp dịch vụ công.
+
+
+  utter_xephangcdsdti2021/phan_tich_iem_manh_iem_yeu_cua_tung_bo:
+  - text: |
+      Thiếu thông tin chi tiết nên không thể phân tích điểm mạnh, điểm yếu cụ thể của từng Bộ.
+
+
+  utter_xephangcdsdti2021/kho_khan_vuong_mac_va_giai_phap:
+  - text: |
+      Không có thông tin cụ thể về khó khăn, vướng mắc của các Bộ trong quá trình chuyển đổi số.
+
+
+  utter_xephangcdsdti2021/so_sanh_dti_2020_giua_hai_nhom_bo:
+  - text: |
+      Điểm số DTI trung bình của các Bộ cung cấp dịch vụ công (0.4944) cao hơn so với các Bộ không cung cấp dịch vụ công (0.3242). Nguyên nhân có thể do các Bộ cung cấp dịch vụ công có nhu cầu chuyển đổi số cao hơn để nâng cao chất lượng dịch vụ, đáp ứng nhu cầu của người dân và doanh nghiệp.
+
+
+  utter_xephangcdsdti2021/nang_cao_nhan_thuc_ve_chuyen_oi_so:
+  - text: |
+      Cần đẩy mạnh tuyên truyền, phổ biến kiến thức về chuyển đổi số cho cán bộ, công chức trong các Bộ không cung cấp dịch vụ công; tổ chức các khóa đào tạo, tập huấn về chuyển đổi số và ứng dụng công nghệ thông tin.
+
+
+  utter_xephangcdsdti2021/vai_tro_cua_cong_nghe_thong_tin:
+  - text: |
+      Công nghệ thông tin là nền tảng và công cụ quan trọng cho chuyển đổi số. Cần đầu tư phát triển hạ tầng công nghệ thông tin và ứng dụng các công nghệ mới như trí tuệ nhân tạo, dữ liệu lớn vào hoạt động của các Bộ.
+
+
+  utter_xephangcdsdti2021/chinh_sach_ho_tro_tu_chinh_phu:
+  - text: |
+      Cần có chính sách ưu tiên, hỗ trợ về tài chính, công nghệ và nhân lực cho các Bộ không cung cấp dịch vụ công thực hiện chuyển đổi số. Đơn giản hóa thủ tục hành chính, tạo môi trường thuận lợi cho ứng dụng công nghệ thông tin.
+
+
+  utter_xephangcdsdti2021/du_bao_dti_2021_va_xu_huong_phat_trien:
+  - text: |
+      Với sự quan tâm và đầu tư ngày càng tăng cho chuyển đổi số, DTi của các Bộ này được kỳ vọng sẽ tiếp tục tăng trong những năm tiếp theo.
+
+
+  utter_xephangcdsdti2021/phan_tich_ky_hon_ve_chi_so_dti_03_tru_cot_cua_bo_truyen_thong_bo_co_iem_dti_cao_nhat:
+  - text: |
+      Đâu là trụ cột có điểm số cao nhất, thấp nhất?
+
+
+  utter_xephangcdsdti2021/ieu_nay_cho_thay_bo_can_tap_trung_vao_nhung_mang_nao_e_nang_cao_dti:
+  - text: |
+      Chưa có thông tin chi tiết về điểm số của 03 trụ cột (Chính quyền số, Kinh tế số, Xã hội số) của Bộ Truyền thông nên không thể phân tích điểm mạnh, điểm yếu của từng trụ cột hay đưa ra khuyến nghị cụ thể.
+
+
+  utter_xephangcdsdti2021/phan_tich_03_chi_so_tru_cot_cua_ban_quan_ly_lang_chu_tich_ho_chi_minh_bo_co_iem_dti_thap_nhat:
+  - text: |
+      Tương tự như Bộ Truyền thông, chưa có thông tin chi tiết về điểm số 03 trụ cột của Ban Quản lý Lăng Chủ tịch Hồ Chí Minh.
+
+
+  utter_xephangcdsdti2021/chi_so_chuan_oi_nhan_thuc_va_du_lieu_so_cua_cac_bo_khong_cung_cap_dich_vu_cong_thuong_o_muc_thap_tai_sao_lai_co_xu_huong_nay_can_co_nhung_giai_phap_gi_e_nang_cao_nhan_thuc_ve_chuyen_oi_so_va_thuc_ay_viec_ung_dung_du_lieu_so_trong_cac_bo_nay:
+  - text: |
+      Có thể lý giải qua các nguyên nhân: nhận thức về chuyển đổi số của cán bộ trong các Bộ này chưa đủ mạnh, dẫn đến hiệu quả triển khai thấp; hạn chế trong hạ tầng kỹ thuật và nguồn nhân lực chất lượng; và thiếu chính sách khuyến khích cụ thể cho việc ứng dụng dữ liệu số.
+
+
+  utter_xephangcdsdti2021/so_sanh_iem_so_dti_2020_cua_cac_bo_khong_cung_cap_dich_vu_cong_voi_muc_tieu_dti_quoc_gia_en_nam_2025_ket_qua_so_sanh_cho_thay_ieu_gi:
+  - text: |
+      DTi 2020 trung bình của các bộ không cung cấp dịch vụ công là 0.3242, thấp hơn so với mục tiêu DTi quốc gia đến năm 2025 là nâng cao năng lực cạnh tranh lên 20%. Điều này cho thấy cần đẩy mạnh các hoạt động chuyển đổi số trong các Bộ không cung cấp dịch vụ công để đạt mục tiêu quốc gia.
+
+
+  utter_xephangcdsdti2021/muc_o_ung_dung_cong_nghe_thong_tin_cntt_trong_hoat_ong_cua_cac_bo_khong_cung_cap_dich_vu_cong_nhu_the_nao_co_nhung_cong_nghe_nao_uoc_ung_dung_pho_bien:
+  - text: |
+      Chưa có thông tin chi tiết về mức độ ứng dụng CNTT trong các Bộ không cung cấp dịch vụ công.
+
+
+  utter_xephangcdsdti2021/top_3_tinh_thanh_pho_co_dti_cao_nhat_va_thap_nhat_la_gi_so_sanh_dti_cua_3_tinh_thanh_pho_dan_au_voi_dti_trung_binh_cua_ca_nuoc:
+  - text: |
+      Cao nhất: Đà Nẵng (0.4874), Thừa Thiên - Huế (0.4874), Quảng Ninh (0.4544); Thấp nhất: Phú Yên (0.2108), Ninh Thuận (0.2051), Kon Tum (0.1824). So sánh với DTi trung bình: DTi trung bình của cả nước không được đề cập trong nguồn. Tuy nhiên, dựa vào biểu đồ Hình 9, ta thấy Đà Nẵng và Thừa Thiên - Huế thuộc nhóm 1 (trên 0.40), là nhóm có DTi cao nhất. Ngược lại, Phú Yên, Ninh Thuận và Kon Tum thuộc nhóm 4 (dưới 0.25), là nhóm có DTi thấp nhất.
+
+
+  utter_xephangcdsdti2021/phan_tich_3_tru_cot_chinh_quyen_so_kinh_te_so_va_xa_hoi_so_cua_tp_a_nang_tinh_dan_au_ve_dti_tru_cot_nao_co_iem_so_cao_nhat:
+  - text: |
+      Chính quyền số: 0.5346, Kinh tế số: 0.4155, Xã hội số: 0.4964. Nhận xét: TP. Đà Nẵng đạt điểm số cao nhất ở trụ cột Chính quyền số, cho thấy chính quyền thành phố đã ứng dụng CNTT hiệu quả trong hoạt động quản lý, điều hành và cung cấp dịch vụ công trực tuyến.
+
+
+  utter_xephangcdsdti2021/theo_ket_qua_dti_khoang_cach_giua_nhom_tinh_co_dti_cao_nhat_va_nhom_tinh_co_dti_thap_nhat_la_bao_nhieu_ieu_nay_cho_thay_muc_o_chenh_lech_ve_chuyen_oi_so_giua_cac_ia_phuong_nhu_the_nao:
+  - text: |
+      Đà Nẵng (cao nhất): 0.4874, Kon Tum (thấp nhất): 0.1824, Khoảng cách: 0.305. Nhận xét: Khoảng cách DTi giữa 2 nhóm tỉnh là khá lớn, cho thấy mức độ chênh lệch về chuyển đổi số giữa các địa phương là đáng kể.
+
+
+  utter_xephangcdsdti2021/ty_le_tinh_thanh_pho_at_tren_dti_trung_binh_la_bao_nhieu_liet_ke_05_tinh_co_dti_thap_hon_nhieu_so_voi_muc_trung_binh_va_phan_tich_nguyen_nhan_dan_en_ket_qua_nay:
+  - text: |
+      Nguồn cung cấp không đề cập đến tỷ lệ tỉnh, thành phố đạt DTi trên trung bình. 5 tỉnh có DTi thấp hơn nhiều so với các tỉnh, thành phố khác: Phú Yên, Ninh Thuận, Kon Tum, Quảng Bình và Bạc Kan. Nguyên nhân: Cần phân tích dựa vào thông tin chi tiết của từng tỉnh. Nguồn cung cấp chỉ ra Phú Yên có kết quả DTi thấp là do hạn chế về hạ tầng viễn thông và CNTT.
+
+
+  utter_xephangcdsdti2021/so_sanh_dti_2020_cua_3_nhom_tinh_thanh_pho_theo_vung_mien_bac_trung_nam_vung_nao_co_dti_trung_binh_cao_nhat_thap_nhat:
+  - text: |
+      Nguồn cung cấp không cung cấp thông tin về vùng miền của các tỉnh, thành phố nên không thể so sánh theo tiêu chí này.
+
+
+  utter_xephangcdsdti2021/dua_vao_bang_10_va_bang_13_so_sanh_thu_hang_cua_03_tru_cot_chinh_quyen_so_kinh_te_so_xa_hoi_so_cua_cac_tinh_thanh_pho_co_tinh_thanh_pho_nao_co_su_chenh_lech_lon_giua_thu_hang_cua_cac_tru_cot_hay_khong:
+  - text: |
+      Dựa vào Bảng 10 và Bảng 13, ta thấy có một số tỉnh có sự chênh lệch đáng kể giữa thứ hạng của các trụ cột: Bắc Ninh: Xếp hạng 8 về Chính quyền số nhưng hạng 3 về Kinh tế số; Hà Nội: Xếp hạng 54 về Kinh tế số nhưng hạng 13 về Xã hội số; Quảng Ninh: Xếp hạng 4 về Chính quyền số nhưng hạng 15 về Xã hội số.
+
+
+  utter_xephangcdsdti2021/phan_tich_10_chi_so_chi_tiet_co_iem_so_cao_nhat_va_thap_nhat_cua_tru_cot_chinh_quyen_so_cap_tinh_au_la_nhung_iem_manh_va_iem_yeu_cua_chinh_quyen_so_cap_tinh:
+  - text: |
+      Nguồn cung cấp không cung cấp điểm số chi tiết của từng chỉ số thành phần của trụ cột Chính quyền số. Do đó, không thể phân tích theo yêu cầu.
+
+
+  utter_xephangcdsdti2021/tuong_tu_phan_tich_10_chi_so_chi_tiet_co_iem_so_cao_nhat_va_thap_nhat_cua_tru_cot_kinh_te_so_cap_tinh:
+  - text: |
+      Tương tự như trụ cột Chính quyền số, nguồn cung cấp không cung cấp điểm số chi tiết của từng chỉ số thành phần thuộc Kinh tế số.
+
+
+  utter_xephangcdsdti2021/tp_ho_chi_minh_la_trung_tam_kinh_te_lon_nhat_ca_nuoc_nhung_dti_2020_cua_tp_ho_chi_minh_chi_xep_hang_thu_10_phan_tich_nguyen_nhan_va_bai_hoc_kinh_nghiem_tu_ket_qua_nay:
+  - text: |
+      TP. Hồ Chí Minh xếp hạng 10 về DTi, thấp hơn so với kỳ vọng đối với một trung tâm kinh tế lớn. Nguyên nhân và bài học kinh nghiệm: Cần phân tích thêm thông tin từ các nguồn khác để có câu trả lời cho vấn đề này.
+
+
+  utter_xephangcdsdti2021/e_xuat_cac_giai_phap_kien_nghi_cu_the_e_nang_cao_dti_2021_va_nhung_nam_tiep_theo_cua_cac_tinh_thanh_pho_ac_biet_la_nhom_co_dti_thap:
+  - text: |
+      Đầu tư phát triển hạ tầng viễn thông và CNTT, đặc biệt là ở các tỉnh có DTi thấp; Nâng cao nhận thức về chuyển đổi số cho cán bộ, công chức, người dân và doanh nghiệp; Đẩy mạnh ứng dụng CNTT trong hoạt động của cơ quan nhà nước và cung cấp dịch vụ công trực tuyến; Hoàn thiện khung pháp lý, chính sách, cơ chế hỗ trợ chuyển đổi số; Thúc đẩy hợp tác, chia sẻ kinh nghiệm chuyển đổi số giữa các địa phương.
+
+
+  utter_xephangcdsdti2021/hay_xac_inh_5_tinh_thanh_pho_co_dti_cao_nhat_va_5_tinh_thanh_pho_co_dti_thap_nhat:
+  - text: |
+      5 tỉnh, thành phố có DTi cao nhất: Đà Nẵng, Thừa Thiên Huế, Quảng Ninh, TP. Hồ Chí Minh, Bắc Ninh; 5 tỉnh, thành phố có DTi thấp nhất: Kon Tum, Ninh Thuận, Bạc Liêu, Sóc Trăng, Cao Bằng.
+
+
+  utter_xephangcdsdti2021/so_sanh_gia_tri_dti_trung_binh_cua_3_tru_cot_chinh_quyen_so_kinh_te_so_va_xa_hoi_so_cap_tinh_tru_cot_nao_co_dti_trung_binh_cao_nhattru_cot_nao_thap_nhat:
+  - text: |
+      Chính quyền số: 0.3611, Kinh tế số: 0.2568, Xã hội số: 0.2898. Như vậy, trụ cột Chính quyền số có DTi trung bình cao nhất, tiếp theo là Xã hội số và thấp nhất là Kinh tế số.
+
+
+  utter_xephangcdsdti2021/ke_ten_03_tinh_thanh_pho_co_iem_so_xa_hoi_so_cao_nhat_phan_tich_nhung_yeu_to_nao_a_giup_cac_tinh_thanh_pho_nay_at_uoc_ket_qua_tot:
+  - text: |
+      3 tỉnh, thành phố có điểm số Xã hội số cao nhất: Đà Nẵng (0.4964), Bắc Ninh (0.4655), Quảng Ninh (0.4392); Phân tích: Đà Nẵng chú trọng phát triển hạ tầng CNTT đồng bộ và hiện đại, ứng dụng CNTT vào các lĩnh vực y tế, giáo dục, dịch vụ công,... đem lại lợi ích thiết thực cho người dân; Bắc Ninh tập trung phát triển chính quyền điện tử, nâng cao chất lượng dịch vụ công trực tuyến, đẩy mạnh phổ cập internet và đào tạo kỹ năng số cho người dân; Quảng Ninh đã triển khai nhiều chương trình, dự án thúc đẩy ứng dụng CNTT trong các lĩnh vực kinh tế, văn hóa, xã hội, góp phần nâng cao chất lượng cuộc sống người dân.
+
+
+  utter_xephangcdsdti2021/tinh_thanh_pho_nao_co_su_chenh_lech_lon_nhat_giua_iem_so_chinh_quyen_so_va_kinh_te_so_hay_phan_tich_nguyen_nhan_co_the_dan_en_su_chenh_lech_nay:
+  - text: |
+      Bắc Ninh có sự chênh lệch lớn nhất: hạng 8 về Chính quyền số nhưng hạng 3 về Kinh tế số; Nguyên nhân có thể: Bắc Ninh là tỉnh có nhiều khu công nghiệp, thu hút đầu tư nước ngoài mạnh mẽ. Điều này dẫn đến việc phát triển kinh tế số (thương mại điện tử, công nghiệp 4.0,...) được chú trọng hơn so với chính quyền số.
+
+
+  utter_xephangcdsdti2021/trong_so_10_chi_so_chi_tiet_cua_tru_cot_chinh_quyen_so_chi_so_nao_co_iem_trung_binh_thap_nhat_ua_ra_nhan_inh_ve_ket_qua_nay:
+  - text: |
+      Bảng giá trị trụ cột Chính quyền số và các chỉ số chi tiết của các tỉnh, thành phố, chỉ số \"CN 04: Tỷ lệ hồ sơ công việc được xử lý trực tuyến trên môi trường mạng\" có điểm trung bình thấp nhất (0.0000); Nhận định: Kết quả này cho thấy việc ứng dụng CNTT trong xử lý hồ sơ công việc tại các địa phương còn nhiều hạn chế.
+
+
+  utter_xephangcdsdti2021/trong10_chi_so_chi_tiet_cua_tru_cot_kinh_te_so_chi_so_nao_co_iem_trung_binh_cao_nhat:
+  - text: |
+      Bảng giá trị trụ cột Kinh tế số và các chỉ số chi tiết của các tỉnh, thành phố, chỉ số \"CN 06: Tỷ lệ doanh nghiệp sử dụng hóa đơn điện tử\" có điểm trung bình cao nhất (0.9605); Nhận xét: Điều này phản ánh việc sử dụng hóa đơn điện tử đã được triển khai rộng rãi và đạt hiệu quả tích cực tại các tỉnh, thành phố.
+
+
+  utter_xephangcdsdti2021/nhan_xet_ve_xu_huong_hoi_tu_dti_giua_cac_tinh_thanh_pho_lieu_khoang_cach_ve_dti_giua_cac_ia_phuong_co_xu_huong_thu_hep_trong_tuong_lai:
+  - text: |
+      Khoảng cách về DTi giữa nhóm dẫn đầu và nhóm cuối bảng vẫn còn khá lớn; Tuy nhiên, một số tỉnh, thành phố có DTi thấp đã có sự tiến bộ đáng kể so với DTi trung bình; Kết luận: Xu hướng hội tụ DTi giữa các địa phương là có, nhưng diễn ra chậm. Khoảng cách về DTi có thể sẽ thu hẹp trong tương lai nhưng cần nhiều nỗ lực hơn nữa.
+
+
+  utter_xephangcdsdti2021/theo_nguon_tp_a_nang_a_thuc_hien_nhung_giai_phap_nao_e_at_uoc_vi_tri_dan_au_ve_dti:
+  - text: |
+      Đà Nẵng - Xếp hạng thứ nhất về DTi 2020 cấp tỉnh, Đà Nẵng đã thực hiện những giải pháp như: xây dựng Trung tâm điều hành thành phố thông minh, triển khai các nền tảng dịch vụ công trực tuyến, ứng dụng công nghệ thông minh trong quản lý đô thị, hỗ trợ doanh nghiệp ứng dụng CNTT.
+
+
+  utter_xephangcdsdti2021/a_nang_la_ia_phuong_duy_nhat_at_iem_tuyet_oi_10_o_mot_so_chi_so_thanh_phan_cua_tru_cot_chinh_quyen_so_hay_xac_inh_nhung_chi_so_nay_va_ly_giai_vi_sao_a_nang_at_iem_cao_nhu_vay:
+  - text: |
+      Đà Nẵng đạt 100% ở các chỉ số: dịch vụ công trực tuyến mức độ 4 và ứng dụng của bộ được kết nối, chia sẻ qua LGSP; Lý giải: Đà Nẵng đã ứng dụng CNTT hiệu quả trong cung cấp dịch vụ công trực tuyến mức độ 4, đồng thời kết nối, chia sẻ dữ liệu giữa các hệ thống thông qua LGSP, tạo thuận lợi cho người dân, doanh nghiệp.
+
+
+  utter_xephangcdsdti2021/phan_tich_nhung_iem_noi_bat_trong_ket_qua_dti_2020_cap_tinh:
+  - text: |
+      Sự phân hóa về DTi: Khoảng cách DTi giữa nhóm dẫn đầu và nhóm cuối bảng còn lớn, thể hiện sự chênh lệch về mức độ chuyển đổi số giữa các địa phương; Chính quyền số dẫn đầu: Trụ cột Chính quyền số có DTi trung bình cao nhất, cho thấy nỗ lực của các tỉnh, thành phố trong việc ứng dụng CNTT vào hoạt động quản lý, điều hành; Kinh tế số còn hạn chế: Trụ cột Kinh tế số có DTi trung bình thấp nhất, cho thấy việc ứng dụng CNTT trong sản xuất, kinh doanh và phát triển kinh tế số còn nhiều thách thức; Xu hướng hội tụ DTi: Mặc dù còn chậm, nhưng xu hướng hội tụ DTi giữa các địa phương là có, hứa hẹn sự phát triển đồng đều hơn về chuyển đổi số trong tương lai.
+
+
+  utter_xephangcdsdti2021/nhom_nao_co_so_luong_tinh_thanh_pho_nhieu_nhat_va_it_nhat_hay_phan_tich_nguyen_nhan_dan_en_su_phan_bo_nay:
+  - text: |
+      Nhóm 3 (0.25 - 0.325) có số lượng tỉnh, thành phố nhiều nhất với 30 tỉnh, thành phố, chiếm tỷ lệ 47%. Nhóm 1 (trên 0.40) có số lượng ít nhất với 03 tỉnh, thành phố, chiếm 5%. Điều này cho thấy đa số các tỉnh, thành phố vẫn đang trong giai đoạn chuyển đổi số ở mức trung bình, chưa có nhiều địa phương đạt được mức DTi cao.
+
+
+  utter_xephangcdsdti2021/xac_inh_3_tinh_thanh_pho_co_iem_so_kinh_te_so_cao_nhat_so_sanh_voi_ket_qua_cua_3_tinh_thanh_pho_co_iem_xa_hoi_so_cao_nhat_ban_co_nhan_xet_gi_ve_su_tuong_quan_giua_hai_tru_cot_nay:
+  - text: |
+      3 tỉnh, thành phố có điểm số Kinh tế số cao nhất là Đà Nẵng (0.4155), TP. Hồ Chí Minh (0.3353), Bình Dương (0.3151). So sánh với 3 tỉnh, thành phố có điểm Xã hội số cao nhất: Đà Nẵng (0.4964), Bắc Ninh (0.4655), Quảng Ninh (0.4392). Nhận xét cho thấy Đà Nẵng dẫn đầu cả 2 trụ cột, TP. Hồ Chí Minh có điểm Kinh tế số cao, trong khi Bắc Ninh và Quảng Ninh cần tập trung phát triển Kinh tế số hơn nữa.
+
+
+  utter_xephangcdsdti2021/trong_3_tru_cot_tru_cot_nao_co_khoang_cach_giua_gia_tri_cao_nhat_va_thap_nhat_lon_nhat_ieu_nay_cho_thay_ieu_gi_ve_su_phat_trien_chuyen_oi_so_o_cac_tinh_thanh_pho:
+  - text: |
+      Trụ cột Xã hội số có khoảng cách giữa giá trị cao nhất và thấp nhất lớn nhất, với giá trị cao nhất là 0.4964 (Đà Nẵng) và giá trị thấp nhất là 0.1824 (Ninh Thuận). Khoảng cách lớn này cho thấy sự chênh lệch lớn về mức độ ứng dụng CNTT trong các lĩnh vực xã hội giữa các địa phương.
+
+
+  utter_xephangcdsdti2021/tinh_thanh_pho_nao_co_thu_hang_dti_chung_thap_nhat_nhung_lai_co_iem_so_cao_o_mot_trong_3_tru_cot_hay_phan_tich_nguyen_nhan_dan_en_ket_qua_nay:
+  - text: |
+      Ninh Thuận có DTi chung thấp nhất (0.2108) nhưng lại có điểm số Xã hội số khá cao (0.3355). Nguyên nhân có thể do Ninh Thuận đã triển khai một số chương trình, dự án về an sinh xã hội, y tế, giáo dục sử dụng CNTT hiệu quả, góp phần nâng cao điểm số Xã hội số. Tuy nhiên, các trụ cột khác, đặc biệt là Kinh tế số, còn yếu kém nên DTi chung thấp.
+
+
+  utter_xephangcdsdti2021/phan_tich_iem_manh_va_iem_yeu_cua_tp_ho_chi_minh_trong_ket_qua_dti_2020:
+  - text: |
+      Điểm mạnh: Xếp thứ 4 về DTi chung, điểm Kinh tế số cao, xếp thứ 2, thu hút đầu tư nước ngoài mạnh mẽ. Điểm yếu: Điểm Xã hội số chưa tương xứng với điểm Kinh tế số, cần nâng cao hiệu quả ứng dụng CNTT trong y tế, giáo dục, an sinh xã hội và cải thiện môi trường đầu tư.
+
+
+  utter_xephangcdsdti2021/so_sanh_ket_qua_dti_2020_cua_cac_tinh_thanh_pho_vung_ong_bang_song_hong_voi_cac_tinh_thanh_pho_vung_tay_nguyen_vung_nao_co_ket_qua_dti_tot_hon:
+  - text: |
+      Vùng Đồng bằng sông Hồng có kết quả DTi tốt hơn vùng Tây Nguyên, với các tỉnh trong vùng Đồng bằng sông Hồng chủ yếu nằm trong nhóm DTi từ 0.25 trở lên, trong khi vùng Tây Nguyên chủ yếu nằm trong nhóm DTi dưới 0.325.
+
+
+  utter_xephangcdsdti2021/theo_nguon_tp_a_nang_co_ty_le_nguoi_dan_su_dung_dich_vu_cong_truc_tuyen_muc_o_4_at_100_hay_cho_biet_ty_le_nay_o_ha_noi_la_bao_nhieu:
+  - text: |
+      Không có thông tin về tỷ lệ người dân sử dụng dịch vụ công trực tuyến mức độ 4 ở Hà Nội trong các nguồn được cung cấp.
+
+
+  utter_xephangcdsdti2021/chi_so_nao_trong_tru_cot_xa_hoi_so_uoc_anh_gia_la_co_tac_ong_lon_nhat_en_oi_song_nguoi_dan:
+  - text: |
+      Không có thông tin nào trong các nguồn được cung cấp đề cập đến chỉ số trong trụ cột Xã hội số có tác động lớn nhất đến đời sống người dân. Việc đánh giá tác động của các chỉ số là một câu hỏi mở, cần phân tích dựa trên nhiều yếu tố và bối cảnh cụ thể.
+
+
+  utter_xephangcdsdti2021/nguon_e_cap_en_viec_xay_dung_chinh_phu_so_huong_toi_phuc_vu_xa_hoi_vay_theo_ban_chinh_phu_so_co_vai_tro_nhu_the_nao_trong_viec_nang_cao_chat_luong_cuoc_song_nguoi_dan:
+  - text: |
+      “Chính phủ số” có vai trò quan trọng trong việc nâng cao chất lượng cuộc sống, bao gồm cung cấp dịch vụ công trực tuyến hiệu quả, nâng cao minh bạch và trách nhiệm giải trình, thúc đẩy phát triển kinh tế - xã hội.
+
+
+  utter_xephangcdsdti2021/dua_tren_ket_qua_dti_2020_hay_du_oan_xu_huong_phat_trien_chuyen_oi_so_cua_cac_tinh_thanh_pho_trong_nhung_nam_tiep_theo:
+  - text: |
+      Dự đoán xu hướng phát triển chuyển đổi số sẽ tiếp tục tăng, khoảng cách DTi giữa các địa phương sẽ thu hẹp, ứng dụng CNTT sẽ ngày càng sâu rộng và \"Chính phủ số\" sẽ đóng vai trò chủ đạo trong chuyển đổi số quốc gia.
+
+
+  utter_xephangcdsdti2021/dti_2020_cua_cac_tinh_thanh_pho_truc_thuoc_trung_uong_uoc_anh_gia_dua_tren_nhung_tru_cot_nao:
+  - text: |
+      DTI 2020 được đánh giá dựa trên 3 trụ cột chính: Chính quyền số, Kinh tế số và Xã hội số.
+
+
+  utter_xephangcdsdti2021/ket_qua_dti_2020_cap_tinh_uoc_chia_thanh_bao_nhieu_nhom_va_noi_dung_cua_cac_nhom_nay_la_gi:
+  - text: |
+      Kết quả DTI 2020 được chia thành 4 nhóm: Nhóm 1 (DTI trên 0.40), Nhóm 2 (DTI từ 0.325 đến 0.40), Nhóm 3 (DTI từ 0.25 đến 0.325), Nhóm 4 (DTI dưới 0.25).
+
+
+  utter_xephangcdsdti2021/tinh_thanh_pho_nao_dan_au_ca_nuoc_ve_dti_2020_va_co_iem_so_la_bao_nhieu:
+  - text: |
+      TP. Đà Nẵng dẫn đầu cả nước về DTI 2020 với điểm số 0.4874.
+
+
+  utter_xephangcdsdti2021/tp_a_nang_at_iem_tuyet_oi_o_tru_cot_nao_va_co_ty_le_nguoi_dan_su_dung_dich_vu_cong_truc_tuyen_muc_o_4_la_bao_nhieu:
+  - text: |
+      TP. Đà Nẵng đạt điểm tuyệt đối ở cả 3 trụ cột, đặc biệt là Chính quyền số và Kinh tế số, với tỷ lệ người dân sử dụng dịch vụ công trực tuyến mức độ 4 đạt 100%.
+
+
+  utter_xephangcdsdti2021/tp_ho_chi_minh_xep_thu_may_ve_dti_2020_va_co_iem_so_la_bao_nhieu:
+  - text: |
+      TP. Hồ Chí Minh xếp thứ 4 về DTI 2020 với điểm số 0.4097.
+
+
+  utter_xephangcdsdti2021/iem_manh_va_iem_yeu_cua_tp_ho_chi_minh_trong_ket_qua_dti_2020_la_gi:
+  - text: |
+      Điểm mạnh của TP. Hồ Chí Minh là Kinh tế số, nhưng điểm yếu là Xã hội số cần được cải thiện.
+
+
+  utter_xephangcdsdti2021/muc_o_chuyen_oi_so_cua_cac_tinh_thanh_pho_thuoc_nhom_nao_ang_o_muc_trung_binh:
+  - text: |
+      Đa số các tỉnh, thành phố thuộc nhóm 3 (DTI từ 0.25 đến 0.325), cho thấy mức độ chuyển đổi số ở các địa phương này còn ở mức trung bình.
+
+
+  utter_xephangcdsdti2021/khoang_cach_giua_gia_tri_dti_cao_nhat_va_thap_nhat_cua_tru_cot_nao_la_lon_nhat:
+  - text: |
+      Khoảng cách giữa giá trị DTI cao nhất và thấp nhất của trụ cột Xã hội số là lớn nhất, thể hiện sự chênh lệch về mức độ ứng dụng CNTT trong các lĩnh vực xã hội giữa các địa phương.
+
+
+  utter_xephangcdsdti2021/tinh_nao_co_dti_chung_thap_nhat_nhung_lai_co_iem_xa_hoi_so_cao:
+  - text: |
+      Ninh Thuận có DTI chung thấp nhất (0.2108) nhưng điểm Xã hội số lại khá cao, cho thấy sự phát triển chưa đồng đều giữa các trụ cột.
+
+
+  utter_xephangcdsdti2021/xu_huong_phat_trien_chuyen_oi_so_cua_cac_ia_phuong_trong_nhung_nam_toi_se_ra_sao:
+  - text: |
+      DTI sẽ tiếp tục tăng, khoảng cách DTI giữa các địa phương sẽ được thu hẹp, và ứng dụng CNTT sẽ ngày càng sâu rộng.
+
+
+  utter_xephangcdsdti2021/dvctt_la_gi_va_vai_tro_cua_no_trong_viec_phat_trien_chinh_phu_ien_tu:
+  - text: |
+      DVCTT (Dịch vụ công trực tuyến) là giải pháp quan trọng để phát triển Chính phủ điện tử, góp phần phục vụ người dân và doanh nghiệp. DVCTT giúp người dân tiếp cận dịch vụ công mọi lúc mọi nơi, giảm thiểu thời gian, chi phí đi lại, đồng thời nâng cao hiệu quả hoạt động của cơ quan nhà nước.
+
+
+  utter_xephangcdsdti2021/nam_nao_chinh_phu_ban_hanh_nghi_inh_ve_viec_cung_cap_dvctt_va_tac_ong_cua_no_la_gi:
+  - text: |
+      Năm 2011, Chính phủ ban hành Nghị định về việc cung cấp DVCTT, thúc đẩy việc ứng dụng CNTT trong cung cấp dịch vụ công.
+
+
+  utter_xephangcdsdti2021/ty_le_dvctt_muc_o_4_at_khoang_bao_nhieu_phan_tram_vao_nam_2015:
+  - text: |
+      Vào năm 2015, tỷ lệ DVCTT mức độ 4 đạt khoảng 1%.
+
+
+  utter_xephangcdsdti2021/khung_phap_ly_ve_dvctt_a_uoc_hoan_thien_trong_khoang_thoi_gian_nao:
+  - text: |
+      Khung pháp lý về DVCTT được hoàn thiện từ năm 2016 đến 2018, trong đó có việc ban hành Nghị quyết về Chính phủ điện tử.
+
+
+  utter_xephangcdsdti2021/ty_le_dvctt_co_phat_sinh_ho_so_truc_tuyen_vao_nam_2019_la_bao_nhieu_phan_tram:
+  - text: |
+      Năm 2019, tỷ lệ DVCTT có phát sinh hồ sơ trực tuyến đạt 10,76%.
+
+
+  utter_xephangcdsdti2021/ty_le_dvctt_co_phat_sinh_ho_so_truc_tuyen_vao_nam_2020_at_bao_nhieu_phan_tram_va_co_su_gia_tang_nao_ang_chu_y:
+  - text: |
+      Năm 2020, tỷ lệ DVCTT có phát sinh hồ sơ trực tuyến đạt 30,86%, cùng với sự gia tăng mạnh mẽ trong tỷ lệ doanh nghiệp sử dụng dịch vụ khai thuế điện tử và tham gia dịch vụ nộp thuế điện tử.
+
+
+  utter_xephangcdsdti2021/ai_dich_covid-19_a_anh_huong_nhu_the_nao_en_vai_tro_cua_dvctt:
+  - text: |
+      Đại dịch Covid-19 làm nổi bật vai trò quan trọng của DVCTT, giúp các tỉnh, thành phố duy trì hoạt động và cung cấp dịch vụ công cho người dân trong bối cảnh giãn cách xã hội.
+
+
+  utter_xephangcdsdti2021/chinh_phu_at_muc_tieu_gi_cho_chuyen_oi_so_quoc_gia_va_dvctt_vao_nam_2030:
+  - text: |
+      Chính phủ đặt mục tiêu hoàn thành chuyển đổi số quốc gia và xây dựng Chính phủ điện tử vào năm 2030, trong đó DVCTT được xác định là giải pháp then chốt để nâng cao chất lượng phục vụ xã hội, hướng tới phục vụ người dân và doanh nghiệp.
+
+
+  utter_xephangcdsdti2021/dvctt_khong_chi_la_cung_cap_dich_vu_cong_tren_moi_truong_mang_ma_con_ong_vai_tro_gi_khac:
+  - text: |
+      DVCTT không chỉ là cung cấp dịch vụ công trên môi trường mạng mà còn là công cụ để thu thập dữ liệu, góp phần xây dựng Chính phủ dữ liệu.
+
+
+  utter_xephangcdsdti2021/du_lieu_tu_dvctt_co_tac_ong_nhu_the_nao_en_co_quan_nha_nuoc_trong_viec_phuc_vu_nguoi_dan_va_doanh_nghiep:
+  - text: |
+      Dữ liệu từ DVCTT giúp cơ quan nhà nước nắm bắt nhu cầu, đánh giá hiệu quả cung cấp dịch vụ, từ đó đưa ra chính sách phù hợp, nâng cao chất lượng phục vụ người dân và doanh nghiệp.
+
+
+  utter_xephangcdsdti2021/muc_tieu_chinh_cua_chinh_phu_trong_viec_cung_cap_dich_vu_cong_truc_tuyen_la_gi:
+  - text: |
+      Chính phủ đặt mục tiêu 100% dịch vụ công phải được cung cấp trực tuyến ở mức độ 4, coi nhà nước là nơi cung cấp dịch vụ cho người dân và doanh nghiệp.
+
+
+  utter_xephangcdsdti2021/dvctt_se_ong_vai_tro_gi_trong_cong_tac_quan_ly_va_hoach_inh_chinh_sach:
+  - text: |
+      DVCTT không chỉ dừng lại ở việc cung cấp dịch vụ trên môi trường mạng mà còn phải trở thành công cụ để thu thập dữ liệu, xây dựng Chính phủ dữ liệu, phục vụ công tác quản lý, điều hành và hoạch định chính sách hiệu quả hơn.
+
+
+  utter_xephangcdsdti2021/chuyen_oi_tu_cung_cap_dvctt_sang_dvctt_lay_nguoi_dan_doanh_nghiep_lam_trung_tam_co_nghia_la_gi:
+  - text: |
+      Điều này có nghĩa là chuyển từ mô hình cơ quan nhà nước cung cấp dịch vụ sang mô hình người dân, doanh nghiệp yêu cầu và sử dụng DVCTT.
+
+
+  utter_xephangcdsdti2021/co_nhung_mo_hinh_nao_se_uoc_chuyen_oi_trong_cung_cap_dvctt:
+  - text: |
+      Mô hình cung cấp DVCTT sẽ được chuyển đổi từ độc lập sang liên thông, kết nối giữa các cơ quan, đơn vị, và từ đại trà sang cá nhân hóa, đáp ứng nhu cầu riêng biệt của từng người dân, doanh nghiệp.
+
+
+  utter_xephangcdsdti2021/chinh_phu_so_uoc_xac_inh_nhu_the_nao_trong_giai_oan_toi:
+  - text: |
+      Chuyển đổi số quốc gia là nhiệm vụ trọng tâm của Chính phủ trong giai đoạn tới, với Chính phủ số là động lực thúc đẩy chuyển đổi số, tạo nền tảng cho phát triển kinh tế - xã hội.
+
+
+  utter_xephangcdsdti2021/dvctt_se_co_vai_tro_gi_trong_viec_xay_dung_chinh_phu_so:
+  - text: |
+      DVCTT là nền tảng quan trọng để xây dựng Chính phủ số, giúp kết nối Chính phủ với người dân và doanh nghiệp.
+
+
+  utter_xephangcdsdti2021/chuyen_oi_so_se_huong_toi_muc_tieu_gi_oi_voi_cuoc_song_nguoi_dan:
+  - text: |
+      Chuyển đổi số phải hướng tới phục vụ con người, nâng cao chất lượng cuộc sống người dân.
+
+
+  utter_xephangcdsdti2021/cac_ung_dung_cntt_se_phuc_vu_nhung_nhu_cau_nao_cua_nguoi_dan:
+  - text: |
+      Các ứng dụng CNTT sẽ phục vụ nhu cầu thiết yếu của người dân trong các lĩnh vực như y tế, giáo dục, an sinh xã hội, giải trí...
+
+
+  utter_xephangcdsdti2021/lam_the_nao_e_am_bao_moi_nguoi_dan_eu_uoc_huong_loi_ich_tu_chuyen_oi_so:
+  - text: |
+      Cần đảm bảo rằng không ai bị bỏ lại phía sau trong quá trình chuyển đổi số, để mọi người dân đều được hưởng lợi ích từ các dịch vụ và ứng dụng.
+
+
+  utter_xephangcdsdti2021/ket_luan_ve_inh_huong_phat_trien_chinh_phu_ien_tu_trong_giai_oan_tiep_theo_la_gi:
+  - text: |
+      Định hướng phát triển Chính phủ điện tử trong giai đoạn tiếp theo tập trung vào việc tiếp tục phát huy vai trò then chốt của DVCTT, thúc đẩy phát triển Chính phủ số, hướng tới phục vụ người dân và doanh nghiệp.
+
+
+  utter_xephangcdsdti2021/cau_truc_cua_dti_2020_cap_bo_bao_gom_nhung_gi:
+  - text: |
+      DTI 2020 cấp bộ bao gồm 07 chỉ số chính, 41 chỉ số thành phần và 111 tiêu chí, trong đó 109 tiêu chí được thực hiện đánh giá dựa trên số liệu.
+
+
+  utter_xephangcdsdti2021/cac_chi_so_chinh_cua_dti_cap_bo_la_gi:
+  - text: |
+      Bảy chỉ số chính bao gồm: Chuyển đổi nhận thức, Kiến tạo thể chế, Phát triển và nền tảng số, Thông tin và dữ liệu số, Hoạt động chuyển đổi số, An toàn, an ninh mạng, và Đào tạo và phát triển nhân lực.
+
+
+  utter_xephangcdsdti2021/phuong_phap_tinh_iem_dti_cap_bo_uoc_thuc_hien_nhu_the_nao:
+  - text: |
+      Điểm được tính dựa trên số liệu báo cáo và điều tra, kết quả đánh giá được tổng hợp từ cấp tiêu chí lên cấp chỉ số thành phần và cuối cùng là chỉ số chính.
+
+
+  utter_xephangcdsdti2021/cau_truc_cua_dti_2020_cap_tinh_bao_gom_nhung_gi:
+  - text: |
+      DTI 2020 cấp tỉnh bao gồm 03 trụ cột: Chính quyền số, Kinh tế số, và Xã hội số.
+
+
+  utter_xephangcdsdti2021/moi_tru_cot_trong_dti_cap_tinh_uoc_anh_gia_dua_tren_cai_gi:
+  - text: |
+      Mỗi trụ cột được đánh giá dựa trên các chỉ số thành phần và tiêu chí riêng.
+
+
+  utter_xephangcdsdti2021/phuong_phap_tinh_iem_dti_cap_tinh_co_iem_gi_khac_so_voi_cap_bo_khong:
+  - text: |
+      Phương pháp tính điểm DTI cấp tỉnh tương tự như DTI cấp bộ, cũng dựa trên số liệu báo cáo và điều tra.
+
+
+  utter_xephangcdsdti2021/oi_tuong_nao_uoc_anh_gia_trong_dti_cap_bo:
+  - text: |
+      DTI cấp bộ đánh giá mức độ chuyển đổi số của các bộ, cơ quan ngang bộ và cơ quan thuộc Chính phủ.
+
+
+  utter_xephangcdsdti2021/oi_tuong_nao_uoc_anh_gia_trong_dti_cap_tinh:
+  - text: |
+      DTI cấp tỉnh đánh giá mức độ chuyển đổi số của các tỉnh, thành phố trực thuộc Trung ương.
+
+
+  utter_xephangcdsdti2021/so_luong_chi_so_chinh_cua_dti_cap_bo_va_cap_tinh_la_bao_nhieu:
+  - text: |
+      DTI cấp bộ có 07 chỉ số chính, trong khi DTI cấp tỉnh chỉ có 03 chỉ số chính.
+
+
+  utter_xephangcdsdti2021/iem_khac_biet_chinh_giua_cau_truc_dti_cap_bo_va_cap_tinh_la_gi:
+  - text: |
+      Điểm khác biệt chính là DTI cấp bộ có cấu trúc gồm chỉ số chính, chỉ số thành phần và tiêu chí, trong khi DTI cấp tỉnh có cấu trúc gồm trụ cột, chỉ số thành phần và tiêu chí.
+
+
+  utter_xephangcdsdti2021/dti_2020_cap_tinh_co_tong_iem_toi_a_la_bao_nhieu:
+  - text: |
+      Tổng điểm tối đa của DTI 2020 cấp tỉnh là 1000 điểm.
+
+
+  utter_xephangcdsdti2021/ba_tru_cot_cua_dti_cap_tinh_uoc_phan_chia_iem_nhu_the_nao:
+  - text: |
+      Ba trụ cột được phân chia điểm theo tỷ lệ: Chính quyền số 400 điểm, Kinh tế số 300 điểm, và Xã hội số 300 điểm.
+
+
+  utter_xephangcdsdti2021/tong_iem_toi_a_cua_dti_cap_bo_la_bao_nhieu:
+  - text: |
+      Tổng điểm tối đa của DTI 2020 cấp bộ là 500 điểm.
+
+
+  utter_xephangcdsdti2021/ai_la_on_vi_chu_tri_thu_thap_thong_tin_so_lieu_cho_dti_2020:
+  - text: |
+      Bộ Thông tin và Truyền thông là đơn vị chủ trì thu thập thông tin, số liệu để phục vụ đánh giá DTI.
+
+
+  utter_xephangcdsdti2021/cac_hinh_thuc_thu_thap_thong_tin_so_lieu_uoc_thuc_hien_ra_sao:
+  - text: |
+      Thông tin, số liệu được thu thập thông qua hai hình thức: trực tuyến tại địa chỉ https://dti.gov.vn và khảo sát từ các nguồn như số liệu do các bộ, tỉnh cung cấp và điều tra xã hội.
+
+
+  utter_xephangcdsdti2021/thoi_gian_thu_thap_du_lieu_cho_dti_2020_la_khi_nao:
+  - text: |
+      Dữ liệu được thu thập trong khoảng thời gian từ ngày 01/01/2020 đến hết ngày 31/12/2020.
+
+
+  utter_xephangcdsdti2021/co_may_buoc_trong_quy_trinh_tong_hop_phan_tich_thong_tin_so_lieu:
+  - text: |
+      Có 5 bước trong quy trình tổng hợp và phân tích thông tin, số liệu.
+
+
+  utter_xephangcdsdti2021/trong_buoc_au_tien_cua_quy_trinh_tong_hop_cac_bo_cap_tinh_se_lam_gi:
+  - text: |
+      Trong bước đầu tiên, số liệu do các bộ, cấp tỉnh cung cấp được rà soát và xác minh để tổng hợp, phân tích và đánh giá.
+
+
+  utter_xephangcdsdti2021/cac_buoc_ra_soat_so_lieu_uoc_thuc_hien_trong_khoang_thoi_gian_nao:
+  - text: |
+      Lần 1 từ ngày 25/12/2020 đến 05/02/2021, và lần 2 từ ngày 18/3/2021 đến 31/3/2021.
+
+
+  utter_xephangcdsdti2021/so_lieu_anh_gia_thong_qua_ieu_tra_xa_hoi_uoc_thuc_hien_nhu_the_nao:
+  - text: |
+      Số liệu đánh giá thông qua điều tra xã hội được tổng hợp và phân tích qua hai lần tham luận từ ngày 19/3/2021 đến 26/3/2021.
+
+
+  utter_xephangcdsdti2021/ket_qua_anh_gia_qua_phong_van_chuyen_gia_uoc_tong_hop_ra_sao:
+  - text: |
+      Kết quả đánh giá qua phòng văn chuyên gia được tổng hợp từ các chuyên gia về công nghệ thông tin cung cấp trực tiếp cho Phiếu Đánh giá DTI trên hệ thống tại địa chỉ https://dti.gov.vn.
+
+
+  utter_xephangcdsdti2021/dti_cap_bo_uoc_phan_nhom_nhu_the_nao:
+  - text: |
+      DTI cấp bộ được phân thành hai nhóm: nhóm các bộ, cơ quan ngang bộ cung cấp dịch vụ công và nhóm các bộ, cơ quan ngang bộ không cung cấp dịch vụ công.
+
+
+  utter_xephangcdsdti2021/cac_tinh_thanh_pho_truc_thuoc_trung_uong_uoc_anh_gia_trong_dti_cap_tinh_theo_tru_cot_nao:
+  - text: |
+      Các tỉnh, thành phố trực thuộc Trung ương được đánh giá theo ba trụ cột: Chính quyền số, Kinh tế số, và Xã hội số.
+
+
+  utter_xephangcdsdti2021/iem_so_uoc_chuan_hoa_ra_sao_trong_qua_trinh_xep_hang_dti:
+  - text: |
+      Điểm số được chuẩn hóa từ 0 đến 1 cho từng tiêu chí, từng chỉ số thành phần, từng chỉ số chính, để dễ so sánh và thống nhất thang điểm chung cho từng đối tượng.
+
+
+  utter_xephangcdsdti2021/co_bao_gio_gia_tri_cua_cac_bo_nganh_va_cac_tinh_nhan_iem_0_khong:
+  - text: |
+      Giá trị của các bộ, ngành và các tỉnh không bao giờ nhận điểm 0 với từng tiêu chí, chỉ số thành phần, chỉ số chính, và trụ cột.
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

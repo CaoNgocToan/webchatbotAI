@@ -1,0 +1,142 @@
+version: '3.1'
+
+intents:
+ - sothongtinvatruyenthong
+
+responses:
+  utter_sothongtinvatruyenthong/chuyen_oi_so_la_gi:
+  - text: |
+      Chuyển đổi số là bước phát triển tiếp theo của tin học hóa, có được nhờ sự tiến bộ vượt bậc của những công nghệ mới mang tính đột phá, gọi chung là công nghệ số. Trên thế giới, chuyển đổi số bắt đầu được nhắc đến nhiều vào khoảng năm 2015, phổ biến từ năm 2017. Ở Việt Nam, chuyển đổi số bắt đầu được nhắc đến nhiều vào khoảng năm 2018. Thủ tướng Chính phủ phê duyệt Chương trình Chuyển đổi số quốc gia vào ngày 03/6/2020. Bạn có thể tham khảo cuốn Cẩm nang Chuyển đổi số do Bộ Thông tin và Truyền thông xuất bản, hoặc truy cập website dx.mic.gov.vn để tìm hiểu thêm thông tin chi tiết.
+
+
+  utter_sothongtinvatruyenthong/vi_sao_lai_can_chuyen_oi_so:
+  - text: |
+      Chuyển đổi số không chỉ giúp tăng năng suất, giảm chi phí mà còn mở ra không gian phát triển mới, tạo ra các giá trị mới ngoài các giá trị truyền thống vốn có.
+
+
+  utter_sothongtinvatruyenthong/chuyen_oi_so_la_viec_cua_ai:
+  - text: |
+      Với một tổ chức, vì là sự thay đổi, nên trước tiên đó là việc của lãnh đạo, của người đứng đầu, vì nếu không thì không ai dám làm và có thể làm. Vì là tổng thể và toàn diện nên đó là việc của tất cả mọi thành viên trong tổ chức.
+
+
+  utter_sothongtinvatruyenthong/cac_linh_vuc_nao_uoc_uu_tien_chuyen_oi_so:
+  - text: |
+      Tám (08) lĩnh vực ưu tiên chuyển đổi số là y tế, giáo dục, tài chính ngân hàng, nông nghiệp, giao thông vận tải và logistics, năng lượng, tài nguyên và môi trường, sản xuất công nghiệp.
+
+
+  utter_sothongtinvatruyenthong/the_nao_la_chuyen_oi_so_lay_nguoi_dan_la_trung_tam:
+  - text: |
+      Là chính quyền lắng nghe từ người dân, xuất phát từ nhu cầu của người dân, mang lại giá trị cho người dân. Nếu có câu hỏi về chuyển đổi số, hãy liên hệ Cục Tin học hóa, Bộ Thông tin và Truyền thông để được tư vấn, hỗ trợ. Địa chỉ liên hệ: https://aita.gov.vn/
+
+
+  utter_sothongtinvatruyenthong/van_e_then_chot_trong_chuyen_oi_so_la_gi:
+  - text: |
+      Bảo đảm an toàn, an ninh mạng là then chốt để chuyển đổi số thành công và bền vững, đồng thời là phần xuyên suốt, không thể tách rời của chuyển đổi số. Mọi thiết bị, sản phẩm, phần mềm, hệ thống thông tin, dự án đầu tư về công nghệ thông tin đều có cấu phần bắt buộc về an toàn, an ninh mạng ngay từ khi thiết kế.
+
+
+  utter_sothongtinvatruyenthong/loi_the_cua_viet_nam_khi_thuc_hien_chuyen_oi_so_la_gi:
+  - text: |
+      Văn hoá của người Việt Nam là thích ứng nhanh với cái mới, ham học hỏi cái mới, sáng tạo trong ứng dụng cái mới. Việt Nam là nước có truyền thống lâu đời trong việc triển khai thành công các cuộc cách mạng toàn dân.
+
+
+  utter_sothongtinvatruyenthong/chuyen_oi_so_co_quan_nha_nuoc_la_gi:
+  - text: |
+      Chuyển đổi số cơ quan nhà nước là hoạt động phát triển chính phủ số của các cơ quan trung ương và tương ứng với đó là hoạt động phát triển chính quyền số, đô thị thông minh của các cơ quan chính quyền các cấp ở địa phương.
+
+
+  utter_sothongtinvatruyenthong/quy_inh_ve_chia_se_du_lieu_trong_co_quan_nha_nuoc:
+  - text: |
+      Ngày 09 tháng 4 năm 2020 Chính phủ ban hành nghị định số Số: 47/2020/NĐ-CP về quản lý, kết nối và chia sẻ dữ liệu số của cơ quan nhà nước.
+
+
+  utter_sothongtinvatruyenthong/xay_dung_chien_luoc_chuyen_oi_so_nhu_the_nao:
+  - text: |
+      Chiến lược chuyển đổi số do người đứng đầu chỉ đạo xây dựng và phải lan tỏa, thấm nhuần tới từng thành viên của tổ chức. Chiến lược chuyển đổi số bắt đầu từ tầm nhìn của người đứng đầu, nhưng khi thực thi cần không ngừng đo lường, kiểm nghiệm thực tế xem điều gì đang đi đúng hướng và điều gì không, sau đó nhanh chóng điều chỉnh theo thực tế.
+
+
+  utter_sothongtinvatruyenthong/cach_mang_cong_nghiep_lan_thu_tu_la_gi:
+  - text: |
+      Cách mạng công nghiệp xảy ra khi có đột phá lớn về công nghệ dẫn đến các thay đổi sâu sắc trong sản xuất và xã hội. Cách mạng công nghiệp lần thứ tư được cho là bắt đầu từ thập kỷ này với các đột phá và cộng hưởng của các công nghệ số và tạo ra sản xuất thông minh.
+
+
+  utter_sothongtinvatruyenthong/so_hoa_la_gi:
+  - text: |
+      Số hóa là việc tạo ra các con số để mô tả và biểu diễn các thực thể, tức là tạo ra dữ liệu hay phiên bản số của các thực thể
+
+
+  utter_sothongtinvatruyenthong/tin_hoc_hoa_la_gi:
+  - text: |
+      Tin học hóa, hay còn gọi là ứng dụng công nghệ thông tin, là việc số hóa quy trình nghiệp vụ đã có. Thông thường, tin học hóa không làm thay đổi quy trình đã có hoặc mô hình hoạt động đã có. Khi tin học hóa ở mức cao, dẫn đến thay đổi quy trình hoặc thay đổi mô hình hoạt động, thì gọi là chuyển đổi số.
+
+
+  utter_sothongtinvatruyenthong/tro_ly_ao_la_gi:
+  - text: |
+      Trợ lý ảo là phần mềm có thể thực hiện các nhiệm vụ hoặc dịch vụ cho một cá nhân dựa trên câu lệnh hoặc câu hỏi.
+
+
+  utter_sothongtinvatruyenthong/khai_niem_nen_tang_so:
+  - text: |
+      Nền tảng số là bước phát triển tiếp theo của hệ thống thông tin, là yếu tố tạo ra sự khác biệt căn bản giữa ứng dụng công nghệ thông tin và chuyển đổi số. Nền tảng số có khả năng đáp ứng ngay nhu cầu của người sử dụng như là dịch vụ, giống như dịch vụ điện, giống như dịch vụ nước và càng nhiều người sử dụng thì chi phí càng rẻ.
+
+  utter_sothongtinvatruyenthong/chinh_phu_ien_tu_la_gi:
+  - text: |
+      Chính phủ điện tử là chính phủ ứng dụng công nghệ thông tin để nâng cao hiệu lực, hiệu quả hoạt động, phục vụ người dân và doanh nghiệp tốt hơn. Hay nói một cách khác, đây là quá trình tin học hóa các hoạt động của chính phủ.
+
+
+  utter_sothongtinvatruyenthong/chinh_phu_so_la_gi:
+  - text: |
+      Chính phủ số là chính phủ đưa toàn bộ hoạt động của mình lên môi trường số, không chỉ là nâng cao hiệu lực, hiệu quả hoạt động, mà còn đổi mới mô hình hoạt động, thay đổi cách thức cung cấp dịch vụ dựa trên công nghệ số và dữ liệu, cho phép doanh nghiệp cùng tham gia vào quá trình cung cấp dịch vụ. Hay nói một cách khác, đây là quá trình chuyển đổi số của chính phủ.
+
+
+  utter_sothongtinvatruyenthong/iem_khac_nhau_giua_chinh_phu_ien_tu_va_chinh_phu_so_la_gi:
+  - text: |
+      Chính phủ điện tử là chính phủ tin học hóa quy trình đã có, cung cấp trực tuyến các dịch vụ hành chính công đã có. Chính phủ số là chính phủ chuyển đổi số, đổi mới mô hình hoạt động, thay đổi quy trình làm việc, thay đổi cách thức cung cấp dịch vụ, nhanh chóng cung cấp dịch vụ công mới.
+
+
+  utter_sothongtinvatruyenthong/trong_tam_cua_chien_luoc_chinh_phu_so_la_gi:
+  - text: |
+      Trọng tâm của Chiến lược Chính phủ số là chuyển đổi mọi hoạt động của Chính phủ lên môi trường số và sau đó là thay đổi cách vận hành của Chính phủ dựa trên dữ liệu và công nghệ số, tương tác với người dân, doanh nghiệp, dùng công nghệ để giải quyết các bài toán thiên niên kỷ. Chính phủ số là giải pháp đột phá để thay đổi cách vận hành của Chính phủ. Chính phủ số dẫn dắt chuyển đổi số quốc gia.
+
+
+  utter_sothongtinvatruyenthong/moi_quan_he_giua_o_thi_thong_minh_va_chinh_quyen_so:
+  - text: |
+      Ở cấp quốc gia, quốc gia thông minh gồm ba thành phần là chính phủ số, kinh tế số và xã hội số. Ở cấp địa phương, đô thị thông minh cũng gồm ba thành phần tương ứng là chính quyền số, kinh tế số và xã hội số trong phạm vi địa lý của đô thị đó.
+
+
+  utter_sothongtinvatruyenthong/ung_dung_cong_nghe_thong_tin_bat_au_tu_khi_nao:
+  - text: |
+      Trên thế giới, chuyển đổi số bắt đầu được nhắc đến nhiều vào khoảng năm 2015, phổ biến từ năm 2017. Ở Việt Nam, chuyển đổi số bắt đầu được nhắc đến nhiều vào khoảng năm 2018. Thủ tướng Chính phủ phê duyệt Chương trình Chuyển đổi số quốc gia vào ngày 03/6/2020.
+
+
+  utter_sothongtinvatruyenthong/chuyen_oi_so_va_ung_dung_cong_nghe_thong_tin_khac_nhau_nhu_the_nao:
+  - text: |
+      Chuyển đổi số là bước phát triển tiếp theo của ứng dụng công nghệ thông tin. Ứng dụng công nghệ thông tin là số hóa một quy trình đã có, hay còn gọi là tin học hóa. Chuyển đổi số là số hóa toàn bộ cả một tổ chức. Chuyển đổi số là thay đổi quy trình mới, mô hình tổ chức mới, phương thức cung cấp dịch vụ mới, cung cấp dịch vụ mới.
+
+
+  utter_sothongtinvatruyenthong/nen_kinh_te_so_la_gi:
+  - text: |
+      Kinh tế số là các hoạt động kinh tế có sử dụng thông tin số, tri thức số như là yếu tố sản xuất chính; sử dụng mạng Internet, mạng thông tin làm không gian hoạt động; và sử dụng ICT, tức là viễn thông và CNTT, để tăng năng suất lao động, và để tối ưu nền kinh tế.
+
+
+  utter_sothongtinvatruyenthong/nen_kinh_te_nen_tang_la_gi:
+  - text: |
+      Nền kinh tế nền tảng được hiểu là một phần của nền kinh tế mà tại đó các hoạt động kinh tế và xã hội được diễn ra trên các nền tảng số.
+
+
+  utter_sothongtinvatruyenthong/vai_tro_cua_kinh_te_so_la_gi:
+  - text: |
+      Kinh tế số giúp tăng năng suất lao động, giúp tăng trưởng kinh tế. Kinh tế số cũng giúp tăng trưởng bền vững, tăng trưởng bao trùm, vì sử dụng tri thức nhiều hơn là tài nguyên. Chi phí tham gia kinh tế số thấp hơn nên tạo ra cơ hội cho nhiều người hơn.
+
+
+  utter_sothongtinvatruyenthong/lam_the_nao_e_thuc_ay_nen_kinh_te_so:
+  - text: |
+      Cách nhanh nhất đẩy nhanh nền kinh tế số là sử dụng công nghệ số để thay đổi cách chúng ta đang sản xuất, đang làm việc.
+
+
+  utter_sothongtinvatruyenthong/o_luong_kinh_te_so_the_nao:
+  - text: |
+      Hiện nay chưa có phương pháp thống nhất trên toàn cầu để đo lường giá trị của kinh tế số. Cách đo phổ biến là kinh tế số bao gồm 03 cấu phần: kinh tế số công nghệ thông tin - điện tử - viễn thông; kinh tế số Internet và kinh tế số theo ngành / lĩnh vực.
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

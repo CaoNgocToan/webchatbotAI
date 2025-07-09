@@ -1,0 +1,471 @@
+version: '3.1'
+
+intents:
+ - xephangcdsdti2020
+
+responses:
+  utter_xephangcdsdti2020/cac_bo_cung_cap_dich_vu_cong_co_bao_nhieu_co_quan:
+  - text: |
+      Các bộ cung cấp dịch vụ công bao gồm 18 cơ quan: Bộ Ngoại giao, Bộ Tư pháp, Bộ Tài chính, Bộ Công thương, Bộ Lao động – Thương binh và Xã hội, Bộ Giao thông vận tải, Bộ Xây dựng, Bộ Thông tin và Truyền thông, Bộ Giáo dục và Đào tạo, Bộ Nông nghiệp và Phát triển nông thôn, Bộ Kế hoạch và Đầu tư, Bộ Nội vụ, Bộ Y tế, Bộ Khoa học và Công nghệ, Bộ Văn hóa - Thể thao và Du lịch, Bộ Tài Nguyên và Môi trường, Ngân hàng Nhà nước Việt Nam và Bảo hiểm Xã hội Việt Nam.
+
+
+  utter_xephangcdsdti2020/bo_va_co_quang_ngang_bo_nao_khong_thuc_hien_anh_gia:
+  - text: |
+      Bộ và cơ quang ngang bộ nào không thực hiện đánh giá bao gồm: Bộ Công an, Bộ Quốc phòng và Văn phòng Chính phủ.
+
+
+  utter_xephangcdsdti2020/vi_sao_bo_cong_an_bo_quoc_phong_va_van_phong_chinh_phu_khong_thuc_hien_anh_gia:
+  - text: |
+      Bộ Công an, Bộ Quốc phòng và Văn phòng Chính phủ không thực hiện đánh giá do đặc thù chức năng, nhiệm vụ nên một số tiêu chí đánh giá chưa thật sự phù hợp, tương đồng với các bộ, ngành khác.
+
+
+  utter_xephangcdsdti2020/nhom_cac_bo_khong_cung_cap_dich_vu_cong:
+  - text: |
+      Nhóm các bộ không cung cấp dịch vụ công gồm Thanh tra Chính phủ và Ủy ban Dân tộc.
+
+
+  utter_xephangcdsdti2020/so_luot_ve_dti_2020:
+  - text: |
+      DTI 2020 trung bình của các bộ cung cấp dịch vụ công năm 2020 là 0,3982, với 11/18 bộ, ngành có giá trị DTI2020 trên mức trung bình. Trong đó, Bộ Tài chính xếp hạng ở vị trí thứ nhất về DTI2020 (với giá trị DTI là 0,4944) của các bộ cung cấp dịch vụ công với nhiều hoạt động chuyển đổi số nổi bật trong năm 2020 như: tỷ lệ DVCTT mức độ 4 đạt 50%; 100% ứng dụng của Bộ Tài chính được kết nổi, chia sẻ qua LGSP cấp bộ; hiệu quả của các hoạt động này cũng được chứng minh qua việc phục vụ người dân và doanh nghiệp nhuw: 99,89% doanh nghiệp sử dụng dịch vụ khai thuế điện tử; 99,42% doanh nghiệp tham gia dịch vụ nộp thuế điện tử; 96,28% doanh nghiệp hoàn thuế điện tử; Số lượng hồ sơ xử lý trực tuyến là hơn 98 triệu trên tổng số hồ sơ TTHC được xử lý (109,81 triệu hồ sơ) trong năm 2020, đạt tỷ lệ 89,3%; Tổng số lượt truy cập trên Cổng thông tin điện tử của Bộ Tài chính năm 2020 là gần 3,4 triệu lượt.
+
+
+  utter_xephangcdsdti2020/chi_tiet_cac_gia_tri_dti_2020_cua_bo_tai_chinh:
+  - text: |
+      Bộ Tài chính đứng đầu với các chỉ số như sau: Chỉ số chuyển đổi nhận thức là 0,5232; Chỉ số kiến tạo thể chế là 0,5400; Chỉ số phát triển Hạ tầng và nền tảng số là 0,4440; Chỉ số Thông tin và Dữ liệu số là 0,04680; Chỉ số Hoạt động Chuyển đổi số là 0,5249; Chỉ số An toàn, an ninh mạng là 0,5249; Chỉ số Đào tạo và phát triển nhân lực là 0,5560; Chỉ số Đánh giá DTI trên không gian mạng là 0,4228; Chỉ số Đánh giá qua phỏng vấn chuyên gia là 0,5654, tổng DTI là 0,4944.
+
+
+  utter_xephangcdsdti2020/chi_tiet_cac_gia_tri_dti_2020_cua_ngan_hang_nha_nuoc_viet_nam:
+  - text: |
+      Ngân hàng Nhà nước Việt Nam đứng thứ hai với các chỉ số như sau: Chỉ số chuyển đổi nhận thức là 0,4522; Chỉ số kiến tạo thể chế là 0,5530; Chỉ số phát triển Hạ tầng và nền tảng số là 0,5116; Chỉ số Thông tin và Dữ liệu số là 0,4618; Chỉ số Hoạt động Chuyển đổi số là 0,4960; Chỉ số An toàn, an ninh mạng là 0,4804; Chỉ số Đào tạo và phát triển nhân lực là 0,5294; Chỉ số Đánh giá DTI trên không gian mạng là 0,4264; Chỉ số Đánh giá qua phỏng vấn chuyên gia là 0,5022, tổng DTI là 0,4932.
+
+
+  utter_xephangcdsdti2020/chi_tiet_cac_gia_tri_dti_2020_cua_bo_ke_hoach_va_au_tu:
+  - text: |
+      Bộ Kế hoạch và Đầu tư đứng thứ ba với các chỉ số như sau: Chỉ số chuyển đổi nhận thức là 0,5400; Chỉ số kiến tạo thể chế là 0,4757; Chỉ số phát triển Hạ tầng và nền tảng số là 0,4980; Chỉ số Thông tin và Dữ liệu số là 0,5640; Chỉ số Hoạt động Chuyển đổi số là 0,5312; Chỉ số An toàn, an ninh mạng là 0,0000; Chỉ số Đào tạo và phát triển nhân lực là 0,5760; Chỉ số Đánh giá DTI trên không gian mạng là 0,4172; Chỉ số Đánh giá qua phỏng vấn chuyên gia là 0,5900, tổng DTI là 0,4701.
+
+
+  utter_xephangcdsdti2020/chi_tiet_cac_gia_tri_dti_2020_cua_bo_bao_hiem_xa_hoi_viet_nam:
+  - text: |
+      Bộ Bảo hiểm xã hội Việt Nam xếp thứ 4 với các chỉ số như sau: Chỉ số chuyển đổi nhận thức là 0,4752; Chỉ số kiến tạo thể chế là 0,3000; Chỉ số phát triển Hạ tầng và nền tảng số là 0,5160; Chỉ số Thông tin và Dữ liệu số là 0,4006; Chỉ số Hoạt động Chuyển đổi số là 0,5454; Chỉ số An toàn, an ninh mạng là 0,5326; Chỉ số Đào tạo và phát triển nhân lực là 0,4104; Chỉ số Đánh giá DTI trên không gian mạng là 0,4280; Chỉ số Đánh giá qua phỏng vấn chuyên gia là 0,5872, tổng DTI là 0,4643.
+
+
+  utter_xephangcdsdti2020/chi_tiet_cac_gia_tri_dti_2020_cua_bo_y_te:
+  - text: |
+      Bộ Y tế đứng thứ năm với các chỉ số như sau: Chỉ số chuyển đổi nhận thức là 0,4992; Chỉ số kiến tạo thể chế là 0,4800; Chỉ số phát triển Hạ tầng và nền tảng số là 0,4122; Chỉ số Thông tin và Dữ liệu số là 0,3672; Chỉ số Hoạt động Chuyển đổi số là 0,4492; Chỉ số An toàn, an ninh mạng là 0,4460; Chỉ số Đào tạo và phát triển nhân lực là 0,4788; Chỉ số Đánh giá DTI trên không gian mạng là 0,4296; Chỉ số Đánh giá qua phỏng vấn chuyên gia là 0,5624, tổng DTI là 0,4582.
+
+
+  utter_xephangcdsdti2020/chi_tiet_cac_gia_tri_dti_2020_cua_bo_cong_thuong:
+  - text: |
+      Bộ Công Thương đứng thứ sáu với các chỉ số như sau: Chỉ số chuyển đổi nhận thức là 0,4776; Chỉ số kiến tạo thể chế là 0,4161; Chỉ số phát triển Hạ tầng và nền tảng số là 0,4480; Chỉ số Thông tin và Dữ liệu số là 0,4376; Chỉ số Hoạt động Chuyển đổi số là 0,4696; Chỉ số An toàn, an ninh mạng là 0,4920; Chỉ số Đào tạo và phát triển nhân lực là 0,3206; Chỉ số Đánh giá DTI trên không gian mạng là 0,4184; Chỉ số Đánh giá qua phỏng vấn chuyên gia là 0,5882, tổng DTI là 0,4516.
+
+
+  utter_xephangcdsdti2020/chi_tiet_cac_gia_tri_dti_2020_cua_bo_thong_tin_va_truyen_thong:
+  - text: |
+      Bộ Thông tin và Truyền thông đứng thứ bảy với các chỉ số như sau: Chỉ số chuyển đổi nhận thức là 0,5040; Chỉ số kiến tạo thể chế là 0,4730; Chỉ số phát triển Hạ tầng và nền tảng số là 0,5640; Chỉ số Thông tin và Dữ liệu số là 0,2280; Chỉ số Hoạt động Chuyển đổi số là 0,5121; Chỉ số An toàn, an ninh mạng là 0,2040; Chỉ số Đào tạo và phát triển nhân lực là 0,5400; Chỉ số Đánh giá DTI trên không gian mạng là 0,4286; Chỉ số Đánh giá qua phỏng vấn chuyên gia là 0,4636, tổng DTI là 0,4414.
+
+
+  utter_xephangcdsdti2020/chi_tiet_cac_gia_tri_dti_2020_cua_bo_xay_dung:
+  - text: |
+      Bộ Xây dựng đứng thứ tám với các chỉ số như sau: Chỉ số chuyển đổi nhận thức là 0,3766; Chỉ số kiến tạo thể chế là 0,5129; Chỉ số phát triển Hạ tầng và nền tảng số là 0,4238; Chỉ số Thông tin và Dữ liệu số là 0,1440; Chỉ số Hoạt động Chuyển đổi số là 0,4255; Chỉ số An toàn, an ninh mạng là 0,6000; Chỉ số Đào tạo và phát triển nhân lực là 0,4054; Chỉ số Đánh giá DTI trên không gian mạng là 0,4204; Chỉ số Đánh giá qua phỏng vấn chuyên gia là 0,4654, tổng DTI là 0,4234.
+
+
+  utter_xephangcdsdti2020/chi_tiet_cac_gia_tri_dti_2020_cua_bo_giao_thong_van_tai:
+  - text: |
+      Bộ Giao thông Vận tải đứng thứ chín với các chỉ số như sau: Chỉ số chuyển đổi nhận thức là 0,2316; Chỉ số kiến tạo thể chế là 0,4164; Chỉ số phát triển Hạ tầng và nền tảng số là 0,3528; Chỉ số Thông tin và Dữ liệu số là 0,3538; Chỉ số Hoạt động Chuyển đổi số là 0,5242; Chỉ số An toàn, an ninh mạng là 0,4320; Chỉ số Đào tạo và phát triển nhân lực là 0,3578; Chỉ số Đánh giá DTI trên không gian mạng là 0,4258; Chỉ số Đánh giá qua phỏng vấn chuyên gia là 0,5870, tổng DTI là 0,4192.
+
+
+  utter_xephangcdsdti2020/chi_tiet_cac_gia_tri_dti_2020_cua_bo_noi_vu:
+  - text: |
+      Bộ Nội vụ đứng thứ mười với các chỉ số như sau: Chỉ số chuyển đổi nhận thức là 0,2340; Chỉ số kiến tạo thể chế là 0,4543; Chỉ số phát triển Hạ tầng và nền tảng số là 0,4922; Chỉ số Thông tin và Dữ liệu số là 0,3478; Chỉ số Hoạt động Chuyển đổi số là 0,4179; Chỉ số An toàn, an ninh mạng là 0,4144; Chỉ số Đào tạo và phát triển nhân lực là 0,5080; Chỉ số Đánh giá DTI trên không gian mạng là 0,4216; Chỉ số Đánh giá qua phỏng vấn chuyên gia là 0,4276, tổng DTI là 0,4151.
+
+
+  utter_xephangcdsdti2020/chi_tiet_cac_gia_tri_dti_2020_cua_bo_giao_duc_va_ao_tao:
+  - text: |
+      Bộ Giáo dục và Đào tạo đứng thứ mười một với các chỉ số như sau: Chỉ số chuyển đổi nhận thức là 0,4200; Chỉ số kiến tạo thể chế là 0,4920; Chỉ số phát triển Hạ tầng và nền tảng số là 0,4060; Chỉ số Thông tin và Dữ liệu số là 0,1080; Chỉ số Hoạt động Chuyển đổi số là 0,3884; Chỉ số An toàn, an ninh mạng là 0,3116; Chỉ số Đào tạo và phát triển nhân lực là 0,5444; Chỉ số Đánh giá DTI trên không gian mạng là 0,4138; Chỉ số Đánh giá qua phỏng vấn chuyên gia là 0,5610, tổng DTI là 0,4075.
+
+
+  utter_xephangcdsdti2020/chi_tiet_cac_gia_tri_dti_2020_cua_bo_tu_phap:
+  - text: |
+      Bộ Tư pháp đứng thứ mười hai với các chỉ số như sau: Chỉ số chuyển đổi nhận thức là 0,4104; Chỉ số kiến tạo thể chế là 0,2704; Chỉ số phát triển Hạ tầng và nền tảng số là 0,3974; Chỉ số Thông tin và Dữ liệu số là 0,2028; Chỉ số Hoạt động Chuyển đổi số là 0,4106; Chỉ số An toàn, an ninh mạng là 0,4138; Chỉ số Đào tạo và phát triển nhân lực là 0,4540; Chỉ số Đánh giá DTI trên không gian mạng là 0,4032; Chỉ số Đánh giá qua phỏng vấn chuyên gia là 0,5096, tổng DTI là 0,3818.
+
+
+  utter_xephangcdsdti2020/chi_tiet_cac_gia_tri_dti_2020_cua_bo_ngoai_giao:
+  - text: |
+      Bộ Ngoại giao đứng thứ mười ba với các chỉ số như sau: Chỉ số chuyển đổi nhận thức là 0,2520; Chỉ số kiến tạo thể chế là 0,1629; Chỉ số phát triển Hạ tầng và nền tảng số là 0,4186; Chỉ số Thông tin và Dữ liệu số là 0,1580; Chỉ số Hoạt động Chuyển đổi số là 0,5148; Chỉ số An toàn, an ninh mạng là 0,5280; Chỉ số Đào tạo và phát triển nhân lực là 0,4652; Chỉ số Đánh giá DTI trên không gian mạng là 0,4100; Chỉ số Đánh giá qua phỏng vấn chuyên gia là 0,4974, tổng DTI là 0,3781.
+
+
+  utter_xephangcdsdti2020/chi_tiet_cac_gia_tri_dti_2020_cua_bo_khoa_hoc_va_cong_nghe:
+  - text: |
+      Bộ Khoa học và Công nghệ đứng thứ mười bốn với các chỉ số như sau: Chỉ số chuyển đổi nhận thức là 0,2312; Chỉ số kiến tạo thể chế là 0,3530; Chỉ số phát triển Hạ tầng và nền tảng số là 0,3826; Chỉ số Thông tin và Dữ liệu số là 0,1616; Chỉ số Hoạt động Chuyển đổi số là 0,4051; Chỉ số An toàn, an ninh mạng là 0,2358; Chỉ số Đào tạo và phát triển nhân lực là 0,3502; Chỉ số Đánh giá DTI trên không gian mạng là 0,4192; Chỉ số Đánh giá qua phỏng vấn chuyên gia là 0,4246, tổng DTI là 0,3348.
+
+
+  utter_xephangcdsdti2020/chi_tiet_cac_gia_tri_dti_2020_cua_bo_tai_nguyen_va_moi_truong:
+  - text: |
+      Bộ Tài nguyên và Môi trường đứng thứ mười lăm với các chỉ số như sau: Chỉ số chuyển đổi nhận thức là 0,1382; Chỉ số kiến tạo thể chế là 0,4457; Chỉ số phát triển Hạ tầng và nền tảng số là 0,3746; Chỉ số Thông tin và Dữ liệu số là 0,3298; Chỉ số Hoạt động Chuyển đổi số là 0,4589; Chỉ số An toàn, an ninh mạng là 0,0000; Chỉ số Đào tạo và phát triển nhân lực là 0,3550; Chỉ số Đánh giá DTI trên không gian mạng là 0,4292; Chỉ số Đánh giá qua phỏng vấn chuyên gia là 0,2830, tổng DTI là 0,3286.
+
+
+  utter_xephangcdsdti2020/chi_tiet_cac_gia_tri_dti_2020_cua_bo_van_hoa_the_thao_va_du_lich:
+  - text: |
+      Bộ Văn hóa, Thể thao và Du lịch đứng thứ mười sáu với các chỉ số như sau: Chỉ số chuyển đổi nhận thức là 0,1740; Chỉ số kiến tạo thể chế là 0,1714; Chỉ số phát triển Hạ tầng và nền tảng số là 0,2056; Chỉ số Thông tin và Dữ liệu số là 0,0000; Chỉ số Hoạt động Chuyển đổi số là 0,3604; Chỉ số An toàn, an ninh mạng là 0,4348; Chỉ số Đào tạo và phát triển nhân lực là 0,3814; Chỉ số Đánh giá DTI trên không gian mạng là 0,4220; Chỉ số Đánh giá qua phỏng vấn chuyên gia là 0,4748, tổng DTI là 0,2909.
+
+
+  utter_xephangcdsdti2020/chi_tiet_cac_gia_tri_dti_2020_cua_bo_nong_nghiep_va_phat_trien_nong_thon:
+  - text: |
+      Bộ Nông nghiệp và Phát triển nông thôn đứng thứ mười bảy với các chỉ số như sau: Chỉ số chuyển đổi nhận thức là 0,0816; Chỉ số kiến tạo thể chế là 0,3049; Chỉ số phát triển Hạ tầng và nền tảng số là 0,1780; Chỉ số Thông tin và Dữ liệu số là 0,1680; Chỉ số Hoạt động Chuyển đổi số là 0,4851; Chỉ số An toàn, an ninh mạng là 0,0000; Chỉ số Đào tạo và phát triển nhân lực là 0,2428; Chỉ số Đánh giá DTI trên không gian mạng là 0,4040; Chỉ số Đánh giá qua phỏng vấn chuyên gia là 0,4286, tổng DTI là 0,2706.
+
+
+  utter_xephangcdsdti2020/chi_tiet_cac_gia_tri_dti_2020_cua_bo_lao_ong_-_thuong_binh_va_xa_hoi:
+  - text: |
+      Bộ Lao động - Thương binh và Xã hội đứng thứ mười tám với các chỉ số như sau: Chỉ số chuyển đổi nhận thức là 0,1264; Chỉ số kiến tạo thể chế là 0,1146; Chỉ số phát triển Hạ tầng và nền tảng số là 0,1320; Chỉ số Thông tin và Dữ liệu số là 0,0320; Chỉ số Hoạt động Chuyển đổi số là 0,3803; Chỉ số An toàn, an ninh mạng là 0,0060; Chỉ số Đào tạo và phát triển nhân lực là 0,4034; Chỉ số Đánh giá DTI trên không gian mạng là 0,0428; Chỉ số Đánh giá qua phỏng vấn chuyên gia là 0,6000, tổng DTI là 0,2472.
+
+
+  utter_xephangcdsdti2020/cac_bo_nganh_nao_nam_trong_top_5_ve_chi_so_dti_2020_va_nhung_yeu_to_nao_a_giup_ho_at_uoc_thu_hang_nay:
+  - text: |
+      Top 5 bộ, ngành về DTI 2020 gồm Bộ Tài chính, Ngân hàng Nhà nước Việt Nam, Bộ Kế hoạch và Đầu tư, Bảo hiểm Xã hội Việt Nam, và Bộ Y tế. Những yếu tố nổi bật giúp họ dẫn đầu là sự cân bằng giữa Chỉ số chuyển đổi nhận thức, Chỉ số Hoạt động Chuyển đổi số, Chỉ số Đào tạo và phát triển nhân lực, cũng như Chỉ số An toàn, an ninh mạng. Sự chú trọng đến xây dựng hạ tầng số, quản lý thông tin, và đào tạo nhân lực đóng vai trò quan trọng trong việc đạt được điểm số cao.
+
+
+  utter_xephangcdsdti2020/cac_yeu_to_nao_duong_nhu_anh_huong_manh_nhat_en_xep_hang_tong_the_dti_cua_cac_bo_nganh_vi_du_lieu_chi_so_phat_trien_ha_tang_va_nen_tang_so_hay_chi_so_ao_tao_va_phat_trien_nhan_luc_co_vai_tro_quan_trong_hon:
+  - text: |
+      Không có câu trả lời cho intent này.
+
+  utter_xephangcdsdti2020/trong_so_cac_bo_nganh_au_la_nhung_linh_vuc_can_cai_thien_manh_me_ve_an_toan_an_ninh_mang_va_lam_the_nao_e_cai_thien_iem_so_nay:
+  - text: |
+      Chỉ số phát triển Hạ tầng và nền tảng số cùng Chỉ số Đào tạo và phát triển nhân lực có tác động lớn đến xếp hạng tổng thể DTI. Các bộ có chỉ số cao ở hai yếu tố này thường đạt vị trí cao hơn. Ngoài ra, Chỉ số Hoạt động Chuyển đổi số và An toàn, an ninh mạng cũng quan trọng, đặc biệt khi chuyển đổi số cần đảm bảo tính bảo mật và nguồn nhân lực có năng lực.
+
+
+  utter_xephangcdsdti2020/bo_nganh_nao_co_su_can_bang_tot_nhat_giua_cac_chi_so_khac_nhau_cho_thay_su_phat_trien_ong_eu_ve_nhieu_mat_trong_qua_trinh_chuyen_oi_so:
+  - text: |
+      Các bộ như Bộ Tài nguyên và Môi trường và Bộ Nông nghiệp và Phát triển nông thôn có Chỉ số An toàn, an ninh mạng thấp (điểm bằng 0), cho thấy cần có những cải thiện đáng kể. Để tăng điểm số, họ cần đầu tư vào hệ thống bảo mật, xây dựng quy trình quản lý an toàn thông tin, và đào tạo nhân lực về nhận thức và kỹ năng bảo mật.
+
+
+  utter_xephangcdsdti2020/cac_bo_nganh_nao_co_su_chenh_lech_lon_nhat_giua_cac_chi_so_vi_du_co_bo_nao_co_chi_so_kien_tao_the_che_cao_nhung_chi_so_hoat_ong_chuyen_oi_so_thap_hay_nguoc_lai:
+  - text: |
+      Bộ Tài chính và Ngân hàng Nhà nước Việt Nam là hai đơn vị có sự cân bằng tốt nhất giữa các chỉ số. Cả hai bộ đều đạt điểm cao trong hầu hết các chỉ số, cho thấy họ đầu tư đồng đều vào các lĩnh vực từ xây dựng hạ tầng, đào tạo nhân lực, cho đến bảo đảm an ninh mạng. Điều này cho thấy khả năng phát triển đồng đều, không quá tập trung vào một yếu tố duy nhất.
+
+
+  utter_xephangcdsdti2020/tu_du_lieu_dti_2020_co_xu_huong_hoac_mo_hinh_nao_trong_chuyen_oi_so_giua_cac_bo_nganh_hay_khong_vi_du_cac_bo_quan_ly_hanh_chinh_co_xu_huong_at_iem_cao_hon_o_chi_so_nao_so_voi_cac_nganh_quan_ly_chuyen_nganh:
+  - text: |
+      Không có câu trả lời cho intent này.
+
+  utter_xephangcdsdti2020/cac_bo_nganh_xep_o_nhom_cuoi_bang_co_nhung_iem_chung_nao_ve_cac_chi_so_nhung_chi_so_nao_can_uoc_uu_tien_cai_thien_e_nang_cao_tong_dti:
+  - text: |
+      Bộ Văn hóa, Thể thao và Du lịch và Bộ Ngoại giao là hai bộ có sự chênh lệch lớn giữa các chỉ số. Bộ Văn hóa, Thể thao và Du lịch có Chỉ số kiến tạo thể chế khá cao (0,1714) nhưng Chỉ số Hoạt động Chuyển đổi số và Hạ tầng và nền tảng số lại thấp. Tương tự, Bộ Ngoại giao đạt điểm cao trong Thông tin và Dữ liệu số nhưng điểm thấp trong Chỉ số Hoạt động Chuyển đổi số và đào tạo nhân lực, cho thấy cần sự đầu tư đồng đều hơn.
+
+
+  utter_xephangcdsdti2020/cac_yeu_to_nao_the_hien_su_thanh_cong_trong_viec_ao_tao_va_phat_trien_nhan_luc_phuc_vu_cho_chuyen_oi_so_va_lam_the_nao_cac_bo_nganh_co_chi_so_thap_co_the_hoc_hoi_tu_cac_on_vi_dan_au:
+  - text: |
+      Không có câu trả lời cho intent này.
+
+  utter_xephangcdsdti2020/chi_so_anh_gia_qua_phong_van_chuyen_gia_phan_anh_ieu_gi_ve_nhan_thuc_va_hieu_qua_chuyen_oi_so_tai_cac_bo_nganh_bo_nao_uoc_chuyen_gia_anh_gia_cao_nhat_va_tai_sao:
+  - text: |
+      Các bộ quản lý hành chính, như Bộ Tài chính và Ngân hàng Nhà nước Việt Nam, có xu hướng đạt điểm cao hơn ở Chỉ số kiến tạo thể chế, Hạ tầng và nền tảng số, và An toàn, an ninh mạng. Trong khi đó, các bộ quản lý chuyên ngành, như Bộ Nông nghiệp và Phát triển nông thôn và Bộ Lao động - Thương binh và Xã hội, thường có chỉ số thấp hơn ở các yếu tố trên. Điều này có thể phản ánh sự ưu tiên và năng lực khác nhau giữa các bộ ngành trong việc triển khai công nghệ và hạ tầng kỹ thuật số.
+
+
+  utter_xephangcdsdti2020/so_sanh_tong_the_cac_chi_so_giua_cac_bo_nganh_au_la_nhung_rao_can_chinh_trong_viec_at_chi_so_cao_cho_toan_bo_cac_yeu_to_cua_chuyen_oi_so:
+  - text: |
+      Không có câu trả lời cho intent này.
+
+  utter_xephangcdsdti2020/bo_nganh_nao_a_co_su_cai_thien_ro_ret_nhat_ve_chi_so_chuyen_oi_so_va_ieu_nay_the_hien_qua_cac_chi_so_nao:
+  - text: |
+      Các bộ xếp cuối bảng, như Bộ Tài nguyên và Môi trường, Bộ Nông nghiệp và Phát triển nông thôn, và Bộ Lao động - Thương binh và Xã hội, có điểm chung là Chỉ số chuyển đổi nhận thức và An toàn, an ninh mạng thấp. Để nâng cao tổng DTI, các bộ này cần ưu tiên cải thiện ở hai chỉ số trên, đồng thời nâng cấp hạ tầng kỹ thuật số và phát triển nhân lực.
+
+
+  utter_xephangcdsdti2020/vi_sao_mot_so_bo_nganh_lai_co_chi_so_thap_o_nhieu_tieu_chi_va_ieu_nay_co_the_gay_anh_huong_gi_en_chuyen_oi_so_toan_quoc:
+  - text: |
+      Chỉ số Đào tạo và phát triển nhân lực cao thường thể hiện sự đầu tư vào nâng cao kỹ năng, tổ chức các khóa đào tạo chuyển đổi số và xây dựng văn hóa số trong đơn vị. Các bộ như Bộ Y tế và Bộ Công Thương, đạt điểm cao trong chỉ số này, cho thấy họ đã có chiến lược rõ ràng về phát triển năng lực nhân viên. Các bộ khác có thể học hỏi bằng cách xây dựng chương trình đào tạo liên tục và hợp tác với các đơn vị đào tạo chuyên môn để nâng cao kỹ năng.
+
+
+  utter_xephangcdsdti2020/co_su_khac_biet_nao_giua_cac_bo_kinh_te_va_cac_bo_xa_hoi_trong_qua_trinh_chuyen_oi_so:
+  - text: |
+      Không có câu trả lời cho intent này.
+
+  utter_xephangcdsdti2020/tai_sao_chi_so_ao_tao_va_phat_trien_nhan_luc_lai_ong_vai_tro_quan_trong_trong_chuyen_oi_so_cua_cac_bo_nganh:
+  - text: |
+      Chỉ số Đánh giá qua phỏng vấn chuyên gia phản ánh nhận thức và hiệu quả thực tiễn của các hoạt động chuyển đổi số. Bộ Công Thương có chỉ số cao nhất trong đánh giá chuyên gia (0,5882), cho thấy bộ này có cách tiếp cận và triển khai chuyển đổi số đáng tin cậy, có thể do các sáng kiến và thành tựu trong hoạt động số hóa.
+
+
+  utter_xephangcdsdti2020/cac_yeu_to_nao_co_the_giup_nang_cao_chi_so_hoat_ong_chuyen_oi_so_trong_cac_bo_nganh:
+  - text: |
+      Những rào cản chính bao gồm thiếu hạ tầng kỹ thuật số đồng bộ, thiếu nhân lực có kỹ năng cao về công nghệ số, và thiếu sự đầu tư vào an ninh mạng. Các bộ, ngành cần có chiến lược rõ ràng để vượt qua những rào cản này, đặc biệt là trong việc phát triển nền tảng số và nâng cao nhận thức chuyển đổi số. Thêm vào đó, cần chú trọng vào đào tạo nguồn nhân lực và đảm bảo an toàn thông tin để đạt được hiệu quả chuyển đổi số toàn diện.
+
+
+  utter_xephangcdsdti2020/lam_the_nao_e_cai_thien_chi_so_anh_gia_qua_phong_van_chuyen_gia_cua_cac_bo_nganh:
+  - text: |
+      Ngân hàng Nhà nước Việt Nam đã có sự cải thiện đáng kể với Chỉ số kiến tạo thể chế và Hạ tầng và nền tảng số đạt điểm cao (0,5530 và 0,5116). Điều này cho thấy Ngân hàng Nhà nước đã đầu tư mạnh vào việc xây dựng cơ sở hạ tầng và thể chế cần thiết để thúc đẩy chuyển đổi số. Các chỉ số cao ở những yếu tố này giúp Ngân hàng Nhà nước đạt vị trí cao trong xếp hạng tổng thể, phản ánh sự phát triển tích cực.
+
+
+  utter_xephangcdsdti2020/co_moi_lien_he_nao_giua_chi_so_ha_tang_va_nen_tang_so_voi_cac_chi_so_khac_nhu_chi_so_an_toan_an_ninh_mang_hay_khong:
+  - text: |
+      Một số bộ, ngành như Bộ Tài nguyên và Môi trường và Bộ Văn hóa, Thể thao và Du lịch có chỉ số thấp ở nhiều tiêu chí, đặc biệt là An toàn, an ninh mạng và Hoạt động Chuyển đổi số. Điều này có thể làm chậm quá trình chuyển đổi số toàn quốc vì thiếu sự đồng bộ và thiếu an toàn khi triển khai công nghệ mới. Nếu không cải thiện, các bộ này có thể gặp khó khăn trong việc triển khai các dịch vụ công số hóa và khó đạt được mục tiêu phát triển số quốc gia.
+
+
+  utter_xephangcdsdti2020/chi_so_chuyen_oi_nhan_thuc_anh_huong_nhu_the_nao_en_toan_bo_qua_trinh_chuyen_oi_so:
+  - text: |
+      Các bộ kinh tế như Bộ Công Thương và Ngân hàng Nhà nước Việt Nam thường có điểm số cao hơn ở các yếu tố như Hoạt động Chuyển đổi số và Kiến tạo thể chế, do cần đáp ứng nhu cầu kinh tế và thương mại. Trong khi đó, các bộ xã hội như Bộ Lao động - Thương binh và Xã hội có điểm số thấp hơn ở một số yếu tố này, có thể do ít phải đối mặt với áp lực thị trường và chuyển đổi số hơn. Điều này phản ánh các lĩnh vực hoạt động khác nhau, dẫn đến ưu tiên khác nhau trong các chỉ số DTI.
+
+
+  utter_xephangcdsdti2020/tai_sao_mot_so_bo_nganh_lai_co_chi_so_hoat_ong_chuyen_oi_so_cao_nhung_van_xep_hang_tong_the_thap:
+  - text: |
+      Chỉ số Đào tạo và phát triển nhân lực là yếu tố then chốt để đảm bảo các nhân viên có khả năng sử dụng công nghệ số một cách hiệu quả và thích nghi với các quy trình công việc mới. Bộ Y tế và Bộ Công Thương có chỉ số này khá cao, cho thấy họ đã có kế hoạch phát triển kỹ năng cho nhân viên, điều này giúp các bộ, ngành này duy trì tính ổn định và bền vững trong quá trình chuyển đổi số. Các bộ khác nên chú trọng phát triển nhân lực để đạt hiệu quả tốt hơn trong chuyển đổi số.
+
+
+  utter_xephangcdsdti2020/cac_bo_nganh_co_the_hoc_hoi_lan_nhau_nhu_the_nao_e_nang_cao_dti_tong_the:
+  - text: |
+      Để nâng cao Chỉ số Hoạt động Chuyển đổi số, các bộ, ngành cần đẩy mạnh các dự án chuyển đổi số nội bộ, tạo điều kiện thuận lợi cho việc ứng dụng công nghệ trong quản lý và dịch vụ. Điều này bao gồm việc triển khai các hệ thống quản lý thông tin và dịch vụ công trực tuyến. Sự phát triển và áp dụng các giải pháp số hóa trong quy trình nội bộ giúp cải thiện hiệu quả công việc, từ đó nâng cao điểm số chuyển đổi số.
+
+
+  utter_xephangcdsdti2020/nhung_yeu_to_nao_gop_phan_lam_cho_bo_tai_chinh_ung_au_bang_xep_hang_dti_2020:
+  - text: |
+      Chỉ số đánh giá qua phỏng vấn chuyên gia phản ánh hiệu quả thực tiễn và nhận thức của các bộ, ngành về chuyển đổi số. Để cải thiện chỉ số này, các bộ, ngành cần xây dựng kế hoạch cụ thể và triển khai chiến lược chuyển đổi số hiệu quả. Ngoài ra, cần tăng cường hợp tác với các chuyên gia và tổ chức đào tạo để nhận được sự hỗ trợ và tư vấn chuyên sâu, từ đó cải thiện cách thức thực hiện và triển khai các dự án số hóa.
+
+
+  utter_xephangcdsdti2020/ly_do_nao_giup_ngan_hang_nha_nuoc_at_vi_tri_thu_hai_trong_chuyen_oi_so:
+  - text: |
+      Có một mối liên hệ chặt chẽ giữa Chỉ số Hạ tầng và nền tảng số với An toàn, an ninh mạng. Khi hạ tầng kỹ thuật số được xây dựng mạnh mẽ và ổn định, việc triển khai các biện pháp bảo mật dễ dàng hơn và hiệu quả hơn. Các bộ, ngành như Bộ Kế hoạch và Đầu tư, có chỉ số cao ở cả Hạ tầng và nền tảng số và An toàn, an ninh mạng, chứng tỏ rằng sự phát triển đồng bộ trong hai lĩnh vực này giúp đảm bảo tính bảo mật và độ tin cậy trong quá trình chuyển đổi số.
+
+
+  utter_xephangcdsdti2020/co_iem_nao_ang_chu_y_trong_qua_trinh_nay:
+  - text: |
+      Chỉ số chuyển đổi nhận thức phản ánh mức độ hiểu biết và sẵn sàng của các bộ, ngành trong việc chuyển đổi số. Khi nhận thức về chuyển đổi số cao, các đơn vị dễ dàng hơn trong việc thực hiện các thay đổi cần thiết, từ việc cải tiến hạ tầng đến đào tạo nhân lực. Bộ Tài chính, với Chỉ số chuyển đổi nhận thức cao, đã cho thấy sự chủ động trong các hoạt động chuyển đổi số. Tăng cường nhận thức số giúp các bộ, ngành tiến hành thay đổi dễ dàng và nhanh chóng, dẫn đến hiệu quả cao hơn trong quá trình chuyển đổi.
+
+
+  utter_xephangcdsdti2020/iem_manh_va_iem_yeu_cua_bo_ke_hoach_va_au_tu_trong_chuyen_oi_so_la_gi_nhung_khia_canh_nao_co_the_cai_thien:
+  - text: |
+      Điều này có thể xảy ra khi các bộ, ngành chỉ tập trung vào một vài chỉ số chính mà không đầu tư đồng đều vào các yếu tố khác, chẳng hạn như an ninh mạng hoặc phát triển nhân lực. Bộ Tài nguyên và Môi trường, dù có Chỉ số Hoạt động Chuyển đổi số khá cao (0,3746), nhưng vẫn xếp hạng tổng thể thấp do thiếu đầu tư vào các yếu tố như An toàn, an ninh mạng và Hạ tầng nền tảng số. Sự không đồng đều này có thể hạn chế khả năng ứng dụng hiệu quả của chuyển đổi số trong thực tế.
+
+
+  utter_xephangcdsdti2020/cac_bo_xep_cuoi_bang_xep_hang_dti_co_gap_kho_khan_ac_biet_nao_trong_cac_chi_so_vi_du_nhu_ha_tang_so_hoac_ao_tao_nhan_luc:
+  - text: |
+      Các bộ, ngành có thể học hỏi lẫn nhau qua việc trao đổi kinh nghiệm và thực tiễn tốt nhất, đặc biệt từ các bộ dẫn đầu như Bộ Tài chính hay Ngân hàng Nhà nước Việt Nam. Các đơn vị có thể tham khảo chiến lược phát triển hạ tầng và đào tạo nhân lực của các bộ này. Thêm vào đó, việc hợp tác trong các dự án chuyển đổi số liên bộ ngành cũng giúp chia sẻ nguồn lực, nâng cao hiệu quả và đồng thời cải thiện điểm số DTI tổng thể.
+
+
+  utter_xephangcdsdti2020/au_la_cac_thach_thuc_ma_bo_lao_ong_-_thuong_binh_va_xa_hoi_gap_phai_khi_ung_o_vi_tri_cuoi_cung_ve_chi_so_dti:
+  - text: |
+      Bộ Tài Chính dẫn đầu nhờ sự chủ động trong xây dựng hạ tầng kỹ thuật số, áp dụng hệ thống quản lý tài chính điện tử tiên tiến và đầu tư vào an toàn, an ninh mạng. Bộ cũng tích cực trong triển khai các dịch vụ công trực tuyến và có chiến lược đào tạo nhân lực chuyên sâu về chuyển đổi số, góp phần nâng cao hiệu quả quản lý tài chính.
+
+
+  utter_xephangcdsdti2020/co_su_khac_biet_ang_ke_nao_khong:
+  - text: |
+      Không có câu trả lời cho intent này.
+
+  utter_xephangcdsdti2020/vai_tro_cua_yeu_to_ao_tao_va_phat_trien_nhan_luc_trong_qua_trinh_chuyen_oi_so_cua_cac_bo_the_hien_nhu_the_nao_qua_chi_so_dti_2020:
+  - text: |
+      Ngân hàng Nhà nước đã phát triển mạnh mẽ các nền tảng ngân hàng số và dịch vụ thanh toán trực tuyến, hỗ trợ trực tiếp cho công chúng và doanh nghiệp. Với các biện pháp an toàn bảo mật được tăng cường và cải tiến công nghệ liên tục, đơn vị này đảm bảo việc xử lý thông tin và giao dịch trực tuyến một cách hiệu quả và bảo mật.
+
+
+  utter_xephangcdsdti2020/trong_cac_chi_so_anh_gia_qua_phong_van_chuyen_gia_au_la_yeu_to_then_chot_giup_bo_y_te_at_thu_hang_cao_trong_bang:
+  - text: |
+      Không có câu trả lời cho intent này.
+
+  utter_xephangcdsdti2020/nhung_bo_co_chi_so_ve_thong_tin_va_du_lieu_so_thap_co_gap_rao_can_ac_biet_nao_khong_ieu_gi_can_cai_thien_e_nang_cao_chi_so_nay:
+  - text: |
+      Bộ Kế hoạch và Đầu tư có điểm mạnh trong việc thu thập, quản lý và phân tích dữ liệu quốc gia. Tuy nhiên, các quy trình số hóa chưa đồng bộ hoàn toàn, ảnh hưởng đến tốc độ xử lý và chia sẻ dữ liệu với các bộ ngành khác. Bộ cần tập trung vào việc tăng cường hạ tầng kỹ thuật và triển khai đồng bộ các ứng dụng để cải thiện tính hiệu quả.
+
+
+  utter_xephangcdsdti2020/chi_so_chuyen_oi_nhan_thuc_co_tac_ong_ra_sao_en_hieu_qua_tong_the_cua_qua_trinh_chuyen_oi_so_o_cac_bo:
+  - text: |
+      Các Bộ xếp cuối bảng gặp hạn chế chủ yếu trong việc đầu tư hạ tầng kỹ thuật và đào tạo nhân lực số. Thiếu nguồn lực và khả năng tiếp cận công nghệ hiện đại đã khiến các Bộ này gặp khó khăn trong triển khai dịch vụ trực tuyến và bảo đảm an toàn thông tin, dẫn đến chỉ số DTI thấp.
+
+
+  utter_xephangcdsdti2020/cac_bo_co_chi_so_cung_cap_dich_vu_cong_thap_can_lam_gi_e_tang_cuong_kha_nang_cung_cap_dich_vu_cong_truc_tuyen:
+  - text: |
+      Bộ Lao động - Thương binh và Xã hội gặp khó khăn trong xây dựng hạ tầng kỹ thuật số do nguồn lực và kinh phí hạn chế. Việc triển khai các dịch vụ trực tuyến chưa đồng đều và hệ thống đào tạo nhân lực chưa được đầu tư đúng mức cũng là yếu tố cản trở quá trình chuyển đổi số của Bộ. So sánh các chỉ số về an toàn, an ninh mạng của các Bộ.
+
+
+  utter_xephangcdsdti2020/viec_thieu_hut_nhan_luc_chuyen_mon_ve_cong_nghe_anh_huong_the_nao_en_qua_trinh_chuyen_oi_so_cua_cac_bo:
+  - text: |
+      Các Bộ đứng đầu bảng xếp hạng DTI đều có mức độ bảo mật thông tin và an toàn mạng cao nhờ vào đầu tư mạnh mẽ vào công nghệ bảo mật. Trong khi đó, các Bộ xếp hạng thấp có các biện pháp bảo mật yếu hơn, thiếu nhân lực chuyên môn và chưa có các giải pháp bảo vệ toàn diện cho dữ liệu số, gây ra sự khác biệt lớn.
+
+
+  utter_xephangcdsdti2020/co_su_tuong_quan_nao_giua_chi_so_ve_ha_tang_cong_nghe_va_chi_so_cung_cap_dich_vu_cong_khong:
+  - text: |
+      Đào tạo và phát triển nhân lực đóng vai trò quan trọng, với các Bộ có chỉ số DTI cao đều có chương trình đào tạo kỹ năng số cho nhân viên. Ngược lại, những Bộ có chỉ số thấp thường thiếu các chương trình này, dẫn đến hiệu quả chuyển đổi số không cao do hạn chế về kỹ năng và kiến thức công nghệ.
+
+
+  utter_xephangcdsdti2020/cac_bo_gap_kho_khan_gi_khi_trien_khai_he_thong_quan_ly_du_lieu_so_hoa:
+  - text: |
+      Bộ Y tế đạt thứ hạng cao nhờ triển khai thành công các ứng dụng y tế điện tử và phát triển hệ thống hồ sơ sức khỏe cá nhân điện tử. Sự sẵn sàng tiếp nhận công nghệ của đội ngũ nhân viên y tế cũng là yếu tố quan trọng được các chuyên gia ghi nhận.
+
+
+  utter_xephangcdsdti2020/co_iem_gi_ac_biet_trong_cach_bo_tai_chinh_trien_khai_chien_luoc_bao_mat_thong_tin_va_bao_ve_du_lieu_so_voi_cac_bo_khac:
+  - text: |
+      Không có câu trả lời cho intent này.
+
+  utter_xephangcdsdti2020/cac_bo_can_co_giai_phap_gi_e_cai_thien_chi_so_hop_tac_va_chia_se_du_lieu_trong_qua_trinh_chuyen_oi_so:
+  - text: |
+      Những Bộ có chỉ số thấp về thông tin và dữ liệu số gặp khó khăn trong việc thu thập và phân tích dữ liệu do hạ tầng và nhân lực còn hạn chế. Để cải thiện, họ cần đầu tư vào công nghệ phân tích dữ liệu và tăng cường đào tạo kỹ năng phân tích dữ liệu cho đội ngũ.
+
+
+  utter_xephangcdsdti2020/cong_tac_tuyen_truyen_ve_loi_ich_cua_chuyen_oi_so_co_tac_ong_ra_sao_en_hieu_qua_cua_qua_trinh_nay_tai_cac_bo:
+  - text: |
+      Chỉ số chuyển đổi nhận thức cao giúp tăng cường nhận thức về tầm quan trọng của công nghệ số trong quản lý và điều hành, thúc đẩy các Bộ đầu tư nghiêm túc vào chuyển đổi số. Ngược lại, các Bộ có chỉ số này thấp thường không đặt trọng tâm vào chuyển đổi số, dẫn đến hiệu quả tổng thể kém và tiến độ triển khai chậm.
+
+
+  utter_xephangcdsdti2020/tai_sao_viec_lien_ket_va_phoi_hop_giua_cac_bo_nganh_lai_la_yeu_to_then_chot_trong_qua_trinh_chuyen_oi_so:
+  - text: |
+      Các Bộ này nên đầu tư vào hạ tầng công nghệ, cải thiện quy trình cung cấp dịch vụ và nâng cấp các nền tảng dịch vụ trực tuyến. Họ cần tối ưu hóa giao diện và quy trình sử dụng để tạo điều kiện thuận lợi cho người dân tiếp cận dịch vụ công dễ dàng hơn.
+
+
+  utter_xephangcdsdti2020/cac_bo_co_chi_so_ve_dich_vu_va_ung_dung_so_cao_a_lam_gi_e_thu_hut_nguoi_dan_su_dung_dich_vu_cong_truc_tuyen:
+  - text: |
+      Thiếu nhân lực chuyên môn dẫn đến hiệu quả triển khai các giải pháp công nghệ giảm sút, ảnh hưởng đến tiến độ và chất lượng của chuyển đổi số. Các Bộ này cần đẩy mạnh công tác tuyển dụng và đào tạo chuyên sâu để đáp ứng nhu cầu nhân lực trong lĩnh vực công nghệ số.
+
+
+  utter_xephangcdsdti2020/lam_the_nao_e_cac_bo_nang_cao_tinh_tuong_tac_va_phan_hoi_tu_nguoi_dan_khi_trien_khai_dich_vu_cong_truc_tuyen:
+  - text: |
+      Thông thường, các Bộ có hạ tầng công nghệ tốt sẽ có chỉ số cung cấp dịch vụ công cao hơn, vì hạ tầng ổn định là nền tảng cho việc triển khai các dịch vụ công trực tuyến hiệu quả. Tuy nhiên, các Bộ có hạ tầng yếu thường gặp khó khăn trong cung cấp dịch vụ công, dẫn đến chỉ số thấp hơn.
+
+
+  utter_xephangcdsdti2020/cac_yeu_to_nao_anh_huong_lon_nhat_en_chi_so_quan_tri_va_to_chuc_chuyen_oi_so_trong_cac_bo:
+  - text: |
+      Một số Bộ gặp khó khăn trong việc xây dựng cơ sở dữ liệu đồng bộ và bảo mật, đặc biệt là khi chia sẻ thông tin với các Bộ ngành khác. Họ cần có các chính sách quản lý và bảo mật dữ liệu nghiêm ngặt cùng với hạ tầng công nghệ đủ mạnh để đảm bảo an toàn và tính chính xác của dữ liệu.
+
+
+  utter_xephangcdsdti2020/viec_thieu_cong_cu_phan_tich_du_lieu_anh_huong_ra_sao_en_hieu_qua_ra_quyet_inh_cua_cac_bo:
+  - text: |
+      Bộ Tài chính đầu tư mạnh vào các công nghệ bảo mật tiên tiến và thường xuyên tổ chức các đợt kiểm tra, đánh giá an toàn mạng. Bộ này cũng có quy trình xử lý sự cố và đảm bảo tuân thủ các quy định quốc gia về an ninh mạng, tạo ra sự khác biệt trong chiến lược bảo mật.
+
+
+  utter_xephangcdsdti2020/cac_bo_a_su_dung_cong_nghe_nao_e_toi_uu_hoa_quy_trinh_cung_cap_dich_vu_cong:
+  - text: |
+      Để cải thiện chỉ số này, các Bộ cần thiết lập các hệ thống tương thích để chia sẻ dữ liệu và xây dựng các quy trình liên thông giữa các Bộ ngành. Cần có các thoả thuận hợp tác về quy trình và bảo mật để đảm bảo dữ liệu được chia sẻ an toàn và hiệu quả.
+
+
+  utter_xephangcdsdti2020/tai_sao_chi_so_ve_o_san_sang_cong_nghe_lai_quan_trong_trong_chuyen_oi_so:
+  - text: |
+      Tuyên truyền tích cực giúp nâng cao nhận thức và thúc đẩy tinh thần sẵn sàng áp dụng công nghệ trong cán bộ nhân viên. Điều này tạo ra một môi trường thuận lợi, giúp quá trình chuyển đổi số diễn ra suôn sẻ và nhanh chóng hơn nhờ sự ủng hộ và đồng thuận cao trong tổ chức.
+
+
+  utter_xephangcdsdti2020/viec_thieu_ngan_sach_anh_huong_the_nao_en_kha_nang_trien_khai_cac_du_an_chuyen_oi_so_cua_cac_bo:
+  - text: |
+      Liên kết và phối hợp giúp các Bộ chia sẻ dữ liệu, giải pháp công nghệ, và kinh nghiệm thực tiễn, từ đó tối ưu hoá nguồn lực và cải thiện chất lượng dịch vụ công. Sự hợp tác liên ngành giúp quá trình chuyển đổi số diễn ra liền mạch và nâng cao tính đồng bộ trên toàn quốc.
+
+
+  utter_xephangcdsdti2020/cac_bo_co_chuong_trinh_nao_nham_nang_cao_ky_nang_so_cho_can_bo_nhan_vien:
+  - text: |
+      Các Bộ này thường đầu tư vào giao diện dễ sử dụng, cung cấp các hướng dẫn rõ ràng và đảm bảo tính ổn định của dịch vụ trực tuyến. Họ cũng đẩy mạnh tuyên truyền để nâng cao nhận thức của người dân về lợi ích khi sử dụng dịch vụ công trực tuyến, từ đó khuyến khích người dân sử dụng.
+
+
+  utter_xephangcdsdti2020/tai_sao_cac_bo_can_chu_trong_vao_bao_mat_va_an_ninh_mang_khi_thuc_hien_chuyen_oi_so:
+  - text: |
+      Các Bộ có thể cải thiện tính tương tác bằng cách thiết lập các kênh phản hồi trực tuyến, hỗ trợ người dùng nhanh chóng và hiệu quả. Cung cấp dịch vụ hỗ trợ qua điện thoại, email, hoặc chatbot có thể giúp người dân cảm thấy được quan tâm và thúc đẩy họ tham gia sử dụng dịch vụ công trực tuyến.
+
+
+  utter_xephangcdsdti2020/cong_nghe_ien_toan_am_may_co_vai_tro_gi_trong_qua_trinh_chuyen_oi_so_cua_cac_bo:
+  - text: |
+      Chỉ số này chịu ảnh hưởng từ yếu tố lãnh đạo, cam kết chiến lược của cấp quản lý, và cơ cấu tổ chức hỗ trợ cho đổi mới công nghệ. Sự tham gia tích cực từ các cấp lãnh đạo và quy trình quản lý rõ ràng giúp các Bộ thực hiện chuyển đổi số hiệu quả hơn.
+
+
+  utter_xephangcdsdti2020/tai_sao_cac_bo_can_phai_anh_gia_va_ieu_chinh_chien_luoc_chuyen_oi_so_thuong_xuyen:
+  - text: |
+      Khi thiếu các công cụ phân tích, các Bộ gặp khó khăn trong việc xử lý và phân tích thông tin để đưa ra quyết định chiến lược. Công cụ phân tích giúp tối ưu hóa việc ra quyết định dựa trên dữ liệu thực tế, từ đó nâng cao hiệu quả hoạt động và chất lượng dịch vụ.
+
+
+  utter_xephangcdsdti2020/cac_bo_co_the_hoc_hoi_gi_tu_cac_quoc_gia_khac_a_thanh_cong_trong_chuyen_oi_so:
+  - text: |
+      Nhiều Bộ ứng dụng các công nghệ như trí tuệ nhân tạo (AI), xử lý ngôn ngữ tự nhiên (NLP), và tự động hóa quy trình bằng robot (RPA) để tối ưu hóa dịch vụ công. Các công nghệ này giúp giảm thời gian xử lý và tăng cường độ chính xác trong các dịch vụ hành chính.
+
+
+  utter_xephangcdsdti2020/chuyen_oi_so_a_giup_cai_thien_hieu_qua_lam_viec_cua_cac_bo_nhu_the_nao:
+  - text: |
+      Độ sẵn sàng công nghệ đảm bảo các Bộ có cơ sở hạ tầng và nguồn lực cần thiết để triển khai các giải pháp số hóa hiệu quả. Chỉ số này cao cho thấy các Bộ đã chuẩn bị kỹ càng về công nghệ, giúp quá trình chuyển đổi số dễ dàng và ổn định hơn.
+
+
+  utter_xephangcdsdti2020/nhung_thach_thuc_nao_trong_chuyen_oi_so_ma_cac_bo_can_phai_vuot_qua:
+  - text: |
+      Ngân sách hạn chế khiến các Bộ gặp khó khăn trong đầu tư công nghệ, tuyển dụng nhân lực chuyên môn, và thực hiện các dự án số hóa. Điều này làm giảm khả năng cập nhật công nghệ mới, khiến quá trình chuyển đổi số diễn ra chậm hơn.
+
+
+  utter_xephangcdsdti2020/cac_chi_so_dti_co_the_giup_cac_bo_ieu_chinh_chien_luoc_chuyen_oi_so_nhu_the_nao:
+  - text: |
+      Một số Bộ tổ chức các khóa đào tạo kỹ năng số cơ bản và nâng cao, cung cấp chứng chỉ công nghệ thông tin, và hỗ trợ nhân viên cập nhật kỹ năng mới trong lĩnh vực số hóa. Điều này giúp tạo ra nguồn nhân lực chất lượng, sẵn sàng đáp ứng nhu cầu chuyển đổi số.
+
+
+  utter_xephangcdsdti2020/cac_bo_can_tap_trung_vao_nhung_yeu_to_nao_e_ay_manh_phat_trien_ky_nang_so_cho_oi_ngu_nhan_vien:
+  - text: |
+      Bảo mật và an ninh mạng là nền tảng để bảo vệ dữ liệu và hệ thống công nghệ của các Bộ trước các mối đe dọa an ninh. Đảm bảo an toàn thông tin là cần thiết để duy trì lòng tin của người dân và đảm bảo dịch vụ công không bị gián đoạn.
+
+
+  utter_xephangcdsdti2020/lam_the_nao_e_cac_bo_am_bao_tinh_ben_vung_trong_chuyen_oi_so:
+  - text: |
+      Điện toán đám mây cung cấp khả năng lưu trữ linh hoạt, khả năng xử lý mạnh mẽ, và tính bảo mật cao. Sử dụng công nghệ đám mây giúp các Bộ giảm thiểu chi phí hạ tầng, dễ dàng mở rộng quy mô dịch vụ, và tăng cường khả năng truy cập từ xa.
+
+
+  utter_xephangcdsdti2020/viec_su_dung_du_lieu_lon_big_data_co_the_mang_lai_loi_ich_gi_trong_quan_ly_va_ieu_hanh_cac_bo:
+  - text: |
+      Việc đánh giá và điều chỉnh chiến lược giúp các Bộ thích nghi với thay đổi nhanh chóng trong công nghệ và nhu cầu của xã hội. Điều này giúp họ xác định các điểm yếu và điều chỉnh mục tiêu để đảm bảo quá trình chuyển đổi số hiệu quả và bền vững.
+
+
+  utter_xephangcdsdti2020/chi_so_dti_anh_huong_the_nao_en_quyet_inh_au_tu_cong_nghe_cua_cac_bo:
+  - text: |
+      Các Bộ có thể học hỏi về mô hình tổ chức, công nghệ tiên tiến, quy trình triển khai và phương pháp giám sát hiệu quả từ các quốc gia thành công. Áp dụng các bài học này sẽ giúp họ xây dựng chiến lược phù hợp và đạt được kết quả nhanh chóng trong chuyển đổi số.
+
+
+  utter_xephangcdsdti2020/cac_bo_co_ke_hoach_nao_e_am_bao_kha_nang_tuong_tac_giua_cac_he_thong_so_hoa:
+  - text: |
+      Các quy trình được số hóa giúp giảm thiểu thủ tục hành chính, tăng cường tính minh bạch và đẩy nhanh thời gian xử lý công việc, từ đó cải thiện hiệu quả làm việc của các Bộ.
+
+
+  utter_xephangcdsdti2020/chi_so_dti_co_the_giup_cac_bo_tang_cuong_moi_quan_he_voi_cac_doanh_nghiep_tu_nhan_ra_sao:
+  - text: |
+      Thách thức bao gồm thiếu nhân lực có kỹ năng công nghệ, ngân sách hạn chế, cơ sở hạ tầng chưa đồng bộ và khả năng bảo mật chưa đáp ứng đủ yêu cầu, làm cản trở quá trình chuyển đổi số.
+
+
+  utter_xephangcdsdti2020/su_tham_gia_cua_nguoi_dan_co_the_gop_phan_nhu_the_nao_vao_qua_trinh_chuyen_oi_so_cua_cac_bo:
+  - text: |
+      Các chỉ số DTI cung cấp dữ liệu đánh giá rõ ràng về hiệu quả và tiến độ thực hiện chuyển đổi số, giúp các Bộ nhận ra các điểm yếu cần cải thiện và điều chỉnh chiến lược phù hợp.
+
+
+  utter_xephangcdsdti2020/cac_bo_co_the_su_dung_dti_e_anh_gia_hieu_qua_cua_cac_sang_kien_chuyen_oi_so_nhu_the_nao:
+  - text: |
+      Các yếu tố cần tập trung gồm tổ chức đào tạo kỹ năng số, khuyến khích văn hóa học hỏi, hỗ trợ thực hành thực tế và cung cấp công cụ hiện đại để nhân viên ứng dụng công nghệ một cách hiệu quả.
+
+
+  utter_xephangcdsdti2020/cong_nghe_ai_co_the_uoc_ap_dung_nhu_the_nao_e_ho_tro_chuyen_oi_so_trong_cac_bo:
+  - text: |
+      Tính bền vững đạt được khi các Bộ đầu tư vào cơ sở hạ tầng công nghệ lâu dài, cập nhật thường xuyên chiến lược số, và duy trì đội ngũ có kỹ năng phù hợp với yêu cầu của thời đại công nghệ.
+
+
+  utter_xephangcdsdti2020/cac_bo_co_the_su_dung_du_lieu_cua_dti_e_inh_huong_phat_trien_ky_nang_so_ra_sao:
+  - text: |
+      Big Data giúp phân tích thông tin từ nhiều nguồn, dự đoán xu hướng và hỗ trợ ra quyết định nhanh chóng, chính xác, từ đó nâng cao hiệu quả quản lý và điều hành của các Bộ.
+
+
+  utter_xephangcdsdti2020/chi_so_dti_tac_ong_nhu_the_nao_en_viec_cai_thien_dich_vu_cong_truc_tuyen:
+  - text: |
+      DTI cao cho thấy hiệu quả chuyển đổi số tốt, giúp các Bộ tự tin đầu tư thêm vào công nghệ, trong khi DTI thấp thúc đẩy sự cân nhắc kỹ càng hơn để tránh các chi phí không cần thiết.
+
+
+  utter_xephangcdsdti2020/nhung_rui_ro_nao_co_the_phat_sinh_tu_viec_trien_khai_chuyen_oi_so_ma_cac_bo_can_luu_y:
+  - text: |
+      Kế hoạch bao gồm thiết lập các giao thức và tiêu chuẩn kỹ thuật chung, áp dụng các API, và xây dựng hạ tầng mạng mạnh mẽ để các hệ thống có thể dễ dàng tương tác và trao đổi thông tin.
+
+
+  utter_xephangcdsdti2020/cac_bo_co_the_hop_tac_voi_cac_to_chuc_quoc_te_nhu_the_nao_e_thuc_ay_chuyen_oi_so:
+  - text: |
+      Khi DTI cao, các Bộ có thể minh bạch hóa quy trình và tiêu chuẩn công nghệ, tạo điều kiện thuận lợi cho các doanh nghiệp tham gia hợp tác và đầu tư vào các dự án chuyển đổi số công.
+
+
+  utter_xephangcdsdti2020/oi_moi_cong_nghe_anh_huong_the_nao_en_viec_duy_tri_chi_so_dti_on_inh:
+  - text: |
+      Người dân đóng vai trò cung cấp phản hồi, giúp cải thiện dịch vụ công số và đẩy mạnh sự chấp nhận công nghệ trong xã hội. Sự tham gia của người dân cũng là chỉ báo về mức độ thành công và hiệu quả của quá trình chuyển đổi số.
+
+
+  utter_xephangcdsdti2020/viec_su_dung_dti_co_the_giup_cac_bo_theo_doi_va_ieu_chinh_muc_tieu_dai_han_ra_sao:
+  - text: |
+      DTI có thể cung cấp dữ liệu về kết quả và tiến độ của các sáng kiến, giúp các Bộ đánh giá hiệu quả và tối ưu hóa các chiến lược chuyển đổi.
+
+
+  utter_xephangcdsdti2020/o_luong_hieu_qua_cua_chuyen_oi_so_dua_tren_dti_co_anh_huong_gi_en_cach_cac_bo_phan_bo_nguon_luc:
+  - text: |
+      AI có thể tự động hóa quy trình, phân tích dữ liệu lớn, và đưa ra các dự đoán hoặc đề xuất hỗ trợ quyết định, từ đó giúp các Bộ tăng hiệu suất và độ chính xác trong quản lý.
+
+
+  utter_xephangcdsdti2020/chi_so_dti_co_the_tac_ong_en_cach_thuc_cac_bo_cai_thien_trai_nghiem_nguoi_dung_nhu_the_nao:
+  - text: |
+      Dữ liệu DTI giúp các Bộ xác định nhu cầu kỹ năng cụ thể, từ đó xây dựng chương trình đào tạo phù hợp và hiệu quả cho đội ngũ nhân viên trong quá trình chuyển đổi số.
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,738 @@
+version: '3.1'
+nlu:
+- intent: sothongtinvatruyenthong/chuyen_oi_so_la_gi
+  examples: |
+    - Chuyển đổi số là gì?
+    - Chuyển đổi số là gì là gì?
+    - Chuyển đổi số là gì bao gồm những gì?
+    - Chuyển đổi số là gì cụ thể ra sao?
+    - Chuyển đổi số là gì, bạn có thể giải thích không?
+    - Chuyển đổi số là gì được hiểu như thế nào?
+    - Chuyển đổi số là gì có những điểm nào nổi bật?
+    - Có thể nói rõ Chuyển đổi số là gì không?
+    - Bạn biết Chuyển đổi số là gì không?
+    - Làm thế nào để hiểu Chuyển đổi số là gì?
+    - Chuyển đổi số là gì có ý nghĩa gì?
+    - Chuyển đổi số là gì có thể giải thích thêm không?
+    - Hãy cho tôi biết về Chuyển đổi số là gì?
+    - Hãy Chuyển đổi số là gì
+    - Xin hãy cho tôi biết về Chuyển đổi số là gì?
+    - Bạn có thể cho tôi biết về Chuyển đổi số là gì?
+    - Chuyển đổi số là gì là sao?
+    - Chuyển đổi số là gì là như thế nào
+    - Chuyển đổi số là gì nào?
+    - Chuyển đổi số là gì không?
+
+- intent: sothongtinvatruyenthong/vi_sao_lai_can_chuyen_oi_so
+  examples: |
+    - Vì sao lại cần chuyển đổi số?
+    - Vì sao lại cần chuyển đổi số là gì?
+    - Vì sao lại cần chuyển đổi số bao gồm những gì?
+    - Vì sao lại cần chuyển đổi số cụ thể ra sao?
+    - Vì sao lại cần chuyển đổi số, bạn có thể giải thích không?
+    - Vì sao lại cần chuyển đổi số được hiểu như thế nào?
+    - Vì sao lại cần chuyển đổi số có những điểm nào nổi bật?
+    - Có thể nói rõ Vì sao lại cần chuyển đổi số không?
+    - Bạn biết Vì sao lại cần chuyển đổi số không?
+    - Làm thế nào để hiểu Vì sao lại cần chuyển đổi số?
+    - Vì sao lại cần chuyển đổi số có ý nghĩa gì?
+    - Vì sao lại cần chuyển đổi số có thể giải thích thêm không?
+    - Hãy cho tôi biết về Vì sao lại cần chuyển đổi số?
+    - Hãy Vì sao lại cần chuyển đổi số
+    - Xin hãy cho tôi biết về Vì sao lại cần chuyển đổi số?
+    - Bạn có thể cho tôi biết về Vì sao lại cần chuyển đổi số?
+    - Vì sao lại cần chuyển đổi số là sao?
+    - Vì sao lại cần chuyển đổi số là như thế nào
+    - Vì sao lại cần chuyển đổi số nào?
+    - Vì sao lại cần chuyển đổi số không?
+
+- intent: sothongtinvatruyenthong/chuyen_oi_so_la_viec_cua_ai
+  examples: |
+    - Chuyển đổi số là việc của ai?
+    - Chuyển đổi số là việc của ai là gì?
+    - Chuyển đổi số là việc của ai bao gồm những gì?
+    - Chuyển đổi số là việc của ai cụ thể ra sao?
+    - Chuyển đổi số là việc của ai, bạn có thể giải thích không?
+    - Chuyển đổi số là việc của ai được hiểu như thế nào?
+    - Chuyển đổi số là việc của ai có những điểm nào nổi bật?
+    - Có thể nói rõ Chuyển đổi số là việc của ai không?
+    - Bạn biết Chuyển đổi số là việc của ai không?
+    - Làm thế nào để hiểu Chuyển đổi số là việc của ai?
+    - Chuyển đổi số là việc của ai có ý nghĩa gì?
+    - Chuyển đổi số là việc của ai có thể giải thích thêm không?
+    - Hãy cho tôi biết về Chuyển đổi số là việc của ai?
+    - Hãy Chuyển đổi số là việc của ai
+    - Xin hãy cho tôi biết về Chuyển đổi số là việc của ai?
+    - Bạn có thể cho tôi biết về Chuyển đổi số là việc của ai?
+    - Chuyển đổi số là việc của ai là sao?
+    - Chuyển đổi số là việc của ai là như thế nào
+    - Chuyển đổi số là việc của ai nào?
+    - Chuyển đổi số là việc của ai không?
+
+- intent: sothongtinvatruyenthong/cac_linh_vuc_nao_uoc_uu_tien_chuyen_oi_so
+  examples: |
+    - Các lĩnh vực nào được ưu tiên chuyển đổi số?
+    - Các lĩnh vực nào được ưu tiên chuyển đổi số là gì?
+    - Các lĩnh vực nào được ưu tiên chuyển đổi số bao gồm những gì?
+    - Các lĩnh vực nào được ưu tiên chuyển đổi số cụ thể ra sao?
+    - Các lĩnh vực nào được ưu tiên chuyển đổi số, bạn có thể giải thích không?
+    - Các lĩnh vực nào được ưu tiên chuyển đổi số được hiểu như thế nào?
+    - Các lĩnh vực nào được ưu tiên chuyển đổi số có những điểm nào nổi bật?
+    - Có thể nói rõ Các lĩnh vực nào được ưu tiên chuyển đổi số không?
+    - Bạn biết Các lĩnh vực nào được ưu tiên chuyển đổi số không?
+    - Làm thế nào để hiểu Các lĩnh vực nào được ưu tiên chuyển đổi số?
+    - Các lĩnh vực nào được ưu tiên chuyển đổi số có ý nghĩa gì?
+    - Các lĩnh vực nào được ưu tiên chuyển đổi số có thể giải thích thêm không?
+    - Hãy cho tôi biết về Các lĩnh vực nào được ưu tiên chuyển đổi số?
+    - Hãy Các lĩnh vực nào được ưu tiên chuyển đổi số
+    - Xin hãy cho tôi biết về Các lĩnh vực nào được ưu tiên chuyển đổi số?
+    - Bạn có thể cho tôi biết về Các lĩnh vực nào được ưu tiên chuyển đổi số?
+    - Các lĩnh vực nào được ưu tiên chuyển đổi số là sao?
+    - Các lĩnh vực nào được ưu tiên chuyển đổi số là như thế nào
+    - Các lĩnh vực nào được ưu tiên chuyển đổi số nào?
+    - Các lĩnh vực nào được ưu tiên chuyển đổi số không?
+
+- intent: sothongtinvatruyenthong/the_nao_la_chuyen_oi_so_lay_nguoi_dan_la_trung_tam
+  examples: |
+    - Thế nào là chuyển đổi số lấy người dân là trung tâm?
+    - Thế nào là chuyển đổi số lấy người dân là trung tâm là gì?
+    - Thế nào là chuyển đổi số lấy người dân là trung tâm bao gồm những gì?
+    - Thế nào là chuyển đổi số lấy người dân là trung tâm cụ thể ra sao?
+    - Thế nào là chuyển đổi số lấy người dân là trung tâm, bạn có thể giải thích không?
+    - Thế nào là chuyển đổi số lấy người dân là trung tâm được hiểu như thế nào?
+    - Thế nào là chuyển đổi số lấy người dân là trung tâm có những điểm nào nổi bật?
+    - Có thể nói rõ Thế nào là chuyển đổi số lấy người dân là trung tâm không?
+    - Bạn biết Thế nào là chuyển đổi số lấy người dân là trung tâm không?
+    - Làm thế nào để hiểu Thế nào là chuyển đổi số lấy người dân là trung tâm?
+    - Thế nào là chuyển đổi số lấy người dân là trung tâm có ý nghĩa gì?
+    - Thế nào là chuyển đổi số lấy người dân là trung tâm có thể giải thích thêm không?
+    - Hãy cho tôi biết về Thế nào là chuyển đổi số lấy người dân là trung tâm?
+    - Hãy Thế nào là chuyển đổi số lấy người dân là trung tâm
+    - Xin hãy cho tôi biết về Thế nào là chuyển đổi số lấy người dân là trung tâm?
+    - Bạn có thể cho tôi biết về Thế nào là chuyển đổi số lấy người dân là trung tâm?
+    - Thế nào là chuyển đổi số lấy người dân là trung tâm là sao?
+    - Thế nào là chuyển đổi số lấy người dân là trung tâm là như thế nào
+    - Thế nào là chuyển đổi số lấy người dân là trung tâm nào?
+    - Thế nào là chuyển đổi số lấy người dân là trung tâm không?
+
+- intent: sothongtinvatruyenthong/van_e_then_chot_trong_chuyen_oi_so_la_gi
+  examples: |
+    - Vấn đề then chốt trong chuyển đổi số là gì?
+    - Vấn đề then chốt trong chuyển đổi số là gì là gì?
+    - Vấn đề then chốt trong chuyển đổi số là gì bao gồm những gì?
+    - Vấn đề then chốt trong chuyển đổi số là gì cụ thể ra sao?
+    - Vấn đề then chốt trong chuyển đổi số là gì, bạn có thể giải thích không?
+    - Vấn đề then chốt trong chuyển đổi số là gì được hiểu như thế nào?
+    - Vấn đề then chốt trong chuyển đổi số là gì có những điểm nào nổi bật?
+    - Có thể nói rõ Vấn đề then chốt trong chuyển đổi số là gì không?
+    - Bạn biết Vấn đề then chốt trong chuyển đổi số là gì không?
+    - Làm thế nào để hiểu Vấn đề then chốt trong chuyển đổi số là gì?
+    - Vấn đề then chốt trong chuyển đổi số là gì có ý nghĩa gì?
+    - Vấn đề then chốt trong chuyển đổi số là gì có thể giải thích thêm không?
+    - Hãy cho tôi biết về Vấn đề then chốt trong chuyển đổi số là gì?
+    - Hãy Vấn đề then chốt trong chuyển đổi số là gì
+    - Xin hãy cho tôi biết về Vấn đề then chốt trong chuyển đổi số là gì?
+    - Bạn có thể cho tôi biết về Vấn đề then chốt trong chuyển đổi số là gì?
+    - Vấn đề then chốt trong chuyển đổi số là gì là sao?
+    - Vấn đề then chốt trong chuyển đổi số là gì là như thế nào
+    - Vấn đề then chốt trong chuyển đổi số là gì nào?
+    - Vấn đề then chốt trong chuyển đổi số là gì không?
+
+- intent: sothongtinvatruyenthong/loi_the_cua_viet_nam_khi_thuc_hien_chuyen_oi_so_la_gi
+  examples: |
+    - Lợi thế của Việt Nam khi thực hiện chuyển đổi số là gì?
+    - Lợi thế của Việt Nam khi thực hiện chuyển đổi số là gì là gì?
+    - Lợi thế của Việt Nam khi thực hiện chuyển đổi số là gì bao gồm những gì?
+    - Lợi thế của Việt Nam khi thực hiện chuyển đổi số là gì cụ thể ra sao?
+    - Lợi thế của Việt Nam khi thực hiện chuyển đổi số là gì, bạn có thể giải thích không?
+    - Lợi thế của Việt Nam khi thực hiện chuyển đổi số là gì được hiểu như thế nào?
+    - Lợi thế của Việt Nam khi thực hiện chuyển đổi số là gì có những điểm nào nổi bật?
+    - Có thể nói rõ Lợi thế của Việt Nam khi thực hiện chuyển đổi số là gì không?
+    - Bạn biết Lợi thế của Việt Nam khi thực hiện chuyển đổi số là gì không?
+    - Làm thế nào để hiểu Lợi thế của Việt Nam khi thực hiện chuyển đổi số là gì?
+    - Lợi thế của Việt Nam khi thực hiện chuyển đổi số là gì có ý nghĩa gì?
+    - Lợi thế của Việt Nam khi thực hiện chuyển đổi số là gì có thể giải thích thêm không?
+    - Hãy cho tôi biết về Lợi thế của Việt Nam khi thực hiện chuyển đổi số là gì?
+    - Hãy Lợi thế của Việt Nam khi thực hiện chuyển đổi số là gì
+    - Xin hãy cho tôi biết về Lợi thế của Việt Nam khi thực hiện chuyển đổi số là gì?
+    - Bạn có thể cho tôi biết về Lợi thế của Việt Nam khi thực hiện chuyển đổi số là gì?
+    - Lợi thế của Việt Nam khi thực hiện chuyển đổi số là gì là sao?
+    - Lợi thế của Việt Nam khi thực hiện chuyển đổi số là gì là như thế nào
+    - Lợi thế của Việt Nam khi thực hiện chuyển đổi số là gì nào?
+    - Lợi thế của Việt Nam khi thực hiện chuyển đổi số là gì không?
+
+- intent: sothongtinvatruyenthong/chuyen_oi_so_co_quan_nha_nuoc_la_gi
+  examples: |
+    - Chuyển đổi số cơ quan nhà nước là gì?
+    - Chuyển đổi số cơ quan nhà nước là gì là gì?
+    - Chuyển đổi số cơ quan nhà nước là gì bao gồm những gì?
+    - Chuyển đổi số cơ quan nhà nước là gì cụ thể ra sao?
+    - Chuyển đổi số cơ quan nhà nước là gì, bạn có thể giải thích không?
+    - Chuyển đổi số cơ quan nhà nước là gì được hiểu như thế nào?
+    - Chuyển đổi số cơ quan nhà nước là gì có những điểm nào nổi bật?
+    - Có thể nói rõ Chuyển đổi số cơ quan nhà nước là gì không?
+    - Bạn biết Chuyển đổi số cơ quan nhà nước là gì không?
+    - Làm thế nào để hiểu Chuyển đổi số cơ quan nhà nước là gì?
+    - Chuyển đổi số cơ quan nhà nước là gì có ý nghĩa gì?
+    - Chuyển đổi số cơ quan nhà nước là gì có thể giải thích thêm không?
+    - Hãy cho tôi biết về Chuyển đổi số cơ quan nhà nước là gì?
+    - Hãy Chuyển đổi số cơ quan nhà nước là gì
+    - Xin hãy cho tôi biết về Chuyển đổi số cơ quan nhà nước là gì?
+    - Bạn có thể cho tôi biết về Chuyển đổi số cơ quan nhà nước là gì?
+    - Chuyển đổi số cơ quan nhà nước là gì là sao?
+    - Chuyển đổi số cơ quan nhà nước là gì là như thế nào
+    - Chuyển đổi số cơ quan nhà nước là gì nào?
+    - Chuyển đổi số cơ quan nhà nước là gì không?
+
+- intent: sothongtinvatruyenthong/quy_inh_ve_chia_se_du_lieu_trong_co_quan_nha_nuoc
+  examples: |
+    - Quy định về chia sẻ dữ liệu trong cơ quan nhà nước?
+    - Quy định về chia sẻ dữ liệu trong cơ quan nhà nước là gì?
+    - Quy định về chia sẻ dữ liệu trong cơ quan nhà nước bao gồm những gì?
+    - Quy định về chia sẻ dữ liệu trong cơ quan nhà nước cụ thể ra sao?
+    - Quy định về chia sẻ dữ liệu trong cơ quan nhà nước, bạn có thể giải thích không?
+    - Quy định về chia sẻ dữ liệu trong cơ quan nhà nước được hiểu như thế nào?
+    - Quy định về chia sẻ dữ liệu trong cơ quan nhà nước có những điểm nào nổi bật?
+    - Có thể nói rõ Quy định về chia sẻ dữ liệu trong cơ quan nhà nước không?
+    - Bạn biết Quy định về chia sẻ dữ liệu trong cơ quan nhà nước không?
+    - Làm thế nào để hiểu Quy định về chia sẻ dữ liệu trong cơ quan nhà nước?
+    - Quy định về chia sẻ dữ liệu trong cơ quan nhà nước có ý nghĩa gì?
+    - Quy định về chia sẻ dữ liệu trong cơ quan nhà nước có thể giải thích thêm không?
+    - Hãy cho tôi biết về Quy định về chia sẻ dữ liệu trong cơ quan nhà nước?
+    - Hãy Quy định về chia sẻ dữ liệu trong cơ quan nhà nước
+    - Xin hãy cho tôi biết về Quy định về chia sẻ dữ liệu trong cơ quan nhà nước?
+    - Bạn có thể cho tôi biết về Quy định về chia sẻ dữ liệu trong cơ quan nhà nước?
+    - Quy định về chia sẻ dữ liệu trong cơ quan nhà nước là sao?
+    - Quy định về chia sẻ dữ liệu trong cơ quan nhà nước là như thế nào
+    - Quy định về chia sẻ dữ liệu trong cơ quan nhà nước nào?
+    - Quy định về chia sẻ dữ liệu trong cơ quan nhà nước không?
+
+- intent: sothongtinvatruyenthong/xay_dung_chien_luoc_chuyen_oi_so_nhu_the_nao
+  examples: |
+    - Xây dựng chiến lược chuyển đổi số như thế nào?
+    - Xây dựng chiến lược chuyển đổi số như thế nào là gì?
+    - Xây dựng chiến lược chuyển đổi số như thế nào bao gồm những gì?
+    - Xây dựng chiến lược chuyển đổi số như thế nào cụ thể ra sao?
+    - Xây dựng chiến lược chuyển đổi số như thế nào, bạn có thể giải thích không?
+    - Xây dựng chiến lược chuyển đổi số như thế nào được hiểu như thế nào?
+    - Xây dựng chiến lược chuyển đổi số như thế nào có những điểm nào nổi bật?
+    - Có thể nói rõ Xây dựng chiến lược chuyển đổi số như thế nào không?
+    - Bạn biết Xây dựng chiến lược chuyển đổi số như thế nào không?
+    - Làm thế nào để hiểu Xây dựng chiến lược chuyển đổi số như thế nào?
+    - Xây dựng chiến lược chuyển đổi số như thế nào có ý nghĩa gì?
+    - Xây dựng chiến lược chuyển đổi số như thế nào có thể giải thích thêm không?
+    - Hãy cho tôi biết về Xây dựng chiến lược chuyển đổi số như thế nào?
+    - Hãy Xây dựng chiến lược chuyển đổi số như thế nào
+    - Xin hãy cho tôi biết về Xây dựng chiến lược chuyển đổi số như thế nào?
+    - Bạn có thể cho tôi biết về Xây dựng chiến lược chuyển đổi số như thế nào?
+    - Xây dựng chiến lược chuyển đổi số như thế nào là sao?
+    - Xây dựng chiến lược chuyển đổi số như thế nào là như thế nào
+    - Xây dựng chiến lược chuyển đổi số như thế nào nào?
+    - Xây dựng chiến lược chuyển đổi số như thế nào không?
+
+- intent: sothongtinvatruyenthong/cach_mang_cong_nghiep_lan_thu_tu_la_gi
+  examples: |
+    - Cách mạng công nghiệp lần thứ tư là gì?
+    - Cách mạng công nghiệp lần thứ tư là gì là gì?
+    - Cách mạng công nghiệp lần thứ tư là gì bao gồm những gì?
+    - Cách mạng công nghiệp lần thứ tư là gì cụ thể ra sao?
+    - Cách mạng công nghiệp lần thứ tư là gì, bạn có thể giải thích không?
+    - Cách mạng công nghiệp lần thứ tư là gì được hiểu như thế nào?
+    - Cách mạng công nghiệp lần thứ tư là gì có những điểm nào nổi bật?
+    - Có thể nói rõ Cách mạng công nghiệp lần thứ tư là gì không?
+    - Bạn biết Cách mạng công nghiệp lần thứ tư là gì không?
+    - Làm thế nào để hiểu Cách mạng công nghiệp lần thứ tư là gì?
+    - Cách mạng công nghiệp lần thứ tư là gì có ý nghĩa gì?
+    - Cách mạng công nghiệp lần thứ tư là gì có thể giải thích thêm không?
+    - Hãy cho tôi biết về Cách mạng công nghiệp lần thứ tư là gì?
+    - Hãy Cách mạng công nghiệp lần thứ tư là gì
+    - Xin hãy cho tôi biết về Cách mạng công nghiệp lần thứ tư là gì?
+    - Bạn có thể cho tôi biết về Cách mạng công nghiệp lần thứ tư là gì?
+    - Cách mạng công nghiệp lần thứ tư là gì là sao?
+    - Cách mạng công nghiệp lần thứ tư là gì là như thế nào
+    - Cách mạng công nghiệp lần thứ tư là gì nào?
+    - Cách mạng công nghiệp lần thứ tư là gì không?
+
+- intent: sothongtinvatruyenthong/so_hoa_la_gi
+  examples: |
+    - Số hóa là gì?
+    - Số hóa là gì là gì?
+    - Số hóa là gì bao gồm những gì?
+    - Số hóa là gì cụ thể ra sao?
+    - Số hóa là gì, bạn có thể giải thích không?
+    - Số hóa là gì được hiểu như thế nào?
+    - Số hóa là gì có những điểm nào nổi bật?
+    - Có thể nói rõ Số hóa là gì không?
+    - Bạn biết Số hóa là gì không?
+    - Làm thế nào để hiểu Số hóa là gì?
+    - Số hóa là gì có ý nghĩa gì?
+    - Số hóa là gì có thể giải thích thêm không?
+    - Hãy cho tôi biết về Số hóa là gì?
+    - Hãy Số hóa là gì
+    - Xin hãy cho tôi biết về Số hóa là gì?
+    - Bạn có thể cho tôi biết về Số hóa là gì?
+    - Số hóa là gì là sao?
+    - Số hóa là gì là như thế nào
+    - Số hóa là gì nào?
+    - Số hóa là gì không?
+
+- intent: sothongtinvatruyenthong/tin_hoc_hoa_la_gi
+  examples: |
+    - Tin học hóa là gì?
+    - Tin học hóa là gì là gì?
+    - Tin học hóa là gì bao gồm những gì?
+    - Tin học hóa là gì cụ thể ra sao?
+    - Tin học hóa là gì, bạn có thể giải thích không?
+    - Tin học hóa là gì được hiểu như thế nào?
+    - Tin học hóa là gì có những điểm nào nổi bật?
+    - Có thể nói rõ Tin học hóa là gì không?
+    - Bạn biết Tin học hóa là gì không?
+    - Làm thế nào để hiểu Tin học hóa là gì?
+    - Tin học hóa là gì có ý nghĩa gì?
+    - Tin học hóa là gì có thể giải thích thêm không?
+    - Hãy cho tôi biết về Tin học hóa là gì?
+    - Hãy Tin học hóa là gì
+    - Xin hãy cho tôi biết về Tin học hóa là gì?
+    - Bạn có thể cho tôi biết về Tin học hóa là gì?
+    - Tin học hóa là gì là sao?
+    - Tin học hóa là gì là như thế nào
+    - Tin học hóa là gì nào?
+    - Tin học hóa là gì không?
+
+- intent: sothongtinvatruyenthong/tro_ly_ao_la_gi
+  examples: |
+    - Trợ lý ảo là gì?
+    - Trợ lý ảo là gì là gì?
+    - Trợ lý ảo là gì bao gồm những gì?
+    - Trợ lý ảo là gì cụ thể ra sao?
+    - Trợ lý ảo là gì, bạn có thể giải thích không?
+    - Trợ lý ảo là gì được hiểu như thế nào?
+    - Trợ lý ảo là gì có những điểm nào nổi bật?
+    - Có thể nói rõ Trợ lý ảo là gì không?
+    - Bạn biết Trợ lý ảo là gì không?
+    - Làm thế nào để hiểu Trợ lý ảo là gì?
+    - Trợ lý ảo là gì có ý nghĩa gì?
+    - Trợ lý ảo là gì có thể giải thích thêm không?
+    - Hãy cho tôi biết về Trợ lý ảo là gì?
+    - Hãy Trợ lý ảo là gì
+    - Xin hãy cho tôi biết về Trợ lý ảo là gì?
+    - Bạn có thể cho tôi biết về Trợ lý ảo là gì?
+    - Trợ lý ảo là gì là sao?
+    - Trợ lý ảo là gì là như thế nào
+    - Trợ lý ảo là gì nào?
+    - Trợ lý ảo là gì không?
+
+- intent: sothongtinvatruyenthong/khai_niem_nen_tang_so
+  examples: |
+    - Khái niệm nền tảng số?
+    - Khái niệm nền tảng số là gì?
+    - Khái niệm nền tảng số bao gồm những gì?
+    - Khái niệm nền tảng số cụ thể ra sao?
+    - Khái niệm nền tảng số, bạn có thể giải thích không?
+    - Khái niệm nền tảng số được hiểu như thế nào?
+    - Khái niệm nền tảng số có những điểm nào nổi bật?
+    - Có thể nói rõ Khái niệm nền tảng số không?
+    - Bạn biết Khái niệm nền tảng số không?
+    - Làm thế nào để hiểu Khái niệm nền tảng số?
+    - Khái niệm nền tảng số có ý nghĩa gì?
+    - Khái niệm nền tảng số có thể giải thích thêm không?
+    - Hãy cho tôi biết về Khái niệm nền tảng số?
+    - Hãy Khái niệm nền tảng số
+    - Xin hãy cho tôi biết về Khái niệm nền tảng số?
+    - Bạn có thể cho tôi biết về Khái niệm nền tảng số?
+    - Khái niệm nền tảng số là sao?
+    - Khái niệm nền tảng số là như thế nào
+    - Khái niệm nền tảng số nào?
+    - Khái niệm nền tảng số không?
+
+- intent: sothongtinvatruyenthong/the_nao_la_chuyen_oi_so_lay_nguoi_dan_la_trung_tam
+  examples: |
+    - Thế nào là chuyển đổi số lấy người dân là trung tâm?
+    - Thế nào là chuyển đổi số lấy người dân là trung tâm là gì?
+    - Thế nào là chuyển đổi số lấy người dân là trung tâm bao gồm những gì?
+    - Thế nào là chuyển đổi số lấy người dân là trung tâm cụ thể ra sao?
+    - Thế nào là chuyển đổi số lấy người dân là trung tâm, bạn có thể giải thích không?
+    - Thế nào là chuyển đổi số lấy người dân là trung tâm được hiểu như thế nào?
+    - Thế nào là chuyển đổi số lấy người dân là trung tâm có những điểm nào nổi bật?
+    - Có thể nói rõ Thế nào là chuyển đổi số lấy người dân là trung tâm không?
+    - Bạn biết Thế nào là chuyển đổi số lấy người dân là trung tâm không?
+    - Làm thế nào để hiểu Thế nào là chuyển đổi số lấy người dân là trung tâm?
+    - Thế nào là chuyển đổi số lấy người dân là trung tâm có ý nghĩa gì?
+    - Thế nào là chuyển đổi số lấy người dân là trung tâm có thể giải thích thêm không?
+    - Hãy cho tôi biết về Thế nào là chuyển đổi số lấy người dân là trung tâm?
+    - Hãy Thế nào là chuyển đổi số lấy người dân là trung tâm
+    - Xin hãy cho tôi biết về Thế nào là chuyển đổi số lấy người dân là trung tâm?
+    - Bạn có thể cho tôi biết về Thế nào là chuyển đổi số lấy người dân là trung tâm?
+    - Thế nào là chuyển đổi số lấy người dân là trung tâm là sao?
+    - Thế nào là chuyển đổi số lấy người dân là trung tâm là như thế nào
+    - Thế nào là chuyển đổi số lấy người dân là trung tâm nào?
+    - Thế nào là chuyển đổi số lấy người dân là trung tâm không?
+
+- intent: sothongtinvatruyenthong/ung_dung_cong_nghe_thong_tin_bat_au_tu_khi_nao
+  examples: |
+    - Ứng dụng công nghệ thông tin bắt đầu từ khi nào?
+    - Ứng dụng công nghệ thông tin bắt đầu từ khi nào là gì?
+    - Ứng dụng công nghệ thông tin bắt đầu từ khi nào bao gồm những gì?
+    - Ứng dụng công nghệ thông tin bắt đầu từ khi nào cụ thể ra sao?
+    - Ứng dụng công nghệ thông tin bắt đầu từ khi nào, bạn có thể giải thích không?
+    - Ứng dụng công nghệ thông tin bắt đầu từ khi nào được hiểu như thế nào?
+    - Ứng dụng công nghệ thông tin bắt đầu từ khi nào có những điểm nào nổi bật?
+    - Có thể nói rõ Ứng dụng công nghệ thông tin bắt đầu từ khi nào không?
+    - Bạn biết Ứng dụng công nghệ thông tin bắt đầu từ khi nào không?
+    - Làm thế nào để hiểu Ứng dụng công nghệ thông tin bắt đầu từ khi nào?
+    - Ứng dụng công nghệ thông tin bắt đầu từ khi nào có ý nghĩa gì?
+    - Ứng dụng công nghệ thông tin bắt đầu từ khi nào có thể giải thích thêm không?
+    - Hãy cho tôi biết về Ứng dụng công nghệ thông tin bắt đầu từ khi nào?
+    - Hãy Ứng dụng công nghệ thông tin bắt đầu từ khi nào
+    - Xin hãy cho tôi biết về Ứng dụng công nghệ thông tin bắt đầu từ khi nào?
+    - Bạn có thể cho tôi biết về Ứng dụng công nghệ thông tin bắt đầu từ khi nào?
+    - Ứng dụng công nghệ thông tin bắt đầu từ khi nào là sao?
+    - Ứng dụng công nghệ thông tin bắt đầu từ khi nào là như thế nào
+    - Ứng dụng công nghệ thông tin bắt đầu từ khi nào nào?
+    - Ứng dụng công nghệ thông tin bắt đầu từ khi nào không?
+
+- intent: sothongtinvatruyenthong/chuyen_oi_so_va_ung_dung_cong_nghe_thong_tin_khac_nhau_nhu_the_nao
+  examples: |
+    - Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào?
+    - Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào là gì?
+    - Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào bao gồm những gì?
+    - Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào cụ thể ra sao?
+    - Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào, bạn có thể giải thích không?
+    - Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào được hiểu như thế nào?
+    - Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào có những điểm nào nổi bật?
+    - Có thể nói rõ Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào không?
+    - Bạn biết Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào không?
+    - Làm thế nào để hiểu Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào?
+    - Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào có ý nghĩa gì?
+    - Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào có thể giải thích thêm không?
+    - Hãy cho tôi biết về Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào?
+    - Hãy Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào
+    - Xin hãy cho tôi biết về Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào?
+    - Bạn có thể cho tôi biết về Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào?
+    - Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào là sao?
+    - Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào là như thế nào
+    - Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào nào?
+    - Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào không?
+
+- intent: sothongtinvatruyenthong/chinh_phu_ien_tu_la_gi
+  examples: |
+    - Chính phủ điện tử là gì?
+    - Chính phủ điện tử là gì là gì?
+    - Chính phủ điện tử là gì bao gồm những gì?
+    - Chính phủ điện tử là gì cụ thể ra sao?
+    - Chính phủ điện tử là gì, bạn có thể giải thích không?
+    - Chính phủ điện tử là gì được hiểu như thế nào?
+    - Chính phủ điện tử là gì có những điểm nào nổi bật?
+    - Có thể nói rõ Chính phủ điện tử là gì không?
+    - Bạn biết Chính phủ điện tử là gì không?
+    - Làm thế nào để hiểu Chính phủ điện tử là gì?
+    - Chính phủ điện tử là gì có ý nghĩa gì?
+    - Chính phủ điện tử là gì có thể giải thích thêm không?
+    - Hãy cho tôi biết về Chính phủ điện tử là gì?
+    - Hãy Chính phủ điện tử là gì
+    - Xin hãy cho tôi biết về Chính phủ điện tử là gì?
+    - Bạn có thể cho tôi biết về Chính phủ điện tử là gì?
+    - Chính phủ điện tử là gì là sao?
+    - Chính phủ điện tử là gì là như thế nào
+    - Chính phủ điện tử là gì nào?
+    - Chính phủ điện tử là gì không?
+
+- intent: sothongtinvatruyenthong/chinh_phu_so_la_gi
+  examples: |
+    - Chính phủ số là gì?
+    - Chính phủ số là gì là gì?
+    - Chính phủ số là gì bao gồm những gì?
+    - Chính phủ số là gì cụ thể ra sao?
+    - Chính phủ số là gì, bạn có thể giải thích không?
+    - Chính phủ số là gì được hiểu như thế nào?
+    - Chính phủ số là gì có những điểm nào nổi bật?
+    - Có thể nói rõ Chính phủ số là gì không?
+    - Bạn biết Chính phủ số là gì không?
+    - Làm thế nào để hiểu Chính phủ số là gì?
+    - Chính phủ số là gì có ý nghĩa gì?
+    - Chính phủ số là gì có thể giải thích thêm không?
+    - Hãy cho tôi biết về Chính phủ số là gì?
+    - Hãy Chính phủ số là gì
+    - Xin hãy cho tôi biết về Chính phủ số là gì?
+    - Bạn có thể cho tôi biết về Chính phủ số là gì?
+    - Chính phủ số là gì là sao?
+    - Chính phủ số là gì là như thế nào
+    - Chính phủ số là gì nào?
+    - Chính phủ số là gì không?
+
+- intent: sothongtinvatruyenthong/iem_khac_nhau_giua_chinh_phu_ien_tu_va_chinh_phu_so_la_gi
+  examples: |
+    - Điểm khác nhau giữa chính phủ điện tử và chính phủ số là gì?
+    - Điểm khác nhau giữa chính phủ điện tử và chính phủ số là gì là gì?
+    - Điểm khác nhau giữa chính phủ điện tử và chính phủ số là gì bao gồm những gì?
+    - Điểm khác nhau giữa chính phủ điện tử và chính phủ số là gì cụ thể ra sao?
+    - Điểm khác nhau giữa chính phủ điện tử và chính phủ số là gì, bạn có thể giải thích không?
+    - Điểm khác nhau giữa chính phủ điện tử và chính phủ số là gì được hiểu như thế nào?
+    - Điểm khác nhau giữa chính phủ điện tử và chính phủ số là gì có những điểm nào nổi bật?
+    - Có thể nói rõ Điểm khác nhau giữa chính phủ điện tử và chính phủ số là gì không?
+    - Bạn biết Điểm khác nhau giữa chính phủ điện tử và chính phủ số là gì không?
+    - Làm thế nào để hiểu Điểm khác nhau giữa chính phủ điện tử và chính phủ số là gì?
+    - Điểm khác nhau giữa chính phủ điện tử và chính phủ số là gì có ý nghĩa gì?
+    - Điểm khác nhau giữa chính phủ điện tử và chính phủ số là gì có thể giải thích thêm không?
+    - Hãy cho tôi biết về Điểm khác nhau giữa chính phủ điện tử và chính phủ số là gì?
+    - Hãy Điểm khác nhau giữa chính phủ điện tử và chính phủ số là gì
+    - Xin hãy cho tôi biết về Điểm khác nhau giữa chính phủ điện tử và chính phủ số là gì?
+    - Bạn có thể cho tôi biết về Điểm khác nhau giữa chính phủ điện tử và chính phủ số là gì?
+    - Điểm khác nhau giữa chính phủ điện tử và chính phủ số là gì là sao?
+    - Điểm khác nhau giữa chính phủ điện tử và chính phủ số là gì là như thế nào
+    - Điểm khác nhau giữa chính phủ điện tử và chính phủ số là gì nào?
+    - Điểm khác nhau giữa chính phủ điện tử và chính phủ số là gì không?
+
+- intent: sothongtinvatruyenthong/trong_tam_cua_chien_luoc_chinh_phu_so_la_gi
+  examples: |
+    - Trọng tâm của Chiến lược Chính phủ số là gì?
+    - Trọng tâm của Chiến lược Chính phủ số là gì là gì?
+    - Trọng tâm của Chiến lược Chính phủ số là gì bao gồm những gì?
+    - Trọng tâm của Chiến lược Chính phủ số là gì cụ thể ra sao?
+    - Trọng tâm của Chiến lược Chính phủ số là gì, bạn có thể giải thích không?
+    - Trọng tâm của Chiến lược Chính phủ số là gì được hiểu như thế nào?
+    - Trọng tâm của Chiến lược Chính phủ số là gì có những điểm nào nổi bật?
+    - Có thể nói rõ Trọng tâm của Chiến lược Chính phủ số là gì không?
+    - Bạn biết Trọng tâm của Chiến lược Chính phủ số là gì không?
+    - Làm thế nào để hiểu Trọng tâm của Chiến lược Chính phủ số là gì?
+    - Trọng tâm của Chiến lược Chính phủ số là gì có ý nghĩa gì?
+    - Trọng tâm của Chiến lược Chính phủ số là gì có thể giải thích thêm không?
+    - Hãy cho tôi biết về Trọng tâm của Chiến lược Chính phủ số là gì?
+    - Hãy Trọng tâm của Chiến lược Chính phủ số là gì
+    - Xin hãy cho tôi biết về Trọng tâm của Chiến lược Chính phủ số là gì?
+    - Bạn có thể cho tôi biết về Trọng tâm của Chiến lược Chính phủ số là gì?
+    - Trọng tâm của Chiến lược Chính phủ số là gì là sao?
+    - Trọng tâm của Chiến lược Chính phủ số là gì là như thế nào
+    - Trọng tâm của Chiến lược Chính phủ số là gì nào?
+    - Trọng tâm của Chiến lược Chính phủ số là gì không?
+
+- intent: sothongtinvatruyenthong/moi_quan_he_giua_o_thi_thong_minh_va_chinh_quyen_so
+  examples: |
+    - Mối quan hệ giữa đô thị thông minh và chính quyền số?
+    - Mối quan hệ giữa đô thị thông minh và chính quyền số là gì?
+    - Mối quan hệ giữa đô thị thông minh và chính quyền số bao gồm những gì?
+    - Mối quan hệ giữa đô thị thông minh và chính quyền số cụ thể ra sao?
+    - Mối quan hệ giữa đô thị thông minh và chính quyền số, bạn có thể giải thích không?
+    - Mối quan hệ giữa đô thị thông minh và chính quyền số được hiểu như thế nào?
+    - Mối quan hệ giữa đô thị thông minh và chính quyền số có những điểm nào nổi bật?
+    - Có thể nói rõ Mối quan hệ giữa đô thị thông minh và chính quyền số không?
+    - Bạn biết Mối quan hệ giữa đô thị thông minh và chính quyền số không?
+    - Làm thế nào để hiểu Mối quan hệ giữa đô thị thông minh và chính quyền số?
+    - Mối quan hệ giữa đô thị thông minh và chính quyền số có ý nghĩa gì?
+    - Mối quan hệ giữa đô thị thông minh và chính quyền số có thể giải thích thêm không?
+    - Hãy cho tôi biết về Mối quan hệ giữa đô thị thông minh và chính quyền số?
+    - Hãy Mối quan hệ giữa đô thị thông minh và chính quyền số
+    - Xin hãy cho tôi biết về Mối quan hệ giữa đô thị thông minh và chính quyền số?
+    - Bạn có thể cho tôi biết về Mối quan hệ giữa đô thị thông minh và chính quyền số?
+    - Mối quan hệ giữa đô thị thông minh và chính quyền số là sao?
+    - Mối quan hệ giữa đô thị thông minh và chính quyền số là như thế nào
+    - Mối quan hệ giữa đô thị thông minh và chính quyền số nào?
+    - Mối quan hệ giữa đô thị thông minh và chính quyền số không?
+
+- intent: sothongtinvatruyenthong/ung_dung_cong_nghe_thong_tin_bat_au_tu_khi_nao
+  examples: |
+    - Ứng dụng công nghệ thông tin bắt đầu từ khi nào?
+    - Ứng dụng công nghệ thông tin bắt đầu từ khi nào là gì?
+    - Ứng dụng công nghệ thông tin bắt đầu từ khi nào bao gồm những gì?
+    - Ứng dụng công nghệ thông tin bắt đầu từ khi nào cụ thể ra sao?
+    - Ứng dụng công nghệ thông tin bắt đầu từ khi nào, bạn có thể giải thích không?
+    - Ứng dụng công nghệ thông tin bắt đầu từ khi nào được hiểu như thế nào?
+    - Ứng dụng công nghệ thông tin bắt đầu từ khi nào có những điểm nào nổi bật?
+    - Có thể nói rõ Ứng dụng công nghệ thông tin bắt đầu từ khi nào không?
+    - Bạn biết Ứng dụng công nghệ thông tin bắt đầu từ khi nào không?
+    - Làm thế nào để hiểu Ứng dụng công nghệ thông tin bắt đầu từ khi nào?
+    - Ứng dụng công nghệ thông tin bắt đầu từ khi nào có ý nghĩa gì?
+    - Ứng dụng công nghệ thông tin bắt đầu từ khi nào có thể giải thích thêm không?
+    - Hãy cho tôi biết về Ứng dụng công nghệ thông tin bắt đầu từ khi nào?
+    - Hãy Ứng dụng công nghệ thông tin bắt đầu từ khi nào
+    - Xin hãy cho tôi biết về Ứng dụng công nghệ thông tin bắt đầu từ khi nào?
+    - Bạn có thể cho tôi biết về Ứng dụng công nghệ thông tin bắt đầu từ khi nào?
+    - Ứng dụng công nghệ thông tin bắt đầu từ khi nào là sao?
+    - Ứng dụng công nghệ thông tin bắt đầu từ khi nào là như thế nào
+    - Ứng dụng công nghệ thông tin bắt đầu từ khi nào nào?
+    - Ứng dụng công nghệ thông tin bắt đầu từ khi nào không?
+
+- intent: sothongtinvatruyenthong/chuyen_oi_so_va_ung_dung_cong_nghe_thong_tin_khac_nhau_nhu_the_nao
+  examples: |
+    - Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào?
+    - Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào là gì?
+    - Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào bao gồm những gì?
+    - Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào cụ thể ra sao?
+    - Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào, bạn có thể giải thích không?
+    - Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào được hiểu như thế nào?
+    - Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào có những điểm nào nổi bật?
+    - Có thể nói rõ Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào không?
+    - Bạn biết Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào không?
+    - Làm thế nào để hiểu Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào?
+    - Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào có ý nghĩa gì?
+    - Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào có thể giải thích thêm không?
+    - Hãy cho tôi biết về Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào?
+    - Hãy Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào
+    - Xin hãy cho tôi biết về Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào?
+    - Bạn có thể cho tôi biết về Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào?
+    - Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào là sao?
+    - Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào là như thế nào
+    - Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào nào?
+    - Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào không?
+
+- intent: sothongtinvatruyenthong/nen_kinh_te_so_la_gi
+  examples: |
+    - Nền kinh tế số là gì?
+    - Nền kinh tế số là gì là gì?
+    - Nền kinh tế số là gì bao gồm những gì?
+    - Nền kinh tế số là gì cụ thể ra sao?
+    - Nền kinh tế số là gì, bạn có thể giải thích không?
+    - Nền kinh tế số là gì được hiểu như thế nào?
+    - Nền kinh tế số là gì có những điểm nào nổi bật?
+    - Có thể nói rõ Nền kinh tế số là gì không?
+    - Bạn biết Nền kinh tế số là gì không?
+    - Làm thế nào để hiểu Nền kinh tế số là gì?
+    - Nền kinh tế số là gì có ý nghĩa gì?
+    - Nền kinh tế số là gì có thể giải thích thêm không?
+    - Hãy cho tôi biết về Nền kinh tế số là gì?
+    - Hãy Nền kinh tế số là gì
+    - Xin hãy cho tôi biết về Nền kinh tế số là gì?
+    - Bạn có thể cho tôi biết về Nền kinh tế số là gì?
+    - Nền kinh tế số là gì là sao?
+    - Nền kinh tế số là gì là như thế nào
+    - Nền kinh tế số là gì nào?
+    - Nền kinh tế số là gì không?
+
+- intent: sothongtinvatruyenthong/nen_kinh_te_nen_tang_la_gi
+  examples: |
+    - Nền kinh tế nền tảng là gì?
+    - Nền kinh tế nền tảng là gì là gì?
+    - Nền kinh tế nền tảng là gì bao gồm những gì?
+    - Nền kinh tế nền tảng là gì cụ thể ra sao?
+    - Nền kinh tế nền tảng là gì, bạn có thể giải thích không?
+    - Nền kinh tế nền tảng là gì được hiểu như thế nào?
+    - Nền kinh tế nền tảng là gì có những điểm nào nổi bật?
+    - Có thể nói rõ Nền kinh tế nền tảng là gì không?
+    - Bạn biết Nền kinh tế nền tảng là gì không?
+    - Làm thế nào để hiểu Nền kinh tế nền tảng là gì?
+    - Nền kinh tế nền tảng là gì có ý nghĩa gì?
+    - Nền kinh tế nền tảng là gì có thể giải thích thêm không?
+    - Hãy cho tôi biết về Nền kinh tế nền tảng là gì?
+    - Hãy Nền kinh tế nền tảng là gì
+    - Xin hãy cho tôi biết về Nền kinh tế nền tảng là gì?
+    - Bạn có thể cho tôi biết về Nền kinh tế nền tảng là gì?
+    - Nền kinh tế nền tảng là gì là sao?
+    - Nền kinh tế nền tảng là gì là như thế nào
+    - Nền kinh tế nền tảng là gì nào?
+    - Nền kinh tế nền tảng là gì không?
+
+- intent: sothongtinvatruyenthong/vai_tro_cua_kinh_te_so_la_gi
+  examples: |
+    - Vai trò của kinh tế số là gì?
+    - Vai trò của kinh tế số là gì là gì?
+    - Vai trò của kinh tế số là gì bao gồm những gì?
+    - Vai trò của kinh tế số là gì cụ thể ra sao?
+    - Vai trò của kinh tế số là gì, bạn có thể giải thích không?
+    - Vai trò của kinh tế số là gì được hiểu như thế nào?
+    - Vai trò của kinh tế số là gì có những điểm nào nổi bật?
+    - Có thể nói rõ Vai trò của kinh tế số là gì không?
+    - Bạn biết Vai trò của kinh tế số là gì không?
+    - Làm thế nào để hiểu Vai trò của kinh tế số là gì?
+    - Vai trò của kinh tế số là gì có ý nghĩa gì?
+    - Vai trò của kinh tế số là gì có thể giải thích thêm không?
+    - Hãy cho tôi biết về Vai trò của kinh tế số là gì?
+    - Hãy Vai trò của kinh tế số là gì
+    - Xin hãy cho tôi biết về Vai trò của kinh tế số là gì?
+    - Bạn có thể cho tôi biết về Vai trò của kinh tế số là gì?
+    - Vai trò của kinh tế số là gì là sao?
+    - Vai trò của kinh tế số là gì là như thế nào
+    - Vai trò của kinh tế số là gì nào?
+    - Vai trò của kinh tế số là gì không?
+
+- intent: sothongtinvatruyenthong/lam_the_nao_e_thuc_ay_nen_kinh_te_so
+  examples: |
+    - Làm thế nào để thúc đẩy nền kinh tế số?
+    - Làm thế nào để thúc đẩy nền kinh tế số là gì?
+    - Làm thế nào để thúc đẩy nền kinh tế số bao gồm những gì?
+    - Làm thế nào để thúc đẩy nền kinh tế số cụ thể ra sao?
+    - Làm thế nào để thúc đẩy nền kinh tế số, bạn có thể giải thích không?
+    - Làm thế nào để thúc đẩy nền kinh tế số được hiểu như thế nào?
+    - Làm thế nào để thúc đẩy nền kinh tế số có những điểm nào nổi bật?
+    - Có thể nói rõ Làm thế nào để thúc đẩy nền kinh tế số không?
+    - Bạn biết Làm thế nào để thúc đẩy nền kinh tế số không?
+    - Làm thế nào để hiểu Làm thế nào để thúc đẩy nền kinh tế số?
+    - Làm thế nào để thúc đẩy nền kinh tế số có ý nghĩa gì?
+    - Làm thế nào để thúc đẩy nền kinh tế số có thể giải thích thêm không?
+    - Hãy cho tôi biết về Làm thế nào để thúc đẩy nền kinh tế số?
+    - Hãy Làm thế nào để thúc đẩy nền kinh tế số
+    - Xin hãy cho tôi biết về Làm thế nào để thúc đẩy nền kinh tế số?
+    - Bạn có thể cho tôi biết về Làm thế nào để thúc đẩy nền kinh tế số?
+    - Làm thế nào để thúc đẩy nền kinh tế số là sao?
+    - Làm thế nào để thúc đẩy nền kinh tế số là như thế nào
+    - Làm thế nào để thúc đẩy nền kinh tế số nào?
+    - Làm thế nào để thúc đẩy nền kinh tế số không?
+
+- intent: sothongtinvatruyenthong/o_luong_kinh_te_so_the_nao
+  examples: |
+    - Đo lường kinh tế số thế nào?
+    - Đo lường kinh tế số thế nào là gì?
+    - Đo lường kinh tế số thế nào bao gồm những gì?
+    - Đo lường kinh tế số thế nào cụ thể ra sao?
+    - Đo lường kinh tế số thế nào, bạn có thể giải thích không?
+    - Đo lường kinh tế số thế nào được hiểu như thế nào?
+    - Đo lường kinh tế số thế nào có những điểm nào nổi bật?
+    - Có thể nói rõ Đo lường kinh tế số thế nào không?
+    - Bạn biết Đo lường kinh tế số thế nào không?
+    - Làm thế nào để hiểu Đo lường kinh tế số thế nào?
+    - Đo lường kinh tế số thế nào có ý nghĩa gì?
+    - Đo lường kinh tế số thế nào có thể giải thích thêm không?
+    - Hãy cho tôi biết về Đo lường kinh tế số thế nào?
+    - Hãy Đo lường kinh tế số thế nào
+    - Xin hãy cho tôi biết về Đo lường kinh tế số thế nào?
+    - Bạn có thể cho tôi biết về Đo lường kinh tế số thế nào?
+    - Đo lường kinh tế số thế nào là sao?
+    - Đo lường kinh tế số thế nào là như thế nào
+    - Đo lường kinh tế số thế nào nào?
+    - Đo lường kinh tế số thế nào không?
+
+- intent: sothongtinvatruyenthong/ung_dung_cong_nghe_thong_tin_bat_au_tu_khi_nao
+  examples: |
+    - Ứng dụng công nghệ thông tin bắt đầu từ khi nào?
+    - Ứng dụng công nghệ thông tin bắt đầu từ khi nào là gì?
+    - Ứng dụng công nghệ thông tin bắt đầu từ khi nào bao gồm những gì?
+    - Ứng dụng công nghệ thông tin bắt đầu từ khi nào cụ thể ra sao?
+    - Ứng dụng công nghệ thông tin bắt đầu từ khi nào, bạn có thể giải thích không?
+    - Ứng dụng công nghệ thông tin bắt đầu từ khi nào được hiểu như thế nào?
+    - Ứng dụng công nghệ thông tin bắt đầu từ khi nào có những điểm nào nổi bật?
+    - Có thể nói rõ Ứng dụng công nghệ thông tin bắt đầu từ khi nào không?
+    - Bạn biết Ứng dụng công nghệ thông tin bắt đầu từ khi nào không?
+    - Làm thế nào để hiểu Ứng dụng công nghệ thông tin bắt đầu từ khi nào?
+    - Ứng dụng công nghệ thông tin bắt đầu từ khi nào có ý nghĩa gì?
+    - Ứng dụng công nghệ thông tin bắt đầu từ khi nào có thể giải thích thêm không?
+    - Hãy cho tôi biết về Ứng dụng công nghệ thông tin bắt đầu từ khi nào?
+    - Hãy Ứng dụng công nghệ thông tin bắt đầu từ khi nào
+    - Xin hãy cho tôi biết về Ứng dụng công nghệ thông tin bắt đầu từ khi nào?
+    - Bạn có thể cho tôi biết về Ứng dụng công nghệ thông tin bắt đầu từ khi nào?
+    - Ứng dụng công nghệ thông tin bắt đầu từ khi nào là sao?
+    - Ứng dụng công nghệ thông tin bắt đầu từ khi nào là như thế nào
+    - Ứng dụng công nghệ thông tin bắt đầu từ khi nào nào?
+    - Ứng dụng công nghệ thông tin bắt đầu từ khi nào không?
+
+- intent: sothongtinvatruyenthong/chuyen_oi_so_va_ung_dung_cong_nghe_thong_tin_khac_nhau_nhu_the_nao
+  examples: |
+    - Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào?
+    - Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào là gì?
+    - Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào bao gồm những gì?
+    - Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào cụ thể ra sao?
+    - Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào, bạn có thể giải thích không?
+    - Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào được hiểu như thế nào?
+    - Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào có những điểm nào nổi bật?
+    - Có thể nói rõ Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào không?
+    - Bạn biết Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào không?
+    - Làm thế nào để hiểu Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào?
+    - Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào có ý nghĩa gì?
+    - Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào có thể giải thích thêm không?
+    - Hãy cho tôi biết về Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào?
+    - Hãy Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào
+    - Xin hãy cho tôi biết về Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào?
+    - Bạn có thể cho tôi biết về Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào?
+    - Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào là sao?
+    - Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào là như thế nào
+    - Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào nào?
+    - Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào không?
+

@@ -1,0 +1,1104 @@
+version: '3.1'
+
+intents:
+ - dichvucong
+
+responses:
+  utter_dichvucong/dich_vu_cong_la_gi:
+  - text: |
+      Dịch vụ công là các dịch vụ mà nhà nước cung cấp để đáp ứng nhu cầu thiết yếu của cộng đồng, chẳng hạn như y tế, giáo dục, giao thông công cộng, và bảo vệ môi trường.
+
+
+  utter_dichvucong/ai_cung_cap_dich_vu_cong:
+  - text: |
+      Dịch vụ công được cung cấp bởi các cơ quan chính phủ hoặc các tổ chức công quyền như các bộ, sở, ngành hoặc chính quyền địa phương.
+
+
+  utter_dichvucong/muc_ich_cua_dich_vu_cong_la_gi:
+  - text: |
+      Mục đích của dịch vụ công là đảm bảo quyền lợi và sự phát triển toàn diện của cộng đồng, cung cấp các dịch vụ thiết yếu mà thị trường tư nhân không thể cung cấp đầy đủ hoặc không hiệu quả.
+
+
+  utter_dichvucong/dich_vu_cong_co_phai_tra_phi_khong:
+  - text: |
+      Một số dịch vụ công có thể miễn phí hoặc chỉ thu một khoản phí tượng trưng (như giáo dục công lập, y tế cơ bản), trong khi những dịch vụ khác có thể yêu cầu người sử dụng trả phí, chẳng hạn như vé xe buýt hoặc phí dịch vụ tại các bệnh viện công.
+
+
+  utter_dichvucong/loi_ich_cua_dich_vu_cong_la_gi:
+  - text: |
+      Lợi ích của dịch vụ công bao gồm đảm bảo công bằng xã hội, nâng cao chất lượng cuộc sống của người dân, hỗ trợ người nghèo và yếu thế, và thúc đẩy sự phát triển bền vững.
+
+
+  utter_dichvucong/co_bao_nhieu_loai_dich_vu_cong:
+  - text: |
+      Có nhiều loại dịch vụ công, bao gồm giáo dục, y tế, an ninh, giao thông công cộng, bảo vệ môi trường, và các dịch vụ hành chính công.
+
+
+  utter_dichvucong/dich_vu_cong_co_phai_la_mien_phi:
+  - text: |
+      Không phải tất cả dịch vụ công đều miễn phí. Một số dịch vụ có thể yêu cầu người dân đóng góp một khoản phí hoặc chi phí nhất định, tùy thuộc vào từng quốc gia và từng loại dịch vụ.
+
+
+  utter_dichvucong/dich_vu_cong_co_vai_tro_nhu_the_nao_trong_phat_trien_xa_hoi:
+  - text: |
+      Dịch vụ công đóng vai trò quan trọng trong việc nâng cao chất lượng cuộc sống, giảm bớt sự bất bình đẳng xã hội, tạo cơ hội bình đẳng cho tất cả mọi người và thúc đẩy sự phát triển kinh tế - xã hội của đất nước.
+
+
+  utter_dichvucong/cac_yeu_to_nao_anh_huong_en_chat_luong_dich_vu_cong:
+  - text: |
+      Chất lượng dịch vụ công có thể bị ảnh hưởng bởi nhiều yếu tố như ngân sách của nhà nước, trình độ và thái độ của đội ngũ cán bộ công chức, cơ sở vật chất, công nghệ và quy trình quản lý.
+
+
+  utter_dichvucong/lam_the_nao_e_cai_thien_dich_vu_cong:
+  - text: |
+      Để cải thiện dịch vụ công, cần có sự cải cách trong quản lý, nâng cao năng lực đội ngũ nhân viên, ứng dụng công nghệ hiện đại, tăng cường sự minh bạch và trách nhiệm giải trình, và đảm bảo ngân sách hợp lý cho các dịch vụ quan trọng.
+
+
+  utter_dichvucong/dich_vu_cong_co_su_khac_biet_gi_so_voi_dich_vu_tu_nhan:
+  - text: |
+      Dịch vụ công thường được cung cấp bởi chính phủ với mục tiêu phục vụ lợi ích cộng đồng, không vì mục đích lợi nhuận, trong khi dịch vụ tư nhân được cung cấp bởi các doanh nghiệp với mục tiêu kiếm lời.
+
+
+  utter_dichvucong/tai_sao_dich_vu_cong_lai_quan_trong_trong_xa_hoi:
+  - text: |
+      Dịch vụ công quan trọng vì chúng giúp đảm bảo sự công bằng và ổn định xã hội, cung cấp những dịch vụ cơ bản mà mọi người đều cần, đặc biệt là nhóm người nghèo và khó khăn.
+
+
+  utter_dichvucong/dich_vu_cong_co_anh_huong_nhu_the_nao_en_nen_kinh_te:
+  - text: |
+      Dịch vụ công có ảnh hưởng trực tiếp đến nền kinh tế, vì chúng hỗ trợ sự phát triển kinh tế thông qua giáo dục, y tế, hạ tầng giao thông, và bảo vệ môi trường, từ đó tạo nền tảng cho sự phát triển lâu dài và bền vững.
+
+
+  utter_dichvucong/ai_la_nguoi_huong_loi_tu_dich_vu_cong:
+  - text: |
+      Tất cả công dân đều hưởng lợi từ dịch vụ công, đặc biệt là những người có thu nhập thấp, người yếu thế hoặc các nhóm đối tượng đặc biệt, như người cao tuổi và trẻ em.
+
+
+  utter_dichvucong/chinh_phu_co_the_lam_gi_e_nang_cao_chat_luong_dich_vu_cong:
+  - text: |
+      Chính phủ có thể cải cách hành chính, tăng cường đầu tư vào cơ sở hạ tầng, đào tạo đội ngũ nhân viên, ứng dụng công nghệ vào công tác quản lý, và tăng cường giám sát và đánh giá chất lượng dịch vụ.
+
+
+  utter_dichvucong/dich_vu_cong_co_the_uoc_cai_tien_bang_cong_nghe_khong:
+  - text: |
+      Có, công nghệ có thể giúp cải thiện dịch vụ công bằng cách tự động hóa các quy trình, cải thiện việc cung cấp dịch vụ trực tuyến, và tạo ra các công cụ giám sát và đánh giá hiệu quả dịch vụ.
+
+
+  utter_dichvucong/dich_vu_cong_co_the_ong_vai_tro_gi_trong_viec_chong_tham_nhung:
+  - text: |
+      Dịch vụ công có thể giảm thiểu tham nhũng thông qua việc tăng cường minh bạch, thực hiện các quy trình quản lý chặt chẽ và nâng cao tính trách nhiệm giải trình của các cơ quan nhà nước.
+
+
+  utter_dichvucong/moi_quan_he_giua_dich_vu_cong_va_su_phat_trien_ben_vung_la_gi:
+  - text: |
+      Dịch vụ công là yếu tố quan trọng trong phát triển bền vững, vì chúng bảo đảm các nhu cầu cơ bản của người dân, bảo vệ môi trường, và khuyến khích phát triển kinh tế xã hội theo hướng cân bằng và bền vững.
+
+
+  utter_dichvucong/dich_vu_cong_co_the_giup_giam_bat_binh_ang_xa_hoi_nhu_the_nao:
+  - text: |
+      Dịch vụ công giúp giảm bất bình đẳng xã hội bằng cách cung cấp các dịch vụ thiết yếu như y tế và giáo dục miễn phí hoặc giá rẻ, giúp mọi người có cơ hội phát triển bất kể hoàn cảnh xuất thân.
+
+
+  utter_dichvucong/cac_chinh_sach_nao_co_the_ho_tro_phat_trien_dich_vu_cong:
+  - text: |
+      Các chính sách hỗ trợ phát triển dịch vụ công có thể bao gồm việc tăng ngân sách cho các dịch vụ công, cải cách hành chính, thúc đẩy sự tham gia của cộng đồng, và xây dựng hệ thống giám sát hiệu quả để cải tiến chất lượng dịch vụ.
+
+
+  utter_dichvucong/dich_vu_cong_co_the_uoc_phan_loai_theo_cac_tieu_chi_nao:
+  - text: |
+      Dịch vụ công có thể được phân loại theo nhiều tiêu chí như: dịch vụ xã hội (y tế, giáo dục, an sinh xã hội), dịch vụ hạ tầng (giao thông, cấp nước, thoát nước), dịch vụ hành chính (cấp giấy tờ, thủ tục hành chính), và các dịch vụ công cộng khác như bảo vệ môi trường và an ninh.
+
+
+  utter_dichvucong/dich_vu_cong_co_phai_la_quyen_loi_cua_cong_dan_khong:
+  - text: |
+      Có, dịch vụ công là quyền lợi cơ bản của công dân, bởi vì chúng giúp đảm bảo các quyền lợi tối thiểu và cơ bản như quyền được chăm sóc sức khỏe, quyền học tập, và quyền sống trong môi trường an toàn.
+
+
+  utter_dichvucong/co_su_khac_biet_nao_giua_dich_vu_cong_trong_cac_nuoc_phat_trien_va_ang_phat_trien_khong:
+  - text: |
+      Có sự khác biệt về quy mô, chất lượng và sự đa dạng của các dịch vụ công. Các nước phát triển thường có hệ thống dịch vụ công đầy đủ, chất lượng cao và áp dụng nhiều công nghệ tiên tiến, trong khi các nước đang phát triển có thể gặp khó khăn trong việc cung cấp các dịch vụ này cho tất cả công dân.
+
+
+  utter_dichvucong/chinh_phu_lam_gi_e_am_bao_dich_vu_cong_at_chat_luong_cao:
+  - text: |
+      Chính phủ cần đầu tư vào cơ sở hạ tầng, tuyển dụng và đào tạo đội ngũ nhân viên chuyên nghiệp, cải cách hành chính, xây dựng cơ chế giám sát và đánh giá liên tục, và sử dụng công nghệ để tăng cường hiệu quả và chất lượng dịch vụ.
+
+
+  utter_dichvucong/co_bao_nhieu_mo_hinh_cung_cap_dich_vu_cong:
+  - text: |
+      Các mô hình cung cấp dịch vụ công có thể bao gồm mô hình chính phủ trực tiếp cung cấp dịch vụ, mô hình đối tác công-tư (PPP), và mô hình chuyển giao một phần dịch vụ cho các tổ chức xã hội hoặc doanh nghiệp.
+
+
+  utter_dichvucong/dich_vu_cong_co_tac_ong_en_su_tham_gia_cua_cong_dan_trong_xa_hoi_khong:
+  - text: |
+      Dịch vụ công có tác động rất lớn đến sự tham gia của công dân, vì khi các dịch vụ công được cung cấp đầy đủ và hiệu quả, công dân sẽ cảm thấy được bảo vệ quyền lợi và có xu hướng tham gia tích cực hơn vào các hoạt động cộng đồng và xã hội.
+
+
+  utter_dichvucong/dich_vu_cong_co_the_gap_kho_khan_gi_trong_viec_trien_khai:
+  - text: |
+      Các khó khăn trong việc triển khai dịch vụ công có thể bao gồm thiếu ngân sách, sự chậm trễ trong cải cách hành chính, sự thiếu hụt nhân lực và năng lực, và các vấn đề về tham nhũng hoặc quản lý kém.
+
+
+  utter_dichvucong/lam_the_nao_e_nguoi_dan_co_the_anh_gia_chat_luong_dich_vu_cong:
+  - text: |
+      Người dân có thể đánh giá chất lượng dịch vụ công qua các phương tiện phản hồi như khảo sát, các kênh thông tin phản ánh, hoặc qua sự minh bạch trong quy trình cung cấp dịch vụ và kết quả cuối cùng của dịch vụ.
+
+
+  utter_dichvucong/dich_vu_cong_co_the_giup_giam_thieu_tinh_trang_ngheo_oi_nhu_the_nao:
+  - text: |
+      Dịch vụ công giúp giảm nghèo bằng cách cung cấp các dịch vụ y tế, giáo dục, và an sinh xã hội, tạo cơ hội cho những người nghèo và yếu thế được tiếp cận với các dịch vụ cơ bản để cải thiện cuộc sống và tìm kiếm cơ hội phát triển.
+
+
+  utter_dichvucong/cac_chinh_sach_ve_dich_vu_cong_co_can_phai_thay_oi_theo_thoi_gian_khong:
+  - text: |
+      Có, các chính sách về dịch vụ công cần thay đổi và thích ứng theo sự phát triển của xã hội, thay đổi nhu cầu của người dân và tiến bộ của công nghệ. Điều này đảm bảo rằng dịch vụ công luôn đáp ứng được các yêu cầu và thách thức mới trong xã hội.
+
+
+  utter_dichvucong/chuyen_oi_so_la_gi_trong_nganh_dich_vu_cong:
+  - text: |
+      Chuyển đổi số trong ngành dịch vụ công là quá trình áp dụng công nghệ số để cải thiện và đổi mới cách thức cung cấp các dịch vụ công, bao gồm sử dụng dữ liệu, phần mềm, và các công cụ kỹ thuật số để nâng cao hiệu quả, tiết kiệm chi phí và mang lại dịch vụ tốt hơn cho công dân.
+
+
+  utter_dichvucong/loi_ich_cua_chuyen_oi_so_trong_nganh_dich_vu_cong_la_gi:
+  - text: |
+      Lợi ích bao gồm tăng cường hiệu quả công việc, giảm chi phí vận hành, cải thiện sự minh bạch và trách nhiệm, tạo thuận lợi cho công dân trong việc tiếp cận các dịch vụ, và giúp nhà nước đưa ra các quyết định chính xác hơn nhờ vào dữ liệu và phân tích thông minh.
+
+
+  utter_dichvucong/cac_cong_nghe_chu_yeu_trong_chuyen_oi_so_nganh_dich_vu_cong_la_gi:
+  - text: |
+      Các công nghệ chủ yếu bao gồm dữ liệu lớn (Big Data), trí tuệ nhân tạo (AI), điện toán đám mây, Internet vạn vật (IoT), blockchain, và các nền tảng dịch vụ công trực tuyến.
+
+
+  utter_dichvucong/chuyen_oi_so_co_the_cai_thien_chat_luong_dich_vu_cong_nhu_the_nao:
+  - text: |
+      Chuyển đổi số giúp cải thiện chất lượng dịch vụ công bằng cách tự động hóa các quy trình hành chính, giảm thiểu sai sót, tăng cường giao tiếp trực tiếp và nhanh chóng giữa chính phủ và công dân, và giúp cải thiện việc quản lý và phân phối các nguồn lực.
+
+
+  utter_dichvucong/cac_thach_thuc_khi_ap_dung_chuyen_oi_so_vao_dich_vu_cong_la_gi:
+  - text: |
+      Các thách thức có thể bao gồm vấn đề về bảo mật và quyền riêng tư dữ liệu, thiếu hạ tầng công nghệ hiện đại, kháng cự từ những người làm việc trong ngành công, thiếu kỹ năng số trong đội ngũ cán bộ công chức, và chi phí đầu tư ban đầu.
+
+
+  utter_dichvucong/chuyen_oi_so_co_the_lam_giam_tham_nhung_trong_dich_vu_cong_nhu_the_nao:
+  - text: |
+      Chuyển đổi số giúp giảm tham nhũng bằng cách tạo ra các quy trình tự động, minh bạch hóa các dịch vụ công, và cung cấp các công cụ giám sát và theo dõi trực tuyến, giúp hạn chế sự can thiệp và thao túng của các bên ngoài.
+
+
+  utter_dichvucong/chuyen_oi_so_co_the_thay_oi_cach_cung_cap_dich_vu_cong_cho_cong_dan_ra_sao:
+  - text: |
+      Công dân có thể tiếp cận dịch vụ công qua các cổng dịch vụ trực tuyến, các ứng dụng di động, và các nền tảng số khác, giúp họ tiết kiệm thời gian và công sức. Họ cũng có thể tra cứu thông tin, đăng ký thủ tục hành chính, và thực hiện các giao dịch dễ dàng và nhanh chóng từ bất kỳ đâu.
+
+
+  utter_dichvucong/dich_vu_cong_chuyen_oi_so_co_the_giai_quyet_uoc_van_e_nao_trong_xa_hoi:
+  - text: |
+      Chuyển đổi số có thể giải quyết vấn đề như tắc nghẽn thủ tục hành chính, giảm thiểu thời gian chờ đợi, cải thiện chất lượng giáo dục và y tế công cộng, tạo điều kiện thuận lợi cho doanh nghiệp và cá nhân trong việc tiếp cận các dịch vụ công.
+
+
+  utter_dichvucong/chinh_phu_can_lam_gi_e_thuc_ay_chuyen_oi_so_trong_nganh_dich_vu_cong:
+  - text: |
+      Chính phủ cần đầu tư vào hạ tầng công nghệ, nâng cao năng lực đội ngũ cán bộ công chức về kỹ năng số, tạo ra môi trường pháp lý thuận lợi cho việc triển khai các công nghệ mới, và khuyến khích sự tham gia của các doanh nghiệp công nghệ trong cung cấp các giải pháp dịch vụ công.
+
+
+  utter_dichvucong/co_cac_vi_du_thuc_te_nao_ve_chuyen_oi_so_trong_nganh_dich_vu_cong:
+  - text: |
+      Các ví dụ bao gồm việc áp dụng hệ thống đăng ký thủ tục hành chính trực tuyến, cổng thông tin công dân, các dịch vụ y tế trực tuyến (telemedicine), nền tảng học trực tuyến trong giáo dục công, và các ứng dụng di động để tra cứu thông tin và thanh toán phí dịch vụ công như giao thông công cộng hay thuế.
+
+
+  utter_dichvucong/chuyen_oi_so_co_the_lam_tang_tinh_minh_bach_trong_nganh_dich_vu_cong_nhu_the_nao:
+  - text: |
+      Chuyển đổi số có thể tăng tính minh bạch bằng cách cung cấp dữ liệu công khai về các dịch vụ công, giúp công dân theo dõi quá trình xử lý hồ sơ, kết quả giải quyết thủ tục hành chính, và đảm bảo các thông tin được cập nhật chính xác và kịp thời.
+
+
+  utter_dichvucong/chuyen_oi_so_co_giup_giam_bot_cac_thu_tuc_hanh_chinh_phuc_tap_khong:
+  - text: |
+      Có, chuyển đổi số giúp đơn giản hóa các thủ tục hành chính bằng cách tự động hóa quy trình, giảm thiểu sự cần thiết phải đi lại trực tiếp và tiết kiệm thời gian của công dân khi họ có thể thực hiện mọi thủ tục qua cổng thông tin trực tuyến.
+
+
+  utter_dichvucong/cong_nghe_ien_toan_am_may_co_the_giup_nganh_dich_vu_cong_nhu_the_nao:
+  - text: |
+      Công nghệ điện toán đám mây giúp ngành dịch vụ công lưu trữ và quản lý dữ liệu hiệu quả hơn, đồng thời giảm chi phí đầu tư và duy trì hạ tầng phần cứng. Nó cũng hỗ trợ việc chia sẻ và hợp tác dữ liệu giữa các cơ quan nhà nước một cách nhanh chóng và an toàn.
+
+
+  utter_dichvucong/cong_dan_co_the_truy_cap_dich_vu_cong_truc_tuyen_o_au_va_nhu_the_nao:
+  - text: |
+      Công dân có thể truy cập dịch vụ công trực tuyến thông qua các cổng dịch vụ công quốc gia hoặc địa phương, các ứng dụng di động chính thức của chính phủ, hoặc qua các website của các cơ quan, tổ chức nhà nước cung cấp dịch vụ.
+
+
+  utter_dichvucong/chuyen_oi_so_co_giup_nang_cao_chat_luong_giao_duc_cong_khong:
+  - text: |
+      Có, chuyển đổi số giúp nâng cao chất lượng giáo dục công thông qua việc áp dụng các công nghệ trực tuyến trong giảng dạy, học tập, và quản lý lớp học, từ đó tạo cơ hội học tập linh hoạt hơn và giúp học sinh, sinh viên tiếp cận tài liệu học tập dễ dàng hơn.
+
+
+  utter_dichvucong/co_moi_quan_he_nao_giua_chuyen_oi_so_va_su_cai_cach_hanh_chinh_trong_dich_vu_cong_khong:
+  - text: |
+      Chuyển đổi số là một phần quan trọng trong cải cách hành chính vì nó giúp cải thiện quy trình xử lý thủ tục hành chính, giảm thiểu sự tham nhũng, tăng cường minh bạch và giúp cán bộ công chức làm việc hiệu quả hơn, phục vụ người dân tốt hơn.
+
+
+  utter_dichvucong/chuyen_oi_so_co_anh_huong_gi_en_van_e_bao_mat_va_quyen_rieng_tu_trong_dich_vu_cong:
+  - text: |
+      Chuyển đổi số có thể giúp cải thiện bảo mật và quyền riêng tư khi áp dụng các giải pháp bảo mật hiện đại như mã hóa dữ liệu và xác thực đa yếu tố, nhưng cũng tạo ra thách thức lớn trong việc bảo vệ thông tin cá nhân, đòi hỏi các cơ quan nhà nước phải đầu tư vào các hệ thống bảo mật mạnh mẽ.
+
+
+  utter_dichvucong/cac_dich_vu_cong_so_co_the_tao_ra_su_thay_oi_nao_trong_tuong_lai:
+  - text: |
+      Các dịch vụ công số có thể tạo ra sự thay đổi lớn trong tương lai bằng cách cải thiện độ hiệu quả và nhanh chóng trong việc cung cấp dịch vụ, giúp công dân và doanh nghiệp tiết kiệm thời gian và chi phí, đồng thời thúc đẩy sự phát triển của nền kinh tế số và sự tương tác giữa chính phủ và người dân.
+
+
+  utter_dichvucong/chuyen_oi_so_co_the_giup_giam_chi_phi_hoat_ong_trong_nganh_dich_vu_cong_nhu_the_nao:
+  - text: |
+      Chuyển đổi số giúp giảm chi phí bằng cách tự động hóa các quy trình thủ công, giảm số lượng giấy tờ và công tác hành chính, tiết kiệm chi phí vật lý (văn phòng phẩm, không gian làm việc), và tăng cường hiệu quả làm việc của cán bộ công chức.
+
+
+  utter_dichvucong/chuyen_oi_so_co_tac_ong_gi_en_nguoi_dan_o_vung_sau_vung_xa:
+  - text: |
+      Chuyển đổi số giúp người dân ở vùng sâu, vùng xa tiếp cận các dịch vụ công dễ dàng hơn thông qua Internet, giảm bớt sự cần thiết phải di chuyển xa để thực hiện các thủ tục hành chính hoặc tiếp cận các dịch vụ y tế và giáo dục, từ đó góp phần thu hẹp khoảng cách giữa các vùng miền.
+
+
+  utter_dichvucong/chuyen_oi_so_co_the_cai_thien_cong_tac_quan_ly_nha_nuoc_nhu_the_nao:
+  - text: |
+      Chuyển đổi số giúp cải thiện công tác quản lý nhà nước bằng cách sử dụng hệ thống dữ liệu và phần mềm quản lý thông minh để thu thập, xử lý, và phân tích thông tin nhanh chóng. Điều này giúp cơ quan nhà nước đưa ra quyết định chính xác và kịp thời hơn, đồng thời theo dõi và kiểm soát các chương trình, dự án hiệu quả hơn.
+
+
+  utter_dichvucong/cac_co_quan_nha_nuoc_can_lam_gi_e_xay_dung_nen_tang_chuyen_oi_so_thanh_cong:
+  - text: |
+      Các cơ quan nhà nước cần xây dựng chiến lược chuyển đổi số rõ ràng, đầu tư vào hạ tầng công nghệ, đào tạo nhân lực có kỹ năng số, áp dụng các tiêu chuẩn bảo mật thông tin, và thúc đẩy hợp tác với các doanh nghiệp công nghệ để phát triển các nền tảng và giải pháp số hiệu quả.
+
+
+  utter_dichvucong/chuyen_oi_so_co_the_giam_thieu_su_phan_biet_trong_viec_tiep_can_dich_vu_cong_khong:
+  - text: |
+      Có, chuyển đổi số giúp giảm thiểu sự phân biệt trong việc tiếp cận dịch vụ công bằng cách cung cấp dịch vụ công qua các nền tảng trực tuyến, giúp mọi công dân, đặc biệt là nhóm người dân ở khu vực vùng sâu, vùng xa, có thể dễ dàng truy cập các dịch vụ một cách công bằng, không phụ thuộc vào vị trí địa lý.
+
+
+  utter_dichvucong/chuyen_oi_so_co_the_giup_cai_thien_dich_vu_y_te_cong_cong_nhu_the_nao:
+  - text: |
+      Chuyển đổi số trong dịch vụ y tế giúp nâng cao chất lượng dịch vụ bằng cách sử dụng công nghệ để quản lý hồ sơ bệnh án, triển khai các dịch vụ y tế từ xa (telemedicine), cung cấp thông tin về sức khỏe qua ứng dụng di động, và giảm thời gian chờ đợi cho bệnh nhân.
+
+
+  utter_dichvucong/chuyen_oi_so_co_anh_huong_gi_en_cac_dich_vu_cong_o_khu_vuc_o_thi:
+  - text: |
+      Chuyển đổi số có thể làm tăng hiệu quả và chất lượng các dịch vụ công tại khu vực đô thị như giao thông thông minh, quản lý đô thị thông qua dữ liệu lớn, dịch vụ thanh toán trực tuyến cho các dịch vụ công cộng (thuế, phí dịch vụ), và cải thiện khả năng tiếp cận các dịch vụ công từ các khu vực đô thị đông dân cư.
+
+
+  utter_dichvucong/chuyen_oi_so_trong_dich_vu_cong_co_can_su_tham_gia_cua_khu_vuc_tu_nhan_khong:
+  - text: |
+      Có, khu vực tư nhân đóng vai trò quan trọng trong việc cung cấp các giải pháp công nghệ, hạ tầng phần mềm và hệ thống bảo mật để hỗ trợ chuyển đổi số trong ngành dịch vụ công. Sự hợp tác công-tư (PPP) sẽ giúp tối ưu hóa việc triển khai và phát triển các dịch vụ công số.
+
+
+  utter_dichvucong/chuyen_oi_so_co_the_giup_giam_tac_nghen_trong_cac_thu_tuc_hanh_chinh_khong:
+  - text: |
+      Chuyển đổi số có thể giúp giảm tắc nghẽn trong các thủ tục hành chính thông qua việc tự động hóa các quy trình, xử lý hồ sơ nhanh chóng, cho phép công dân thực hiện các giao dịch trực tuyến, và giảm thiểu sự can thiệp thủ công của các nhân viên hành chính.
+
+
+  utter_dichvucong/chuyen_oi_so_co_the_giup_giam_chi_phi_giao_dich_trong_nganh_dich_vu_cong_khong:
+  - text: |
+      Có, chuyển đổi số có thể giúp giảm chi phí giao dịch bằng cách giảm thiểu việc sử dụng giấy tờ, loại bỏ các bước thủ tục không cần thiết, và tăng cường sự kết nối giữa công dân và chính phủ thông qua các cổng thông tin và nền tảng trực tuyến.
+
+
+  utter_dichvucong/chuyen_oi_so_co_the_giup_tao_dung_mot_chinh_phu_ien_tu_nhu_the_nao:
+  - text: |
+      Chuyển đổi số là nền tảng của chính phủ điện tử, nơi các dịch vụ công được cung cấp thông qua các kênh trực tuyến, giúp công dân truy cập thông tin, thực hiện các giao dịch hành chính, và tương tác với các cơ quan nhà nước dễ dàng hơn, đồng thời nâng cao tính minh bạch và hiệu quả trong hoạt động của chính phủ.
+
+
+  utter_dichvucong/chuyen_oi_so_co_the_cai_thien_dich_vu_cong_trong_cac_khu_vuc_nong_thon_nhu_the_nao:
+  - text: |
+      Chuyển đổi số có thể cải thiện dịch vụ công tại các khu vực nông thôn bằng cách cung cấp các dịch vụ công qua nền tảng trực tuyến, giúp giảm bớt sự phụ thuộc vào các dịch vụ địa phương truyền thống, tạo ra cơ hội tiếp cận các dịch vụ y tế, giáo dục, và hành chính từ xa, qua đó giúp nâng cao chất lượng sống cho người dân ở vùng nông thôn.
+
+
+  utter_dichvucong/chuyen_oi_so_co_the_giup_giam_su_phan_tan_thong_tin_trong_nganh_dich_vu_cong_khong:
+  - text: |
+      Có, chuyển đổi số giúp tập trung và quản lý thông tin hiệu quả hơn thông qua hệ thống cơ sở dữ liệu trung tâm, từ đó dễ dàng chia sẻ và truy cập thông tin giữa các cơ quan nhà nước, giảm thiểu sự phân tán và thiếu đồng bộ trong quá trình cung cấp dịch vụ công.
+
+
+  utter_dichvucong/chuyen_oi_so_co_anh_huong_nhu_the_nao_en_cac_dich_vu_cong_trong_linh_vuc_giao_thong:
+  - text: |
+      Chuyển đổi số có thể cải thiện các dịch vụ công trong lĩnh vực giao thông thông qua việc sử dụng công nghệ như giao thông thông minh, hệ thống giám sát giao thông, đặt vé và thanh toán điện tử, quản lý vận hành phương tiện công cộng và tối ưu hóa lộ trình di chuyển.
+
+
+  utter_dichvucong/chuyen_oi_so_co_giup_phat_trien_chinh_phu_mo_khong:
+  - text: |
+      Có, chuyển đổi số là yếu tố quan trọng để xây dựng chính phủ mở. Chính phủ có thể cung cấp thông tin công khai về các hoạt động, ngân sách và dự án thông qua các nền tảng trực tuyến, tạo sự minh bạch và giúp công dân tham gia vào quá trình ra quyết định.
+
+
+  utter_dichvucong/chuyen_oi_so_co_anh_huong_en_quy_trinh_cap_giay_to_va_chung_thuc_trong_dich_vu_cong_khong:
+  - text: |
+      Chuyển đổi số có thể cải thiện quy trình cấp giấy tờ và chứng thực bằng cách cung cấp dịch vụ trực tuyến để công dân có thể đăng ký, nộp hồ sơ, thanh toán và nhận kết quả trực tiếp mà không cần phải đến cơ quan hành chính, tiết kiệm thời gian và chi phí.
+
+
+  utter_dichvucong/cac_dich_vu_cong_so_co_the_giup_cong_dan_giam_bot_su_phu_thuoc_vao_co_quan_nha_nuoc_khong:
+  - text: |
+      Có, các dịch vụ công số giúp công dân tự giải quyết các vấn đề hành chính và thủ tục mà không cần đến trực tiếp cơ quan nhà nước, thông qua các ứng dụng và nền tảng trực tuyến, giúp công dân chủ động hơn và giảm bớt sự phụ thuộc vào các cơ quan hành chính.
+
+
+  utter_dichvucong/chuyen_oi_so_co_the_ho_tro_viec_xay_dung_cac_dich_vu_cong_ben_vung_khong:
+  - text: |
+      Chuyển đổi số có thể hỗ trợ việc xây dựng các dịch vụ công bền vững thông qua việc tối ưu hóa việc sử dụng tài nguyên, giảm thiểu lãng phí, nâng cao hiệu quả quản lý và giám sát, đồng thời sử dụng công nghệ để giảm thiểu tác động xấu đến môi trường và tăng cường sự phát triển xã hội bền vững.
+
+
+  utter_dichvucong/chuyen_oi_so_co_giup_cai_thien_viec_thu_thue_va_quan_ly_tai_chinh_cong_khong:
+  - text: |
+      Có, chuyển đổi số giúp cải thiện việc thu thuế và quản lý tài chính công thông qua việc áp dụng hệ thống quản lý thuế điện tử, giúp thu thập, xử lý và lưu trữ dữ liệu thuế dễ dàng hơn, giảm thiểu gian lận thuế và tăng cường tính minh bạch trong việc sử dụng ngân sách nhà nước.
+
+
+  utter_dichvucong/chuyen_oi_so_co_the_giup_tang_cuong_cong_tac_bao_ve_moi_truong_trong_dich_vu_cong_khong:
+  - text: |
+      Chuyển đổi số có thể giúp bảo vệ môi trường bằng cách sử dụng công nghệ để giám sát và quản lý tài nguyên thiên nhiên, kiểm soát ô nhiễm, tối ưu hóa việc xử lý chất thải, và triển khai các dự án năng lượng tái tạo, giảm tác động tiêu cực đến môi trường.
+
+
+  utter_dichvucong/chuyen_oi_so_co_the_ho_tro_trong_cong_tac_cuu_tro_thien_tai_va_khac_phuc_hau_qua_khong:
+  - text: |
+      Chuyển đổi số giúp hỗ trợ công tác cứu trợ thiên tai và khắc phục hậu quả bằng cách sử dụng công nghệ thông tin để thu thập dữ liệu tình hình thiên tai, phối hợp các lực lượng cứu hộ, quản lý nguồn lực và phân phối hàng cứu trợ một cách hiệu quả, nhanh chóng.
+
+
+  utter_dichvucong/chuyen_oi_so_co_the_giup_cai_thien_viec_cung_cap_dich_vu_cong_cho_nguoi_khuyet_tat_khong:
+  - text: |
+      Có, chuyển đổi số có thể giúp cung cấp dịch vụ công cho người khuyết tật bằng cách phát triển các công cụ hỗ trợ như ứng dụng trợ giúp di chuyển, các dịch vụ công trực tuyến dễ tiếp cận, và các nền tảng số hỗ trợ người khuyết tật trong các lĩnh vực như giáo dục, y tế và giao thông.
+
+
+  utter_dichvucong/chuyen_oi_so_co_the_giup_cai_thien_quan_ly_nhan_su_trong_nganh_dich_vu_cong_nhu_the_nao:
+  - text: |
+      Chuyển đổi số giúp cải thiện quản lý nhân sự bằng cách sử dụng phần mềm quản lý nhân sự, tự động hóa các quy trình tuyển dụng, đào tạo, đánh giá hiệu suất công chức, đồng thời giúp theo dõi và quản lý hồ sơ cán bộ một cách hiệu quả và minh bạch.
+
+
+  utter_dichvucong/chuyen_oi_so_co_giup_nang_cao_trai_nghiem_cua_cong_dan_khi_tiep_can_dich_vu_cong_khong:
+  - text: |
+      Có, chuyển đổi số nâng cao trải nghiệm của công dân bằng cách cung cấp các dịch vụ công dễ tiếp cận thông qua các ứng dụng di động, trang web, và các nền tảng trực tuyến, cho phép công dân thực hiện giao dịch nhanh chóng, giảm bớt thủ tục giấy tờ và thời gian chờ đợi.
+
+
+  utter_dichvucong/chuyen_oi_so_co_anh_huong_en_he_thong_giao_duc_cong_nhu_the_nao:
+  - text: |
+      Chuyển đổi số giúp cải thiện hệ thống giáo dục công bằng cách cung cấp các nền tảng học trực tuyến, giúp học sinh, sinh viên tiếp cận tài liệu học tập mọi lúc mọi nơi, đồng thời hỗ trợ giáo viên trong việc quản lý lớp học và tương tác với học sinh hiệu quả hơn.
+
+
+  utter_dichvucong/chuyen_oi_so_co_the_giup_cai_thien_chat_luong_dich_vu_cong_trong_cac_khu_vuc_mien_nui_khong:
+  - text: |
+      Chuyển đổi số có thể giúp cải thiện chất lượng dịch vụ công ở khu vực miền núi thông qua việc triển khai các nền tảng dịch vụ công trực tuyến, giúp người dân tiếp cận các dịch vụ hành chính, y tế, giáo dục mà không cần phải di chuyển xa, từ đó nâng cao chất lượng cuộc sống.
+
+
+  utter_dichvucong/chuyen_oi_so_co_the_giup_cai_thien_he_thong_cham_soc_suc_khoe_cong_cong_khong:
+  - text: |
+      Chuyển đổi số giúp cải thiện hệ thống chăm sóc sức khỏe công cộng bằng cách sử dụng các công nghệ như hồ sơ y tế điện tử, telemedicine (y tế từ xa), và hệ thống quản lý bệnh viện, giúp cung cấp dịch vụ chăm sóc sức khỏe nhanh chóng, hiệu quả và giảm chi phí.
+
+
+  utter_dichvucong/chuyen_oi_so_co_the_lam_giam_ganh_nang_hanh_chinh_cho_cac_co_quan_nha_nuoc_nhu_the_nao:
+  - text: |
+      Chuyển đổi số giúp giảm gánh nặng hành chính cho các cơ quan nhà nước bằng cách tự động hóa các quy trình, giảm thiểu thủ tục giấy tờ, giúp công chức tiết kiệm thời gian và nâng cao hiệu quả công việc, đồng thời tạo ra môi trường làm việc hiện đại, thuận tiện hơn.
+
+
+  utter_dichvucong/chuyen_oi_so_co_anh_huong_en_kha_nang_cung_cap_dich_vu_cong_cho_nguoi_dan_trong_tinh_huong_khan_cap_khong:
+  - text: |
+      Có, chuyển đổi số có thể giúp cung cấp dịch vụ công trong tình huống khẩn cấp bằng cách sử dụng công nghệ để truyền tải thông tin nhanh chóng, kết nối các cơ quan chức năng và công dân, giúp triển khai các biện pháp ứng phó và cứu trợ kịp thời trong các tình huống khẩn cấp.
+
+
+  utter_dichvucong/chuyen_oi_so_co_giup_cai_thien_cong_tac_tuyen_sinh_va_xet_tuyen_trong_giao_duc_cong_khong:
+  - text: |
+      Chuyển đổi số giúp cải thiện công tác tuyển sinh và xét tuyển bằng cách triển khai hệ thống đăng ký và xét tuyển trực tuyến, giúp giảm bớt thủ tục giấy tờ, giảm thời gian xử lý hồ sơ và nâng cao tính minh bạch trong quy trình xét tuyển.
+
+
+  utter_dichvucong/chuyen_oi_so_co_the_giup_tao_ra_moi_truong_lam_viec_hieu_qua_hon_trong_cac_co_quan_nha_nuoc_khong:
+  - text: |
+      Có, chuyển đổi số giúp tạo ra môi trường làm việc hiệu quả hơn thông qua việc sử dụng các công cụ quản lý công việc trực tuyến, trao đổi thông tin nhanh chóng, làm việc từ xa, và nâng cao sự phối hợp giữa các phòng ban và các cấp chính quyền.
+
+
+  utter_dichvucong/chuyen_oi_so_co_the_giup_nganh_dich_vu_cong_ung_pho_voi_cac_thay_oi_ve_luat_va_chinh_sach_nhu_the_nao:
+  - text: |
+      Chuyển đổi số giúp ngành dịch vụ công ứng phó với các thay đổi về luật và chính sách thông qua việc sử dụng các hệ thống quản lý dữ liệu linh hoạt, giúp cập nhật và triển khai các thay đổi một cách nhanh chóng và đồng bộ, đồng thời đảm bảo tính tuân thủ cao trong toàn bộ quy trình hành chính.
+
+
+  utter_dichvucong/chuyen_oi_so_co_the_ho_tro_phat_trien_cac_dich_vu_cong_ben_vung_khong:
+  - text: |
+      Có, chuyển đổi số có thể hỗ trợ phát triển các dịch vụ công bền vững bằng cách tối ưu hóa việc sử dụng tài nguyên, giảm lãng phí, và tăng cường sự minh bạch trong việc quản lý các dự án phát triển, từ đó thúc đẩy sự phát triển bền vững trong mọi lĩnh vực công.
+
+
+  utter_dichvucong/chuyen_oi_so_co_the_lam_tang_su_tuong_tac_giua_cong_dan_va_chinh_phu_nhu_the_nao:
+  - text: |
+      Chuyển đổi số giúp tăng cường sự tương tác giữa công dân và chính phủ thông qua các kênh giao tiếp trực tuyến, cổng thông tin công dân, và các ứng dụng di động, giúp người dân có thể dễ dàng gửi phản hồi, yêu cầu và nhận thông tin từ các cơ quan nhà nước.
+
+
+  utter_dichvucong/chuyen_oi_so_co_the_cai_thien_quy_trinh_cap_phep_va_giam_sat_cac_doanh_nghiep_trong_nganh_dich_vu_cong_khong:
+  - text: |
+      Chuyển đổi số giúp cải thiện quy trình cấp phép và giám sát doanh nghiệp bằng cách sử dụng các hệ thống quản lý giấy phép tự động, giám sát và theo dõi các hoạt động của doanh nghiệp trong thời gian thực, đảm bảo tuân thủ quy định và giảm thiểu gian lận.
+
+
+  utter_dichvucong/chuyen_oi_so_co_the_giup_cai_thien_dich_vu_cong_trong_cac_khu_vuc_heo_lanh_khong:
+  - text: |
+      Có, chuyển đổi số giúp cải thiện dịch vụ công ở các khu vực hẻo lánh bằng cách cung cấp các dịch vụ trực tuyến, giúp người dân ở vùng sâu, vùng xa có thể tiếp cận dễ dàng hơn với các dịch vụ như y tế, giáo dục và thủ tục hành chính mà không cần di chuyển xa.
+
+
+  utter_dichvucong/chuyen_oi_so_co_the_ho_tro_cong_tac_phong_chong_dich_benh_trong_nganh_dich_vu_cong_khong:
+  - text: |
+      Có, chuyển đổi số hỗ trợ phòng chống dịch bệnh thông qua việc sử dụng các công nghệ như theo dõi và phân tích dữ liệu y tế, triển khai ứng dụng khai báo y tế, giám sát sự lây lan của dịch bệnh, và tổ chức các chiến dịch tuyên truyền qua nền tảng trực tuyến.
+
+
+  utter_dichvucong/chuyen_oi_so_co_the_giup_cai_thien_tinh_linh_hoat_cua_cac_dich_vu_cong_trong_tinh_huong_khan_cap_nhu_thien_tai_dich_benh_khong:
+  - text: |
+      Có, chuyển đổi số giúp cải thiện tính linh hoạt trong các tình huống khẩn cấp bằng cách sử dụng các hệ thống giám sát và thông báo tự động, giúp cơ quan chức năng nhanh chóng triển khai các biện pháp cứu hộ, cung cấp dịch vụ cứu trợ và chăm sóc sức khỏe cho cộng đồng.
+
+
+  utter_dichvucong/chuyen_oi_so_co_the_giam_thieu_tinh_trang_thieu_hut_nguon_luc_trong_nganh_dich_vu_cong_khong:
+  - text: |
+      Có, chuyển đổi số giúp giảm thiểu tình trạng thiếu hụt nguồn lực trong ngành dịch vụ công bằng cách tối ưu hóa việc phân bổ và sử dụng tài nguyên, đồng thời giúp phân tích và dự báo nhu cầu, từ đó giúp các cơ quan nhà nước chuẩn bị và đáp ứng nhu cầu hiệu quả hơn.
+
+
+  utter_dichvucong/chuyen_oi_so_co_the_tao_co_hoi_cho_su_oi_moi_trong_cung_cap_dich_vu_cong_khong:
+  - text: |
+      Có, chuyển đổi số tạo cơ hội cho sự đổi mới trong cung cấp dịch vụ công bằng cách áp dụng các công nghệ mới như trí tuệ nhân tạo, dữ liệu lớn, và tự động hóa, giúp cải thiện quy trình và tạo ra các mô hình dịch vụ công sáng tạo, nhanh chóng và hiệu quả.
+
+
+  utter_dichvucong/chuyen_oi_so_co_the_ho_tro_nang_cao_chat_luong_quan_ly_du_lieu_trong_nganh_dich_vu_cong_nhu_the_nao:
+  - text: |
+      Chuyển đổi số giúp nâng cao chất lượng quản lý dữ liệu bằng cách sử dụng các hệ thống quản lý cơ sở dữ liệu điện tử, giúp thu thập, lưu trữ và phân tích dữ liệu chính xác, nhanh chóng, từ đó tạo ra thông tin giá trị để phục vụ ra quyết định của các cơ quan nhà nước.
+
+
+  utter_dichvucong/chuyen_oi_so_co_the_cai_thien_su_ong_bo_trong_cac_dich_vu_cong_tren_toan_quoc_khong:
+  - text: |
+      Có, chuyển đổi số giúp cải thiện sự đồng bộ trong các dịch vụ công trên toàn quốc thông qua việc sử dụng các nền tảng số và hệ thống dữ liệu liên kết giữa các cấp chính quyền, giúp tất cả các cơ quan cung cấp dịch vụ công tuân theo các quy trình và tiêu chuẩn giống nhau, từ đó đảm bảo sự nhất quán và công bằng trong việc cung cấp dịch vụ.
+
+
+  utter_dichvucong/viet_nam_a_bat_au_ap_dung_chuyen_oi_so_vao_nganh_dich_vu_cong_nhu_the_nao:
+  - text: |
+      Việt Nam đã bắt đầu áp dụng chuyển đổi số vào ngành dịch vụ công từ những năm gần đây thông qua việc phát triển Chính phủ điện tử, cung cấp dịch vụ công trực tuyến, triển khai hệ thống dữ liệu quốc gia và các nền tảng số hỗ trợ người dân và doanh nghiệp thực hiện thủ tục hành chính.
+
+
+  utter_dichvucong/cac_dich_vu_cong_truc_tuyen_o_viet_nam_a_uoc_trien_khai_nhu_the_nao:
+  - text: |
+      Việt Nam đã triển khai các cổng dịch vụ công trực tuyến như Cổng dịch vụ công quốc gia, nơi người dân và doanh nghiệp có thể truy cập để thực hiện các thủ tục hành chính trực tuyến, nộp hồ sơ, tra cứu thông tin, thanh toán phí và nhận kết quả mà không cần phải đến trực tiếp cơ quan nhà nước.
+
+
+  utter_dichvucong/chinh_phu_viet_nam_a_co_nhung_sang_kien_nao_e_thuc_ay_chuyen_oi_so_trong_nganh_dich_vu_cong:
+  - text: |
+      Chính phủ Việt Nam đã ban hành các chiến lược như \"Chiến lược phát triển Chính phủ điện tử\", \"Đề án chuyển đổi số quốc gia\" để đẩy mạnh việc ứng dụng công nghệ trong dịch vụ công, cải cách hành chính và tạo điều kiện cho người dân và doanh nghiệp tiếp cận dịch vụ công một cách nhanh chóng và hiệu quả.
+
+
+  utter_dichvucong/chuyen_oi_so_trong_nganh_dich_vu_cong_tai_viet_nam_co_nhung_thach_thuc_gi:
+  - text: |
+      Những thách thức chính bao gồm hạ tầng công nghệ chưa đồng bộ, thiếu hụt nguồn lực con người có kỹ năng số, sự kháng cự thay đổi từ một bộ phận công chức, và vấn đề bảo mật thông tin và quyền riêng tư trong việc xử lý dữ liệu công dân.
+
+
+  utter_dichvucong/cac_cong_dan_co_the_tiep_can_dich_vu_cong_truc_tuyen_o_viet_nam_nhu_the_nao:
+  - text: |
+      Công dân có thể tiếp cận dịch vụ công trực tuyến thông qua các cổng dịch vụ công quốc gia và địa phương, các ứng dụng di động của các cơ quan nhà nước, hoặc website của các cơ quan chính phủ, nơi họ có thể thực hiện thủ tục hành chính, tra cứu thông tin và nhận kết quả dịch vụ.
+
+
+  utter_dichvucong/chinh_phu_viet_nam_a_thuc_hien_nhung_bien_phap_gi_e_am_bao_tinh_bao_mat_va_an_toan_trong_dich_vu_cong_so:
+  - text: |
+      Chính phủ đã triển khai các hệ thống bảo mật dữ liệu hiện đại, áp dụng mã hóa, xác thực đa yếu tố và các biện pháp giám sát an ninh mạng chặt chẽ để bảo vệ dữ liệu cá nhân và đảm bảo an toàn trong việc xử lý và lưu trữ thông tin công dân.
+
+
+  utter_dichvucong/chuyen_oi_so_co_giup_cai_cach_hanh_chinh_o_viet_nam_nhu_the_nao:
+  - text: |
+      Chuyển đổi số giúp cải cách hành chính ở Việt Nam bằng cách tự động hóa các quy trình thủ tục hành chính, giảm thiểu giấy tờ và thủ tục, tăng cường tính minh bạch và hiệu quả trong quản lý nhà nước, đồng thời nâng cao trải nghiệm của người dân khi tiếp cận các dịch vụ công.
+
+
+  utter_dichvucong/chinh_phu_viet_nam_co_su_dung_cac_cong_nghe_nao_e_ho_tro_chuyen_oi_so_trong_dich_vu_cong:
+  - text: |
+      Chính phủ Việt Nam đã sử dụng các công nghệ như dữ liệu lớn (Big Data), trí tuệ nhân tạo (AI), blockchain, điện toán đám mây và các nền tảng số để quản lý và cung cấp dịch vụ công hiệu quả hơn, tăng cường khả năng phân tích, dự báo và tối ưu hóa các quy trình.
+
+
+  utter_dichvucong/cac_co_quan_nha_nuoc_tai_viet_nam_a_co_nhung_thay_oi_gi_trong_cach_thuc_cung_cap_dich_vu_cong_nho_chuyen_oi_so:
+  - text: |
+      Các cơ quan nhà nước tại Việt Nam đã bắt đầu chuyển từ hình thức cung cấp dịch vụ thủ công sang hình thức trực tuyến, thông qua các nền tảng số, nhằm giảm thiểu thời gian chờ đợi, giảm thủ tục hành chính, và cung cấp dịch vụ công một cách nhanh chóng và minh bạch hơn.
+
+
+  utter_dichvucong/viet_nam_a_co_nhung_thanh_tuu_gi_trong_viec_phat_trien_chinh_phu_ien_tu_va_dich_vu_cong_so:
+  - text: |
+      Việt Nam đã đạt được nhiều thành tựu trong phát triển Chính phủ điện tử, bao gồm việc triển khai Cổng dịch vụ công quốc gia, xây dựng hệ thống thông tin quốc gia, số hóa các thủ tục hành chính, cung cấp các dịch vụ công trực tuyến, giúp người dân và doanh nghiệp thực hiện các giao dịch hành chính thuận tiện hơn, đồng thời tăng cường hiệu quả quản lý nhà nước.
+
+
+  utter_dichvucong/chinh_phu_viet_nam_a_co_nhung_chinh_sach_nao_e_thuc_ay_chuyen_oi_so_trong_nganh_dich_vu_cong:
+  - text: |
+      Chính phủ Việt Nam đã ban hành các chính sách như \"Chương trình chuyển đổi số quốc gia\", \"Chiến lược phát triển Chính phủ điện tử giai đoạn 2021-2025\", và \"Đề án phát triển hệ thống thông tin báo cáo quốc gia\" để thúc đẩy chuyển đổi số trong ngành dịch vụ công, nhằm nâng cao hiệu quả quản lý và phục vụ người dân.
+
+
+  utter_dichvucong/chuyen_oi_so_co_giup_giam_thieu_tinh_trang_tham_nhung_trong_nganh_dich_vu_cong_o_viet_nam_khong:
+  - text: |
+      Có, chuyển đổi số giúp giảm thiểu tham nhũng bằng cách tự động hóa các quy trình hành chính, giảm tiếp xúc trực tiếp giữa cán bộ công chức và công dân, đồng thời tăng cường tính minh bạch trong việc xử lý các thủ tục hành chính và tài chính công.
+
+
+  utter_dichvucong/chinh_phu_viet_nam_co_khuyen_khich_cac_doanh_nghiep_tham_gia_vao_chuyen_oi_so_trong_dich_vu_cong_khong:
+  - text: |
+      Chính phủ Việt Nam khuyến khích các doanh nghiệp tham gia vào chuyển đổi số trong dịch vụ công thông qua các chính sách hợp tác công-tư (PPP), cung cấp các giải pháp công nghệ và hạ tầng hỗ trợ dịch vụ công, nhằm tối ưu hóa quy trình cung cấp dịch vụ và đáp ứng nhu cầu của người dân.
+
+
+  utter_dichvucong/viet_nam_a_ap_dung_chuyen_oi_so_vao_linh_vuc_giao_duc_cong_nhu_the_nao:
+  - text: |
+      Việt Nam đã áp dụng chuyển đổi số trong giáo dục công thông qua việc phát triển các nền tảng học trực tuyến, tạo điều kiện cho học sinh, sinh viên tiếp cận tài liệu học tập từ xa, đặc biệt là trong bối cảnh dịch COVID-19, và nâng cao hiệu quả quản lý học sinh, sinh viên.
+
+
+  utter_dichvucong/chuyen_oi_so_trong_nganh_dich_vu_cong_tai_viet_nam_a_co_tac_ong_gi_en_viec_nang_cao_chat_luong_phuc_vu_nguoi_dan:
+  - text: |
+      Chuyển đổi số giúp nâng cao chất lượng phục vụ người dân thông qua việc cung cấp dịch vụ công nhanh chóng, chính xác và tiện lợi hơn, giúp công dân thực hiện các thủ tục hành chính trực tuyến, giảm bớt thời gian chờ đợi và chi phí đi lại.
+
+
+  utter_dichvucong/viet_nam_co_cac_cong_cu_gi_e_theo_doi_va_anh_gia_hieu_qua_chuyen_oi_so_trong_dich_vu_cong:
+  - text: |
+      Việt Nam sử dụng các công cụ như hệ thống giám sát và đánh giá kết quả thực hiện các đề án chuyển đổi số, bảng xếp hạng chỉ số Chính phủ điện tử (EGDI), và các báo cáo thường niên về tình hình ứng dụng công nghệ thông tin trong các cơ quan nhà nước để theo dõi và đánh giá hiệu quả của chuyển đổi số.
+
+
+  utter_dichvucong/cac_dich_vu_cong_truc_tuyen_cua_viet_nam_co_pho_bien_va_de_tiep_can_voi_nguoi_dan_khong:
+  - text: |
+      Các dịch vụ công trực tuyến ở Việt Nam đã dần trở nên phổ biến và dễ tiếp cận, nhờ vào sự phát triển của các cổng dịch vụ công quốc gia và các nền tảng di động, giúp công dân thực hiện thủ tục hành chính một cách nhanh chóng và thuận tiện từ xa, mà không cần đến trực tiếp cơ quan hành chính.
+
+
+  utter_dichvucong/viet_nam_co_ke_hoach_nao_e_mo_rong_cac_dich_vu_cong_truc_tuyen_trong_tuong_lai:
+  - text: |
+      Việt Nam có kế hoạch mở rộng các dịch vụ công trực tuyến trong tương lai bằng cách nâng cấp hệ thống cơ sở hạ tầng công nghệ, phát triển thêm các ứng dụng di động hỗ trợ người dân, và mở rộng các dịch vụ công trực tuyến trong các lĩnh vực như y tế, giáo dục, và thuế.
+
+
+  utter_dichvucong/chuyen_oi_so_co_giup_giam_tai_cho_cac_co_quan_nha_nuoc_trong_viec_giai_quyet_thu_tuc_hanh_chinh_khong:
+  - text: |
+      Có, chuyển đổi số giúp giảm tải cho các cơ quan nhà nước trong việc giải quyết thủ tục hành chính bằng cách tự động hóa các quy trình xử lý, giảm thiểu giấy tờ và công việc thủ công, từ đó giảm bớt khối lượng công việc và tăng cường hiệu quả công tác.
+
+
+  utter_dichvucong/viet_nam_a_trien_khai_nhung_giai_phap_cong_nghe_nao_e_ho_tro_cong_dan_trong_viec_thuc_hien_cac_thu_tuc_hanh_chinh_truc_tuyen:
+  - text: |
+      Việt Nam đã triển khai các giải pháp công nghệ như cổng dịch vụ công quốc gia, ứng dụng di động cho phép công dân đăng ký và tra cứu các thủ tục hành chính, các hệ thống thanh toán điện tử giúp công dân thanh toán phí dịch vụ trực tuyến, và các hệ thống xác thực điện tử đảm bảo tính bảo mật và an toàn khi thực hiện giao dịch hành chính.
+
+
+  utter_dichvucong/viet_nam_a_ap_dung_chuyen_oi_so_trong_linh_vuc_y_te_cong_nhu_the_nao:
+  - text: |
+      Việt Nam đã áp dụng chuyển đổi số trong y tế công qua việc triển khai các dịch vụ y tế từ xa (telemedicine), xây dựng hồ sơ y tế điện tử, và phát triển các ứng dụng di động để công dân có thể tra cứu kết quả xét nghiệm, nhận tư vấn y tế trực tuyến và thực hiện các thủ tục hành chính liên quan đến sức khỏe.
+
+
+  utter_dichvucong/chuyen_oi_so_trong_nganh_dich_vu_cong_o_viet_nam_co_giup_nang_cao_hieu_qua_giai_quyet_thu_tuc_hanh_chinh_khong:
+  - text: |
+      Có, chuyển đổi số đã giúp nâng cao hiệu quả giải quyết thủ tục hành chính tại Việt Nam nhờ vào việc sử dụng các hệ thống trực tuyến, tự động hóa các quy trình, giảm thiểu sự can thiệp của con người, từ đó giảm thời gian và chi phí xử lý hồ sơ.
+
+
+  utter_dichvucong/viet_nam_co_chinh_sach_nao_e_khuyen_khich_nguoi_dan_va_doanh_nghiep_tham_gia_vao_cac_dich_vu_cong_truc_tuyen:
+  - text: |
+      Chính phủ Việt Nam khuyến khích người dân và doanh nghiệp tham gia vào các dịch vụ công trực tuyến thông qua việc giảm thủ tục hành chính, đơn giản hóa các quy trình, cung cấp hướng dẫn sử dụng dịch vụ công trực tuyến và đảm bảo tính bảo mật khi thực hiện các giao dịch.
+
+
+  utter_dichvucong/chuyen_oi_so_co_giup_cai_thien_cong_tac_bao_ve_moi_truong_trong_nganh_dich_vu_cong_khong:
+  - text: |
+      Chuyển đổi số giúp cải thiện công tác bảo vệ môi trường trong ngành dịch vụ công bằng cách sử dụng các công nghệ như dữ liệu lớn và IoT để giám sát ô nhiễm, quản lý tài nguyên thiên nhiên, giảm thiểu rủi ro thiên tai và tối ưu hóa các quy trình xử lý chất thải.
+
+
+  utter_dichvucong/chuyen_oi_so_co_the_giup_nang_cao_hieu_qua_giam_sat_va_quan_ly_ngan_sach_nha_nuoc_o_viet_nam_khong:
+  - text: |
+      Có, chuyển đổi số giúp nâng cao hiệu quả giám sát và quản lý ngân sách nhà nước thông qua việc sử dụng các hệ thống quản lý tài chính điện tử, cho phép theo dõi chi tiêu công, kiểm tra việc sử dụng ngân sách và tăng cường minh bạch trong việc phân bổ ngân sách.
+
+
+  utter_dichvucong/viet_nam_co_nhung_nen_tang_so_nao_giup_nguoi_dan_de_dang_tiep_can_dich_vu_cong:
+  - text: |
+      Việt Nam đã triển khai các nền tảng số như Cổng Dịch vụ công quốc gia, các ứng dụng di động của các cơ quan nhà nước, các website cung cấp thông tin và hỗ trợ người dân thực hiện thủ tục hành chính trực tuyến, giúp công dân dễ dàng truy cập và sử dụng các dịch vụ công.
+
+
+  utter_dichvucong/chinh_phu_viet_nam_a_ap_dung_cac_cong_nghe_nao_e_cai_thien_chat_luong_dich_vu_cong_trong_linh_vuc_giao_thong:
+  - text: |
+      Chính phủ Việt Nam đã sử dụng công nghệ như giao thông thông minh (smart traffic), ứng dụng quản lý giao thông và thu phí tự động, hệ thống giám sát giao thông, và các giải pháp thanh toán điện tử để cải thiện chất lượng và hiệu quả của dịch vụ công trong lĩnh vực giao thông.
+
+
+  utter_dichvucong/viet_nam_a_co_cac_sang_kien_nao_e_giup_nguoi_dan_hieu_va_tham_gia_vao_chuyen_oi_so_trong_dich_vu_cong:
+  - text: |
+      Việt Nam đã tổ chức các chiến dịch tuyên truyền, cung cấp các khóa đào tạo về kỹ năng số, phát triển các nền tảng giáo dục trực tuyến và các video hướng dẫn sử dụng dịch vụ công trực tuyến để người dân hiểu và dễ dàng tham gia vào quá trình chuyển đổi số.
+
+
+  utter_dichvucong/chuyen_oi_so_trong_nganh_dich_vu_cong_co_giup_nang_cao_nang_suat_lam_viec_cua_cong_chuc_viet_nam_khong:
+  - text: |
+      Có, chuyển đổi số giúp nâng cao năng suất làm việc của công chức Việt Nam thông qua việc sử dụng các công cụ số để tự động hóa quy trình, giảm bớt công việc thủ công, và tăng cường khả năng quản lý và xử lý công việc một cách nhanh chóng và hiệu quả.
+
+
+  utter_dichvucong/chuyen_oi_so_co_giup_nang_cao_tinh_minh_bach_trong_viec_cung_cap_dich_vu_cong_o_viet_nam_khong:
+  - text: |
+      Có, chuyển đổi số giúp nâng cao tính minh bạch trong việc cung cấp dịch vụ công bằng cách cung cấp thông tin công khai và dễ dàng truy cập về các thủ tục hành chính, tiến trình giải quyết hồ sơ, và kết quả thực hiện dịch vụ công.
+
+
+  utter_dichvucong/viet_nam_co_giai_phap_nao_e_am_bao_nguoi_dan_o_cac_vung_sau_vung_xa_co_the_tiep_can_dich_vu_cong_truc_tuyen:
+  - text: |
+      Chính phủ Việt Nam đã phát triển các ứng dụng di động và cổng dịch vụ công trực tuyến, đồng thời tăng cường cơ sở hạ tầng internet ở các vùng sâu, vùng xa để đảm bảo người dân có thể tiếp cận dịch vụ công mọi lúc mọi nơi.
+
+
+  utter_dichvucong/viet_nam_co_ke_hoach_nao_e_cai_thien_ky_nang_so_cho_can_bo_cong_chuc_trong_qua_trinh_chuyen_oi_so:
+  - text: |
+      Việt Nam đã triển khai các chương trình đào tạo kỹ năng số cho cán bộ công chức thông qua các khóa học, hội thảo, và các sáng kiến giáo dục trực tuyến, nhằm nâng cao năng lực công nghệ thông tin trong công tác quản lý và phục vụ công dân.
+
+
+  utter_dichvucong/chuyen_oi_so_co_giup_cai_thien_cong_tac_giai_quyet_khieu_nai_va_phan_anh_cua_cong_dan_trong_nganh_dich_vu_cong_khong:
+  - text: |
+      Có, chuyển đổi số giúp cải thiện công tác giải quyết khiếu nại và phản ánh của công dân bằng cách sử dụng các nền tảng trực tuyến để công dân dễ dàng gửi ý kiến, khiếu nại, và theo dõi quá trình xử lý phản hồi một cách minh bạch và nhanh chóng.
+
+
+  utter_dichvucong/chinh_phu_viet_nam_a_lam_gi_e_phat_trien_cac_nen_tang_du_lieu_ho_tro_chuyen_oi_so_trong_dich_vu_cong:
+  - text: |
+      Chính phủ Việt Nam đã triển khai các dự án xây dựng cơ sở dữ liệu quốc gia, hệ thống quản lý dữ liệu lớn (Big Data), và các nền tảng tích hợp dữ liệu từ nhiều nguồn khác nhau để hỗ trợ việc cung cấp dịch vụ công một cách chính xác và hiệu quả.
+
+
+  utter_dichvucong/chuyen_oi_so_co_giup_cai_thien_cong_tac_phong_chong_dich_benh_trong_nganh_dich_vu_cong_o_viet_nam_khong:
+  - text: |
+      Có, chuyển đổi số giúp cải thiện công tác phòng chống dịch bệnh thông qua việc triển khai các ứng dụng khai báo y tế, giám sát sức khỏe từ xa, và thông báo kịp thời về các biện pháp phòng dịch thông qua nền tảng trực tuyến, giúp kiểm soát dịch bệnh nhanh chóng và hiệu quả.
+
+
+  utter_dichvucong/chuyen_oi_so_co_giup_giam_bot_su_phan_biet_trong_viec_tiep_can_dich_vu_cong_khong:
+  - text: |
+      Có, chuyển đổi số giúp giảm bớt sự phân biệt trong việc tiếp cận dịch vụ công bằng cách cung cấp các dịch vụ trực tuyến dễ dàng truy cập, giúp mọi công dân, đặc biệt là những người ở vùng sâu, vùng xa, dễ dàng tiếp cận các dịch vụ mà không cần phải di chuyển xa.
+
+
+  utter_dichvucong/viet_nam_a_trien_khai_cac_sang_kien_nao_e_phat_trien_chinh_phu_so_va_dich_vu_cong_truc_tuyen:
+  - text: |
+      Việt Nam đã triển khai các sáng kiến như \"Chính phủ điện tử\", \"Chính phủ số\", \"Cổng dịch vụ công quốc gia\", và xây dựng các nền tảng số phục vụ cho người dân và doanh nghiệp thực hiện các thủ tục hành chính và tiếp cận dịch vụ công một cách dễ dàng.
+
+
+  utter_dichvucong/chuyen_oi_so_co_the_giup_cai_thien_he_thong_thanh_toan_trong_nganh_dich_vu_cong_o_viet_nam_khong:
+  - text: |
+      Có, chuyển đổi số giúp cải thiện hệ thống thanh toán trong ngành dịch vụ công thông qua việc triển khai các hệ thống thanh toán điện tử, cho phép người dân và doanh nghiệp thanh toán phí dịch vụ công trực tuyến nhanh chóng, tiện lợi và an toàn.
+
+
+  utter_dichvucong/viet_nam_co_cac_chien_luoc_nao_e_oi_pho_voi_cac_thach_thuc_ve_bao_mat_va_an_toan_thong_tin_trong_dich_vu_cong_so:
+  - text: |
+      Việt Nam đã triển khai các chiến lược bảo mật và an toàn thông tin, bao gồm việc áp dụng các tiêu chuẩn bảo mật quốc tế, mã hóa dữ liệu, xác thực đa yếu tố, và xây dựng các hệ thống giám sát an ninh mạng để bảo vệ dữ liệu công dân và bảo mật trong quá trình cung cấp dịch vụ công số.
+
+
+  utter_dichvucong/chuyen_oi_so_co_giup_cai_thien_hieu_qua_quan_ly_giao_thong_cong_cong_tai_viet_nam_khong:
+  - text: |
+      Có, chuyển đổi số giúp cải thiện hiệu quả quản lý giao thông công cộng thông qua việc sử dụng hệ thống giao thông thông minh (ITS), ứng dụng thanh toán điện tử cho vé xe buýt, và các giải pháp giám sát và tối ưu hóa lộ trình, từ đó nâng cao chất lượng và độ tin cậy của dịch vụ giao thông công cộng.
+
+
+  utter_dichvucong/viet_nam_a_trien_khai_cong_nghe_nao_e_giam_sat_va_quan_ly_cac_du_an_ha_tang_dich_vu_cong:
+  - text: |
+      Việt Nam đã triển khai công nghệ dữ liệu lớn (Big Data), Internet vạn vật (IoT), và các hệ thống phần mềm quản lý dự án để giám sát và tối ưu hóa các dự án hạ tầng dịch vụ công, giúp theo dõi tiến độ, quản lý tài nguyên và giảm thiểu sai sót trong quá trình triển khai.
+
+
+  utter_dichvucong/chuyen_oi_so_co_giup_nang_cao_chat_luong_giao_duc_cong_lap_tai_viet_nam_khong:
+  - text: |
+      Có, chuyển đổi số nâng cao chất lượng giáo dục công lập tại Việt Nam thông qua việc sử dụng các nền tảng học trực tuyến, các công cụ quản lý học sinh và giáo viên, và việc cung cấp tài liệu học tập trực tuyến giúp học sinh, sinh viên tiếp cận kiến thức mọi lúc mọi nơi.
+
+
+  utter_dichvucong/chuyen_oi_so_co_the_lam_giam_tac_nghen_giao_thong_va_o_nhiem_moi_truong_o_cac_thanh_pho_lon_cua_viet_nam_khong:
+  - text: |
+      Có, chuyển đổi số giúp giảm tắc nghẽn giao thông và ô nhiễm môi trường bằng cách triển khai hệ thống giao thông thông minh, quản lý việc di chuyển của phương tiện và tối ưu hóa lộ trình giao thông, giúp giảm thiểu ùn tắc và phát thải khí thải.
+
+
+  utter_dichvucong/viet_nam_co_chinh_sach_nao_e_khuyen_khich_nguoi_dan_su_dung_dich_vu_cong_truc_tuyen:
+  - text: |
+      Chính phủ Việt Nam đã thực hiện các chính sách khuyến khích người dân sử dụng dịch vụ công trực tuyến thông qua việc miễn phí các dịch vụ hành chính, cung cấp hướng dẫn sử dụng dịch vụ trực tuyến và cải thiện sự minh bạch trong quá trình cung cấp dịch vụ.
+
+
+  utter_dichvucong/chuyen_oi_so_co_the_giup_cai_thien_cong_tac_quan_ly_tai_nguyen_nuoc_tai_viet_nam_khong:
+  - text: |
+      Có, chuyển đổi số giúp cải thiện công tác quản lý tài nguyên nước tại Việt Nam thông qua việc sử dụng các hệ thống giám sát, cảm biến IoT để theo dõi chất lượng và lượng nước, giúp tối ưu hóa việc sử dụng và bảo vệ nguồn tài nguyên nước.
+
+
+  utter_dichvucong/chuyen_oi_so_co_giup_tang_cuong_su_phoi_hop_giua_cac_co_quan_nha_nuoc_trong_viec_cung_cap_dich_vu_cong_khong:
+  - text: |
+      Có, chuyển đổi số giúp tăng cường sự phối hợp giữa các cơ quan nhà nước thông qua các hệ thống chia sẻ và đồng bộ dữ liệu, giúp các cơ quan, ban ngành phối hợp hiệu quả hơn trong việc giải quyết thủ tục hành chính và cung cấp dịch vụ công.
+
+
+  utter_dichvucong/viet_nam_co_ke_hoach_nao_e_ap_dung_tri_tue_nhan_tao_ai_trong_dich_vu_cong_khong:
+  - text: |
+      Việt Nam đang triển khai các ứng dụng trí tuệ nhân tạo (AI) trong dịch vụ công, đặc biệt trong các lĩnh vực như phân tích dữ liệu công, tự động hóa các quy trình hành chính, và phát triển các chatbot hỗ trợ công dân giải đáp thắc mắc về thủ tục hành chính.
+
+
+  utter_dichvucong/chuyen_oi_so_co_the_giup_phat_trien_mo_hinh_chinh_phu_mo_tai_viet_nam_khong:
+  - text: |
+      Có, chuyển đổi số giúp phát triển mô hình chính phủ mở tại Việt Nam bằng cách tăng cường cung cấp thông tin công khai qua các nền tảng trực tuyến, tạo điều kiện cho công dân và doanh nghiệp tham gia vào quá trình ra quyết định, đồng thời kiểm soát hiệu quả các hoạt động của chính phủ.
+
+
+  utter_dichvucong/viet_nam_co_su_dung_cong_nghe_blockchain_trong_dich_vu_cong_khong:
+  - text: |
+      Việt Nam đang nghiên cứu và thử nghiệm ứng dụng công nghệ blockchain trong dịch vụ công, đặc biệt trong việc quản lý dữ liệu hành chính, chứng thực các giao dịch, và bảo vệ thông tin cá nhân của công dân, nhằm đảm bảo tính minh bạch và an toàn trong quản lý và cung cấp dịch vụ công.
+
+
+  utter_dichvucong/chuyen_oi_so_co_giup_giam_chi_phi_cho_chinh_phu_va_nguoi_dan_trong_viec_cung_cap_dich_vu_cong_khong:
+  - text: |
+      Có, chuyển đổi số giúp giảm chi phí cho chính phủ và người dân bằng cách tự động hóa các quy trình hành chính, giảm bớt chi phí giấy tờ, đi lại và làm việc thủ công, từ đó giảm thiểu thời gian và chi phí cho cả cơ quan nhà nước và công dân.
+
+
+  utter_dichvucong/chuyen_oi_so_co_the_giup_tang_cuong_cong_tac_quan_ly_ngan_sach_nha_nuoc_tai_viet_nam_khong:
+  - text: |
+      Có, chuyển đổi số giúp tăng cường công tác quản lý ngân sách nhà nước bằng cách áp dụng các hệ thống tài chính điện tử, cho phép theo dõi chi tiêu và phân bổ ngân sách một cách minh bạch và hiệu quả hơn, đồng thời dễ dàng phát hiện và ngăn ngừa gian lận.
+
+
+  utter_dichvucong/viet_nam_a_trien_khai_cac_he_thong_thanh_toan_ien_tu_nao_e_ho_tro_dich_vu_cong:
+  - text: |
+      Việt Nam đã triển khai các hệ thống thanh toán điện tử như Cổng dịch vụ công quốc gia, hệ thống thanh toán trực tuyến của các ngân hàng và các nền tảng thanh toán điện tử, giúp công dân thanh toán phí dịch vụ công trực tuyến một cách dễ dàng và an toàn.
+
+
+  utter_dichvucong/chuyen_oi_so_co_giup_giam_su_cham_tre_trong_viec_giai_quyet_thu_tuc_hanh_chinh_o_viet_nam_khong:
+  - text: |
+      Có, chuyển đổi số giúp giảm sự chậm trễ trong việc giải quyết thủ tục hành chính bằng cách tự động hóa các quy trình, rút ngắn thời gian xử lý hồ sơ, và giúp cán bộ công chức dễ dàng truy cập, theo dõi và xử lý công việc nhanh chóng hơn.
+
+
+  utter_dichvucong/chuyen_oi_so_co_the_lam_tang_su_tham_gia_cua_cong_dan_trong_viec_giam_sat_hoat_ong_cua_chinh_phu_khong:
+  - text: |
+      Có, chuyển đổi số giúp tăng sự tham gia của công dân thông qua các công cụ trực tuyến, nơi công dân có thể đóng góp ý kiến, giám sát và phản hồi về các dịch vụ công, từ đó giúp chính phủ cải thiện chất lượng dịch vụ và tăng tính minh bạch.
+
+
+  utter_dichvucong/viet_nam_co_ke_hoach_nao_e_phat_trien_cac_he_thong_du_lieu_mo_phuc_vu_dich_vu_cong_khong:
+  - text: |
+      Chính phủ Việt Nam đang triển khai các hệ thống dữ liệu mở (Open Data) để cung cấp thông tin công khai về các dịch vụ công, giúp công dân dễ dàng truy cập và sử dụng thông tin về các thủ tục hành chính, chính sách công, và các vấn đề xã hội khác.
+
+
+  utter_dichvucong/viet_nam_co_su_dung_cong_nghe_ien_toan_am_may_trong_cung_cap_dich_vu_cong_khong:
+  - text: |
+      Có, Việt Nam đã áp dụng công nghệ điện toán đám mây trong cung cấp dịch vụ công để lưu trữ, quản lý và chia sẻ dữ liệu hiệu quả hơn, giúp các cơ quan nhà nước dễ dàng phối hợp và cung cấp dịch vụ công qua các nền tảng trực tuyến.
+
+
+  utter_dichvucong/chuyen_oi_so_co_the_giup_toi_uu_hoa_viec_su_dung_tai_nguyen_cong_trong_nganh_dich_vu_cong_khong:
+  - text: |
+      Có, chuyển đổi số giúp tối ưu hóa việc sử dụng tài nguyên công thông qua các hệ thống quản lý số, giúp phân tích và dự báo nhu cầu sử dụng dịch vụ, tối ưu hóa phân bổ tài nguyên và giảm thiểu lãng phí trong các dịch vụ công.
+
+
+  utter_dichvucong/chuyen_oi_so_co_the_giup_nang_cao_chat_luong_dich_vu_cong_trong_linh_vuc_bao_ve_xa_hoi_tai_viet_nam_khong:
+  - text: |
+      Có, chuyển đổi số giúp nâng cao chất lượng dịch vụ công trong lĩnh vực bảo vệ xã hội thông qua việc số hóa hồ sơ và thông tin của người hưởng trợ cấp, quản lý chi trả và theo dõi quá trình cung cấp dịch vụ bảo vệ xã hội một cách hiệu quả hơn.
+
+
+  utter_dichvucong/chuyen_oi_so_co_the_giup_tang_cuong_su_hop_tac_giua_cac_co_quan_nha_nuoc_va_cac_to_chuc_xa_hoi_trong_viec_cung_cap_dich_vu_cong_khong:
+  - text: |
+      Có, chuyển đổi số giúp tăng cường sự hợp tác giữa các cơ quan nhà nước và các tổ chức xã hội bằng cách chia sẻ dữ liệu và thông tin qua các nền tảng trực tuyến, từ đó giúp đồng bộ hóa các hoạt động cung cấp dịch vụ công và tăng cường sự phối hợp hiệu quả.
+
+
+  utter_dichvucong/chuyen_oi_so_co_giup_giam_tinh_trang_qua_tai_trong_cac_co_quan_nha_nuoc_khong:
+  - text: |
+      Có, chuyển đổi số giúp giảm tình trạng quá tải trong các cơ quan nhà nước thông qua việc tự động hóa quy trình xử lý hồ sơ, phân bổ công việc hợp lý và giảm lượng công việc thủ công, giúp cán bộ công chức tập trung vào các nhiệm vụ quan trọng hơn.
+
+
+  utter_dichvucong/chuyen_oi_so_co_giup_tang_cuong_kha_nang_tiep_can_dich_vu_cong_cho_doanh_nghiep_khong:
+  - text: |
+      Có, chuyển đổi số giúp doanh nghiệp dễ dàng tiếp cận dịch vụ công thông qua các nền tảng trực tuyến, giúp họ thực hiện các thủ tục hành chính như đăng ký kinh doanh, khai thuế, xin cấp phép, thanh toán phí mà không cần phải đến cơ quan nhà nước.
+
+
+  utter_dichvucong/viet_nam_co_su_dung_he_thong_ai_tri_tue_nhan_tao_trong_nganh_dich_vu_cong_khong:
+  - text: |
+      Việt Nam đã bắt đầu sử dụng trí tuệ nhân tạo (AI) trong một số lĩnh vực dịch vụ công, như tự động hóa quy trình hành chính, phân tích dữ liệu lớn, cải thiện các dịch vụ khách hàng như chatbot hỗ trợ công dân giải quyết thủ tục hành chính.
+
+
+  utter_dichvucong/chuyen_oi_so_co_giup_cai_thien_cong_tac_kiem_tra_va_giam_sat_trong_nganh_dich_vu_cong_khong:
+  - text: |
+      Có, chuyển đổi số giúp cải thiện công tác kiểm tra và giám sát bằng cách sử dụng các hệ thống giám sát điện tử, theo dõi tiến độ giải quyết các thủ tục hành chính, và thu thập phản hồi từ công dân, giúp tăng cường tính minh bạch và trách nhiệm trong cung cấp dịch vụ công.
+
+
+  utter_dichvucong/viet_nam_co_chinh_sach_nao_e_thu_hut_cac_doanh_nghiep_cong_nghe_tham_gia_vao_chuyen_oi_so_trong_dich_vu_cong:
+  - text: |
+      Chính phủ Việt Nam khuyến khích các doanh nghiệp công nghệ tham gia vào chuyển đổi số trong dịch vụ công thông qua các chính sách hỗ trợ như ưu đãi thuế, hợp tác công tư (PPP), và tạo ra các cơ chế để doanh nghiệp cung cấp giải pháp công nghệ cho các cơ quan nhà nước.
+
+
+  utter_dichvucong/chuyen_oi_so_co_the_giup_cai_thien_cong_tac_cap_giay_to_va_chung_thuc_trong_dich_vu_cong_khong:
+  - text: |
+      Có, chuyển đổi số giúp cải thiện công tác cấp giấy tờ và chứng thực bằng cách sử dụng hệ thống điện tử để đăng ký, cấp và lưu trữ các loại giấy tờ, giúp giảm bớt thủ tục hành chính và thời gian chờ đợi cho công dân.
+
+
+  utter_dichvucong/chuyen_oi_so_co_giup_giam_su_phan_tan_thong_tin_trong_cac_co_quan_nha_nuoc_khong:
+  - text: |
+      Có, chuyển đổi số giúp giảm sự phân tán thông tin giữa các cơ quan nhà nước thông qua việc tạo ra các hệ thống dữ liệu tích hợp, cho phép chia sẻ và truy cập thông tin dễ dàng hơn, đồng thời cải thiện hiệu quả công tác phối hợp giữa các đơn vị.
+
+
+  utter_dichvucong/viet_nam_co_chuong_trinh_nao_e_phat_trien_ha_tang_cong_nghe_phuc_vu_chuyen_oi_so_trong_dich_vu_cong_khong:
+  - text: |
+      Chính phủ Việt Nam đã triển khai các chương trình phát triển hạ tầng công nghệ, bao gồm việc nâng cấp mạng Internet, xây dựng các trung tâm dữ liệu quốc gia, và phát triển các cơ sở hạ tầng số, nhằm hỗ trợ việc triển khai các dịch vụ công trực tuyến và tăng cường kết nối giữa các cơ quan nhà nước.
+
+
+  utter_dichvucong/chuyen_oi_so_co_giup_nang_cao_chat_luong_dich_vu_cong_trong_linh_vuc_bao_ve_moi_truong_khong:
+  - text: |
+      Có, chuyển đổi số giúp nâng cao chất lượng dịch vụ công trong lĩnh vực bảo vệ môi trường thông qua việc sử dụng công nghệ giám sát ô nhiễm, quản lý tài nguyên thiên nhiên và các hệ thống dữ liệu để phân tích xu hướng và phát triển các chính sách bảo vệ môi trường hiệu quả hơn.
+
+
+  utter_dichvucong/chuyen_oi_so_co_the_giup_tang_cuong_cong_tac_phong_chong_tham_nhung_trong_nganh_dich_vu_cong_khong:
+  - text: |
+      Có, chuyển đổi số giúp tăng cường công tác phòng chống tham nhũng bằng cách số hóa các quy trình công việc, giảm thiểu sự tiếp xúc trực tiếp giữa công dân và công chức, đồng thời tăng cường khả năng giám sát và kiểm tra thông qua các hệ thống báo cáo và phân tích dữ liệu, giúp phát hiện và ngăn chặn hành vi tham nhũng sớm hơn.
+
+
+  utter_dichvucong/neu_mot_cong_dan_muon_ang_ky_ket_hon_lieu_ho_co_the_thuc_hien_thu_tuc_nay_truc_tuyen_khong:
+  - text: |
+      Có, công dân có thể thực hiện thủ tục đăng ký kết hôn trực tuyến qua Cổng dịch vụ công quốc gia, nơi cung cấp các bước hướng dẫn, điền thông tin và nộp hồ sơ điện tử mà không cần đến trực tiếp cơ quan nhà nước.
+
+
+  utter_dichvucong/trong_truong_hop_mot_doanh_nghiep_muon_ang_ky_ma_so_thue_moi_ho_co_the_lam_gi_e_tiet_kiem_thoi_gian:
+  - text: |
+      Doanh nghiệp có thể thực hiện đăng ký mã số thuế trực tuyến qua hệ thống Thuế điện tử của Tổng cục Thuế, tiết kiệm thời gian và chi phí thay vì phải đến cơ quan thuế trực tiếp.
+
+
+  utter_dichvucong/neu_mot_nguoi_dan_muon_nop_thue_truc_tuyen_ho_co_the_lam_theo_cac_buoc_nao:
+  - text: |
+      Người dân có thể truy cập vào Cổng dịch vụ công quốc gia hoặc hệ thống thuế điện tử của Tổng cục Thuế, chọn mục \"Nộp thuế\", điền thông tin cần thiết và thanh toán trực tuyến qua các nền tảng thanh toán điện tử.
+
+
+  utter_dichvucong/khi_mot_cong_dan_muon_xin_cap_giay_phep_xay_dung_cho_cong_trinh_nha_o_lieu_co_the_hoan_toan_thuc_hien_thu_tuc_truc_tuyen_khong:
+  - text: |
+      Có, công dân có thể nộp hồ sơ xin cấp giấy phép xây dựng qua Cổng dịch vụ công của địa phương, nơi hồ sơ sẽ được xét duyệt và trả kết quả trực tuyến mà không cần đến cơ quan nhà nước.
+
+
+  utter_dichvucong/khi_mot_nguoi_muon_xin_cap_lai_giay_chung_minh_nhan_dan_ho_co_the_thuc_hien_nhu_the_nao:
+  - text: |
+      Người dân có thể nộp đơn xin cấp lại chứng minh nhân dân trực tuyến qua Cổng dịch vụ công quốc gia, cung cấp thông tin và tài liệu cần thiết, sau đó theo dõi tiến trình và nhận kết quả qua dịch vụ bưu chính hoặc trực tiếp.
+
+
+  utter_dichvucong/neu_mot_cong_dan_muon_tra_cuu_ket_qua_xet_tuyen_vao_cac_truong_ai_hoc_ho_co_the_lam_gi:
+  - text: |
+      Công dân có thể tra cứu kết quả xét tuyển vào các trường đại học thông qua các hệ thống trực tuyến của Bộ Giáo dục và Đào tạo hoặc các cổng thông tin của các trường đại học, tiết kiệm thời gian và công sức.
+
+
+  utter_dichvucong/khi_mot_doanh_nghiep_muon_thay_oi_ia_chi_ang_ky_kinh_doanh_lieu_ho_co_the_thuc_hien_thu_tuc_nay_ma_khong_phai_en_co_quan_nha_nuoc:
+  - text: |
+      Có, doanh nghiệp có thể thay đổi địa chỉ đăng ký kinh doanh qua Cổng dịch vụ công quốc gia, nộp hồ sơ trực tuyến và nhận kết quả phê duyệt mà không cần đến cơ quan đăng ký kinh doanh.
+
+
+  utter_dichvucong/neu_mot_nguoi_dan_muon_ang_ky_bao_hiem_xa_hoi_lieu_ho_co_the_lam_viec_nay_qua_cac_nen_tang_truc_tuyen_khong:
+  - text: |
+      Có, người dân có thể đăng ký bảo hiểm xã hội trực tuyến qua Cổng dịch vụ công quốc gia, điền thông tin và thực hiện thủ tục liên quan mà không cần đến cơ quan bảo hiểm xã hội.
+
+
+  utter_dichvucong/khi_mot_nguoi_muon_lam_thu_tuc_cap_phep_moi_truong_cho_mot_du_an_kinh_doanh_co_the_thuc_hien_thu_tuc_nay_truc_tuyen_khong:
+  - text: |
+      Có, thủ tục cấp phép môi trường có thể được thực hiện trực tuyến qua Cổng dịch vụ công của Bộ Tài nguyên và Môi trường hoặc các cơ quan chức năng cấp phép, nơi hồ sơ sẽ được nộp và theo dõi trực tuyến.
+
+
+  utter_dichvucong/neu_mot_cong_dan_muon_phan_anh_hoac_khieu_nai_ve_mot_dich_vu_cong_chua_uoc_giai_quyet_thoa_ang_ho_co_the_gui_khieu_nai_qua_au:
+  - text: |
+      Công dân có thể gửi khiếu nại hoặc phản ánh qua Cổng thông tin khiếu nại của Chính phủ, nơi họ có thể nhập thông tin khiếu nại và theo dõi quá trình xử lý trực tuyến, đảm bảo quyền lợi và sự minh bạch trong việc giải quyết.
+
+
+  utter_dichvucong/neu_mot_cong_dan_can_xin_cap_so_ho_khau_lieu_ho_co_the_lam_thu_tuc_nay_truc_tuyen_khong:
+  - text: |
+      Có, công dân có thể thực hiện thủ tục cấp sổ hộ khẩu qua Cổng dịch vụ công quốc gia hoặc hệ thống dịch vụ công trực tuyến của địa phương, nộp hồ sơ và theo dõi quá trình xử lý mà không cần phải đến trực tiếp cơ quan công an.
+
+
+  utter_dichvucong/khi_mot_cong_ty_muon_xin_giay_phep_lao_ong_cho_nguoi_nuoc_ngoai_ho_co_the_lam_thu_tuc_nay_qua_au:
+  - text: |
+      Công ty có thể thực hiện thủ tục xin giấy phép lao động cho người nước ngoài qua Cổng dịch vụ công quốc gia hoặc hệ thống của Bộ Lao động – Thương binh và Xã hội, giúp giảm thiểu thời gian và công sức khi thực hiện thủ tục hành chính này.
+
+
+  utter_dichvucong/neu_mot_nguoi_dan_muon_thay_oi_ten_trong_so_ho_khau_lieu_ho_co_the_thuc_hien_truc_tuyen_khong:
+  - text: |
+      Có, người dân có thể thực hiện thủ tục thay đổi tên trong sổ hộ khẩu qua Cổng dịch vụ công trực tuyến của cơ quan công an, điền thông tin và gửi hồ sơ yêu cầu xử lý trực tuyến.
+
+
+  utter_dichvucong/khi_mot_cong_dan_muon_ang_ky_khai_sinh_cho_con_lieu_ho_co_the_thuc_hien_thu_tuc_nay_truc_tuyen_khong:
+  - text: |
+      Có, công dân có thể đăng ký khai sinh cho con qua Cổng dịch vụ công quốc gia, điền thông tin về trẻ em và nộp hồ sơ trực tuyến, giúp giảm bớt thủ tục hành chính và tiết kiệm thời gian.
+
+
+  utter_dichvucong/neu_mot_doanh_nghiep_muon_xin_giay_phep_kinh_doanh_ho_co_the_lam_thu_tuc_nay_qua_au:
+  - text: |
+      Doanh nghiệp có thể thực hiện thủ tục xin cấp giấy phép kinh doanh qua Cổng dịch vụ công quốc gia hoặc các hệ thống dịch vụ công trực tuyến của Sở Kế hoạch và Đầu tư, giúp hoàn thành thủ tục nhanh chóng mà không cần phải đến trực tiếp.
+
+
+  utter_dichvucong/khi_mot_nguoi_can_xin_cap_the_can_cuoc_cong_dan_ho_co_the_ang_ky_qua_au:
+  - text: |
+      Người dân có thể đăng ký cấp thẻ căn cước công dân qua Cổng dịch vụ công quốc gia, cung cấp thông tin và nộp hồ sơ yêu cầu trực tuyến, giúp việc cấp thẻ nhanh chóng và hiệu quả.
+
+
+  utter_dichvucong/neu_mot_doanh_nghiep_muon_nop_bao_cao_thue_lieu_ho_co_the_thuc_hien_thu_tuc_nay_qua_mang_khong:
+  - text: |
+      Có, doanh nghiệp có thể nộp báo cáo thuế trực tuyến qua hệ thống của Tổng cục Thuế, giúp việc khai báo và nộp thuế trở nên nhanh chóng và dễ dàng mà không cần đến cơ quan thuế.
+
+
+  utter_dichvucong/khi_mot_cong_dan_muon_tra_cuu_ket_qua_xu_ly_on_xin_cap_phep_xay_dung_lieu_ho_co_the_lam_truc_tuyen_khong:
+  - text: |
+      Có, công dân có thể tra cứu kết quả xử lý đơn xin cấp phép xây dựng qua Cổng dịch vụ công quốc gia hoặc hệ thống dịch vụ của các sở, ban, ngành liên quan, giúp theo dõi và nắm bắt tình trạng hồ sơ một cách nhanh chóng.
+
+
+  utter_dichvucong/neu_mot_cong_dan_muon_xin_cap_giay_chung_nhan_quyen_su_dung_at_lieu_ho_co_the_thuc_hien_thu_tuc_nay_truc_tuyen_khong:
+  - text: |
+      Có, công dân có thể thực hiện thủ tục xin cấp giấy chứng nhận quyền sử dụng đất qua Cổng dịch vụ công trực tuyến của Sở Tài nguyên và Môi trường, giúp việc đăng ký và theo dõi hồ sơ trở nên thuận tiện hơn.
+
+
+  utter_dichvucong/khi_mot_cong_dan_muon_thay_oi_thong_tin_trong_chung_minh_nhan_dan_ho_co_the_thuc_hien_qua_nen_tang_nao:
+  - text: |
+      Công dân có thể thay đổi thông tin trong chứng minh nhân dân qua Cổng dịch vụ công quốc gia, đăng ký và nộp hồ sơ trực tuyến cho cơ quan công an để thực hiện thay đổi thông tin cá nhân nhanh chóng và dễ dàng.
+
+
+  utter_dichvucong/neu_mot_cong_dan_muon_ang_ky_tam_tru_lieu_ho_co_the_thuc_hien_thu_tuc_nay_truc_tuyen_khong:
+  - text: |
+      Có, công dân có thể đăng ký tạm trú qua Cổng dịch vụ công quốc gia, điền thông tin và nộp hồ sơ trực tuyến mà không cần phải đến cơ quan công an, giúp tiết kiệm thời gian và công sức.
+
+
+  utter_dichvucong/khi_mot_doanh_nghiep_muon_xin_giay_phep_moi_truong_cho_du_an_cua_minh_ho_co_the_thuc_hien_thu_tuc_nay_qua_au:
+  - text: |
+      Doanh nghiệp có thể thực hiện thủ tục xin giấy phép môi trường qua Cổng dịch vụ công quốc gia hoặc hệ thống dịch vụ công trực tuyến của Bộ Tài nguyên và Môi trường, giúp quá trình xin phép nhanh chóng và minh bạch hơn.
+
+
+  utter_dichvucong/neu_mot_nguoi_dan_muon_xin_cap_giay_phep_lai_xe_ho_co_the_lam_thu_tuc_nay_truc_tuyen_khong:
+  - text: |
+      Có, công dân có thể xin cấp giấy phép lái xe qua Cổng dịch vụ công của Bộ Giao thông Vận tải hoặc các cơ quan chức năng địa phương, giúp tiết kiệm thời gian và thực hiện thủ tục nhanh chóng.
+
+
+  utter_dichvucong/khi_mot_cong_dan_muon_xin_cap_giay_phep_to_chuc_su_kien_cong_cong_ho_co_the_thuc_hien_qua_au:
+  - text: |
+      Công dân có thể thực hiện thủ tục xin cấp giấy phép tổ chức sự kiện công cộng qua Cổng dịch vụ công quốc gia hoặc hệ thống dịch vụ công trực tuyến của các cơ quan địa phương, giúp quy trình trở nên thuận tiện hơn.
+
+
+  utter_dichvucong/neu_mot_nguoi_muon_tra_cuu_thong_tin_lien_quan_en_thue_tai_san_cua_minh_ho_co_the_lam_nhu_the_nao:
+  - text: |
+      Công dân có thể tra cứu thông tin về thuế tài sản qua hệ thống thuế điện tử của Tổng cục Thuế hoặc qua Cổng dịch vụ công, giúp việc tra cứu thông tin nhanh chóng và chính xác.
+
+
+  utter_dichvucong/khi_mot_nguoi_muon_xin_cap_giay_phep_xay_dung_cho_cong_trinh_sua_chua_nha_lieu_ho_co_the_lam_thu_tuc_nay_truc_tuyen_khong:
+  - text: |
+      Có, công dân có thể xin cấp giấy phép xây dựng cho công trình sửa chữa qua Cổng dịch vụ công quốc gia hoặc hệ thống của Sở Xây dựng, giúp giảm thiểu thủ tục hành chính và tăng hiệu quả giải quyết.
+
+
+  utter_dichvucong/neu_mot_cong_dan_muon_ang_ky_bao_hiem_y_te_lieu_ho_co_the_thuc_hien_thu_tuc_nay_truc_tuyen_khong:
+  - text: |
+      Có, công dân có thể đăng ký bảo hiểm y tế trực tuyến qua Cổng dịch vụ công quốc gia hoặc qua các hệ thống bảo hiểm xã hội điện tử của các cơ quan bảo hiểm xã hội, giúp tiết kiệm thời gian và chi phí đi lại.
+
+
+  utter_dichvucong/chuyen_oi_so_co_giup_cong_dan_xin_cap_visa_i_du_lich_nhanh_chong_khong:
+  - text: |
+      Có, công dân có thể xin cấp visa đi du lịch trực tuyến qua các cổng dịch vụ của Cục Quản lý Xuất nhập cảnh, giúp thủ tục xin visa được thực hiện nhanh chóng và đơn giản mà không cần phải đến trực tiếp cơ quan.
+
+
+  utter_dichvucong/khi_mot_cong_dan_muon_cap_lai_giay_to_bi_mat_ho_co_the_thuc_hien_qua_nen_tang_truc_tuyen_nao:
+  - text: |
+      Công dân có thể xin cấp lại giấy tờ bị mất (chứng minh nhân dân, giấy phép lái xe, sổ hộ khẩu...) qua Cổng dịch vụ công quốc gia, điền thông tin yêu cầu và theo dõi quá trình xử lý hồ sơ một cách nhanh chóng và thuận tiện.
+
+
+  utter_dichvucong/neu_mot_doanh_nghiep_muon_ang_ky_thay_oi_nganh_nghe_kinh_doanh_lieu_ho_co_the_thuc_hien_truc_tuyen_khong:
+  - text: |
+      Có, doanh nghiệp có thể thực hiện thủ tục đăng ký thay đổi ngành nghề kinh doanh qua Cổng dịch vụ công quốc gia hoặc hệ thống đăng ký kinh doanh trực tuyến của Sở Kế hoạch và Đầu tư, giúp tiết kiệm thời gian và giảm thiểu thủ tục hành chính.
+
+
+  utter_dichvucong/neu_mot_cong_dan_muon_xin_cap_the_bao_hiem_y_te_cho_nguoi_than_ho_co_the_thuc_hien_thu_tuc_nay_truc_tuyen_khong:
+  - text: |
+      Có, công dân có thể xin cấp thẻ bảo hiểm y tế cho người thân qua Cổng dịch vụ công quốc gia hoặc các hệ thống bảo hiểm xã hội trực tuyến, giúp nộp hồ sơ và theo dõi tình trạng cấp thẻ nhanh chóng.
+
+
+  utter_dichvucong/khi_mot_doanh_nghiep_muon_ang_ky_lai_ten_doanh_nghiep_lieu_ho_co_the_thuc_hien_thu_tuc_nay_truc_tuyen_khong:
+  - text: |
+      Có, doanh nghiệp có thể thực hiện thủ tục đăng ký thay đổi tên doanh nghiệp qua Cổng dịch vụ công quốc gia hoặc hệ thống của Sở Kế hoạch và Đầu tư, giúp tiết kiệm thời gian và giảm thiểu thủ tục hành chính.
+
+
+  utter_dichvucong/neu_mot_cong_dan_muon_xin_cap_giay_phep_hoat_ong_cho_cua_hang_ho_co_the_lam_thu_tuc_nay_qua_au:
+  - text: |
+      Công dân có thể xin cấp giấy phép hoạt động cho cửa hàng qua Cổng dịch vụ công quốc gia hoặc hệ thống dịch vụ công của cơ quan cấp phép địa phương, giúp quy trình trở nên thuận tiện và nhanh chóng.
+
+
+  utter_dichvucong/khi_mot_nguoi_muon_xin_cap_giay_phep_nhap_khau_hang_hoa_lieu_ho_co_the_lam_thu_tuc_nay_truc_tuyen_khong:
+  - text: |
+      Có, công dân hoặc doanh nghiệp có thể xin cấp giấy phép nhập khẩu hàng hóa qua Cổng dịch vụ công quốc gia hoặc hệ thống của Bộ Công Thương, giúp làm thủ tục nhanh chóng và chính xác.
+
+
+  utter_dichvucong/neu_mot_nguoi_muon_thuc_hien_thu_tuc_xin_cap_giay_phep_mo_truong_hoc_ho_co_the_lam_qua_nen_tang_truc_tuyen_khong:
+  - text: |
+      Có, người dân hoặc tổ chức có thể thực hiện thủ tục xin cấp giấy phép mở trường học qua Cổng dịch vụ công của Bộ Giáo dục và Đào tạo, giúp rút ngắn thời gian và thực hiện thủ tục hành chính đơn giản hơn.
+
+
+  utter_dichvucong/chuyen_oi_so_co_giup_nguoi_dan_nop_on_xin_tro_cap_that_nghiep_truc_tuyen_khong:
+  - text: |
+      Có, người dân có thể nộp đơn xin trợ cấp thất nghiệp trực tuyến qua hệ thống bảo hiểm xã hội điện tử của Bộ Lao động, Thương binh và Xã hội, giúp tiết kiệm thời gian và đảm bảo tính minh bạch trong việc giải quyết yêu cầu.
+
+
+  utter_dichvucong/khi_mot_cong_dan_muon_xin_cap_giay_chung_nhan_quyen_so_huu_nha_ho_co_the_thuc_hien_thu_tuc_nay_qua_au:
+  - text: |
+      Công dân có thể xin cấp giấy chứng nhận quyền sở hữu nhà qua Cổng dịch vụ công của Sở Tài nguyên và Môi trường hoặc hệ thống dịch vụ công của các cơ quan nhà nước có thẩm quyền, giúp việc cấp giấy tờ trở nên nhanh chóng và dễ dàng.
+
+
+  utter_dichvucong/neu_mot_cong_dan_muon_oi_giay_phep_lai_xe_do_bi_mat_lieu_ho_co_the_thuc_hien_qua_nen_tang_truc_tuyen_khong:
+  - text: |
+      Có, công dân có thể xin cấp lại giấy phép lái xe qua Cổng dịch vụ công quốc gia hoặc hệ thống của Bộ Giao thông Vận tải, điền thông tin và theo dõi tiến trình xử lý hồ sơ trực tuyến.
+
+
+  utter_dichvucong/chuyen_oi_so_co_giup_cong_dan_xin_cap_lai_ho_chieu_nhanh_chong_khong:
+  - text: |
+      Có, công dân có thể xin cấp lại hộ chiếu qua Cổng dịch vụ công của Cục Quản lý Xuất nhập cảnh, điền thông tin và theo dõi quá trình xử lý hồ sơ trực tuyến mà không cần phải đến cơ quan.
+
+
+  utter_dichvucong/khi_mot_cong_dan_muon_nop_on_xin_ho_tro_nguoi_ngheo_lieu_ho_co_the_lam_thu_tuc_nay_qua_mang_khong:
+  - text: |
+      Có, công dân có thể nộp đơn xin hỗ trợ người nghèo qua Cổng dịch vụ công quốc gia, nộp hồ sơ trực tuyến và theo dõi kết quả xét duyệt mà không cần phải trực tiếp đến cơ quan chức năng.
+
+
+  utter_dichvucong/neu_mot_cong_dan_muon_ang_ky_giay_phep_kinh_doanh_cho_mot_cua_hang_online_lieu_ho_co_the_thuc_hien_thu_tuc_nay_truc_tuyen_khong:
+  - text: |
+      Có, công dân có thể đăng ký giấy phép kinh doanh cho cửa hàng online qua Cổng dịch vụ công quốc gia hoặc hệ thống của Sở Kế hoạch và Đầu tư, giúp quá trình đăng ký nhanh chóng và tiết kiệm thời gian.
+
+
+  utter_dichvucong/khi_mot_cong_dan_muon_xin_cap_giay_phep_su_dung_at_lieu_ho_co_the_lam_thu_tuc_nay_qua_nen_tang_truc_tuyen_khong:
+  - text: |
+      Có, công dân có thể xin cấp giấy phép sử dụng đất qua Cổng dịch vụ công của Sở Tài nguyên và Môi trường, điền thông tin và nộp hồ sơ trực tuyến, giúp tiết kiệm thời gian và giảm bớt thủ tục hành chính.
+
+
+  utter_dichvucong/chuyen_oi_so_co_giup_cong_dan_nhan_ket_qua_xet_nghiem_y_te_nhanh_chong_khong:
+  - text: |
+      Có, công dân có thể nhận kết quả xét nghiệm y tế nhanh chóng qua các ứng dụng di động hoặc cổng dịch vụ công trực tuyến của cơ sở y tế, giúp việc tra cứu kết quả trở nên dễ dàng và tiện lợi.
+
+
+  utter_dichvucong/khi_mot_cong_dan_muon_nop_ho_so_xin_visa_lieu_ho_co_the_thuc_hien_thu_tuc_nay_truc_tuyen_khong:
+  - text: |
+      Có, công dân có thể nộp hồ sơ xin visa trực tuyến qua hệ thống của Bộ Ngoại giao hoặc Cục Quản lý Xuất nhập cảnh, giúp việc xin visa trở nên thuận tiện và giảm thiểu thủ tục hành chính.
+
+
+  utter_dichvucong/neu_mot_cong_dan_muon_thay_oi_thong_tin_trong_ho_so_ho_tich_ho_co_the_thuc_hien_thu_tuc_nay_qua_au:
+  - text: |
+      Công dân có thể thay đổi thông tin trong hồ sơ hộ tịch qua Cổng dịch vụ công quốc gia hoặc hệ thống của cơ quan đăng ký hộ tịch địa phương, giúp việc thay đổi thông tin nhanh chóng và chính xác.
+
+
+  utter_dichvucong/khi_mot_doanh_nghiep_muon_xin_cap_giay_phep_san_xuat_lieu_ho_co_the_lam_thu_tuc_nay_qua_mang_khong:
+  - text: |
+      Có, doanh nghiệp có thể xin cấp giấy phép sản xuất qua Cổng dịch vụ công quốc gia hoặc hệ thống dịch vụ công của Bộ Công Thương, giúp quy trình cấp phép trở nên nhanh chóng và hiệu quả.
+
+
+  utter_dichvucong/chuyen_oi_so_co_giup_cong_dan_theo_doi_tien_trinh_cap_giay_chung_nhan_quyen_so_huu_xe_khong:
+  - text: |
+      Có, công dân có thể theo dõi tiến trình cấp giấy chứng nhận quyền sở hữu xe qua Cổng dịch vụ công của Bộ Giao thông Vận tải, giúp giảm thời gian chờ đợi và nắm bắt tình trạng hồ sơ một cách thuận tiện.
+
+
+  utter_dichvucong/neu_mot_cong_dan_muon_ang_ky_bao_hiem_xa_hoi_tu_nguyen_ho_co_the_thuc_hien_thu_tuc_nay_truc_tuyen_khong:
+  - text: |
+      Có, công dân có thể đăng ký bảo hiểm xã hội tự nguyện qua Cổng dịch vụ công quốc gia hoặc các hệ thống bảo hiểm xã hội điện tử của cơ quan chức năng, giúp đơn giản hóa thủ tục và giảm thiểu công sức đi lại.
+
+
+  utter_dichvucong/chuyen_oi_so_co_giup_nguoi_dan_ang_ky_thay_oi_noi_cu_tru_de_dang_hon_khong:
+  - text: |
+      Có, người dân có thể đăng ký thay đổi nơi cư trú qua Cổng dịch vụ công của cơ quan công an, giúp quá trình thay đổi nơi cư trú nhanh chóng và thuận tiện hơn mà không cần phải đến trực tiếp.
+
+
+  utter_dichvucong/khi_mot_cong_dan_muon_tham_gia_chuong_trinh_ho_tro_an_sinh_xa_hoi_lieu_ho_co_the_nop_ho_so_qua_nen_tang_truc_tuyen_khong:
+  - text: |
+      Có, công dân có thể nộp hồ sơ tham gia chương trình hỗ trợ an sinh xã hội qua Cổng dịch vụ công quốc gia, giúp quá trình đăng ký và xét duyệt diễn ra thuận lợi và nhanh chóng.
+
+
+  utter_dichvucong/khi_mot_cong_dan_muon_ang_ky_quyen_so_huu_tai_san_lieu_ho_co_the_lam_thu_tuc_nay_truc_tuyen_khong:
+  - text: |
+      Có, công dân có thể đăng ký quyền sở hữu tài sản qua Cổng dịch vụ công của Sở Tài nguyên và Môi trường hoặc các cơ quan chức năng liên quan, giúp thực hiện thủ tục nhanh chóng và dễ dàng hơn.
+
+
+  utter_dichvucong/neu_mot_nguoi_muon_xin_cap_giay_phep_tham_do_khoang_san_ho_co_the_lam_thu_tuc_nay_qua_au:
+  - text: |
+      Công dân hoặc doanh nghiệp có thể xin cấp giấy phép thăm dò khoáng sản qua Cổng dịch vụ công của Bộ Tài nguyên và Môi trường, giúp quá trình cấp phép trở nên minh bạch và hiệu quả.
+
+
+  utter_dichvucong/chuyen_oi_so_co_giup_cong_dan_nhan_giay_phep_lao_ong_cho_nguoi_nuoc_ngoai_mot_cach_nhanh_chong_khong:
+  - text: |
+      Có, công dân hoặc doanh nghiệp có thể xin cấp giấy phép lao động cho người nước ngoài qua Cổng dịch vụ công quốc gia hoặc hệ thống của Bộ Lao động, Thương binh và Xã hội, giúp thủ tục diễn ra nhanh chóng và tiện lợi hơn.
+
+
+  utter_dichvucong/khi_mot_cong_dan_muon_ang_ky_lam_thu_tuc_ve_so_huu_tri_tue_lieu_ho_co_the_lam_thu_tuc_truc_tuyen_khong:
+  - text: |
+      Có, công dân có thể đăng ký và nộp thủ tục sở hữu trí tuệ (bản quyền, nhãn hiệu, sáng chế) qua Cổng dịch vụ công của Cục Sở hữu trí tuệ, giúp việc đăng ký và theo dõi trạng thái hồ sơ thuận tiện và dễ dàng.
+
+
+  utter_dichvucong/neu_mot_cong_dan_muon_xin_cap_giay_chung_nhan_quyen_su_dung_at_o_nong_thon_lieu_ho_co_the_thuc_hien_truc_tuyen_khong:
+  - text: |
+      Có, công dân có thể xin cấp giấy chứng nhận quyền sử dụng đất ở nông thôn qua Cổng dịch vụ công của Sở Tài nguyên và Môi trường, giúp giảm thiểu thủ tục hành chính và tiết kiệm thời gian.
+
+
+  utter_dichvucong/khi_mot_cong_dan_muon_xin_cap_chung_chi_hanh_nghe_ho_co_the_lam_thu_tuc_nay_truc_tuyen_khong:
+  - text: |
+      Có, công dân có thể xin cấp chứng chỉ hành nghề qua Cổng dịch vụ công của Bộ Y tế, Bộ Giáo dục và Đào tạo hoặc các cơ quan chuyên ngành khác, giúp quá trình cấp chứng chỉ được đơn giản và hiệu quả hơn.
+
+
+  utter_dichvucong/chuyen_oi_so_co_giup_cai_thien_thu_tuc_ang_ky_ket_hon_cho_cong_dan_khong:
+  - text: |
+      Có, công dân có thể thực hiện thủ tục đăng ký kết hôn qua Cổng dịch vụ công quốc gia hoặc các cổng dịch vụ công của các địa phương, giúp đăng ký nhanh chóng và giảm bớt thủ tục giấy tờ.
+
+
+  utter_dichvucong/neu_mot_cong_dan_muon_ang_ky_quyen_su_dung_at_cho_mot_du_an_xay_dung_lieu_ho_co_the_lam_thu_tuc_nay_qua_nen_tang_truc_tuyen_khong:
+  - text: |
+      Có, công dân hoặc doanh nghiệp có thể đăng ký quyền sử dụng đất cho dự án xây dựng qua Cổng dịch vụ công của Sở Tài nguyên và Môi trường, giúp tiết kiệm thời gian và đơn giản hóa quy trình.
+
+
+  utter_dichvucong/khi_mot_cong_dan_muon_thay_oi_ho_khau_hoac_ang_ky_tam_tru_tai_mot_ia_phuong_moi_lieu_ho_co_the_thuc_hien_thu_tuc_nay_qua_mang_khong:
+  - text: |
+      Có, công dân có thể thay đổi hộ khẩu hoặc đăng ký tạm trú qua Cổng dịch vụ công quốc gia, điền thông tin và theo dõi tình trạng hồ sơ trực tuyến, giúp việc đăng ký trở nên thuận tiện và hiệu quả.
+
+
+  utter_dichvucong/chuyen_oi_so_co_giup_viec_theo_doi_va_cap_chung_nhan_an_toan_ve_sinh_thuc_pham_nhanh_chong_khong:
+  - text: |
+      Có, công dân hoặc doanh nghiệp có thể theo dõi và xin cấp chứng nhận an toàn vệ sinh thực phẩm qua Cổng dịch vụ công của Bộ Y tế hoặc Sở Y tế, giúp tiết kiệm thời gian và giảm thiểu thủ tục hành chính trong lĩnh vực này.
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,32 @@
+version: '3.1'
+nlu:
+- intent: xin_chao
+  examples: |
+    - xin chào
+    - chào
+    - xin chào bạn
+    - bạn có thể giúp mình không?
+    - chào bạn
+    - hey
+    - hey you
+    - bạn giúp mình được không?
+    - xin chào bạn có thể giúp mình được không?
+    - chào bạn giúp mình được không?
+    - mình muốn bạn giúp mình?
+    - bạn có thể giúp tôi được không
+    - xin chào bạn có thể giúp tôi được không
+
+- intent: gioi_thieu
+  examples: |
+    - Bạn là gì?
+    - Bạn là?
+    - Bạn có chức năng gì?
+    - bạn có các chức năng gì?
+    - bạn là gì vậy?
+    - bạn có nhiệm vụ gì?
+    - chức năng của bạn?
+    - chức năng của bạn là gì?
+    - chức năng của bạn là như thế nào?
+    - nhiệm vụ của bạn là gì?
+    - công dụng của bạn là gì?
+    
