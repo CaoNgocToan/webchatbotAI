@@ -10,6 +10,10 @@ use App\Http\Controllers\MessagesController;
 use App\Http\Controllers\FineTuningController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\TopicController;
+use App\Http\Controllers\ExportController;
+
+Route::get('admin/rasa/export-view', [ExportController::class, 'showExportForm']);
+
 
 Route::get('auth/login',[LoginController::class, 'login_form']);
 Route::get('auth/logout', [LoginController::class, 'logout']);
@@ -51,6 +55,10 @@ Route::group(['prefix' => 'admin',  'middleware' => 'checkauth'], function(){
     Route::post('topic/create', [TopicController::class, 'create'])->middleware('role:Admin,Manager');
     Route::get('topic/edit/{id}', [TopicController::class, 'editForm'])->middleware('role:Admin,Manager');
     Route::post('topic/update', [TopicController::class, 'update'])->middleware('role:Admin,Manager');
+
+    Route::get('export-view', [ExportController::class, 'showExportForm']);
+    Route::post('export-view/export', [ExportController::class, 'export']);
+
 
     Route::get('user', [UserController::class, 'list'])->middleware('role:Admin');
     Route::get('user/change-password', [UserController::class, 'change_password'])->middleware('role:Admin');

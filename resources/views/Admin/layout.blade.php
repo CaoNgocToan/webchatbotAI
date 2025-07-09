@@ -100,6 +100,9 @@
                             <li class="has-submenu">
                                 <a href="{{ env('APP_URL') }}admin/fine-tuning"><i class="fas fa-book-medical"></i>Tập huấn dữ liệu</a>
                             </li>
+                            <li class="has-submenu">
+                                <a href="{{ env('APP_URL') }}admin/export-view"><i class="fas fa-file-export"></i> Xuất dữ liệu</a>
+                            </li>
                             {{--<li class="has-submenu">
                                 <a href="#"><i class="icon-layers"></i> Danh mục <div class="arrow-down"></div></a>
                                 <ul class="submenu">
