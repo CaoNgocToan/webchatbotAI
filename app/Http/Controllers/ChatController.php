@@ -58,8 +58,10 @@ class ChatController extends Controller
     $messages[] = ['role' => 'assistant', 'content' => $text];
     Session::put('messages', $messages);
 
+    $user = User::find($data['id']);
+
     // Ghi log nếu cần
-    $username = $request->session()->get('user.email', 'guest@rasa.local');
+    $username = $request->session()->get('user.email', 'abc@gmail.com');
     $msg = [
         ['role' => 'username', 'content' => $username],
         ['role' => 'user', 'content' => $message],
