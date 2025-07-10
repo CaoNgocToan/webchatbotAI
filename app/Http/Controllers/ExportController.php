@@ -9,6 +9,7 @@ use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Session;
 use Symfony\Component\Yaml\Yaml;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Storage;
 
 class ExportController extends Controller
 {
@@ -54,7 +55,7 @@ class ExportController extends Controller
             }
         }
 
-        return redirect()->back()->with('msg', '✅ Đã ghi YAML cho tất cả chủ đề.');
+        return redirect()->back()->with('msg', '✅ Đã tải YAML cho tất cả chủ đề.');
     }else{
         if (in_array('nlu', $exportTypes)) {
             $this->downloadnlu($slug);
@@ -63,7 +64,7 @@ class ExportController extends Controller
             $this->downloaddomain($slug);
         }
     }
-    return redirect()->back()->with('msg', "✅ Đã ghi YAML cho chủ đề '$slug'");
+    return redirect()->back()->with('msg', "✅ Đã tải YAML cho chủ đề '$slug'");
 }
 
     public function writeToFile(?string $slug, array $exportTypes)
@@ -177,7 +178,7 @@ class ExportController extends Controller
         File::put($filePath, $yamlString);
        
 
-        return response()->download($filePath)->deleteFileAfterSend(true);
+        
     }
 
 
@@ -269,13 +270,13 @@ class ExportController extends Controller
         File::ensureDirectoryExists(dirname($filePath));
         File::put($filePath, $yaml);
 
-        return response()->download($filePath)->deleteFileAfterSend(true);
+        
     }
 
 
     public function downloadnlu(string $slug)
     {
-        $filePath = base_path("temp//nlu//nlu_$slug.yml");
+        $filePath = "temp//nlu//nlu_$slug.yml";
 
         // Lấy intent cũ trong file YAML nếu có
         $intentYML = $this->readnlu($slug); // dạng [ [intent => .., examples => [..] ], ... ]
@@ -356,17 +357,20 @@ class ExportController extends Controller
             $yamlString .= "\n";
         }
 
-        File::ensureDirectoryExists(dirname($filePath));
-        File::put($filePath, $yamlString);
+        
+
+        Storage::put($filePath, $yamlString);
        
 
-        response()->download($filePath)->deleteFileAfterSend(true);
+        Storage::download($filePath);
+
+
     }
 
 
     public function downloaddomain(string $slug)
     {
-        $filePath = base_path("temp//domain//domain_$slug.yml");
+        $filePath = "temp//domain//domain_$slug.yml";
         $responses = [];
         $intents = [];
         $utterYML=$this -> readdomain($slug);
@@ -449,10 +453,11 @@ class ExportController extends Controller
         $yaml .= "  session_expiration_time: 60\n";
         $yaml .= "  carry_over_slots_to_new_session: true\n";
 
-        File::ensureDirectoryExists(dirname($filePath));
-        File::put($filePath, $yaml);
+        
+        Storage::put($filePath, $yaml);
+       
 
-        response()->download($filePath)->deleteFileAfterSend(true);
+        Storage::download($filePath);
     }
 
 

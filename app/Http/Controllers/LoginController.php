@@ -11,7 +11,7 @@ use App\Models\Messages;
 use Session;
 use Validator;
 
-class Logincontroller extends Controller
+class LoginController extends Controller
 {
     //
   function login_form(Request $request) {
