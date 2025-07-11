@@ -76,7 +76,7 @@ class UserController extends Controller {
           $user->email = $data['email'];
           $user->name = $data['name'];
           $user->password = Hash::make($data['password']);
-          $user->roles = array('Admin');
+          $user->roles = array('Customer');
           $user->phone = '';
           $user->address = '';
           $user->active = 1;

@@ -38,7 +38,6 @@
                             </div>
                         </div>
                     </div>
-                    <div id="chat-history" class="chat-history">
                         <div class="m-b-0 messages" id="messages">
                             <div class="message other-message"> <i class="fa-solid fa-user"></i> <strong>ChatbotAI</strong> xin chào, Hãy nhập thông tin cần trao đổi phía dưới. </div>
                             {{-- <div class="message my-message">Are we meeting today?</div>

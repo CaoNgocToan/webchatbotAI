@@ -22,9 +22,6 @@ Route::get('auth/register', [LoginController::class, 'register']);
 Route::post('auth/register-submit', [LoginController::class, 'register_submit']);
 Route::get('auth/not-permis', [AuthController::class, 'notPermis']);
 
-Route::post('/ask', [OpenAIController::class, 'ask']);
-Route::get('ask', [OpenAIController::class, 'get_ask']);
-
 Route::get('/', [ChatController::class, 'index'])->middleware('checkauth');
 Route::post('chat/generate', [ChatController::class, 'chat_submit']);//->middleware('checkauth');
 Route::get('chat/get-completion', [ChatController::class, 'get_completion']);
@@ -56,8 +53,8 @@ Route::group(['prefix' => 'admin',  'middleware' => 'checkauth'], function(){
     Route::get('topic/edit/{id}', [TopicController::class, 'editForm'])->middleware('role:Admin,Manager');
     Route::post('topic/update', [TopicController::class, 'update'])->middleware('role:Admin,Manager');
 
-    Route::get('export-view', [ExportController::class, 'showExportForm']);
-    Route::post('export-view/export', [ExportController::class, 'export']);
+    Route::get('export-view', [ExportController::class, 'showExportForm'])->middleware('role:Admin,Manager');
+    Route::post('export-view/export', [ExportController::class, 'export'])->middleware('role:Admin,Manager');
 
 
     Route::get('user', [UserController::class, 'list'])->middleware('role:Admin');

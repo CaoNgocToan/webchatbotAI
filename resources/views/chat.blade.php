@@ -62,6 +62,8 @@
         </div>
     </div>
 </div>
+
 <script type="text/javascript" src="{{ env('APP_URL') }}assets/js/chat.js"></script>
+
 </body>
 </html>

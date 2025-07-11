@@ -24,6 +24,7 @@ class ChatController extends Controller
         Session::pull('messages');
         //Session::pull('id_chat');
         $title = ''; $content = '';
+        
         return view('chat', compact('title', 'content'));
         //$fine_tuning = FineTuning::where('messages.1.content','regexp', "/Lịch thi Chứng chỉ Ứng dụng Công nghệ Thông tin của Trung tâm Tin học Trường Đại học An Giang./i")->orderBy('updated_at', 'desc')->take(value: 3)->get()->toArray();
         //dd($fine_tuning);
@@ -39,16 +40,17 @@ class ChatController extends Controller
 
     function chat_submit(Request $request)
     {
+        
     $request->validate([
         'title' => 'required|string',
     ]);
-
+    
     $senderId = $request->session()->getId(); // hoặc email nếu muốn xác định người dùng
     $message = $request->title;
-
+    
     // Gọi đến Rasa
     $responses = $this->rasaService->sendMessage($senderId, $message);
-
+    
     // Lấy text trả lời đầu tiên (hoặc gộp nhiều nếu có)
     $text = collect($responses)->pluck('text')->implode("\n");
 
@@ -58,8 +60,9 @@ class ChatController extends Controller
     $messages[] = ['role' => 'assistant', 'content' => $text];
     Session::put('messages', $messages);
 
-    $user = User::find($data['id']);
-    $name = $user->name;
+    $name = session('user.name');
+    
+
     // Ghi log nếu cần
     
     $msg = [

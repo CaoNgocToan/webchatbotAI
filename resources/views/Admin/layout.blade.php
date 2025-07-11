@@ -17,6 +17,7 @@
         <link href="{{ env('APP_URL') }}assets/admin/css/style.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
+        {{-- {{ dd(env('APP_URL')) }} --}}
         <!-- Navigation Bar-->
         <header id="topnav" style="background-color:#015151;">
             <!-- Topbar Start -->

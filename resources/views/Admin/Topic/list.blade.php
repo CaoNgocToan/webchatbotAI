@@ -14,6 +14,7 @@
                 <a href="{{ url('admin/topic/create') }}">
                     <i class="mdi mdi-message-plus"></i>
                 </a>
+                
                 Danh sách Topic: {{ number_format($danhsach->total() ?? count($danhsach), 0, ',', '.') }} dòng dữ liệu
             </h3>
             <hr />
