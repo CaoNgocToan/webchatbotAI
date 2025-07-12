@@ -72,7 +72,9 @@ class ExportController extends Controller
     {
         $filePath = env('CHATBOT_URL') . "//data//nlu//nlu_$slug.yml";
         // Lấy intent cũ trong file YAML nếu có
-        $intentYML = $this->readnlu($slug); 
+        $intentYML = $this->readnlu($slug);
+        if (!empty($intentYML)) {
+            
         foreach ($intentYML as $item) {
             $intent = $item['intent'];
             $examples = $item['examples'];
@@ -84,6 +86,7 @@ class ExportController extends Controller
                 ];
             }
         }
+    }
 
 
         $fineTunings = FineTuning::all(); // hoặc chỉ lấy cột messages: FineTuning::pluck('messages')
@@ -164,13 +167,15 @@ class ExportController extends Controller
         $responses = [];
         $intents = [];
         $utterYML=$this -> readdomain($slug);
+        if (!empty($utterYML)) {
+           
         foreach($utterYML as $item){
             $utterKey = "utter_" . $item['utter'];
             if (!isset($responses[$utterKey])) {
                 $responses[$utterKey] = $item['text'];
             }
         }
-
+    }
 
         $fineTunings = FineTuning::all(); 
 
@@ -283,17 +288,39 @@ class ExportController extends Controller
 
             // Nén ZIP với cấu trúc thư mục
             $zip = new \ZipArchive;
-            if ($zip->open($zipPath, \ZipArchive::CREATE) === TRUE) {
-                $files = \File::allFiles($tempDir);
+            if ($zip->open($zipPath, \ZipArchive::CREATE | \ZipArchive::OVERWRITE) === TRUE) {
+
+                // Đệ quy lấy tất cả file + thư mục từ $tempDir
+                $files = new \RecursiveIteratorIterator(
+                    new \RecursiveDirectoryIterator($tempDir, \FilesystemIterator::SKIP_DOTS),
+                    \RecursiveIteratorIterator::SELF_FIRST
+                );
+
                 foreach ($files as $file) {
-                    // Giữ nguyên thư mục con (nlu/, domain/)
-                    $relativePath = str_replace($tempDir . '/', '', $file->getPathname());
-                    $zip->addFile($file->getRealPath(), $relativePath);
+                    $filePath = $file->getRealPath();
+                    $relativePath = substr($filePath, strlen($tempDir) + 1);
+
+                    if ($file->isDir()) {
+                        // Thêm thư mục (kể cả thư mục rỗng)
+                        $zip->addEmptyDir($relativePath);
+                    } else if ($file->isFile()) {
+                        $zip->addFile($filePath, $relativePath);
+                    }
                 }
+
                 $zip->close();
             }
 
-            return response()->download($zipPath, 'tatca_yaml.zip')->deleteFileAfterSend(true);
+
+
+            $response = response()->download($zipPath, 'tatca_yaml.zip')->deleteFileAfterSend(true);
+
+            // Xóa thư mục tạm sau khi gửi file xong
+           register_shutdown_function(function () use ($tempDir) {
+                \File::deleteDirectory($tempDir);
+            });
+
+            return $response;
         }
 
         // Nếu chỉ 1 chủ đề
@@ -315,7 +342,12 @@ class ExportController extends Controller
                 $zip->close();
             }
 
-            return response()->download($zipPath, "{$slug}_yaml.zip")->deleteFileAfterSend(true);
+            $response = response()->download($zipPath, "{$slug}_yaml.zip")->deleteFileAfterSend(true);
+            register_shutdown_function(function () use ($tempDir) {
+                \File::deleteDirectory($tempDir);
+            });
+
+            return $response;
         }
 
         if (in_array('nlu', $exportTypes)) {
@@ -333,6 +365,8 @@ class ExportController extends Controller
     public function generateNluYaml(string $slug, ?string $outputDir = null)
 {
     $intentYML = $this->readnlu($slug); 
+    
+    if (!empty($intentYML)) {
         foreach ($intentYML as $item) {
             $intent = $item['intent'];
             $examples = $item['examples'];
@@ -344,8 +378,8 @@ class ExportController extends Controller
                 ];
             }
         }
-
-
+    }
+        
         $fineTunings = FineTuning::all(); // hoặc chỉ lấy cột messages: FineTuning::pluck('messages')
 
         $messagesList = [];
@@ -419,7 +453,7 @@ class ExportController extends Controller
 
     // Lưu và trả về file tải
     $filePath = "temp/nlu/$filename";
-    Storage::disk('public')->put($filePath, $yaml);
+    Storage::disk('public')->put($filePath, $yamlString);
 
     return response()->download(storage_path("app/public/$filePath"), $filename, [
         'Content-Type' => 'application/x-yaml',
@@ -431,13 +465,17 @@ public function generateDomainYaml(string $slug, ?string $outputDir = null)
     $responses = [];
     $intents = [];
     $utterYML=$this -> readdomain($slug);
+    if (!empty($utterYML)) {
+        // Nếu không có dữ liệu từ readdomain, khởi tạo mảng rỗng
+        
+    
     foreach($utterYML as $item){
         $utterKey = "utter_" . $item['utter'];
         if (!isset($responses[$utterKey])) {
             $responses[$utterKey] = $item['text'];
         }
     }
-
+    }
 
     $fineTunings = FineTuning::all(); 
 
@@ -529,15 +567,13 @@ public function generateDomainYaml(string $slug, ?string $outputDir = null)
 
     public function readnlu(string $slug)
     {
+        $intents = [];
         $filePath = base_path("datarasa/nlu/nlu_$slug.yml");
-
-        if (!File::exists($filePath)) {
-            return response()->json(['error' => 'File not found'], 404);
+        if (!isset($filePath) || !file_exists($filePath)) {
+            return $intents; // Trả về mảng rỗng nếu không có responses
         }
-
         $content = Yaml::parseFile($filePath);
         $intents = [];
-
         foreach ($content['nlu'] ?? [] as $item) {
             if (isset($item['intent']) && isset($item['examples'])) {
                 // Tách examples YAML về mảng
@@ -558,15 +594,12 @@ public function generateDomainYaml(string $slug, ?string $outputDir = null)
 
     public function readdomain(string $slug)
     {
-        $filePath = base_path("datarasa/domain/domain_$slug.yml");
-
-        if (!File::exists($filePath)) {
-            return response()->json(['error' => 'File not found'], 404);
-        }
-
-        $content = Yaml::parseFile($filePath);
         $responses = [];
-
+        $filePath = base_path("datarasa/domain/domain_$slug.yml");
+        if (!isset($filePath) || !file_exists($filePath)) {
+            return $responses; // Trả về mảng rỗng nếu không có responses
+        }
+        $content = Yaml::parseFile($filePath);
         foreach ($content['responses'] ?? [] as $key => $response) {
             if (isset($response[0]['text'])) {
                 $responses[] = [
