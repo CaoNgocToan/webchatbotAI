@@ -27,6 +27,15 @@
                             <div class="text-center">
                                 <img src="{{ env('APP_URL') }}assets/images/logo.jpg" alt="VietGPT-Chat" title="VietGPT-Chat" class="img-fluid rounded-circle" width="132" height="132">
                             </div>
+                            
+                            @if (session('error'))
+                                <div class="alert alert-danger alert-dismissible fade show mt-3" role="alert">
+                                    {{ session('error') }}
+                                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                                </div>
+                        
+                            @endif
+
                             <form action="{{ env('APP_URL') }}auth/login-submit" method="POST" id="LoginForm">
                                 {{ csrf_field() }}
                                 <input type="hidden" name="url" value="{{ Request::input('url') }}" placeholder="">

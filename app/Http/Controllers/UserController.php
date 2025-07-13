@@ -209,4 +209,32 @@ class UserController extends Controller {
       }
     }
 }
+
+ public function showEditProfile()
+{
+    $user = Auth::user();
+    return view('edit-profile', compact('user'));
+}
+
+public function updateProfile(Request $request)
+{
+    $user = Auth::user();
+
+    $validated = $request->validate([
+        'name' => 'required|string|max:255',
+        'phone' => 'nullable|string|max:20',
+        'password' => 'nullable|min:6|confirmed',
+    ]);
+
+    $user->name = $validated['name'];
+    $user->phone = $validated['phone'] ?? $user->phone;
+
+    if (!empty($validated['password'])) {
+        $user->password = Hash::make($validated['password']);
+    }
+
+    $user->save();
+
+    return back()->with('success', 'Cập nhật thông tin thành công!');
+}
 }

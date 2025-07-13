@@ -33,7 +33,7 @@ class LoginController extends Controller
         return redirect()->intended(env('APP_URL').'?url='.$url);
       }
     } else {
-      return redirect(env('APP_URL').'auth/login?url='.$url);
+      return back()->with('error', 'Đăng nhập không thành công. Vui lòng kiểm tra email hoặc mật khẩu.');
     }
   }
 

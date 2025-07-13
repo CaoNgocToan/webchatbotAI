@@ -132,4 +132,9 @@ class AuthController extends Controller
     //return redirect()->intended(env('APP_URL').'auth/login');
     return view('Admin.page_not_permis');
   }
+
+ 
 }
+
+
+

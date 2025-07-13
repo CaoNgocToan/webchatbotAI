@@ -29,6 +29,12 @@ Route::get('chat/get-completion', [ChatController::class, 'get_completion']);
 Route::get('address/get/{id}', [DMDiaChiController::class, 'getOptions'])->middleware('checkauth');
 Route::get('address/get/{id}/{id1}', [DMDiaChiController::class, 'getOptions1'])->middleware('checkauth');
 
+Route::middleware('auth')->group(function () {
+    Route::get('/auth/profile-edit', [UserController::class, 'showEditProfile']);
+    Route::post('/auth/profile-update', [UserController::class, 'updateProfile']);
+});
+
+
 Route::group(['prefix' => 'admin',  'middleware' => 'checkauth'], function(){
     Route::get('/', [AuthController::class, 'admin'])->middleware('role:Admin,Manager');
     Route::get('dashboard', [AuthController::class, 'admin'])->middleware('role:Admin,Manager');

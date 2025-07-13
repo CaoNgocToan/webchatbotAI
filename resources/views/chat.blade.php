@@ -11,57 +11,60 @@
     <link href="{{ env('APP_URL') }}assets/css/chat.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+    
 </head>
 <body>
-<div class="container">
-    <div class="row clearfix">
-        <div class="col-lg-12 col-12 col-md-12">
-            <div class="card chat-app">
-                <div class="chat">
-                    <div class="chat-header clearfix">
-                        <div class="row">
-                            <div class="col-md-8">
-                                <a href="javascript:void(0);" data-toggle="modal" data-target="#view_info">
-                                <img src="{{ env('APP_URL') }}assets/images/logo.jpg" alt="VietGPT-Chat" title="VietGPT-Chat">
-                                </a>
-                                <div class="chat-about">
-                                    <h2 class="m-b-0">Chatbot AI</h2>
-                                </div>
-                            </div>
-                            <div class="col-md-4 text-right">
-                                <a href="https://cdsdnag.com" target="_blank">
-                                    <span style="font-size:15px;color:#00a38b;">&copy; Chatbot - Tư vấn Chuyển đồi số Doanh nghiệp</span><br />
-                                </a>
-                                <a href="{{ env('APP_URL') }}auth/logout">
-                                    <span style="font-size:15px;color:#00504d;"><i class="fa-solid fa-right-from-bracket"></i> Đăng xuất</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="chat-history" class="chat-history">
-                        <div class="m-b-0 messages" id="messages">
-                            <div class="message other-message"> <i class="fa-solid fa-user"></i> <strong>ChatbotAI</strong> xin chào, Hãy nhập thông tin cần trao đổi phía dưới. </div>
-                            {{-- <div class="message my-message">Are we meeting today?</div>
-                            <div class="message other-message"> Hi Aiden, how are you? How is the project coming along? </div> --}}
-                        </div>
-                        {{-- <div class="loading"><img src="{{ env('APP_URL') }}assets/images/loading.svg" /></div> --}}
-                    </div>
-                    <form id="ChatForm" action="{{ env('APP_URL') }}chat/generate" method="POST">
-                    <input type="hidden" name="_token" id="_token" value="{{ csrf_token() }}" />
-                    <div class="chat-message clearfix">
-                        <div class="input-group mb-0">
-                            <input type="text" class="form-control" placeholder="Nhập thông tin cần trao đổi..." id="title" name="title" value="{{ $title }}" autocomplete="off">
-                            <div class="input-group-prepend">
-                                <button type="submit" name="submit" value="submit" class="btn btn-info"><i class="fa-sharp fa-solid fa-paper-plane"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                    </form>
-                </div>
+<div class="chat">
+    <div class="header">
+        <div class="logo">🤖 ChatBot</div>
+        <div class="user-menu-wrapper">
+            <div class="user-avatar" onclick="toggleDropdown()">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu">
+                <a href="{{ env('APP_URL') }}auth/profile-edit">👤 Quản lý tài khoản</a>
+                <a href="{{ env('APP_URL') }}auth/logout">🚪 Đăng xuất</a>
             </div>
         </div>
+
+    </div>
+    </div>
+    <div id="chat-container" class="chat-container">
+    <div class="message bot">
+        <div class="bubble">🤖 Xin chào! Tôi có thể giúp gì cho bạn hôm nay?</div>
+        <div class="timestamp">07:53</div>
     </div>
 </div>
+
+
+    <div class="input-area">
+    <form id="ChatForm" action="{{ env('APP_URL') }}chat/generate" method="POST" onsubmit="handleSubmit(event)" style="display: flex; width: 100%;">
+        <input type="hidden" name="_token" id="_token" value="{{ csrf_token() }}" />
+        
+        <textarea
+            id="user-input"
+            name="title"
+            autocomplete="off"
+            placeholder="Nhập tin nhắn..."
+            onkeydown="handleEnter(event)"
+        >{{ $title }}</textarea>
+
+        <button type="submit" name="submit" value="submit" title="Gửi">
+            <i class="fa-solid fa-paper-plane"></i> Gửi
+        </button>
+    </form>
+</div>
+
+
+</div>
+<footer class="chat-footer">
+    <a href="https://cdsdnag.com" target="_blank">
+        &copy; Chatbot - Tư vấn Chuyển đổi số Doanh nghiệp
+    </a>
+</footer>
+
+
+
 
 <script type="text/javascript" src="{{ env('APP_URL') }}assets/js/chat.js"></script>
 
