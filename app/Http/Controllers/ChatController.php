@@ -10,6 +10,8 @@ use App\Models\Messages;
 use Illuminate\Support\Str;
 use App\Http\Controllers\RasaService;
 use App\Models\FineTuning;
+use Symfony\Component\Yaml\Yaml;
+
 
 class ChatController extends Controller
 {
@@ -38,45 +40,86 @@ class ChatController extends Controller
     }
 
 
-    function chat_submit(Request $request)
-    {
-        
+    public function chat_submit(Request $request)
+{
     $request->validate([
         'title' => 'required|string',
     ]);
-    
-    $senderId = $request->session()->getId(); // hoặc email nếu muốn xác định người dùng
+
+    $senderId = $request->session()->getId();
     $message = $request->title;
-    
-    // Gọi đến Rasa
+
+    // Gửi message đến Rasa
     $responses = $this->rasaService->sendMessage($senderId, $message);
     
     // Lấy text trả lời đầu tiên (hoặc gộp nhiều nếu có)
     $text = collect($responses)->pluck('text')->implode("\n");
-
-    // Ghi lại session
+    
+    // 👉 Tìm chủ đề theo nội dung trả lời
+    $topicResult = $this->findTopicByBotResponse($text);
+    
+    $source = null;
+    if ($topicResult) {
+        $pdfPath = public_path("pdf/{$topicResult}.pdf");
+        if (file_exists($pdfPath)) {
+            $source = url("pdf/{$topicResult}.pdf");
+        }
+    }
+    
+    // Ghi vào session (nếu cần giữ lịch sử)
     $messages = Session::get('messages', []);
     $messages[] = ['role' => 'user', 'content' => $message];
-    $messages[] = ['role' => 'assistant', 'content' => $text];
+    $messages[] = ['role' => 'assistant', 'content' => $text, 'source' => $source];
     Session::put('messages', $messages);
 
+    // Ghi log
     $name = session('user.name');
-    
-
-    // Ghi log nếu cần
-    
     $msg = [
         ['role' => 'username', 'content' => $name],
         ['role' => 'user', 'content' => $message],
-        ['role' => 'assistant', 'content' => $text],
+        ['role' => 'assistant', 'content' => $text, 'source' => $source],
     ];
-
     $ms = new Messages();
     $ms->messages = $msg;
     $ms->save();
+    
+    // 👉 Trả về cả text và link PDF (nếu có)
+    return response()->json([
+        'text' => $text,
+        'source' => $source
+    ]);
+}
 
-    return $text;
+private function findTopicByBotResponse($botText)
+{
+    $domainPath = base_path('datarasa/domain');
+    
+
+    foreach (glob($domainPath . '/domain_*.yml') as $file) {
+        
+        $filename = basename($file); // domain_giaoduc.yml
+        preg_match('/domain_(.+)\.yml$/', $filename, $matches);
+        $topic = $matches[1] ?? null;
+
+        if (!$topic) continue;
+
+        $yaml = Yaml::parseFile($file);
+        $responses = $yaml['responses'] ?? [];
+
+        foreach ($responses as $utter => $variants) {
+            foreach ($variants as $item) {
+                if (isset($item['text']) && trim($item['text']) === trim($botText)) {
+                    
+                    return $topic;
+                }
+            }
+        }
     }
+
+    return null;
+}
+
+
 
 
 

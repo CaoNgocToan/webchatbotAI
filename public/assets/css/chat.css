@@ -229,6 +229,22 @@ body {
     text-decoration: underline;
 }
 
+.source-wrapper {
+    margin-top: 6px;
+    /* Giảm xuống 6px hoặc 4px để gần lại */
+    font-size: 13px;
+}
+
+.source-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.source-link:hover {
+    text-decoration: underline;
+}
+
+
 
 @media (max-width: 600px) {
 

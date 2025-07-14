@@ -19,8 +19,11 @@ async function sendMessage() {
     input.value = "";
 
     const container = document.getElementById("chat-container");
+
+    // Tạo tin nhắn đang gõ của bot
     const typingMsg = document.createElement("div");
     typingMsg.className = "message bot";
+
     const bubble = document.createElement("div");
     bubble.className = "bubble";
     bubble.textContent = ".";
@@ -34,6 +37,7 @@ async function sendMessage() {
     container.appendChild(typingMsg);
     container.scrollTop = container.scrollHeight;
 
+    // Hiệu ứng typing "..."
     let dots = 1;
     const typingInterval = setInterval(() => {
         dots = (dots % 3) + 1;
@@ -54,12 +58,14 @@ async function sendMessage() {
             body: JSON.stringify({ title: text })
         });
 
-        const data = await response.text();
+        const data = await response.json();
         clearInterval(typingInterval);
         typingMsg.remove();
 
-        const reply = data || "🤖 Xin lỗi, tôi không hiểu.";
-        addMessage(reply, 'bot', true);
+        const reply = data.text || "🤖 Xin lỗi, tôi không hiểu.";
+        const source = data.source || null;
+
+        addMessage(reply, 'bot', false, source);
 
     } catch (error) {
         clearInterval(typingInterval);
@@ -68,20 +74,19 @@ async function sendMessage() {
     }
 }
 
-
 function getCurrentTime() {
     const now = new Date();
     return now.toLocaleTimeString('vi-VN', { hour: '2-digit', minute: '2-digit' });
 }
 
-function addMessage(text, sender = 'bot', typing = false) {
+function addMessage(text, sender = 'bot', typing = false, source = null) {
     const container = document.getElementById("chat-container");
+
     const message = document.createElement("div");
     message.className = `message ${sender}`;
 
     const bubble = document.createElement("div");
     bubble.className = "bubble";
-    bubble.innerHTML = sender === 'user' ? text : "";
 
     const timestamp = document.createElement("div");
     timestamp.className = "timestamp";
@@ -93,26 +98,60 @@ function addMessage(text, sender = 'bot', typing = false) {
     container.scrollTop = container.scrollHeight;
 
     if (sender === 'bot' && typing) {
-        typeEffect(bubble, text, container, 15, timestamp);
+        // Gõ từng chữ
+        typeEffect(bubble, text, container, 15, () => {
+            // Gõ xong thì thêm dòng nguồn (nếu có)
+            if (source) {
+                const filename = source.split('/').pop();
+                const link = document.createElement("a");
+                link.href = source;
+                link.target = "_blank";
+                link.className = "source-link";
+                link.textContent = `📄 Nguồn: ${filename}`;
+
+                const sourceDiv = document.createElement("div");
+                sourceDiv.className = "source-wrapper";
+                sourceDiv.appendChild(link);
+
+
+
+                bubble.appendChild(sourceDiv);
+                container.scrollTop = container.scrollHeight;
+            }
+        });
+    } else {
+        // Nếu không typing thì hiển thị ngay
+        bubble.innerHTML = text;
+        if (source) {
+            const filename = source.split('/').pop();
+            bubble.innerHTML += `<br><br><a href="${source}" target="_blank" class="source-link">📄 Nguồn: ${filename}</a>`;
+        }
     }
 }
 
-function typeEffect(el, text, container, speed = 15, timestampEl = null) {
+
+
+
+
+
+function typeEffect(element, text, container, speed = 5, onDone = null) {
     let i = 0;
-    el.innerHTML = "";
-    function type() {
-        if (i < text.length) {
-            const char = text[i] === "\n" ? "<br>" : text[i];
-            el.innerHTML += char;
-            i++;
-            container.scrollTop = container.scrollHeight;
-            setTimeout(type, speed);
-        } else if (timestampEl) {
-            timestampEl.textContent = getCurrentTime();
+    element.textContent = "";
+
+    const interval = setInterval(() => {
+        element.textContent += text.charAt(i);
+        i++;
+        container.scrollTop = container.scrollHeight;
+
+        if (i >= text.length) {
+            clearInterval(interval);
+            if (typeof onDone === 'function') onDone();
         }
-    }
-    type();
+    }, speed);
 }
+
+
+
 
 function toggleDropdown() {
     const menu = document.getElementById("dropdown-menu");
